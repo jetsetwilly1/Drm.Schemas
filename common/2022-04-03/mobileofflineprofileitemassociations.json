@@ -1,0 +1,88 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/mobileofflineprofileitemassociation.json#",
+  "title": "Entity definition for MobileOfflineProfileItemAssociation",
+  "definitions": {
+    "MobileOfflineProfileItemAssociationPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "introducedversion": {
+          "description": "Version in which the Mobile offline Profile Item Association is introduced.",
+          "type": "string"
+        },
+        "mobileofflineprofileitemassociationid": {
+          "description": "Unique identifier of the mobile offline profile item associaition.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Enter the name of the mobile offline profile item association.",
+          "type": "string"
+        },
+        "processid": {
+          "description": "Shows the ID of the process.",
+          "type": "string"
+        },
+        "profileitemassociationentityfilter": {
+          "description": "Profile item association entity filter criteria.",
+          "type": "string"
+        },
+        "relationshipdata": {
+          "description": "Internal Use Only",
+          "type": "string"
+        },
+        "relationshipdisplayname": {
+          "description": "Entity relationship schema name",
+          "type": "string"
+        },
+        "relationshipid": {
+          "description": "Shows the relationship",
+          "type": "string"
+        },
+        "selectedrelationshipsschema": {
+          "description": "List of relationships of entity selected in parent profile item"
+        },
+        "stageid": {
+          "description": "Shows the ID of the stage.",
+          "type": "string"
+        },
+        "traversedpath": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "mobileofflineprofileitemassociationid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^regardingobjectid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mobileofflineprofileitem'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

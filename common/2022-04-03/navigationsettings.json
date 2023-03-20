@@ -1,0 +1,137 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/navigationsetting.json#",
+  "title": "Entity definition for NavigationSetting",
+  "definitions": {
+    "NavigationSettingPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "advancedsettingorder": {
+          "description": "Enter the position of this NavigationSetting as it should appear within its group in the Advanced Setup menu."
+        },
+        "appconfigidunique": {
+          "description": "For system use only.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Type a description that describes that Navigation Setting in detail.",
+          "type": "string"
+        },
+        "groupname": {
+          "description": "Type the name of the group represented by this Navigation Setting record.",
+          "type": "string"
+        },
+        "iconresourceid": {
+          "description": "The web resource identifier of the icon to be used for a navigation setting area or sub area.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the similarity rule is introduced.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Type a title or name that describes the Navigation Setting so it can be identified in Dynamics CRM views.",
+          "type": "string"
+        },
+        "navigationsettingid": {
+          "description": "Identifies a single setting page or group of pages configured for use in a single app.",
+          "type": "string"
+        },
+        "navigationsettingidunique": {
+          "description": "For system use only.",
+          "type": "string"
+        },
+        "objecttypecode": {
+          "description": "Enter the Object Type Code of the entity associated whose page this Navigation Setting record represents."
+        },
+        "pageurl": {
+          "description": "Type the URL which locates the page associated with this Navigation Setting record.",
+          "type": "string"
+        },
+        "parentnavigationsettingid": {
+          "description": "The Navigation Setting record that represents the group that this record belongs to.",
+          "type": "string"
+        },
+        "privileges": {
+          "description": "Enter the Privilege Mask for the entity associated with this navigation setting page that will be the minimum requirement for the page to be made available to a user."
+        },
+        "quicksettingorder": {
+          "description": "Enter the position of this NavigationSetting as it should appear in the Quick Setup menu."
+        },
+        "resourceid": {
+          "description": "The Web Resource that will be associated with this Navigation Setting record.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "progressstate": {
+          "description": "Select the setup completion level for this Navigation Setting page.",
+          "anyOf": [
+            {
+              "enum": [
+                "Visited",
+                "Not Visited"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "settingtype": {
+          "description": "Select the type of group this Navigation Setting record represents. This determines which of the three in-app customization menus will contain this group.",
+          "anyOf": [
+            {
+              "enum": [
+                "Advanced Setup",
+                "Basic Setup",
+                "Advanced Setup Summary",
+                "Basic Setup Summary"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "navigationsettingid"
+      ],
+      "patternProperties": {
+        "^navigationsetting_appconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appconfig'",
+          "type": "string"
+        },
+        "^navigationsetting_createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^navigationsetting_createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^navigationsetting_modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^navigationsetting_modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organization_navigationsetting_navigationsetting(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

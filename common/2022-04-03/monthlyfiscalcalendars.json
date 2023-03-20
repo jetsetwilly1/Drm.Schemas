@@ -1,0 +1,117 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/monthlyfiscalcalendar.json#",
+  "title": "Entity definition for MonthlyFiscalCalendar",
+  "definitions": {
+    "MonthlyFiscalCalendarPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "effectiveon": {
+          "description": "Date and time when the monthly fiscal calendar sales quota takes effect.",
+          "type": "string"
+        },
+        "month1": {
+          "description": "Sales quota for the first month in the fiscal year.",
+          "type": "number"
+        },
+        "month10": {
+          "description": "Sales quota for the tenth month in the fiscal year.",
+          "type": "number"
+        },
+        "month11": {
+          "description": "Sales quota for the eleventh month in the fiscal year.",
+          "type": "number"
+        },
+        "month12": {
+          "description": "Sales quota for the twelfth month in the fiscal year.",
+          "type": "number"
+        },
+        "month2": {
+          "description": "Sales quota for the second month in the fiscal year.",
+          "type": "number"
+        },
+        "month3": {
+          "description": "Sales quota for the third month in the fiscal year.",
+          "type": "number"
+        },
+        "month4": {
+          "description": "Sales quota for the fourth month in the fiscal year.",
+          "type": "number"
+        },
+        "month5": {
+          "description": "Sales quota for the fifth month in the fiscal year.",
+          "type": "number"
+        },
+        "month6": {
+          "description": "Sales quota for the sixth month in the fiscal year.",
+          "type": "number"
+        },
+        "month7": {
+          "description": "Sales quota for the seventh month in the fiscal year.",
+          "type": "number"
+        },
+        "month8": {
+          "description": "Sales quota for the eighth month in the fiscal year.",
+          "type": "number"
+        },
+        "month9": {
+          "description": "Sales quota for the ninth month in the fiscal year.",
+          "type": "number"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "userfiscalcalendarid": {
+          "description": "Unique identifier of the monthly fiscal calendar.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "MonthlyFiscalCalendar_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "MonthlyFiscalCalendar_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "userfiscalcalendarid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^salespersonid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

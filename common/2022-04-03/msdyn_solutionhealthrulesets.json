@@ -1,0 +1,154 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/msdyn_solutionhealthruleset.json#",
+  "title": "Entity definition for SolutionHealthRuleSet",
+  "definitions": {
+    "SolutionHealthRuleSetPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "msdyn_description": {
+          "description": "Holds the description of the rule set.",
+          "type": "string"
+        },
+        "msdyn_name": {
+          "description": "The name of the custom entity.",
+          "type": "string"
+        },
+        "msdyn_solutionhealthrulesetid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "msdyn_uniquename": {
+          "description": "The unique name of the rule set. Will be enforced as unique in UI and business logic.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "msdyn_msdyn_solutionhealthruleset_msdyn_analysi": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysiscomponent'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_msdyn_solutionhealthruleset_msdyn_solutio": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_solutionhealthrule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_solutionhealthruleset_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_solutionhealthruleset_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_solutionhealthruleset_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_solutionhealthruleset_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_solutionhealthruleset_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_solutionhealthruleset_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_solutionhealthruleset_ProcessSession": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_solutionhealthruleset_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "statecode": {
+          "description": "Status of the Solution Health Rule Set",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the Solution Health Rule Set",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "msdyn_solutionhealthrulesetid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

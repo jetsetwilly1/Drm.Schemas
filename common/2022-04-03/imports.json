@@ -1,0 +1,135 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/import.json#",
+  "title": "Entity definition for DataImport",
+  "definitions": {
+    "DataImportPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "emailaddress": {
+          "description": "Type the email address that the import completion notification must be sent to.",
+          "type": "string"
+        },
+        "importid": {
+          "description": "Unique identifier of the import job.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Shows the name of the import job, based on the import file and the entity being imported.",
+          "type": "string"
+        },
+        "Import_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Import_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Import_ImportFile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importfile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "modecode": {
+          "description": "Select whether to create or update records in Microsoft Dynamics 365 during the import job.",
+          "anyOf": [
+            {
+              "enum": [
+                "Create",
+                "Update"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "sendnotification": {
+          "description": "Select whether to send a notification email message to a selected user after the import is completed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Shows the reason code that explains the import job's status to identify the job's stage of the import processes, from transforming the data to completed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Submitted",
+                "Parsing",
+                "Transforming",
+                "Importing",
+                "Completed",
+                "Failed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "importid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

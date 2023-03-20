@@ -1,0 +1,102 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/documenttemplate.json#",
+  "title": "Entity definition for DocumentTemplate",
+  "definitions": {
+    "DocumentTemplatePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "associatedentitytypecode": {
+          "description": "Associated Entity Type Code.",
+          "type": "string"
+        },
+        "clientdata": {
+          "description": "Client data regarding this document template.",
+          "type": "string"
+        },
+        "content": {
+          "description": "Bytes of the document template.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Additional information to describe the Document Template",
+          "type": "string"
+        },
+        "documenttemplateid": {
+          "description": "Unique identifier of the document template.",
+          "type": "string"
+        },
+        "languagecode": {
+          "description": "Language of Document Template."
+        },
+        "name": {
+          "description": "Name of the document template.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "documenttype": {
+          "description": "Option set for selecting the type of the document template",
+          "anyOf": [
+            {
+              "enum": [
+                "Microsoft Excel",
+                "Microsoft Word"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "status": {
+          "description": "Information about whether the document template is active.",
+          "anyOf": [
+            {
+              "enum": [
+                "Draft",
+                "Activated"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "documenttemplateid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

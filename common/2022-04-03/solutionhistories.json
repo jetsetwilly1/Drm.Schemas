@@ -1,0 +1,200 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/solutionhistorydata.json#",
+  "title": "Entity definition for SolutionHistoryData",
+  "definitions": {
+    "SolutionHistoryDataPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "activityid": {
+          "description": "The Activity Id.",
+          "type": "string"
+        },
+        "correlationid": {
+          "description": "The Correlation Id.",
+          "type": "string"
+        },
+        "endtime": {
+          "description": "DateTime of the end of the solution event.",
+          "type": "string"
+        },
+        "errorcode": {
+          "description": "The error code of the operation performed on the solution."
+        },
+        "exceptionmessage": {
+          "description": "The Exception Message.",
+          "type": "string"
+        },
+        "exceptionstack": {
+          "description": "The Exception Stack.",
+          "type": "string"
+        },
+        "packagename": {
+          "description": "Name of the package.",
+          "type": "string"
+        },
+        "packageversion": {
+          "description": "Version of the package.",
+          "type": "string"
+        },
+        "publishername": {
+          "description": "Name of the solution's publisher.",
+          "type": "string"
+        },
+        "result": {
+          "description": "The result of the operation performed on the solution."
+        },
+        "solutionhistorydataid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "solutionid": {
+          "description": "The Solution.",
+          "type": "string"
+        },
+        "solutionname": {
+          "description": "Name of the solution.",
+          "type": "string"
+        },
+        "solutionversion": {
+          "description": "The Version of the Solution.",
+          "type": "string"
+        },
+        "starttime": {
+          "description": "DateTime of the start of the solution event.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "ismanaged": {
+          "description": "Is Solution Managed",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismicrosoftpublisher": {
+          "description": "Is the solution published by a Microsoft publisher.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isoverwritecustomizations": {
+          "description": "Does the event overwrite customizations.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ispatch": {
+          "description": "Is Solution Patch",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "operation": {
+          "description": "The operation performed on the solution.",
+          "anyOf": [
+            {
+              "enum": [
+                "Import",
+                "Uninstall",
+                "Export"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "status": {
+          "description": "The status of the operation performed on the solution.",
+          "anyOf": [
+            {
+              "enum": [
+                "Start",
+                "End"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "suboperation": {
+          "description": "The suboperation performed on the solution.",
+          "anyOf": [
+            {
+              "enum": [
+                "None",
+                "New",
+                "Upgrade",
+                "Update",
+                "Delete"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "solutionhistorydataid"
+      ]
+    }
+  }
+}

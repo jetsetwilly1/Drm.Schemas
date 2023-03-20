@@ -1,0 +1,23 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/timestampdatemapping.json#",
+  "title": "Entity definition for TimeStampDateMapping",
+  "definitions": {
+    "TimeStampDateMappingPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "timestampdatemappingid": {
+          "description": "",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "timestampdatemappingid"
+      ]
+    }
+  }
+}

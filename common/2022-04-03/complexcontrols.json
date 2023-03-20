@@ -1,0 +1,65 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/complexcontrol.json#",
+  "title": "Entity definition for ProcessConfiguration",
+  "definitions": {
+    "ProcessConfigurationPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "complexcontrolid": {
+          "description": "Unique identifier of the complex control.",
+          "type": "string"
+        },
+        "complexcontrolxml": {
+          "description": "XML representation of the complex control layout.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the complex control.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the component is introduced.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the complex control.",
+          "type": "string"
+        },
+        "version": {
+          "description": "For internal use only."
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "type": {
+          "description": "Type of the complex control, for example, Process Control or Link Control.",
+          "anyOf": [
+            {
+              "enum": [
+                "ProcessControl",
+                "LinkControl"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "complexcontrolid"
+      ],
+      "patternProperties": {
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

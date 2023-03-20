@@ -1,0 +1,253 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/recurrencerule.json#",
+  "title": "Entity definition for RecurrenceRule",
+  "definitions": {
+    "RecurrenceRulePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "dayofmonth": {
+          "description": "The day of the month on which the recurring appointment or task occurs."
+        },
+        "daysofweekmask": {
+          "description": "Bitmask representing the days of the week on which the recurring appointment or task occurs."
+        },
+        "duration": {
+          "description": "Duration of the recurrence pattern in minutes."
+        },
+        "effectiveenddate": {
+          "description": "The actual end date for expansion of the recurrence pattern.",
+          "type": "string"
+        },
+        "effectivestartdate": {
+          "description": "The actual start date for expansion of the recurrence pattern.",
+          "type": "string"
+        },
+        "endtime": {
+          "description": "End time of the associated activity.",
+          "type": "string"
+        },
+        "firstdayofweek": {
+          "description": "First day Of week for the recurrence pattern."
+        },
+        "interval": {
+          "description": "Number of units of a given recurrence type between occurrences."
+        },
+        "occurrences": {
+          "description": "Number of occurrences of the recurrence pattern."
+        },
+        "patternenddate": {
+          "description": "End date of the Recurrence Range.",
+          "type": "string"
+        },
+        "patternstartdate": {
+          "description": "Start date of the Recurrence Range.",
+          "type": "string"
+        },
+        "ruleid": {
+          "description": "Unique identifier of the entity associated with recurrence rule.",
+          "type": "string"
+        },
+        "starttime": {
+          "description": "Start time of the recurring activity.",
+          "type": "string"
+        },
+        "recurrencerule_recurringappointmentmaster": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recurringappointmentmaster'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "instance": {
+          "description": "Specifies the count for which the recurrence pattern is valid for a given interval.",
+          "anyOf": [
+            {
+              "enum": [
+                "First",
+                "Second",
+                "Third",
+                "Fourth",
+                "Last"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isnthmonthly": {
+          "description": "Specifies whether the monthly recurrence pattern is Nth monthly, valid only for monthly recurrence.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isnthyearly": {
+          "description": "Specifies whether the yearly recurrence pattern is Nth yearly, valid only for yearly recurrence.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isregenerate": {
+          "description": "Valid only for task type recurrence,indicates whether task should be regenerated.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isweekdaypattern": {
+          "description": "Specifies whether the weekly recurrence pattern is actually a daily every weekday pattern, valid only for weekly recurrence.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "monthofyear": {
+          "description": "Specifies the month of the year valid for the recurrence pattern.",
+          "anyOf": [
+            {
+              "enum": [
+                "Invalid Month Of Year",
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "patternendtype": {
+          "description": "Pattern End Type of a recurring series.",
+          "anyOf": [
+            {
+              "enum": [
+                "No End Date",
+                "Occurrences",
+                "Pattern End Date"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "recurrencepatterntype": {
+          "description": "Type of Recurrence.",
+          "anyOf": [
+            {
+              "enum": [
+                "Daily",
+                "Weekly",
+                "Monthly",
+                "Yearly"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "ruleid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^objectid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitypointer'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

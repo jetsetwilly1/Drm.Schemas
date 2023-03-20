@@ -1,0 +1,172 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/msdyn_aiodtrainingboundingbox.json#",
+  "title": "Entity definition for AIObjectDetectionBoundingBox",
+  "definitions": {
+    "AIObjectDetectionBoundingBoxPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "msdyn_aiodtrainingboundingboxid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "msdyn_height": {
+          "description": "",
+          "type": "number"
+        },
+        "msdyn_left": {
+          "description": "",
+          "type": "number"
+        },
+        "msdyn_name": {
+          "description": "The name of the custom entity.",
+          "type": "string"
+        },
+        "msdyn_top": {
+          "description": "",
+          "type": "number"
+        },
+        "msdyn_width": {
+          "description": "",
+          "type": "number"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "msdyn_aiodtrainingboundingbox_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aiodtrainingboundingbox_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aiodtrainingboundingbox_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aiodtrainingboundingbox_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aiodtrainingboundingbox_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aiodtrainingboundingbox_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aiodtrainingboundingbox_ProcessSession": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aiodtrainingboundingbox_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "statecode": {
+          "description": "Status of the TrainingBoundingBox",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the TrainingBoundingBox",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "msdyn_aiodtrainingboundingboxid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^msdyn_AIOdLabelId(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodlabel'",
+          "type": "string"
+        },
+        "^msdyn_AIOdTrainingImageId(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodtrainingimage'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

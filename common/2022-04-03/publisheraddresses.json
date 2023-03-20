@@ -1,0 +1,184 @@
+{
+  "id": "https://devops.midwolf.co.uk/schemas/2022-04-03/publisheraddress.json#",
+  "title": "Entity definition for PublisherAddress",
+  "definitions": {
+    "PublisherAddressPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "addressnumber": {
+          "description": "Specifies which publisher address is applicable."
+        },
+        "city": {
+          "description": "City name in the publisher address.",
+          "type": "string"
+        },
+        "country": {
+          "description": "Country/region name in the publisher address.",
+          "type": "string"
+        },
+        "county": {
+          "description": "County name in the publisher address.",
+          "type": "string"
+        },
+        "fax": {
+          "description": "Fax number for the publisher address.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "latitude": {
+          "description": "Latitude for the publisher address.",
+          "type": "number"
+        },
+        "line1": {
+          "description": "First line for entering address information.",
+          "type": "string"
+        },
+        "line2": {
+          "description": "Second line for entering address information.",
+          "type": "string"
+        },
+        "line3": {
+          "description": "Third line for entering address information.",
+          "type": "string"
+        },
+        "longitude": {
+          "description": "Longitude for the publisher address.",
+          "type": "number"
+        },
+        "name": {
+          "description": "Name used to identify the publisher address.",
+          "type": "string"
+        },
+        "postalcode": {
+          "description": "ZIP Code or postal code in the publisher address.",
+          "type": "string"
+        },
+        "postofficebox": {
+          "description": "Post office box number in the publisher address.",
+          "type": "string"
+        },
+        "primarycontactname": {
+          "description": "Name of the primary contact at the publisher address.",
+          "type": "string"
+        },
+        "publisheraddressid": {
+          "description": "Unique identifier of the publisher address.",
+          "type": "string"
+        },
+        "stateorprovince": {
+          "description": "State or province in the publisher address.",
+          "type": "string"
+        },
+        "telephone1": {
+          "description": "First telephone number for the publisher address.",
+          "type": "string"
+        },
+        "telephone2": {
+          "description": "Second telephone number for the publisher address.",
+          "type": "string"
+        },
+        "telephone3": {
+          "description": "Third telephone number for the publisher address.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "upszone": {
+          "description": "United Parcel Service (UPS) zone for the address of the publisher.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "utcoffset": {
+          "description": "UTC offset for the address. This is the difference between local time and standard Coordinated Universal Time."
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "addresstypecode": {
+          "description": "Type of address for the publisher, such as billing, shipping, or primary address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Bill To",
+                "Ship To",
+                "Primary",
+                "Other"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "freighttermscode": {
+          "description": "Freight terms for the publisher address.",
+          "anyOf": [
+            {
+              "enum": [
+                "FOB",
+                "No Charge"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "shippingmethodcode": {
+          "description": "Method of shipment for the publisher address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "publisheraddressid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^parentid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.publisher'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

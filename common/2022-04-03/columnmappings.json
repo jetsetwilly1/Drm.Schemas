@@ -1,0 +1,109 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/columnmapping.json#",
+  "title": "Entity definition for ColumnMapping",
+  "definitions": {
+    "ColumnMappingPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "columnmappingid": {
+          "description": "Unique identifier of the column mapping.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the component is introduced.",
+          "type": "string"
+        },
+        "sourceattributename": {
+          "description": "Name of the source attribute.",
+          "type": "string"
+        },
+        "sourceentityname": {
+          "description": "Name of the source entity.",
+          "type": "string"
+        },
+        "targetattributename": {
+          "description": "Name of the Microsoft Dynamics 365 attribute.",
+          "type": "string"
+        },
+        "targetentityname": {
+          "description": "Name of the Microsoft Dynamics 365 entity.",
+          "type": "string"
+        },
+        "LookUpMapping_ColumnMapping": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lookupmapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "PickListMapping_ColumnMapping": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.picklistmapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "processcode": {
+          "description": "Information about whether the column mapping needs to be processed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Process",
+                "Ignore",
+                "Internal"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the column mapping.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "columnmappingid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^importmapid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importmap'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

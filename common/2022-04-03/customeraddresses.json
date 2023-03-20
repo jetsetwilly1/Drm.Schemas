@@ -1,0 +1,246 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/customeraddress.json#",
+  "title": "Entity definition for Address",
+  "definitions": {
+    "AddressPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "addressnumber": {
+          "description": "Shows the number of the address, to indicate whether the address is the primary, secondary, or other address for the customer."
+        },
+        "city": {
+          "description": "Type the city for the customer's address to help identify the location.",
+          "type": "string"
+        },
+        "country": {
+          "description": "Type the country or region for the customer's address.",
+          "type": "string"
+        },
+        "county": {
+          "description": "Type the county for the customer's address.",
+          "type": "string"
+        },
+        "customeraddressid": {
+          "description": "Unique identifier of the customer address.",
+          "type": "string"
+        },
+        "fax": {
+          "description": "Type the fax number associated with the customer's address.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "latitude": {
+          "description": "Type the latitude value for the customer's address, for use in mapping and other applications.",
+          "type": "number"
+        },
+        "line1": {
+          "description": "Type the first line of the customer's address to help identify the location.",
+          "type": "string"
+        },
+        "line2": {
+          "description": "Type the second line of the customer's address.",
+          "type": "string"
+        },
+        "line3": {
+          "description": "Type the third line of the customer's address.",
+          "type": "string"
+        },
+        "longitude": {
+          "description": "Type the longitude value for the customer's address, for use in mapping and other applications.",
+          "type": "number"
+        },
+        "name": {
+          "description": "Type a descriptive name for the customer's address, such as Corporate Headquarters.",
+          "type": "string"
+        },
+        "objecttypecode": {
+          "description": "Shows the type code of the customer record to indicate whether the address belongs to a customer account or contact.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "postalcode": {
+          "description": "Type the ZIP Code or postal code for the address.",
+          "type": "string"
+        },
+        "postofficebox": {
+          "description": "Type the post office box number of the customer's address.",
+          "type": "string"
+        },
+        "primarycontactname": {
+          "description": "Type the name of the primary contact person for the customer's address.",
+          "type": "string"
+        },
+        "stateorprovince": {
+          "description": "Type the state or province of the customer's address.",
+          "type": "string"
+        },
+        "telephone1": {
+          "description": "Type the primary phone number for the customer's address.",
+          "type": "string"
+        },
+        "telephone2": {
+          "description": "Type a second phone number for the customer's address.",
+          "type": "string"
+        },
+        "telephone3": {
+          "description": "Type a third phone number for the customer's address.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "upszone": {
+          "description": "Type the UPS zone of the customer's address to make sure shipping charges are calculated correctly and deliveries are made promptly, if shipped by UPS.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "utcoffset": {
+          "description": "Select the time zone for the address."
+        },
+        "customer_address_contract_line_items": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contractdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "customer_address_contracts_as_billing_address": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contract'",
+          "type": "array",
+          "minItems": 1
+        },
+        "customer_address_contracts_as_service_address": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contract'",
+          "type": "array",
+          "minItems": 1
+        },
+        "CustomerAddress_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "CustomerAddress_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "customeraddress_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "CustomerAddress_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "CustomerAddress_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "addresstypecode": {
+          "description": "Select the address type, such as primary or billing.",
+          "anyOf": [
+            {
+              "enum": [
+                "Bill To",
+                "Ship To",
+                "Primary",
+                "Other"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "freighttermscode": {
+          "description": "Select the freight terms to make sure shipping charges are processed correctly.",
+          "anyOf": [
+            {
+              "enum": [
+                "FOB",
+                "No Charge"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "shippingmethodcode": {
+          "description": "Select a shipping method for deliveries sent to this address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Airborne",
+                "DHL",
+                "FedEx",
+                "UPS",
+                "Postal Mail",
+                "Full Load",
+                "Will Call"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "customeraddressid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^parentid_account(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "string"
+        },
+        "^parentid_contact(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

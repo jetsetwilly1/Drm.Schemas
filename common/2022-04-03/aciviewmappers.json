@@ -1,0 +1,73 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/aciviewmapper.json#",
+  "title": "Entity definition for ACIViewMapper",
+  "definitions": {
+    "ACIViewMapperPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "aciviewmapperid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "viewname": {
+          "description": "",
+          "type": "string"
+        },
+        "webapplicationendpoint": {
+          "description": "End point of web application",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "statuscode": {
+          "description": "Reason for the status of the Unit Group.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "aciviewmapperid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/entityimageconfig.json#",
+  "title": "Entity definition for EntityImageConfiguration",
+  "definitions": {
+    "EntityImageConfigurationPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "entityimageconfigid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "parententitylogicalname": {
+          "description": "Parent entity logical name",
+          "type": "string"
+        },
+        "primaryimageattribute": {
+          "description": "Logical name of the primary image attribute",
+          "type": "string"
+        },
+        "entityimageconfig_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entityimageconfig_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entityimageconfig_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entityimageconfig_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entityimageconfig_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "entityimageconfigid"
+      ]
+    }
+  }
+}

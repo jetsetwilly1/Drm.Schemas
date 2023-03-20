@@ -1,0 +1,27 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/invaliddependency.json#",
+  "title": "Entity definition for InvalidDependency",
+  "definitions": {
+    "InvalidDependencyPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "invaliddependencyid": {
+          "description": "Unique identifier of the invalid dependency.",
+          "type": "string"
+        },
+        "missingcomponentid": {
+          "description": "Unique identifier of the missing component.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "invaliddependencyid"
+      ]
+    }
+  }
+}

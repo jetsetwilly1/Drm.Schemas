@@ -1,0 +1,243 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/msdyn_solutioncomponentsummary.json#",
+  "title": "Entity definition for SolutionComponentSummary",
+  "definitions": {
+    "SolutionComponentSummaryPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "msdyn_canvasappuniqueid": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_componentlogicalname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_componenttype": {
+          "description": "",
+          "type": "number"
+        },
+        "msdyn_componenttypename": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_connectorinternalid": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_createdon": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_culture": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_deployment": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_description": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_displayname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_eventhandler": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_executionorder": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_executionstage": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_fieldsecurity": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_fieldtype": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_isappaware": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_isappawarename": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_isauditenabled": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_isauditenabledname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_iscustom": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_iscustomizable": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_iscustomizablename": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_iscustomname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_isdefault": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_isdefaultname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_ismanaged": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_ismanagedname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_isolationmode": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_istableenabled": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_logicalcollectionname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_modifiedon": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_name": {
+          "description": "The name of the custom entity.",
+          "type": "string"
+        },
+        "msdyn_objectid": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_objecttypecode": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_owner": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_owningbusinessunit": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_primaryentityname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_primaryidattribute": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_publickeytoken": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_relatedentity": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_relatedentityattribute": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_schemaname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_sdkmessagename": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_solutioncomponentsummaryid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "msdyn_solutionid": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_status": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_statusname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_subtype": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_synctoexternalsearchindex": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_total": {
+          "description": "",
+          "type": "number"
+        },
+        "msdyn_typename": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_uniquename": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_version": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_workflowcategory": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_workflowcategoryname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_workflowidunique": {
+          "description": "",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "msdyn_solutioncomponentsummaryid"
+      ]
+    }
+  }
+}

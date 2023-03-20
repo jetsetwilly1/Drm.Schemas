@@ -1,0 +1,316 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/canvasapp.json#",
+  "title": "Entity definition for CanvasApp",
+  "definitions": {
+    "CanvasAppPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "aadcreatedbyid": {
+          "description": "Unique identifier of the user who created the canvas app.",
+          "type": "string"
+        },
+        "aadlastmodifiedbyid": {
+          "description": "Unique identifier of the user who last modified the application.",
+          "type": "string"
+        },
+        "aadlastpublishedbyid": {
+          "description": "Unique identifier of the user who last published the application.",
+          "type": "string"
+        },
+        "appcomponentdependencies": {
+          "description": "The app component dependencies.",
+          "type": "string"
+        },
+        "appcomponents": {
+          "description": "The app components.",
+          "type": "string"
+        },
+        "appopenuri": {
+          "description": "The app open URI.",
+          "type": "string"
+        },
+        "appversion": {
+          "description": "The application version.",
+          "type": "string"
+        },
+        "authorizationreferences": {
+          "description": "The authorization references of the application.",
+          "type": "string"
+        },
+        "backgroundcolor": {
+          "description": "The background image color.",
+          "type": "string"
+        },
+        "canvasappid": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "cdsdependencies": {
+          "description": "Internal use. The app dependency details.",
+          "type": "string"
+        },
+        "commitmessage": {
+          "description": "The commit message of the app.",
+          "type": "string"
+        },
+        "connectionreferences": {
+          "description": "The connection references of the application.",
+          "type": "string"
+        },
+        "createdbyclientversion": {
+          "description": "The version of the client that was used to author the application.",
+          "type": "string"
+        },
+        "createdtime": {
+          "description": "Date and time when the application was created.",
+          "type": "string"
+        },
+        "databasereferences": {
+          "description": "The database references of the application.",
+          "type": "string"
+        },
+        "description": {
+          "description": "The description of the app.",
+          "type": "string"
+        },
+        "displayname": {
+          "description": "The display name of the app.",
+          "type": "string"
+        },
+        "embeddedapp": {
+          "description": "Internal use. The embedded app information.",
+          "type": "string"
+        },
+        "galleryitemid": {
+          "description": "The gallery item identifier.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the canvas app is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "lastmodifiedtime": {
+          "description": "Date and time when the application was last modified.",
+          "type": "string"
+        },
+        "lastpublishtime": {
+          "description": "Date and time when the application was last published.",
+          "type": "string"
+        },
+        "minclientversion": {
+          "description": "The version of the client that was used to author the application.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the CanvasApp",
+          "type": "string"
+        },
+        "publisher": {
+          "description": "The publisher of the app.",
+          "type": "string"
+        },
+        "status": {
+          "description": "A value indicating whether the application is ready for consumption.",
+          "type": "string"
+        },
+        "tags": {
+          "description": "The metadata tags of the application.",
+          "type": "string"
+        },
+        "canvasapp_FileAttachments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fileattachment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "admincontrolbypassconsent": {
+          "description": "Indicates whether the canvas app was marked for bypass consent by an admin.",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "bypassconsent": {
+          "description": "Indicates whether the canvas app should bypass consent from consumers.",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "canconsumeapppass": {
+          "description": "The type of the canvas app.",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "canvasapptype": {
+          "description": "The type of the canvas app.",
+          "anyOf": [
+            {
+              "enum": [
+                "Classic Canvas App",
+                "App Component Library",
+                "Custom Canvas Page",
+                "Unified App"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "iscdsupgraded": {
+          "description": "Indicates whether the canvas app contains CDS 1.0 references.",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isfeaturedapp": {
+          "description": "Indicates whether the canvas app is a featured app.",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isheroapp": {
+          "description": "Indicates whether the canvas app is a hero app.",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ishidden": {
+          "description": "Indicates whether the canvas app is hidden from a user's list.",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "canvasappid"
+      ],
+      "patternProperties": {
+        "^backgroundimage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fileattachment'",
+          "type": "string"
+        },
+        "^FK_CanvasApp_Solution(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "string"
+        },
+        "^largeicon(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fileattachment'",
+          "type": "string"
+        },
+        "^mediumicon(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fileattachment'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^smallicon(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fileattachment'",
+          "type": "string"
+        },
+        "^teamsicon(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fileattachment'",
+          "type": "string"
+        },
+        "^wideicon(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fileattachment'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/fileattachment.json#",
+  "title": "Entity definition for FileAttachment",
+  "definitions": {
+    "FileAttachmentPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "fileattachmentid": {
+          "description": "Unique identifier of the file attachment.",
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name of the attachment.",
+          "type": "string"
+        },
+        "filesize": {
+          "description": ""
+        },
+        "mimetype": {
+          "description": "MIME type of the attachment.",
+          "type": "string"
+        },
+        "objecttypecode": {
+          "description": "Type of entity with which the file attachment is associated.",
+          "type": "string"
+        },
+        "regardingfieldname": {
+          "description": "Regarding attribute schema name of the attachment.",
+          "type": "string"
+        },
+        "FileAttachment_CanvasApp_BackgroundImage": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.canvasapp'",
+          "type": "array",
+          "minItems": 1
+        },
+        "FileAttachment_CanvasApp_LargeIcon": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.canvasapp'",
+          "type": "array",
+          "minItems": 1
+        },
+        "FileAttachment_CanvasApp_MediumIcon": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.canvasapp'",
+          "type": "array",
+          "minItems": 1
+        },
+        "FileAttachment_CanvasApp_SmallIcon": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.canvasapp'",
+          "type": "array",
+          "minItems": 1
+        },
+        "FileAttachment_CanvasApp_TeamsIcon": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.canvasapp'",
+          "type": "array",
+          "minItems": 1
+        },
+        "FileAttachment_CanvasApp_WideIcon": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.canvasapp'",
+          "type": "array",
+          "minItems": 1
+        },
+        "FileAttachment_revokeinheritedaccessrecordstracker_RecordsAttachment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker'",
+          "type": "array",
+          "minItems": 1
+        },
+        "FileAttachment_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solution_fileid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "fileattachmentid"
+      ],
+      "patternProperties": {
+        "^FileAttachment_Solution(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "string"
+        },
+        "^objectid_asyncoperation(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "string"
+        },
+        "^objectid_canvasapp(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.canvasapp'",
+          "type": "string"
+        },
+        "^objectid_exportsolutionupload(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.exportsolutionupload'",
+          "type": "string"
+        },
+        "^objectid_flowsession(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.flowsession'",
+          "type": "string"
+        },
+        "^objectid_mailbox(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailbox'",
+          "type": "string"
+        },
+        "^objectid_msdyn_aibfile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibfile'",
+          "type": "string"
+        },
+        "^objectid_msdyn_aiconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiconfiguration'",
+          "type": "string"
+        },
+        "^objectid_msdyn_customerassetattachment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerassetattachment'",
+          "type": "string"
+        },
+        "^objectid_msdyn_knowledgearticleimage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgearticleimage'",
+          "type": "string"
+        },
+        "^objectid_msfp_fileresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_fileresponse'",
+          "type": "string"
+        },
+        "^objectid_revokeinheritedaccessrecordstracker(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker'",
+          "type": "string"
+        },
+        "^objectid_stagesolutionupload(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.stagesolutionupload'",
+          "type": "string"
+        },
+        "^objectid_webresource(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.webresource'",
+          "type": "string"
+        },
+        "^objectid_workflowbinary(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.workflowbinary'",
+          "type": "string"
+        },
+        "^objectid_workflowlog(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.workflowlog'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

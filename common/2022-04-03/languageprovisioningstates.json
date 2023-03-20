@@ -1,0 +1,58 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/languageprovisioningstate.json#",
+  "title": "Entity definition for LanguageProvisioningState",
+  "definitions": {
+    "LanguageProvisioningStatePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "applicationversion": {
+          "description": "Application Version",
+          "type": "string"
+        },
+        "languageid": {
+          "description": "Language Id"
+        },
+        "languageprovisioningstateid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "solutionfileversion": {
+          "description": "Solution File Version",
+          "type": "string"
+        },
+        "solutionuniquename": {
+          "description": "Solution Unique Name",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "provisioningstage": {
+          "description": "Provisioning Stage",
+          "anyOf": [
+            {
+              "enum": [
+                "FileBased",
+                "MetadataHelperDependent",
+                "SystemOnly",
+                "Other",
+                "Ribbon"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "languageprovisioningstateid"
+      ]
+    }
+  }
+}

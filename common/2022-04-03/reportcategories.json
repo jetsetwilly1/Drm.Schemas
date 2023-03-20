@@ -1,0 +1,91 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/reportcategory.json#",
+  "title": "Entity definition for ReportRelatedCategory",
+  "definitions": {
+    "ReportRelatedCategoryPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "reportcategoryid": {
+          "description": "Unique identifier of the report category.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "reportcategory_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ReportCategory_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "categorycode": {
+          "description": "Category of the report.",
+          "anyOf": [
+            {
+              "enum": [
+                "Sales Reports",
+                "Service Reports",
+                "Marketing Reports",
+                "Administrative Reports"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "reportcategoryid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^reportid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.report'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

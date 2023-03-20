@@ -1,0 +1,677 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/usersettings.json#",
+  "title": "Entity definition for UserSettings",
+  "definitions": {
+    "UserSettingsPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "addressbooksyncinterval": {
+          "description": "Normal polling frequency used for address book synchronization in Microsoft Office Outlook."
+        },
+        "advancedfindstartupmode": {
+          "description": "Default mode, such as simple or detailed, for advanced find."
+        },
+        "amdesignator": {
+          "description": "AM designator to use in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "autocaptureuserstatus": {
+          "description": "Set user status for ADC Suggestions"
+        },
+        "autocreatecontactonpromote": {
+          "description": "Auto-create contact on client promote"
+        },
+        "businessunitid": {
+          "description": "Unique identifier of the business unit with which the user is associated.",
+          "type": "string"
+        },
+        "calendartype": {
+          "description": "Calendar type for the system. Set to Gregorian US by default."
+        },
+        "currencyformatcode": {
+          "description": "Information about how currency symbols are placed in Microsoft Dynamics 365."
+        },
+        "currencysymbol": {
+          "description": "Symbol used for currency in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "dateformatcode": {
+          "description": "Information about how the date is displayed in Microsoft Dynamics 365."
+        },
+        "dateformatstring": {
+          "description": "String showing how the date is displayed throughout Microsoft 365.",
+          "type": "string"
+        },
+        "dateseparator": {
+          "description": "Character used to separate the month, the day, and the year in dates in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "decimalsymbol": {
+          "description": "Symbol used for decimal in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "defaultcalendarview": {
+          "description": "Default calendar view for the user."
+        },
+        "defaultcountrycode": {
+          "description": "Text area to enter default country code.",
+          "type": "string"
+        },
+        "defaultdashboardid": {
+          "description": "Unique identifier of the default dashboard.",
+          "type": "string"
+        },
+        "fullnameconventioncode": {
+          "description": "Order in which names are to be displayed in Microsoft Dynamics 365."
+        },
+        "helplanguageid": {
+          "description": "Unique identifier of the Help language."
+        },
+        "homepagearea": {
+          "description": "Web site home page for the user.",
+          "type": "string"
+        },
+        "homepagelayout": {
+          "description": "Configuration of the home page layout.",
+          "type": "string"
+        },
+        "homepagesubarea": {
+          "description": "Web site page for the user.",
+          "type": "string"
+        },
+        "lastalertsviewedtime": {
+          "description": "Shows the last time when the traces were read from the database.",
+          "type": "string"
+        },
+        "localeid": {
+          "description": "Unique identifier of the user locale."
+        },
+        "longdateformatcode": {
+          "description": "Information that specifies how Long Date is displayed throughout Microsoft 365."
+        },
+        "negativecurrencyformatcode": {
+          "description": "Information that specifies how negative currency numbers are displayed in Microsoft Dynamics 365."
+        },
+        "negativeformatcode": {
+          "description": "Information that specifies how negative numbers are displayed in Microsoft Dynamics 365."
+        },
+        "nexttrackingnumber": {
+          "description": "Next tracking number."
+        },
+        "numbergroupformat": {
+          "description": "Information that specifies how numbers are grouped in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "numberseparator": {
+          "description": "Symbol used for number separation in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "offlinesyncinterval": {
+          "description": "Normal polling frequency used for background offline synchronization in Microsoft Office Outlook."
+        },
+        "outlooksyncinterval": {
+          "description": "Normal polling frequency used for record synchronization in Microsoft Office Outlook."
+        },
+        "paginglimit": {
+          "description": "Information that specifies how many items to list on a page in list views."
+        },
+        "personalizationsettings": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "pmdesignator": {
+          "description": "PM designator to use in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "resourcebookingexchangesyncversion": {
+          "description": "The version number for resource booking synchronization with Exchange.",
+          "type": "string"
+        },
+        "selectedglobalfilterid": {
+          "description": "Store selected customer service hub dashboard saved filter id.",
+          "type": "string"
+        },
+        "systemuserid": {
+          "description": "Unique identifier of the user.",
+          "type": "string"
+        },
+        "timeformatcode": {
+          "description": "Information that specifies how the time is displayed in Microsoft Dynamics 365."
+        },
+        "timeformatstring": {
+          "description": "Text for how time is displayed in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "timeseparator": {
+          "description": "Text for how time is displayed in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "timezonebias": {
+          "description": "Local time zone adjustment for the user. System calculated based on the time zone selected."
+        },
+        "timezonecode": {
+          "description": "Local time zone for the user."
+        },
+        "timezonedaylightbias": {
+          "description": "Local time zone daylight adjustment for the user. System calculated based on the time zone selected."
+        },
+        "timezonedaylightday": {
+          "description": "Local time zone daylight day for the user. System calculated based on the time zone selected."
+        },
+        "timezonedaylightdayofweek": {
+          "description": "Local time zone daylight day of week for the user. System calculated based on the time zone selected in Options."
+        },
+        "timezonedaylighthour": {
+          "description": "Local time zone daylight hour for the user. System calculated based on the time zone selected."
+        },
+        "timezonedaylightminute": {
+          "description": "Local time zone daylight minute for the user. System calculated based on the time zone selected."
+        },
+        "timezonedaylightmonth": {
+          "description": "Local time zone daylight month for the user. System calculated based on the time zone selected."
+        },
+        "timezonedaylightsecond": {
+          "description": "Local time zone daylight second for the user. System calculated based on the time zone selected."
+        },
+        "timezonedaylightyear": {
+          "description": "Local time zone daylight year for the user. System calculated based on the time zone selected."
+        },
+        "timezonestandardbias": {
+          "description": "Local time zone standard time bias for the user. System calculated based on the time zone selected."
+        },
+        "timezonestandardday": {
+          "description": "Local time zone standard day for the user. System calculated based on the time zone selected."
+        },
+        "timezonestandarddayofweek": {
+          "description": "Local time zone standard day of week for the user. System calculated based on the time zone selected."
+        },
+        "timezonestandardhour": {
+          "description": "Local time zone standard hour for the user. System calculated based on the time zone selected."
+        },
+        "timezonestandardminute": {
+          "description": "Local time zone standard minute for the user. System calculated based on the time zone selected."
+        },
+        "timezonestandardmonth": {
+          "description": "Local time zone standard month for the user. System calculated based on the time zone selected."
+        },
+        "timezonestandardsecond": {
+          "description": "Local time zone standard second for the user. System calculated based on the time zone selected."
+        },
+        "timezonestandardyear": {
+          "description": "Local time zone standard year for the user. System calculated based on the time zone selected."
+        },
+        "trackingtokenid": {
+          "description": "Tracking token ID."
+        },
+        "uilanguageid": {
+          "description": "Unique identifier of the language in which to view the user interface (UI)."
+        },
+        "userprofile": {
+          "description": "Specifies user profile ids in comma separated list.",
+          "type": "string"
+        },
+        "workdaystarttime": {
+          "description": "Workday start time for the user.",
+          "type": "string"
+        },
+        "workdaystoptime": {
+          "description": "Workday stop time for the user.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "datavalidationmodeforexporttoexcel": {
+          "description": "Information that specifies the level of data validation in excel worksheets exported in a format suitable for import.",
+          "anyOf": [
+            {
+              "enum": [
+                "Full",
+                "None"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "defaultsearchexperience": {
+          "description": "Default search experience for the user.",
+          "anyOf": [
+            {
+              "enum": [
+                "Use last search",
+                "Relevance search",
+                "Categorized search",
+                "Custom search"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "entityformmode": {
+          "description": "Indicates the form mode to be used.",
+          "anyOf": [
+            {
+              "enum": [
+                "Organization default",
+                "Read-optimized",
+                "Edit"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "getstartedpanecontentenabled": {
+          "description": "Information that specifies whether the Get Started pane in lists is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ignoreunsolicitedemail": {
+          "description": "Information that specifies whether a user account is to ignore unsolicited email (deprecated).",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "incomingemailfilteringmethod": {
+          "description": "Incoming email filtering method.",
+          "anyOf": [
+            {
+              "enum": [
+                "All email messages",
+                "Email messages in response to Dynamics 365 email",
+                "Email messages from Dynamics 365 Leads, Contacts and Accounts",
+                "Email messages from Dynamics 365 records that are email enabled",
+                "No email messages"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isappsforcrmalertdismissed": {
+          "description": "Show or dismiss alert for Apps for 365.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isautodatacaptureenabled": {
+          "description": "Indicates whether to use the Auto Capture feature enabled or not.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isdefaultcountrycodecheckenabled": {
+          "description": "Enable or disable country code selection .",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isduplicatedetectionenabledwhengoingonline": {
+          "description": "Indicates if duplicate detection is enabled when going online.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isemailconversationviewenabled": {
+          "description": "Enable or disable email conversation view on timeline wall selection.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isguidedhelpenabled": {
+          "description": "Enable or disable guided help.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isresourcebookingexchangesyncenabled": {
+          "description": "Indicates if the synchronization of user resource booking with Exchange is enabled at user level.",
+          "anyOf": [
+            {
+              "enum": [
+                "Enabled",
+                "Disabled"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "issendasallowed": {
+          "description": "Indicates if send as other user privilege is enabled or not.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "reportscripterrors": {
+          "description": "Picklist for selecting the user preference for reporting scripting errors.",
+          "anyOf": [
+            {
+              "enum": [
+                "Ask me for permission to send an error report to Microsoft",
+                "Automatically send an error report to Microsoft without asking me for permission",
+                "Never send an error report to Microsoft about Microsoft Dynamics 365"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "showweeknumber": {
+          "description": "Information that specifies whether to display the week number in calendar displays in Microsoft Dynamics 365.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "splitviewstate": {
+          "description": "For Internal use only",
+          "anyOf": [
+            {
+              "enum": [
+                "Expanded",
+                "Collapsed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "synccontactcompany": {
+          "description": "Indicates if the company field in Microsoft Office Outlook items are set during Outlook synchronization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "usecrmformforappointment": {
+          "description": "Indicates whether to use the Microsoft Dynamics 365 appointment form within Microsoft Office Outlook for creating new appointments.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "usecrmformforcontact": {
+          "description": "Indicates whether to use the Microsoft Dynamics 365 contact form within Microsoft Office Outlook for creating new contacts.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "usecrmformforemail": {
+          "description": "Indicates whether to use the Microsoft Dynamics 365 email form within Microsoft Office Outlook for creating new emails.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "usecrmformfortask": {
+          "description": "Indicates whether to use the Microsoft Dynamics 365 task form within Microsoft Office Outlook for creating new tasks.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "useimagestrips": {
+          "description": "Indicates whether image strips are used to render images.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "visualizationpanelayout": {
+          "description": "The layout of the visualization pane.",
+          "anyOf": [
+            {
+              "enum": [
+                "Top-bottom",
+                "Side-by-side"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "systemuserid"
+      ],
+      "patternProperties": {
+        "^businessunitid_businessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^systemuserid_systemuser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/msdyn_componentlayerdatasource.json#",
+  "title": "Entity definition for ComponentLayerDataSource",
+  "definitions": {
+    "ComponentLayerDataSourcePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "msdyn_componentlayerdatasourceid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "msdyn_name": {
+          "description": "",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "msdyn_componentlayerdatasourceid"
+      ]
+    }
+  }
+}

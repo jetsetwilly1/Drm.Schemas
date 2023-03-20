@@ -1,0 +1,19 @@
+﻿{
+	"type": "object",
+	"properties": {
+		"apiVersion": {
+			"type": "string",
+			"enum": [ "2022-04-03" ]
+		},
+		"type": { "enum": [ "drm.CrmBaseEntity/{name}" ] },
+		"properties": {
+			"oneOf": [
+				{ "$ref": "#/definitions/{nameUpperFirstLetter}PropertiesFormat" },
+				{ "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression" }
+			],
+			"description": "drm.CrmBaseEntity/{nameSingular}: properties for configuring a {nameSingular} entity."
+		}
+	},
+	"required": [ "targetenvironment", "name", "apiVersion", "type", "properties" ],
+	"description": "crmbaseentity/{name} resource"
+}

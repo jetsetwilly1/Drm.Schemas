@@ -1,0 +1,65 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/teamtemplate.json#",
+  "title": "Entity definition for Teamtemplate",
+  "definitions": {
+    "TeamtemplatePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "defaultaccessrightsmask": {
+          "description": "Default access rights mask for the access teams associated with entity instances."
+        },
+        "description": {
+          "description": "Type additional information that describes the team.",
+          "type": "string"
+        },
+        "objecttypecode": {
+          "description": "Object type code of entity which is enabled for access teams"
+        },
+        "teamtemplateid": {
+          "description": "Unique identifier of the team template.",
+          "type": "string"
+        },
+        "teamtemplatename": {
+          "description": "Type the name of the team template.",
+          "type": "string"
+        },
+        "TeamTemplate_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "teamtemplate_Teams": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "teamtemplateid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/connectionrole.json#",
+  "title": "Entity definition for ConnectionRole",
+  "definitions": {
+    "ConnectionRolePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "connectionroleid": {
+          "description": "Unique identifier of the connection role.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the connection role.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the connection role.",
+          "type": "string"
+        },
+        "Connection_Role_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "connection_role_connections1": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "connection_role_connections2": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ConnectionRole_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ConnectionRole_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "connectionroleassociation_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connectionrole'",
+          "type": "array",
+          "minItems": 1
+        },
+        "connectionroleassociation_association_referenced": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connectionrole'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "category": {
+          "description": "Categories for connection roles.",
+          "anyOf": [
+            {
+              "enum": [
+                "Business",
+                "Family",
+                "Social",
+                "Sales",
+                "Other",
+                "Stakeholder",
+                "Sales Team",
+                "Service"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the connection role.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the connection role.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "connectionroleid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/searchtelemetry.json#",
+  "title": "Entity definition for SearchTelemetry",
+  "definitions": {
+    "SearchTelemetryPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "correlationid": {
+          "description": "CorrelationId for the search",
+          "type": "string"
+        },
+        "feedbackdata": {
+          "description": "Feedback data for the search",
+          "type": "string"
+        },
+        "requestid": {
+          "description": "RequestId for the search",
+          "type": "string"
+        },
+        "scenarioname": {
+          "description": "ScenarioName for the search, current will be one of RelevanceSearch/Marketing/Cxp",
+          "type": "string"
+        },
+        "searchtelemetryid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "sessionid": {
+          "description": "SessionId for the search",
+          "type": "string"
+        },
+        "ttlinseconds": {
+          "description": "Time to live in seconds."
+        },
+        "userquery": {
+          "description": "User Query",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "eyesonanalyticsallowed": {
+          "description": "If customer is allow our engineer to eye on",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "searchtelemetryid"
+      ]
+    }
+  }
+}

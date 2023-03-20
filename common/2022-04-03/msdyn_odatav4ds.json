@@ -1,0 +1,339 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/msdyn_odatav4ds.json#",
+  "title": "Entity definition for ODatav4DataSource",
+  "definitions": {
+    "ODatav4DataSourcePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "msdyn_description": {
+          "description": "Type additional information to describe this OData v4 data source. What environment does this data source target and what is the purpose of this system ?",
+          "type": "string"
+        },
+        "msdyn_name": {
+          "description": "Name of the OData v4 data source. This name appears in the data source drop-down list when creating a new entity.",
+          "type": "string"
+        },
+        "msdyn_odatav4dsid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "msdyn_parameter10name": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter10value": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter1name": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter1value": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter2name": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter2value": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter3name": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter3value": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter4name": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter4value": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter5name": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter5value": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter6name": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter6value": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter7name": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter7value": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter8name": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter8value": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter9name": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_parameter9value": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_timeout": {
+          "description": "Amount of time to wait, in seconds, before timing out an OData v4 request."
+        },
+        "msdyn_uri": {
+          "description": "URL of the OData v4 web service endpoint this data source will target.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "msdyn_isparameter10header": {
+          "description": "Parameter10 Type",
+          "anyOf": [
+            {
+              "enum": [
+                "Header",
+                "Query String"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_isparameter1header": {
+          "description": "Parameter1 Type",
+          "anyOf": [
+            {
+              "enum": [
+                "Header",
+                "Query String"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_isparameter2header": {
+          "description": "Parameter2 Type",
+          "anyOf": [
+            {
+              "enum": [
+                "Header",
+                "Query String"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_isparameter3header": {
+          "description": "Parameter3 Type",
+          "anyOf": [
+            {
+              "enum": [
+                "Header",
+                "Query String"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_isparameter4header": {
+          "description": "Parameter4 Type",
+          "anyOf": [
+            {
+              "enum": [
+                "Header",
+                "Query String"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_isparameter5header": {
+          "description": "Parameter5 Type",
+          "anyOf": [
+            {
+              "enum": [
+                "Header",
+                "Query String"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_isparameter6header": {
+          "description": "Parameter6 Type",
+          "anyOf": [
+            {
+              "enum": [
+                "Header",
+                "Query String"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_isparameter7header": {
+          "description": "Parameter7 Type",
+          "anyOf": [
+            {
+              "enum": [
+                "Header",
+                "Query String"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_isparameter8header": {
+          "description": "Parameter8 Type",
+          "anyOf": [
+            {
+              "enum": [
+                "Header",
+                "Query String"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_isparameter9header": {
+          "description": "Parameter9 Type",
+          "anyOf": [
+            {
+              "enum": [
+                "Header",
+                "Query String"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_paginationmode": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Server-side Paging",
+                "Client-side Paging"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_paginationtype": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Client-side Paging",
+                "Server-side Paging"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_returninlinecount": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "msdyn_odatav4dsid"
+      ]
+    }
+  }
+}

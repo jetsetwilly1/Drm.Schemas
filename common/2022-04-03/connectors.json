@@ -1,0 +1,205 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/connector.json#",
+  "title": "Entity definition for Connector",
+  "definitions": {
+    "ConnectorPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "connectionparameters": {
+          "description": "Connection parameters of the Connector",
+          "type": "string"
+        },
+        "connectorid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "connectorinternalid": {
+          "description": "Internal Connector Id",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the Connector",
+          "type": "string"
+        },
+        "displayname": {
+          "description": "Display Name of the Connector",
+          "type": "string"
+        },
+        "iconblob": {
+          "description": "Icon for the Connector",
+          "type": "string"
+        },
+        "iconbrandcolor": {
+          "description": "Connector Icon Branding Color",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Tells whether the component can be customized.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Required logical name of the Connector",
+          "type": "string"
+        },
+        "openapidefinition": {
+          "description": "OpenApi Definition supported by Connector",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "policytemplateinstances": {
+          "description": "Apim Policy Template Instances",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "connector_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "connector_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "connector_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "connector_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "connector_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "connector_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "connector_ProcessSession": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "connector_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "connectortype": {
+          "description": "Connector Type",
+          "anyOf": [
+            {
+              "enum": [
+                "CustomConnector",
+                "NotSpecified"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the Connector",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the Connector",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "connectorid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

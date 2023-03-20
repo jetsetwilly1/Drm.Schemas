@@ -1,0 +1,705 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/mailbox.json#",
+  "title": "Entity definition for Mailbox",
+  "definitions": {
+    "MailboxPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "credentialinfo": {
+          "description": "",
+          "type": "string"
+        },
+        "dataencryptionkey": {
+          "description": "",
+          "type": "string"
+        },
+        "emailaddress": {
+          "description": "Type the email address of the mailbox.",
+          "type": "string"
+        },
+        "entityimage": {
+          "description": "The default image for the entity.",
+          "type": "string"
+        },
+        "ewsurl": {
+          "description": "Exchange web services endpoint URL for the mailbox.",
+          "type": "string"
+        },
+        "exchangesyncstatexml": {
+          "description": "Contains the exchange synchronization state in XML format.",
+          "type": "string"
+        },
+        "folderhierarchy": {
+          "description": "Holds the hierarchy of folders under inbox in XML format.",
+          "type": "string"
+        },
+        "itemsfailedforlastsync": {
+          "description": "For internal use only."
+        },
+        "itemsprocessedforlastsync": {
+          "description": "For internal use only."
+        },
+        "lastautodiscoveredon": {
+          "description": "Shows the date and time when the Exchange web services URL was last discovered using the AutoDiscover service.",
+          "type": "string"
+        },
+        "lastsuccessfulsynccompletedon": {
+          "description": "Last Successful Sync Time",
+          "type": "string"
+        },
+        "lastsyncerror": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "lastsyncerrorcode": {
+          "description": "For internal use only."
+        },
+        "lastsyncerrorcount": {
+          "description": "For internal use only"
+        },
+        "lastsyncerrormachinename": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "lastsyncerroroccurredon": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "mailboxid": {
+          "description": "Unique identifier of the mailbox.",
+          "type": "string"
+        },
+        "mailboxprocessingcontext": {
+          "description": "For internal use only."
+        },
+        "name": {
+          "description": "Type the name of the mailbox.",
+          "type": "string"
+        },
+        "oauthaccesstoken": {
+          "description": "Type the Oauth access token for the mailbox.",
+          "type": "string"
+        },
+        "oauthrefreshtoken": {
+          "description": "Type the Oauth refresh token for the mailbox.",
+          "type": "string"
+        },
+        "oauthtokenexpireson": {
+          "description": "Date and time when the Oauth token will expire",
+          "type": "string"
+        },
+        "password": {
+          "description": "Type the password for the mailbox.",
+          "type": "string"
+        },
+        "postponemailboxprocessinguntil": {
+          "description": "Shows the date and time when processing will begin on this mailbox.",
+          "type": "string"
+        },
+        "postponeofficeappsdeploymentuntil": {
+          "description": "Shows the date and time when the next outlook mail app install will be run for a mailbox record.",
+          "type": "string"
+        },
+        "postponesendinguntil": {
+          "description": "Shows the date and time when the mailbox can start sending emails.",
+          "type": "string"
+        },
+        "postponetestemailconfigurationuntil": {
+          "description": "Shows the date and time when the next email configuration test will be run for a mailbox record.",
+          "type": "string"
+        },
+        "processemailreceivedafter": {
+          "description": "Shows the date and time to start processing email received by the mailbox.",
+          "type": "string"
+        },
+        "testemailconfigurationretrycount": {
+          "description": "Shows the number of times an email configuration test has been performed."
+        },
+        "testmailboxaccesscompletedon": {
+          "description": "Date and time when the last email configuration test was completed for a mailbox record.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "undeliverablefolder": {
+          "description": "Shows the ID of the Undeliverable folder in the mailbox managed by Microsoft Exchange.",
+          "type": "string"
+        },
+        "username": {
+          "description": "Type a user name used for mailbox authentication.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "verboseloggingenabled": {
+          "description": "Indicates if verbose tracing needs to be enabled for this mailbox."
+        },
+        "activitypointer_sendermailboxid_mailbox": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitypointer'",
+          "type": "array",
+          "minItems": 1
+        },
+        "bulkoperation_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "campaignactivity_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "campaignresponse_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "email_sendermailboxid_mailbox": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "incidentresolution_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incidentresolution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_inmail_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_inmail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_message_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_message'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_pointdrivepresentationviewed_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Mailbox_Annotation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annotation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "mailbox_asyncoperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "mailbox_FileAttachments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fileattachment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Mailbox_MailboxTrackingFolder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "mailbox_processsessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Mailbox_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_approval_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_approval'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_bookingalert_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_alert_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_surveyinvite_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_surveyresponse_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "opportunityclose_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunityclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "orderclose_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.orderclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "queue_defaultmailbox_mailbox": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.queue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "quoteclose_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quoteclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "serviceappointment_mailbox_sendermailboxid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceappointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "systemuser_defaultmailbox_mailbox": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "array",
+          "minItems": 1
+        },
+        "tracelog_Mailbox": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.tracelog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "actdeliverymethod": {
+          "description": "Choose the delivery method for the mailbox for appointments, contacts, and tasks.",
+          "anyOf": [
+            {
+              "enum": [
+                "Microsoft Dynamics 365 for Outlook",
+                "Server-Side Synchronization",
+                "None"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "actstatus": {
+          "description": "Status of the Appointments, Contacts, and Tasks.",
+          "anyOf": [
+            {
+              "enum": [
+                "Not Run",
+                "Success",
+                "Failure"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowemailconnectortousecredentials": {
+          "description": "Choose whether to allow the email connector to use credentials.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "emailrouteraccessapproval": {
+          "description": "Shows the status of the email address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Empty",
+                "Approved",
+                "Pending Approval",
+                "Rejected"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enabledforact": {
+          "description": "Indicates whether the mailbox is enabled for Appointments, Contacts, and Tasks.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enabledforincomingemail": {
+          "description": "Choose whether the mailbox is enabled for receiving email.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enabledforoutgoingemail": {
+          "description": "Choose whether the mailbox is enabled for sending email.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "exchangecontactsimportstatus": {
+          "description": "Indicates the exchange contacts import status for a mailbox record.",
+          "anyOf": [
+            {
+              "enum": [
+                "NotImported",
+                "Imported",
+                "ImportFailed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "incomingemaildeliverymethod": {
+          "description": "Select how incoming email will be delivered to the mailbox.",
+          "anyOf": [
+            {
+              "enum": [
+                "None",
+                "Microsoft Dynamics 365 for Outlook",
+                "Server-Side Synchronization or Email Router",
+                "Forward Mailbox"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "incomingemailstatus": {
+          "description": "Select the status that will be assigned to incoming email messages.",
+          "anyOf": [
+            {
+              "enum": [
+                "Not Run",
+                "Success",
+                "Failure"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isactsyncorgflagset": {
+          "description": "Set the current organization as the synchronization organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isemailaddressapprovedbyo365admin": {
+          "description": "Shows the status of approval of the email address by O365 Admin.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "officeappsdeploymentscheduled": {
+          "description": "Indicates if the office apps deployment has been scheduled for a mailbox record.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "officeappsdeploymentstatus": {
+          "description": "Indicates the office apps deployment type for a mailbox record.",
+          "anyOf": [
+            {
+              "enum": [
+                "NotInstalled",
+                "Installed",
+                "InstallFailed",
+                "UninstallFailed",
+                "UpgradeRequired"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "orgmarkedasprimaryforexchangesync": {
+          "description": "Indicates if the crm org is to be marked as primary syncing org for the mailbox record.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "outgoingemaildeliverymethod": {
+          "description": "Select how outgoing email will be sent from the mailbox.",
+          "anyOf": [
+            {
+              "enum": [
+                "None",
+                "Microsoft Dynamics 365 for Outlook",
+                "Server-Side Synchronization or Email Router"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "outgoingemailstatus": {
+          "description": "Select the status of outgoing email messages.",
+          "anyOf": [
+            {
+              "enum": [
+                "Not Run",
+                "Success",
+                "Failure"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "processanddeleteemails": {
+          "description": "Select whether to delete emails from the mailbox after processing.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Shows whether the mailbox is active or inactive.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Select the mailbox's status.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "testemailconfigurationscheduled": {
+          "description": "Indicates if the email configuration test has been scheduled for a mailbox record.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "mailboxid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^emailserverprofile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.emailserverprofile'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^regardingobjectid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^regardingobjectid_queue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.queue'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/activitymimeattachment.json#",
+  "title": "Entity definition for Attachment",
+  "definitions": {
+    "AttachmentPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "activitymimeattachmentid": {
+          "description": "Unique identifier of the attachment.",
+          "type": "string"
+        },
+        "activitymimeattachmentidunique": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "attachmentcontentid": {
+          "description": "For internal use only",
+          "type": "string"
+        },
+        "attachmentnumber": {
+          "description": "Number of the attachment."
+        },
+        "body": {
+          "description": "Contents of the attachment.",
+          "type": "string"
+        },
+        "body_binary": {
+          "description": "Contents of the attachment.",
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name of the attachment.",
+          "type": "string"
+        },
+        "mimetype": {
+          "description": "MIME type of the attachment.",
+          "type": "string"
+        },
+        "objecttypecode": {
+          "description": "Object Type Code of the entity that is associated with the attachment.",
+          "type": "string"
+        },
+        "subject": {
+          "description": "Descriptive subject for the attachment.",
+          "type": "string"
+        },
+        "ActivityMimeAttachment_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ActivityMimeAttachment_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ActivityMimeAttachment_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "activitymimeattachmentid"
+      ],
+      "patternProperties": {
+        "^attachmentid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.attachment'",
+          "type": "string"
+        },
+        "^objectid_activitypointer(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitypointer'",
+          "type": "string"
+        },
+        "^objectid_appointment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appointment'",
+          "type": "string"
+        },
+        "^objectid_email(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "string"
+        },
+        "^objectid_template(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.template'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

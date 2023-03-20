@@ -1,0 +1,226 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/interactionforemail.json#",
+  "title": "Entity definition for InteractionforEmail",
+  "definitions": {
+    "InteractionforEmailPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "emailaddress": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "interactedcomponenttext": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "interactionforemailid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "interactionlocation": {
+          "description": "Shows the location for an Interaction",
+          "type": "string"
+        },
+        "interactionrepliedby": {
+          "description": "Shows the Name who replied to email if interaction is reply",
+          "type": "string"
+        },
+        "interactionreplyid": {
+          "description": "InteractionReplyId",
+          "type": "string"
+        },
+        "interactionuseragent": {
+          "description": "Shows the User Agent for an Interaction if available",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the custom entity.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "interactionforemail_BulkOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_CampaignActivities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_CampaignResponses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_IncidentResolutions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incidentresolution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_li_inmails": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_inmail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_li_messages": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_message'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_li_pointdrivepresentationvieweds": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_msdyn_approvals": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_approval'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_msdyn_bookingalerts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_msfp_alerts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_msfp_surveyinvites": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_msfp_surveyresponses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_OpportunityCloses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunityclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_OrderCloses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.orderclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_QuoteCloses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quoteclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "interactionforemail_ServiceAppointments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceappointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "new_interactionforemail_ActivityPointers": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitypointer'",
+          "type": "array",
+          "minItems": 1
+        },
+        "new_interactionforemail_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "statecode": {
+          "description": "Status of the Interaction for Email",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the Interaction for Email",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "interactionforemailid"
+      ],
+      "patternProperties": {
+        "^createdbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

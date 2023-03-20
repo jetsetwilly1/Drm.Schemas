@@ -1,0 +1,171 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/calendar.json#",
+  "title": "Entity definition for Calendar",
+  "definitions": {
+    "CalendarPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "calendarid": {
+          "description": "Unique identifier of the calendar.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Calendar used by the scheduling system to define when an appointment or activity is to occur.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the calendar.",
+          "type": "string"
+        },
+        "primaryuserid": {
+          "description": "Unique identifier of the primary user of this calendar.",
+          "type": "string"
+        },
+        "BusinessUnit_Calendar": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Calendar_Annotation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annotation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Calendar_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "calendar_bookableresources": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresource'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Calendar_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "calendar_calendar_rules": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendarrule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "calendar_customercalendar_holidaycalendar": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendar'",
+          "type": "array",
+          "minItems": 1
+        },
+        "calendar_equipment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.equipment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "calendar_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "array",
+          "minItems": 1
+        },
+        "calendar_services": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.service'",
+          "type": "array",
+          "minItems": 1
+        },
+        "calendar_slaitem": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.slaitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "calendar_system_users": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "array",
+          "minItems": 1
+        },
+        "inner_calendar_calendar_rules": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendarrule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "slabase_businesshoursid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sla'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isshared": {
+          "description": "Calendar is shared by other calendars, such as the organization calendar.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "type": {
+          "description": "Calendar type, such as User work hour calendar, or Customer service hour calendar.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default",
+                "Customer Service",
+                "Holiday Schedule",
+                "Inner Calendar type"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "calendarid"
+      ],
+      "patternProperties": {
+        "^businessunitid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^holidayschedulecalendarid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendar'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

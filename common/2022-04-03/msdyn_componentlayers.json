@@ -1,0 +1,62 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/msdyn_componentlayer.json#",
+  "title": "Entity definition for ComponentLayer",
+  "definitions": {
+    "ComponentLayerPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "msdyn_changes": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_children": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_componentid": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_componentjson": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_componentlayerid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "msdyn_name": {
+          "description": "The name of the component.",
+          "type": "string"
+        },
+        "msdyn_order": {
+          "description": ""
+        },
+        "msdyn_overwritetime": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_publishername": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_solutioncomponentname": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_solutionname": {
+          "description": "",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "msdyn_componentlayerid"
+      ]
+    }
+  }
+}

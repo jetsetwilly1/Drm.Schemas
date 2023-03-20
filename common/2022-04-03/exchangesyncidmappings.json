@@ -1,0 +1,113 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/exchangesyncidmapping.json#",
+  "title": "Entity definition for ExchangeSyncIdMapping",
+  "definitions": {
+    "ExchangeSyncIdMappingPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "exchangeentryid": {
+          "description": "",
+          "type": "string"
+        },
+        "exchangesyncidmappingid": {
+          "description": "",
+          "type": "string"
+        },
+        "fromcrmchangetype": {
+          "description": ""
+        },
+        "itemsubject": {
+          "description": "",
+          "type": "string"
+        },
+        "lastsyncerror": {
+          "description": "",
+          "type": "string"
+        },
+        "lastsyncerrorcode": {
+          "description": ""
+        },
+        "lastsyncerroroccurredon": {
+          "description": "Last Sync Error Time",
+          "type": "string"
+        },
+        "objectid": {
+          "description": "",
+          "type": "string"
+        },
+        "objecttypecode": {
+          "description": ""
+        },
+        "retries": {
+          "description": ""
+        },
+        "tocrmchangetype": {
+          "description": ""
+        },
+        "userdecision": {
+          "description": ""
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isdeletedinexchange": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isunlinkedincrm": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "exchangesyncidmappingid"
+      ],
+      "patternProperties": {
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

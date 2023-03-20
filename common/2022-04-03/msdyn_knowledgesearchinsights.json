@@ -1,0 +1,202 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/msdyn_knowledgesearchinsight.json#",
+  "title": "Entity definition for KnowledgeSearchInsight",
+  "definitions": {
+    "KnowledgeSearchInsightPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "msdyn_applicationname": {
+          "description": "The name of the application where the knowledge search is performed.",
+          "type": "string"
+        },
+        "msdyn_correlationid": {
+          "description": "Designed for federation search. Used to correlate the search that triggered different search records from different search providers.",
+          "type": "string"
+        },
+        "msdyn_customcontrolid": {
+          "description": "The ID of control knowledge search where the search is performed.",
+          "type": "string"
+        },
+        "msdyn_entityrecordid": {
+          "description": "Entity Record ID of the Entity Type",
+          "type": "string"
+        },
+        "msdyn_entitytype": {
+          "description": "Which kind of entity context the knowledge search performed",
+          "type": "string"
+        },
+        "msdyn_filters": {
+          "description": "The filters selected when performing the search.",
+          "type": "string"
+        },
+        "msdyn_initiatedby": {
+          "description": "Whether the search is initiated by the system automatically or manually initiated by the user.",
+          "type": "string"
+        },
+        "msdyn_knowledgesearchinsightid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "msdyn_responsetime": {
+          "description": "The time to return search results."
+        },
+        "msdyn_resultcount": {
+          "description": "The total count of knowledge articles returned"
+        },
+        "msdyn_searchproviderid": {
+          "description": "Designed for federation search. The ID of the federated search provider.",
+          "type": "string"
+        },
+        "msdyn_searchprovidername": {
+          "description": "Designed for federation search. The name of the federated search provider.",
+          "type": "string"
+        },
+        "msdyn_searchterm": {
+          "description": "The string typed in the search field",
+          "type": "string"
+        },
+        "msdyn_searchtype": {
+          "description": "The type of search run, like full text search, relevance search, etc.",
+          "type": "string"
+        },
+        "msdyn_sortby": {
+          "description": "The sort selected when performing the search.",
+          "type": "string"
+        },
+        "msdyn_timestamp": {
+          "description": "Date and time when the search is performed",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "msdyn_knowledgesearchinsight_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_knowledgesearchinsight_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_knowledgesearchinsight_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_knowledgesearchinsight_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_knowledgesearchinsight_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_knowledgesearchinsight_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_knowledgesearchinsight_ProcessSession": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_knowledgesearchinsight_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "statecode": {
+          "description": "Status of the Knowledge Search Insight",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the Knowledge Search Insight",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "msdyn_knowledgesearchinsightid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

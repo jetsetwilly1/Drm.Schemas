@@ -1,0 +1,65 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/customcontroldefaultconfig.json#",
+  "title": "Entity definition for CustomControlDefaultConfig",
+  "definitions": {
+    "CustomControlDefaultConfigPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "controldescriptionjson": {
+          "description": "Custom control configuration data in JSON format.",
+          "type": "string"
+        },
+        "controldescriptionxml": {
+          "description": "controlDescriptionXML of the custom control default config.",
+          "type": "string"
+        },
+        "customcontroldefaultconfigid": {
+          "description": "Unique identifier of the Custom Control Default Config for the Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "eventsxml": {
+          "description": "The events XML of the custom control default config.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "primaryentitytypecode": {
+          "description": "Entity Type Code of the Custom Control Default Config.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "customcontroldefaultconfigid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

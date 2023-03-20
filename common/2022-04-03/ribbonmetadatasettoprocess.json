@@ -1,0 +1,48 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/ribbonmetadatatoprocess.json#",
+  "title": "Entity definition for RibbonMetadataToProcess",
+  "definitions": {
+    "RibbonMetadataToProcessPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "entityname": {
+          "description": "Entity Logical Name",
+          "type": "string"
+        },
+        "exceptionmessage": {
+          "description": "Exception message",
+          "type": "string"
+        },
+        "isdbupdate": {
+          "description": "Is entity created via Db Update"
+        },
+        "retrycount": {
+          "description": "Retry Count"
+        },
+        "ribbonmetadatarowid": {
+          "description": "Unique identifier for Ribbon Metadata Instance To Process",
+          "type": "string"
+        },
+        "solutionid": {
+          "description": "Solution Id",
+          "type": "string"
+        },
+        "solutionname": {
+          "description": "Solution Name of the ribbon entity",
+          "type": "string"
+        },
+        "status": {
+          "description": "Status"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "ribbonmetadatarowid"
+      ]
+    }
+  }
+}

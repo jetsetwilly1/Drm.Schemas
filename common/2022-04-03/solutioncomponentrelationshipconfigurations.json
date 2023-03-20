@@ -1,0 +1,195 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/solutioncomponentrelationshipconfiguration.json#",
+  "title": "Entity definition for SolutionComponentRelationshipConfiguration",
+  "definitions": {
+    "SolutionComponentRelationshipConfigurationPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "iscustomizable": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the custom entity.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "solutioncomponentrelationshipconfigurationid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "solutioncomponentrelationshipconfiguration_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solutioncomponentrelationshipconfiguration_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solutioncomponentrelationshipconfiguration_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solutioncomponentrelationshipconfiguration_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solutioncomponentrelationshipconfiguration_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solutioncomponentrelationshipconfiguration_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solutioncomponentrelationshipconfiguration_ProcessSession": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solutioncomponentrelationshipconfiguration_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "addrelatedcomponents": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "primaryentitydependencytype": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Hard Dependency",
+                "Soft Dependency"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "secondaryentitydependencytype": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Hard Dependency",
+                "Soft Dependency"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the Solution Component Relationship Configuration",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the Solution Component Relationship Configuration",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "solutioncomponentrelationshipconfigurationid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^EntityRelationshipId(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entityrelationship'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

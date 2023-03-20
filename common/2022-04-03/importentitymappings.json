@@ -1,0 +1,108 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/importentitymapping.json#",
+  "title": "Entity definition for ImportEntityMapping",
+  "definitions": {
+    "ImportEntityMappingPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "importentitymappingid": {
+          "description": "Unique identifier of the import entity mapping.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the component is introduced.",
+          "type": "string"
+        },
+        "sourceentityname": {
+          "description": "Name of the source entity.",
+          "type": "string"
+        },
+        "targetentityname": {
+          "description": "Name of the Microsoft Dynamics 365 entity.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "dedupe": {
+          "description": "Information about whether the entity needs to be processed to find and delete duplicate records.",
+          "anyOf": [
+            {
+              "enum": [
+                "Ignore",
+                "Eliminate"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "processcode": {
+          "description": "Information about whether the import entity mapping needs to be processed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Process",
+                "Ignore",
+                "Internal"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the import entity mapping.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "importentitymappingid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^importmapid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importmap'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

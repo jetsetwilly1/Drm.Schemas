@@ -1,0 +1,230 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/serviceendpoint.json#",
+  "title": "Entity definition for ServiceEndpoint",
+  "definitions": {
+    "ServiceEndpointPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "authvalue": {
+          "description": "Authentication Value",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the service endpoint.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of Service end point.",
+          "type": "string"
+        },
+        "namespaceaddress": {
+          "description": "Full service endpoint address.",
+          "type": "string"
+        },
+        "path": {
+          "description": "Path to the service endpoint.",
+          "type": "string"
+        },
+        "saskey": {
+          "description": "Shared Access Key",
+          "type": "string"
+        },
+        "saskeyname": {
+          "description": "Shared Access Key Name",
+          "type": "string"
+        },
+        "sastoken": {
+          "description": "Shared Access Token",
+          "type": "string"
+        },
+        "serviceendpointid": {
+          "description": "Unique identifier of the service endpoint.",
+          "type": "string"
+        },
+        "solutionnamespace": {
+          "description": "Namespace of the App Fabric solution.",
+          "type": "string"
+        },
+        "url": {
+          "description": "Full service endpoint Url.",
+          "type": "string"
+        },
+        "serviceendpoint_sdkmessageprocessingstep": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessageprocessingstep'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "authtype": {
+          "description": "Specifies mode of authentication with SB",
+          "anyOf": [
+            {
+              "enum": [
+                "ACS",
+                "SAS Key",
+                "SAS Token",
+                "Webhook Key",
+                "Http Header",
+                "Http Query String",
+                "Connection String"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "connectionmode": {
+          "description": "Connection mode to contact the service endpoint.",
+          "anyOf": [
+            {
+              "enum": [
+                "Normal",
+                "Federated"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "contract": {
+          "description": "Type of the endpoint contract.",
+          "anyOf": [
+            {
+              "enum": [
+                "OneWay",
+                "Queue",
+                "Rest",
+                "TwoWay",
+                "Topic",
+                "Queue (Persistent)",
+                "Event Hub",
+                "Webhook"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "messageformat": {
+          "description": "Content type of the message",
+          "anyOf": [
+            {
+              "enum": [
+                "Binary XML",
+                "Json",
+                "Text XML"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "namespaceformat": {
+          "description": "Format of Service Bus Namespace",
+          "anyOf": [
+            {
+              "enum": [
+                "Namespace Name",
+                "Namespace Address"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "usekeyvaultconfiguration": {
+          "description": "Use Auth Information in KeyVault",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "userclaim": {
+          "description": "Additional user claim value type.",
+          "anyOf": [
+            {
+              "enum": [
+                "None",
+                "UserId",
+                "UserInfo"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "serviceendpointid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

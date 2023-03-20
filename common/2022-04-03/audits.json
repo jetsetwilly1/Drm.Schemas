@@ -1,0 +1,37 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/audit.json#",
+  "title": "Entity definition for Auditing",
+  "definitions": {
+    "AuditingPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "auditid": {
+          "description": "Unique identifier of the auditing instance",
+          "type": "string"
+        },
+        "useradditionalinfo": {
+          "description": "Additional information associated to the user who caused the change.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "auditid"
+      ],
+      "patternProperties": {
+        "^callinguserid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^userid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

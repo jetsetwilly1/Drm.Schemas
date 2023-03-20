@@ -1,0 +1,137 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/savedqueryvisualization.json#",
+  "title": "Entity definition for SystemChart",
+  "definitions": {
+    "SystemChartPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "canbedeleted": {
+          "description": "Tells whether the saved query visualization can be deleted.",
+          "type": "string"
+        },
+        "datadescription": {
+          "description": "XML string used to define the underlying data for the system chart.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the system chart.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the system chart.",
+          "type": "string"
+        },
+        "presentationdescription": {
+          "description": "XML string used to define the presentation properties of the system chart.",
+          "type": "string"
+        },
+        "primaryentitytypecode": {
+          "description": "Type of entity with which the system chart is attached.",
+          "type": "string"
+        },
+        "savedqueryvisualizationid": {
+          "description": "Unique identifier of the system chart.",
+          "type": "string"
+        },
+        "SavedQueryVisualization_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "charttype": {
+          "description": "Indicates the library used to render the visualization.",
+          "anyOf": [
+            {
+              "enum": [
+                "ASP.NET Charts",
+                "Power BI"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isdefault": {
+          "description": "Indicates whether the system chart is the default chart for the entity.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "type": {
+          "description": "Specifies where the chart will be used, 0 for data centric as well as interaction centric and 1 for just interaction centric",
+          "anyOf": [
+            {
+              "enum": [
+                "for data centric as well as interaction centric",
+                "just for interaction centric"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "savedqueryvisualizationid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^webresourceid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.webresource'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

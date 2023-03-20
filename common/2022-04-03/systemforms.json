@@ -1,0 +1,228 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/systemform.json#",
+  "title": "Entity definition for SystemForm",
+  "definitions": {
+    "SystemFormPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "canbedeleted": {
+          "description": "Information that specifies whether this component can be deleted.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the form or dashboard.",
+          "type": "string"
+        },
+        "formid": {
+          "description": "Unique identifier of the record type form.",
+          "type": "string"
+        },
+        "formjson": {
+          "description": "Json representation of the form layout.",
+          "type": "string"
+        },
+        "formxml": {
+          "description": "XML representation of the form layout.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the form.",
+          "type": "string"
+        },
+        "objecttypecode": {
+          "description": "Code that represents the record type.",
+          "type": "string"
+        },
+        "uniquename": {
+          "description": "Unique Name",
+          "type": "string"
+        },
+        "version": {
+          "description": "For internal use only."
+        },
+        "form_ancestor_form": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemform'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processtrigger_systemform": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processtrigger'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SystemForm_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SystemForm_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "formactivationstate": {
+          "description": "Specifies the state of the form.",
+          "anyOf": [
+            {
+              "enum": [
+                "Inactive",
+                "Active"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "formpresentation": {
+          "description": "Specifies whether this form is in the updated UI layout in Microsoft Dynamics CRM 2015 or Microsoft Dynamics CRM Online 2015 Update.",
+          "anyOf": [
+            {
+              "enum": [
+                "ClassicForm",
+                "AirForm",
+                "ConvertedICForm"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isairmerged": {
+          "description": "Specifies whether this form is merged with the updated UI layout in Microsoft Dynamics CRM 2015 or Microsoft Dynamics CRM Online 2015 Update.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isdefault": {
+          "description": "Information that specifies whether the form or the dashboard is the system default.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isdesktopenabled": {
+          "description": "Information that specifies whether the dashboard is enabled for desktop.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "istabletenabled": {
+          "description": "Information that specifies whether the dashboard is enabled for tablet.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "type": {
+          "description": "Type of the form, for example, Dashboard or Preview.",
+          "anyOf": [
+            {
+              "enum": [
+                "Dashboard",
+                "AppointmentBook",
+                "Main",
+                "MiniCampaignBO",
+                "Preview",
+                "Mobile - Express",
+                "Quick View Form",
+                "Quick Create",
+                "Dialog",
+                "Task Flow Form",
+                "InteractionCentricDashboard",
+                "Card",
+                "Main - Interactive experience",
+                "Contextual Dashboard",
+                "Other",
+                "MainBackup",
+                "AppointmentBookBackup",
+                "Power BI Dashboard"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "formid"
+      ],
+      "patternProperties": {
+        "^ancestorformid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemform'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

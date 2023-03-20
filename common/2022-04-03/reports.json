@@ -1,0 +1,186 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/report.json#",
+  "title": "Entity definition for Report",
+  "definitions": {
+    "ReportPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "bodybinary": {
+          "description": "Binary report contents (base-64 encoded).",
+          "type": "string"
+        },
+        "bodybinary_binary": {
+          "description": "Binary report contents (base-64 encoded).",
+          "type": "string"
+        },
+        "bodytext": {
+          "description": "Text contents of the RDL file for a Reporting Services report.",
+          "type": "string"
+        },
+        "bodyurl": {
+          "description": "URL for a linked report.",
+          "type": "string"
+        },
+        "createdinmajorversion": {
+          "description": "Major version number of Crm, used to identify the version of Crm in which report is created."
+        },
+        "defaultfilter": {
+          "description": "Default filter for the report.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the report.",
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name of the report.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the report is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "languagecode": {
+          "description": "Language in which the report will be displayed."
+        },
+        "mimetype": {
+          "description": "MIME type of the report.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the report.",
+          "type": "string"
+        },
+        "reportid": {
+          "description": "Unique identifier of the report.",
+          "type": "string"
+        },
+        "signaturedate": {
+          "description": "Report signature date, used to identify a report for upgrades and hotfixes.",
+          "type": "string"
+        },
+        "signatureid": {
+          "description": "Unique identifier of the report signature used to identify a report for upgrades and hotfixes.",
+          "type": "string"
+        },
+        "signaturelcid": {
+          "description": "Report signature language code used to identify a report for upgrades and hotfixes."
+        },
+        "signaturemajorversion": {
+          "description": "Report signature major version, used to identify a report for upgrades and hotfixes."
+        },
+        "signatureminorversion": {
+          "description": "Report signature minor version, used to identify a report for upgrades and hotfixes."
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "Report_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "report_parent_report": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.report'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Report_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "report_reportcategories": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.reportcategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Report_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "ispersonal": {
+          "description": "Information about whether the report is personal or is available to all users.",
+          "anyOf": [
+            {
+              "enum": [
+                "Individual",
+                "Organization"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "reporttypecode": {
+          "description": "Type of the report.",
+          "anyOf": [
+            {
+              "enum": [
+                "Reporting Services Report",
+                "Other Report",
+                "Linked Report"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "reportid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^parentreportid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.report'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/importfile.json#",
+  "title": "Entity definition for ImportSourceFile",
+  "definitions": {
+    "ImportSourceFilePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "content": {
+          "description": "Stores the content of the import file, stored as comma-separated values.",
+          "type": "string"
+        },
+        "entitykeyid": {
+          "description": "Unique identifier of the Alternate key Id",
+          "type": "string"
+        },
+        "importfileid": {
+          "description": "Unique identifier of the import file.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Shows the name of the import file. This name is based on the name of the uploaded file.",
+          "type": "string"
+        },
+        "relatedentitycolumns": {
+          "description": "Shows the columns that are mapped to a related record type (entity) of the primary record type (entity) included in the import file.",
+          "type": "string"
+        },
+        "size": {
+          "description": "Shows the size of the import file, in kilobytes.",
+          "type": "string"
+        },
+        "source": {
+          "description": "Shows the name of the data source file uploaded in the import job.",
+          "type": "string"
+        },
+        "sourceentityname": {
+          "description": "Shows the record type (entity) of the source data.",
+          "type": "string"
+        },
+        "targetentityname": {
+          "description": "Select the target record type (entity) for the records that will be created during the import job.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "ImportFile_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ImportFile_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ImportFile_ImportData": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importdata'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ImportLog_ImportFile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importlog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "datadelimitercode": {
+          "description": "Select the single-character data delimiter used in the import file. This is typically a single or double quotation mark.",
+          "anyOf": [
+            {
+              "enum": [
+                "DoubleQuote",
+                "None",
+                "SingleQuote"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enableduplicatedetection": {
+          "description": "Select whether duplicate-detection rules should be run against the import job.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "fielddelimitercode": {
+          "description": "Select the character that is used to separate each field in the import file. Typically, it is a comma.",
+          "anyOf": [
+            {
+              "enum": [
+                "Colon",
+                "Comma",
+                "Tab",
+                "Semicolon"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "filetypecode": {
+          "description": "Shows the type of source file that is uploaded for import.",
+          "anyOf": [
+            {
+              "enum": [
+                "CSV",
+                "XML Spreadsheet 2003",
+                "Attachment",
+                "XLSX"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isfirstrowheader": {
+          "description": "Select whether the first row of the import file contains column headings, which are used for data mapping during the import job.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "processcode": {
+          "description": "Tells whether the import file should be ignored or processed during the import.",
+          "anyOf": [
+            {
+              "enum": [
+                "Process",
+                "Ignore",
+                "Internal"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Shows the status of the import file record. By default, all records are active and can't be deactivated.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Shows the reason code that explains the import file's status to identify the stage of the import process, from parsing the data to completed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Submitted",
+                "Parsing",
+                "Transforming",
+                "Importing",
+                "Completed",
+                "Failed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "upsertmodecode": {
+          "description": "Select the value which is used for identify the upsert mode. By Default, it is a Create.",
+          "anyOf": [
+            {
+              "enum": [
+                "Create",
+                "Update",
+                "Ignore"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "usesystemmap": {
+          "description": "Tells whether an automatic system map was applied to the import file, which automatically maps the import data to the target entity in Microsoft Dynamics 365.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "importfileid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^importid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.import'",
+          "type": "string"
+        },
+        "^importmapid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importmap'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^recordsownerid_systemuser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^recordsownerid_team(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/timezonerule.json#",
+  "title": "Entity definition for TimeZoneRule",
+  "definitions": {
+    "TimeZoneRulePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "bias": {
+          "description": "Base time bias of the time zone rule."
+        },
+        "daylightbias": {
+          "description": "Time bias in addition to the base bias for daylight savings time."
+        },
+        "daylightday": {
+          "description": "Day of the month when daylight savings time starts."
+        },
+        "daylightdayofweek": {
+          "description": "Day of the week when daylight savings time starts."
+        },
+        "daylighthour": {
+          "description": "Hour of the day when daylight savings time starts"
+        },
+        "daylightminute": {
+          "description": "Minute of the hour when daylight savings time starts."
+        },
+        "daylightmonth": {
+          "description": "Month when daylight savings time starts."
+        },
+        "daylightsecond": {
+          "description": "Second of the minute when daylight savings time starts"
+        },
+        "daylightyear": {
+          "description": "Year when daylight savings times starts."
+        },
+        "effectivedatetime": {
+          "description": "Time that this rule takes effect, in local time.",
+          "type": "string"
+        },
+        "standardbias": {
+          "description": "Time bias in addition to the base bias for standard time."
+        },
+        "standardday": {
+          "description": "Day of the month when standard time starts."
+        },
+        "standarddayofweek": {
+          "description": "Day of the week when standard time starts."
+        },
+        "standardhour": {
+          "description": "Hour of the day when standard time starts."
+        },
+        "standardminute": {
+          "description": "Minute of the hour when standard time starts."
+        },
+        "standardmonth": {
+          "description": "Month when standard time starts."
+        },
+        "standardsecond": {
+          "description": "Second of the Minute when standard time starts."
+        },
+        "standardyear": {
+          "description": "Year when standard time starts."
+        },
+        "timezoneruleid": {
+          "description": "Unique identifier of the time zone rule.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "timezoneruleid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^timezonedefinitionid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.timezonedefinition'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

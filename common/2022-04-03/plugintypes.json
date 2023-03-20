@@ -1,0 +1,89 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/plugintype.json#",
+  "title": "Entity definition for Plug-inType",
+  "definitions": {
+    "Plug-inTypePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "description": "Description of the plug-in type.",
+          "type": "string"
+        },
+        "friendlyname": {
+          "description": "User friendly name for the plug-in.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the plug-in type.",
+          "type": "string"
+        },
+        "plugintypeid": {
+          "description": "Unique identifier of the plug-in type.",
+          "type": "string"
+        },
+        "typename": {
+          "description": "Fully qualified type name of the plug-in type.",
+          "type": "string"
+        },
+        "workflowactivitygroupname": {
+          "description": "Group name of workflow custom activity.",
+          "type": "string"
+        },
+        "plugin_type_service": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.service'",
+          "type": "array",
+          "minItems": 1
+        },
+        "plugintype_plugintypestatistic": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.plugintypestatistic'",
+          "type": "array",
+          "minItems": 1
+        },
+        "plugintype_sdkmessageprocessingstep": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessageprocessingstep'",
+          "type": "array",
+          "minItems": 1
+        },
+        "plugintypeid_sdkmessageprocessingstep": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessageprocessingstep'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "plugintypeid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^pluginassemblyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.pluginassembly'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "id": "https://devops.midwolf.co.uk/schemas/2022-04-03/queue.json#",
+  "title": "Entity definition for Queue",
+  "definitions": {
+    "QueuePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "description": "Description of the queue.",
+          "type": "string"
+        },
+        "emailaddress": {
+          "description": "Email address that is associated with the queue.",
+          "type": "string"
+        },
+        "entityimage": {
+          "description": "The default image for the entity.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "name": {
+          "description": "Name of the queue.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "queueid": {
+          "description": "Unique identifier of the queue.",
+          "type": "string"
+        },
+        "mailbox_regarding_queue": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailbox'",
+          "type": "array",
+          "minItems": 1
+        },
+        "queue_activity_parties": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activityparty'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Queue_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Queue_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Queue_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Queue_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Queue_Email_EmailSender": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "queue_entries": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.queueitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "queue_PostFollows": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.postfollow'",
+          "type": "array",
+          "minItems": 1
+        },
+        "queue_PostRegardings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.postregarding'",
+          "type": "array",
+          "minItems": 1
+        },
+        "queue_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Queue_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Queue_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "queue_system_user": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "array",
+          "minItems": 1
+        },
+        "queue_team": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "array",
+          "minItems": 1
+        },
+        "queuemembership_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "emailrouteraccessapproval": {
+          "description": "Shows the status of the primary email address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Empty",
+                "Approved",
+                "Pending Approval",
+                "Rejected"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ignoreunsolicitedemail": {
+          "description": "Information that specifies whether a queue is to ignore unsolicited email (deprecated).",
+          "anyOf": [
+            {
+              "enum": [
+                "Only specific Emails",
+                "All incoming Emails"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "incomingemaildeliverymethod": {
+          "description": "Incoming email delivery method for the queue.",
+          "anyOf": [
+            {
+              "enum": [
+                "None",
+                "Server-Side Synchronization or Email Router",
+                "Forward Mailbox"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "incomingemailfilteringmethod": {
+          "description": "Convert Incoming Email To Activities",
+          "anyOf": [
+            {
+              "enum": [
+                "All email messages",
+                "Email messages in response to Dynamics 365 email",
+                "Email messages from Dynamics 365 Leads, Contacts and Accounts",
+                "Email messages from Dynamics 365 records that are email enabled",
+                "No email messages"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "outgoingemaildeliverymethod": {
+          "description": "Outgoing email delivery method for the queue.",
+          "anyOf": [
+            {
+              "enum": [
+                "None",
+                "Server-Side Synchronization or Email Router"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "queueviewtype": {
+          "description": "Select whether the queue is public or private. A public queue can be viewed by all. A private queue can be viewed only by the members added to the queue.",
+          "anyOf": [
+            {
+              "enum": [
+                "Public",
+                "Private"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the queue.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the queue.",
+          "anyOf": [
+            {
+              "enum": [
+                "Inactive",
+                "Active"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "queueid"
+      ],
+      "patternProperties": {
+        "^businessunitid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^defaultmailbox(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailbox'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^primaryuserid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

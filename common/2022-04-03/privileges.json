@@ -1,0 +1,166 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/privilege.json#",
+  "title": "Entity definition for Privilege",
+  "definitions": {
+    "PrivilegePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "accessright": {
+          "description": "Rights a user has to an instance of an entity."
+        },
+        "introducedversion": {
+          "description": "Version in which the component is introduced.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the privilege.",
+          "type": "string"
+        },
+        "privilegeid": {
+          "description": "Unique identifier of the privilege.",
+          "type": "string"
+        },
+        "privilegerowid": {
+          "description": "Unique identifier of the Privilege used when synchronizing customizations for the Microsoft Dynamics CRM client for Outlook",
+          "type": "string"
+        },
+        "Privilege_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Privilege_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "roleprivileges_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.role'",
+          "type": "array",
+          "minItems": 1
+        },
+        "roletemplateprivileges_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.roletemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "canbebasic": {
+          "description": "Information that specifies whether the privilege applies to the user, the user's team, or objects shared by the user.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "canbedeep": {
+          "description": "Information that specifies whether the privilege applies to child business units of the business unit associated with the user.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "canbeentityreference": {
+          "description": "Information that specifies whether the privilege applies to the local reference of an external party.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "canbeglobal": {
+          "description": "Information that specifies whether the privilege applies to the entire organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "canbelocal": {
+          "description": "Information that specifies whether the privilege applies to the user's business unit.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "canbeparententityreference": {
+          "description": "Information that specifies whether the privilege applies to parent reference of the external party.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "privilegeid"
+      ],
+      "patternProperties": {
+        "^solution_privilege(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

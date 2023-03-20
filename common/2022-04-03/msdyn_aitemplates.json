@@ -1,0 +1,203 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/msdyn_aitemplate.json#",
+  "title": "Entity definition for AITemplate",
+  "definitions": {
+    "AITemplatePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Tells whether the component can be customized.",
+          "type": "string"
+        },
+        "msdyn_aitemplateid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "msdyn_databinding": {
+          "description": "Data binding",
+          "type": "string"
+        },
+        "msdyn_defaultrunschedulingoptions": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_resourceinfo": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_runconfigschema": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_rundataspecification": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_templateversion": {
+          "description": "Template Version"
+        },
+        "msdyn_trainingconfigschema": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_trainingdataspecification": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_uniquename": {
+          "description": "The name of the custom entity.",
+          "type": "string"
+        },
+        "msdyn_uxconfiguration": {
+          "description": "",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "msdyn_aitemplate_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aitemplate_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aitemplate_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aitemplate_msdyn_aimodel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aimodel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aitemplate_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aitemplate_ProcessSession": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_aitemplate_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "msdyn_istrainable": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the AITemplate",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the AITemplate",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "msdyn_aitemplateid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

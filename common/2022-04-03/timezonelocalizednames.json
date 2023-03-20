@@ -1,0 +1,60 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/timezonelocalizedname.json#",
+  "title": "Entity definition for TimeZoneLocalizedName",
+  "definitions": {
+    "TimeZoneLocalizedNamePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "cultureid": {
+          "description": "Unique identifier of the culture that the UI names are encoded in."
+        },
+        "daylightname": {
+          "description": "Name of the time zone for the daylight time.",
+          "type": "string"
+        },
+        "standardname": {
+          "description": "Name of the time zone for the standard time.",
+          "type": "string"
+        },
+        "timezonelocalizednameid": {
+          "description": "Unique identifier of entity instances.",
+          "type": "string"
+        },
+        "userinterfacename": {
+          "description": "Unique display name for the time zone in the Microsoft Windows registry.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "timezonelocalizednameid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^timezonedefinitionid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.timezonedefinition'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

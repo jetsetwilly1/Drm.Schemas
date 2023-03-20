@@ -1,0 +1,96 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/entityanalyticsconfig.json#",
+  "title": "Entity definition for EntityAnalyticsConfig",
+  "definitions": {
+    "EntityAnalyticsConfigPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "entityanalyticsconfigid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "parententitylogicalname": {
+          "description": "Entity Logical Name For Analytics",
+          "type": "string"
+        },
+        "entityanalyticsconfig_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entityanalyticsconfig_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entityanalyticsconfig_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entityanalyticsconfig_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entityanalyticsconfig_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isenabledforadls": {
+          "description": "Azure Data Lake Storage is enabled for the selected entity",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isenabledfortimeseries": {
+          "description": "Time series is enabled for the selected entity",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "entityanalyticsconfigid"
+      ],
+      "patternProperties": {
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^parententityid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entity'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

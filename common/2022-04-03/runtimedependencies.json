@@ -1,0 +1,41 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/runtimedependency.json#",
+  "title": "Entity definition for RuntimeDependency",
+  "definitions": {
+    "RuntimeDependencyPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "dependencyid": {
+          "description": "Unique identifier of a dependency.",
+          "type": "string"
+        },
+        "dependentcomponentnodeid": {
+          "description": "Unique identifier of the dependent component's node.",
+          "type": "string"
+        },
+        "dependentcomponenttype": {
+          "description": "Dependent Component Node Type"
+        },
+        "ispublished": {
+          "description": "Determines whether required component is published",
+          "type": "string"
+        },
+        "requiredcomponentnodeid": {
+          "description": "Unique identifier of the required component's node",
+          "type": "string"
+        },
+        "requiredcomponenttype": {
+          "description": "Required Component Node Type"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "dependencyid"
+      ]
+    }
+  }
+}

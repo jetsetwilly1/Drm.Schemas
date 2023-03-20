@@ -1,0 +1,74 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/relationshipattribute.json#",
+  "title": "Entity definition for RelationshipAttribute",
+  "definitions": {
+    "RelationshipAttributePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "iscustomizable": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Display Name",
+          "type": "string"
+        },
+        "relationshipattributeid": {
+          "description": "Unique identifier of the relationship attribute",
+          "type": "string"
+        },
+        "relationshipattribute_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "relationshipattribute_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "relationshipattribute_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "relationshipattribute_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "relationshipattribute_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "relationshipattributeid"
+      ],
+      "patternProperties": {
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^referencedattributeid_relationshipattribute(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.attribute'",
+          "type": "string"
+        },
+        "^referencingattributeid_relationshipattribute(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.attribute'",
+          "type": "string"
+        },
+        "^relationshipid_relationshipattribute(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.relationship'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

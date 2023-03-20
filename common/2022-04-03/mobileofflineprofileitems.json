@@ -1,0 +1,180 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/mobileofflineprofileitem.json#",
+  "title": "Entity definition for MobileOfflineProfileItem",
+  "definitions": {
+    "MobileOfflineProfileItemPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "introducedversion": {
+          "description": "Version in which the Mobile offline Profile Item is introduced.",
+          "type": "string"
+        },
+        "mobileofflineprofileitemid": {
+          "description": "Unique identifier of the mobile offline profile item.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Enter the name of the mobile offline profile item.",
+          "type": "string"
+        },
+        "processid": {
+          "description": "Shows the ID of the process.",
+          "type": "string"
+        },
+        "profileitementityfilter": {
+          "description": "Profile item entity filter criteria",
+          "type": "string"
+        },
+        "relationshipdata": {
+          "description": "Internal Use Only",
+          "type": "string"
+        },
+        "selectedentitytypecode": {
+          "description": "Mobile offline enabled entity",
+          "type": "string"
+        },
+        "stageid": {
+          "description": "Shows the ID of the stage.",
+          "type": "string"
+        },
+        "syncintervalinminutes": {
+          "description": "How often to sync data offline."
+        },
+        "traversedpath": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "MobileOfflineProfileItem_MobileOfflineProfileItemAssociation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mobileofflineprofileitemassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isvisibleingrid": {
+          "description": "Information about whether the mobile offline profile item is visible in the Profile Item subgrid.",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "recorddistributioncriteria": {
+          "description": "Specify data download filter for selected entity",
+          "anyOf": [
+            {
+              "enum": [
+                "Download related data only",
+                "All records",
+                "Other data filter",
+                "Custom data filter"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "recordsownedbyme": {
+          "description": "Download my records",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "recordsownedbymybusinessunit": {
+          "description": "Download my business unit's records",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "recordsownedbymyteam": {
+          "description": "Download my team's records",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "mobileofflineprofileitemid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^profileitemrule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.savedquery'",
+          "type": "string"
+        },
+        "^regardingobjectid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mobileofflineprofile'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

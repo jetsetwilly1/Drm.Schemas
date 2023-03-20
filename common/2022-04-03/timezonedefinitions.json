@@ -1,0 +1,72 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/timezonedefinition.json#",
+  "title": "Entity definition for TimeZoneDefinition",
+  "definitions": {
+    "TimeZoneDefinitionPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "bias": {
+          "description": "Base time bias of the time zone."
+        },
+        "daylightname": {
+          "description": "Time zone name for the daylight time.",
+          "type": "string"
+        },
+        "retiredorder": {
+          "description": "Order an entry for a time zone definition is retired. 0 for the latest entry."
+        },
+        "standardname": {
+          "description": "Time zone name for the standard time.",
+          "type": "string"
+        },
+        "timezonecode": {
+          "description": "Time zone identification code."
+        },
+        "timezonedefinitionid": {
+          "description": "Unique identifier of the time zone record.",
+          "type": "string"
+        },
+        "userinterfacename": {
+          "description": "Display name for the time zone in the Microsoft Windows registry.",
+          "type": "string"
+        },
+        "lk_timezonelocalizedname_timezonedefinitionid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.timezonelocalizedname'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_timezonerule_timezonedefinitionid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.timezonerule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "timezonedefinitionid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

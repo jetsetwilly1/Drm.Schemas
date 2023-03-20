@@ -1,0 +1,1683 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/account.json#",
+  "title": "Entity definition for Account",
+  "definitions": {
+    "AccountPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "accountid": {
+          "description": "Unique identifier of the account.",
+          "type": "string"
+        },
+        "accountnumber": {
+          "description": "Type an ID number or code for the account to quickly search and identify the account in system views.",
+          "type": "string"
+        },
+        "address1_addressid": {
+          "description": "Unique identifier for address 1.",
+          "type": "string"
+        },
+        "address1_city": {
+          "description": "Type the city for the primary address.",
+          "type": "string"
+        },
+        "address1_country": {
+          "description": "Type the country or region for the primary address.",
+          "type": "string"
+        },
+        "address1_county": {
+          "description": "Type the county for the primary address.",
+          "type": "string"
+        },
+        "address1_fax": {
+          "description": "Type the fax number associated with the primary address.",
+          "type": "string"
+        },
+        "address1_latitude": {
+          "description": "Type the latitude value for the primary address for use in mapping and other applications.",
+          "type": "number"
+        },
+        "address1_line1": {
+          "description": "Type the first line of the primary address.",
+          "type": "string"
+        },
+        "address1_line2": {
+          "description": "Type the second line of the primary address.",
+          "type": "string"
+        },
+        "address1_line3": {
+          "description": "Type the third line of the primary address.",
+          "type": "string"
+        },
+        "address1_longitude": {
+          "description": "Type the longitude value for the primary address for use in mapping and other applications.",
+          "type": "number"
+        },
+        "address1_name": {
+          "description": "Type a descriptive name for the primary address, such as Corporate Headquarters.",
+          "type": "string"
+        },
+        "address1_postalcode": {
+          "description": "Type the ZIP Code or postal code for the primary address.",
+          "type": "string"
+        },
+        "address1_postofficebox": {
+          "description": "Type the post office box number of the primary address.",
+          "type": "string"
+        },
+        "address1_primarycontactname": {
+          "description": "Type the name of the main contact at the account's primary address.",
+          "type": "string"
+        },
+        "address1_stateorprovince": {
+          "description": "Type the state or province of the primary address.",
+          "type": "string"
+        },
+        "address1_telephone1": {
+          "description": "Type the main phone number associated with the primary address.",
+          "type": "string"
+        },
+        "address1_telephone2": {
+          "description": "Type a second phone number associated with the primary address.",
+          "type": "string"
+        },
+        "address1_telephone3": {
+          "description": "Type a third phone number associated with the primary address.",
+          "type": "string"
+        },
+        "address1_upszone": {
+          "description": "Type the UPS zone of the primary address to make sure shipping charges are calculated correctly and deliveries are made promptly, if shipped by UPS.",
+          "type": "string"
+        },
+        "address1_utcoffset": {
+          "description": "Select the time zone, or UTC offset, for this address so that other people can reference it when they contact someone at this address."
+        },
+        "address2_addressid": {
+          "description": "Unique identifier for address 2.",
+          "type": "string"
+        },
+        "address2_city": {
+          "description": "Type the city for the secondary address.",
+          "type": "string"
+        },
+        "address2_country": {
+          "description": "Type the country or region for the secondary address.",
+          "type": "string"
+        },
+        "address2_county": {
+          "description": "Type the county for the secondary address.",
+          "type": "string"
+        },
+        "address2_fax": {
+          "description": "Type the fax number associated with the secondary address.",
+          "type": "string"
+        },
+        "address2_latitude": {
+          "description": "Type the latitude value for the secondary address for use in mapping and other applications.",
+          "type": "number"
+        },
+        "address2_line1": {
+          "description": "Type the first line of the secondary address.",
+          "type": "string"
+        },
+        "address2_line2": {
+          "description": "Type the second line of the secondary address.",
+          "type": "string"
+        },
+        "address2_line3": {
+          "description": "Type the third line of the secondary address.",
+          "type": "string"
+        },
+        "address2_longitude": {
+          "description": "Type the longitude value for the secondary address for use in mapping and other applications.",
+          "type": "number"
+        },
+        "address2_name": {
+          "description": "Type a descriptive name for the secondary address, such as Corporate Headquarters.",
+          "type": "string"
+        },
+        "address2_postalcode": {
+          "description": "Type the ZIP Code or postal code for the secondary address.",
+          "type": "string"
+        },
+        "address2_postofficebox": {
+          "description": "Type the post office box number of the secondary address.",
+          "type": "string"
+        },
+        "address2_primarycontactname": {
+          "description": "Type the name of the main contact at the account's secondary address.",
+          "type": "string"
+        },
+        "address2_stateorprovince": {
+          "description": "Type the state or province of the secondary address.",
+          "type": "string"
+        },
+        "address2_telephone1": {
+          "description": "Type the main phone number associated with the secondary address.",
+          "type": "string"
+        },
+        "address2_telephone2": {
+          "description": "Type a second phone number associated with the secondary address.",
+          "type": "string"
+        },
+        "address2_telephone3": {
+          "description": "Type a third phone number associated with the secondary address.",
+          "type": "string"
+        },
+        "address2_upszone": {
+          "description": "Type the UPS zone of the secondary address to make sure shipping charges are calculated correctly and deliveries are made promptly, if shipped by UPS.",
+          "type": "string"
+        },
+        "address2_utcoffset": {
+          "description": "Select the time zone, or UTC offset, for this address so that other people can reference it when they contact someone at this address."
+        },
+        "creditlimit": {
+          "description": "Type the credit limit of the account. This is a useful reference when you address invoice and accounting issues with the customer.",
+          "type": "number"
+        },
+        "description": {
+          "description": "Type additional information to describe the account, such as an excerpt from the company's website.",
+          "type": "string"
+        },
+        "emailaddress1": {
+          "description": "Type the primary email address for the account.",
+          "type": "string"
+        },
+        "emailaddress2": {
+          "description": "Type the secondary email address for the account.",
+          "type": "string"
+        },
+        "emailaddress3": {
+          "description": "Type an alternate email address for the account.",
+          "type": "string"
+        },
+        "entityimage": {
+          "description": "Shows the default image for the record.",
+          "type": "string"
+        },
+        "fax": {
+          "description": "Type the fax number for the account.",
+          "type": "string"
+        },
+        "ftpsiteurl": {
+          "description": "Type the URL for the account's FTP site to enable users to access data and share documents.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "lastonholdtime": {
+          "description": "Contains the date and time stamp of the last on hold time.",
+          "type": "string"
+        },
+        "lastusedincampaign": {
+          "description": "Shows the date when the account was last included in a marketing campaign or quick campaign.",
+          "type": "string"
+        },
+        "marketcap": {
+          "description": "Type the market capitalization of the account to identify the company's equity, used as an indicator in financial performance analysis.",
+          "type": "number"
+        },
+        "ms_newsandsocialid": {
+          "description": "",
+          "type": "string"
+        },
+        "ms_traceid": {
+          "description": "",
+          "type": "string"
+        },
+        "ms_tweetsaboutdate": {
+          "description": "",
+          "type": "string"
+        },
+        "ms_tweetsfromdate": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_externalaccountid": {
+          "description": "External Account ID from other systems.",
+          "type": "string"
+        },
+        "msdyn_taxexemptnumber": {
+          "description": "Shows the government tax exempt number.",
+          "type": "string"
+        },
+        "msdyn_travelcharge": {
+          "description": "Enter the travel charge to include on work orders. This value will be multiplied by the travel charge type.",
+          "type": "number"
+        },
+        "msdyn_workorderinstructions": {
+          "description": "Shows the default instructions to show on new work orders.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Type the company or business name.",
+          "type": "string"
+        },
+        "numberofemployees": {
+          "description": "Type the number of employees that work at the account for use in marketing segmentation and demographic analysis."
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "primarysatoriid": {
+          "description": "Primary Satori ID for Account",
+          "type": "string"
+        },
+        "primarytwitterid": {
+          "description": "Primary Twitter ID for Account",
+          "type": "string"
+        },
+        "processid": {
+          "description": "Shows the ID of the process.",
+          "type": "string"
+        },
+        "revenue": {
+          "description": "Type the annual revenue for the account, used as an indicator in financial performance analysis.",
+          "type": "number"
+        },
+        "sharesoutstanding": {
+          "description": "Type the number of shares available to the public for the account. This number is used as an indicator in financial performance analysis."
+        },
+        "sic": {
+          "description": "Type the Standard Industrial Classification (SIC) code that indicates the account's primary industry of business, for use in marketing segmentation and demographic analysis.",
+          "type": "string"
+        },
+        "stageid": {
+          "description": "Shows the ID of the stage.",
+          "type": "string"
+        },
+        "stockexchange": {
+          "description": "Type the stock exchange at which the account is listed to track their stock and financial performance of the company.",
+          "type": "string"
+        },
+        "teamsfollowed": {
+          "description": "Number of users or conversations followed the record"
+        },
+        "telephone1": {
+          "description": "Type the main phone number for this account.",
+          "type": "string"
+        },
+        "telephone2": {
+          "description": "Type a second phone number for this account.",
+          "type": "string"
+        },
+        "telephone3": {
+          "description": "Type a third phone number for this account.",
+          "type": "string"
+        },
+        "tickersymbol": {
+          "description": "Type the stock exchange symbol for the account to track financial performance of the company. You can click the code entered in this field to access the latest trading information from MSN Money.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "traversedpath": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "websiteurl": {
+          "description": "Type the account's website URL to get quick details about the company profile.",
+          "type": "string"
+        },
+        "yominame": {
+          "description": "Type the phonetic spelling of the company name, if specified in Japanese, to make sure the name is pronounced correctly in phone calls and other communications.",
+          "type": "string"
+        },
+        "account_actioncard": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.actioncard'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_activity_parties": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activityparty'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_ActivityPointers": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitypointer'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_Annotation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annotation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_Appointments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_bookableresource_AccountId": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresource'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_BulkOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_CampaignActivities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_CampaignResponses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_connections1": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_connections2": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_CustomerAddress": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.customeraddress'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_Email_EmailSender": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_Email_SendersAccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_Emails": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_entitlement_Account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_entitlement_Customer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_Faxes": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fax'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_IncidentResolutions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incidentresolution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_Letters": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.letter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_li_inmails": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_inmail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_li_messages": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_message'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_li_pointdrivepresentationvieweds": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_MailboxTrackingFolder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_master_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_msdyn_approvals": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_approval'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_msdyn_bookingalerts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_msfp_alerts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_msfp_surveyinvites": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_msfp_surveyresponses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_OpportunityCloses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunityclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_OrderCloses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.orderclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_parent_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_Phonecalls": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonecall'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_PostFollows": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.postfollow'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_PostRegardings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.postregarding'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "account_QuoteCloses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quoteclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_RecurringAppointmentMasters": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recurringappointmentmaster'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_ServiceAppointments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceappointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_SharepointDocumentLocation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointdocumentlocation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_SocialActivities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Account_Tasks": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.task'",
+          "type": "array",
+          "minItems": 1
+        },
+        "accountleads_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BulkOperation_Logs_Accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "CampaignActivity_Logs_Accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_customer_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contract_billingcustomer_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contract'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contract_customer_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contract'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contractlineitem_customer_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contractdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "CreatedAccount_BulkOperationLogs2": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperationlog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "incident_customer_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "invoice_customer_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.invoice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lead_customer_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lead_parent_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "listaccount_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.list'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ms_account_ms_newsitem": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ms_newsitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ms_account_ms_satori": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ms_satori'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_account_BillingAccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_accountpricelist_Account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_accountpricelist'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_actual_AccountCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actual'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_actual_AccountVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actual'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_actual_ServiceAccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actual'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_agreement_BillingAccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_agreement_ServiceAccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_customerasset_Account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerasset'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_entitlementapplication_serviceaccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_entitlementapplication'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_estimateline_AccountCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimateline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_estimateline_AccountVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimateline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_fact_AccountCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_fact_AccountVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_invoicelinetransaction_AccountCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_invoicelinetransaction_AccountVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_iotdevice_Account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_journalline_AccountCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journalline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_journalline_AccountVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journalline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_opportunitylinetransaction_AccountCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_opportunitylinetransaction_AccountVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_orderlinetransaction_AccountCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_orderlinetransaction_AccountVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_payment_Account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_payment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_project_Customer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_project'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_purchaseorder_Vendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_quotelinetransaction_AccountCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_quotelinetransaction_AccountVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_requirementresourcepreference_Account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_rma_BillingAccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rma'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_rma_ServiceAccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rma'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_rmaproduct_Changeownership": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmaproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_rmaproduct_ReturntoVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmaproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_rtv_Vendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtv'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_workorder_BillingAccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_workorder_ServiceAccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_msdyn_workorderresourcerestriction_Account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_opportunityproduct_ServiceAccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunityproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_product_DefaultVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.product'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_quote_Account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_quotedetail_ServiceAccount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quotedetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_account_salesorder_Account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_geofence_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geofence'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_msdyn_functionallocation_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_functionallocation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_playbookinstance_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "opportunity_customer_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "opportunity_parent_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "order_customer_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "quote_customer_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "array",
+          "minItems": 1
+        },
+        "slakpiinstance_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.slakpiinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SocialActivity_PostAuthor_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SocialActivity_PostAuthorAccount_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Socialprofile_customer_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialprofile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SourceAccount_BulkOperationLogs": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperationlog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "accountcategorycode": {
+          "description": "Select a category to indicate whether the customer account is standard or preferred.",
+          "anyOf": [
+            {
+              "enum": [
+                "Preferred Customer",
+                "Standard"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "accountclassificationcode": {
+          "description": "Select a classification code to indicate the potential value of the customer account based on the projected return on investment, cooperation level, sales cycle length or other criteria.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "accountratingcode": {
+          "description": "Select a rating to indicate the value of the customer account.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address1_addresstypecode": {
+          "description": "Select the primary address type.",
+          "anyOf": [
+            {
+              "enum": [
+                "Bill To",
+                "Ship To",
+                "Primary",
+                "Other"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address1_freighttermscode": {
+          "description": "Select the freight terms for the primary address to make sure shipping orders are processed correctly.",
+          "anyOf": [
+            {
+              "enum": [
+                "FOB",
+                "No Charge"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address1_shippingmethodcode": {
+          "description": "Select a shipping method for deliveries sent to this address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Airborne",
+                "DHL",
+                "FedEx",
+                "UPS",
+                "Postal Mail",
+                "Full Load",
+                "Will Call"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address2_addresstypecode": {
+          "description": "Select the secondary address type.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address2_freighttermscode": {
+          "description": "Select the freight terms for the secondary address to make sure shipping orders are processed correctly.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address2_shippingmethodcode": {
+          "description": "Select a shipping method for deliveries sent to this address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "businesstypecode": {
+          "description": "Select the legal designation or other business type of the account for contracts or reporting purposes.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "creditonhold": {
+          "description": "Select whether the credit for the account is on hold. This is a useful reference while addressing the invoice and accounting issues with the customer.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "customersizecode": {
+          "description": "Select the size category or range of the account for segmentation and reporting purposes.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "customertypecode": {
+          "description": "Select the category that best describes the relationship between the account and your organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Competitor",
+                "Consultant",
+                "Customer",
+                "Investor",
+                "Partner",
+                "Influencer",
+                "Press",
+                "Prospect",
+                "Reseller",
+                "Supplier",
+                "Vendor",
+                "Other"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotbulkemail": {
+          "description": "Select whether the account allows bulk email sent through campaigns. If Do Not Allow is selected, the account can be added to marketing lists, but is excluded from email.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Allow",
+                "Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotbulkpostalmail": {
+          "description": "Select whether the account allows bulk postal mail sent through marketing campaigns or quick campaigns. If Do Not Allow is selected, the account can be added to marketing lists, but will be excluded from the postal mail.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotemail": {
+          "description": "Select whether the account allows direct email sent from Microsoft Dynamics 365.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Allow",
+                "Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotfax": {
+          "description": "Select whether the account allows faxes. If Do Not Allow is selected, the account will be excluded from fax activities distributed in marketing campaigns.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Allow",
+                "Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotphone": {
+          "description": "Select whether the account allows phone calls. If Do Not Allow is selected, the account will be excluded from phone call activities distributed in marketing campaigns.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Allow",
+                "Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotpostalmail": {
+          "description": "Select whether the account allows direct mail. If Do Not Allow is selected, the account will be excluded from letter activities distributed in marketing campaigns.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Allow",
+                "Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotsendmm": {
+          "description": "Select whether the account accepts marketing materials, such as brochures or catalogs.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Send",
+                "Send"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "followemail": {
+          "description": "Information about whether to allow following email activity like opens, attachment views and link clicks for emails sent to the account.",
+          "anyOf": [
+            {
+              "enum": [
+                "Allow",
+                "Do Not Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "industrycode": {
+          "description": "Select the account's primary industry for use in marketing segmentation and demographic analysis.",
+          "anyOf": [
+            {
+              "enum": [
+                "Accounting",
+                "Agriculture and Non-petrol Natural Resource Extraction",
+                "Broadcasting Printing and Publishing",
+                "Brokers",
+                "Building Supply Retail",
+                "Business Services",
+                "Consulting",
+                "Consumer Services",
+                "Design, Direction and Creative Management",
+                "Distributors, Dispatchers and Processors",
+                "Doctor's Offices and Clinics",
+                "Durable Manufacturing",
+                "Eating and Drinking Places",
+                "Entertainment Retail",
+                "Equipment Rental and Leasing",
+                "Financial",
+                "Food and Tobacco Processing",
+                "Inbound Capital Intensive Processing",
+                "Inbound Repair and Services",
+                "Insurance",
+                "Legal Services",
+                "Non-Durable Merchandise Retail",
+                "Outbound Consumer Service",
+                "Petrochemical Extraction and Distribution",
+                "Service Retail",
+                "SIG Affiliations",
+                "Social Services",
+                "Special Outbound Trade Contractors",
+                "Specialty Realty",
+                "Transportation",
+                "Utility Creation and Distribution",
+                "Vehicle Retail",
+                "Wholesale"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "marketingonly": {
+          "description": "Whether is only for marketing",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_taxexempt": {
+          "description": "Select whether the account is tax exempt.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_travelchargetype": {
+          "description": "Specify how travel is charged for this account.",
+          "anyOf": [
+            {
+              "enum": [
+                "Hourly",
+                "Mileage",
+                "Fixed",
+                "None"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ownershipcode": {
+          "description": "Select the account's ownership structure, such as public or private.",
+          "anyOf": [
+            {
+              "enum": [
+                "Public",
+                "Private",
+                "Subsidiary",
+                "Other"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "participatesinworkflow": {
+          "description": "For system use only. Legacy Microsoft Dynamics CRM 3.0 workflow data.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "paymenttermscode": {
+          "description": "Select the payment terms to indicate when the customer needs to pay the total amount.",
+          "anyOf": [
+            {
+              "enum": [
+                "Net 30",
+                "2% 10, Net 30",
+                "Net 45",
+                "Net 60"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "preferredappointmentdaycode": {
+          "description": "Select the preferred day of the week for service appointments.",
+          "anyOf": [
+            {
+              "enum": [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "preferredappointmenttimecode": {
+          "description": "Select the preferred time of day for service appointments.",
+          "anyOf": [
+            {
+              "enum": [
+                "Morning",
+                "Afternoon",
+                "Evening"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "preferredcontactmethodcode": {
+          "description": "Select the preferred method of contact.",
+          "anyOf": [
+            {
+              "enum": [
+                "Any",
+                "Email",
+                "Phone",
+                "Fax",
+                "Mail"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "shippingmethodcode": {
+          "description": "Select a shipping method for deliveries sent to the account's address to designate the preferred carrier or other delivery option.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Shows whether the account is active or inactive. Inactive accounts are read-only and can't be edited unless they are reactivated.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Select the account's status.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "territorycode": {
+          "description": "Select a region or territory for the account for use in segmentation and analysis.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "accountid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^defaultpricelevelid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.pricelevel'",
+          "type": "string"
+        },
+        "^masterid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^msdyn_billingaccount_account(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "string"
+        },
+        "^msdyn_PreferredResource(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresource'",
+          "type": "string"
+        },
+        "^msdyn_salestaxcode(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_taxcode'",
+          "type": "string"
+        },
+        "^msdyn_serviceterritory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.territory'",
+          "type": "string"
+        },
+        "^msdyn_workhourtemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workhourtemplate'",
+          "type": "string"
+        },
+        "^originatingleadid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^parentaccountid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "string"
+        },
+        "^preferredequipmentid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.equipment'",
+          "type": "string"
+        },
+        "^preferredserviceid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.service'",
+          "type": "string"
+        },
+        "^preferredsystemuserid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^primarycontactid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "string"
+        },
+        "^slaid_sla(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sla'",
+          "type": "string"
+        },
+        "^slainvokedid_account_sla(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sla'",
+          "type": "string"
+        },
+        "^stageid_processstage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processstage'",
+          "type": "string"
+        },
+        "^territoryid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.territory'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

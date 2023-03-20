@@ -1,0 +1,134 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/newprocess.json#",
+  "title": "Entity definition for NewProcess",
+  "definitions": {
+    "NewProcessPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "activestagestartedon": {
+          "description": "Date and time when current active stage is started.",
+          "type": "string"
+        },
+        "businessprocessflowinstanceid": {
+          "description": "Unique identifier for New Process bpf entity instances",
+          "type": "string"
+        },
+        "completedon": {
+          "description": "Date and time when current active stage is started.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "name": {
+          "description": "Process Name.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "traversedpath": {
+          "description": "Traversed Path",
+          "type": "string"
+        },
+        "NewProcess_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "NewProcess_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "workflowlogs_newprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.workflowlog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "statecode": {
+          "description": "Shows whether the Delve action record is pending, completed, or tracking.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Select the delve action record status.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Finished",
+                "Aborted"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "businessprocessflowinstanceid"
+      ],
+      "patternProperties": {
+        "^activestageid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processstage'",
+          "type": "string"
+        },
+        "^createdbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^knowledgearticleid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgearticle'",
+          "type": "string"
+        },
+        "^modifiedbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^processid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.workflow'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

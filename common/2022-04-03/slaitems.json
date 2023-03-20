@@ -1,0 +1,164 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/slaitem.json#",
+  "title": "Entity definition for SLAItem",
+  "definitions": {
+    "SLAItemPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "actionflowuniquename": {
+          "description": "",
+          "type": "string"
+        },
+        "actionurl": {
+          "description": "Action URL",
+          "type": "string"
+        },
+        "applicableentity": {
+          "description": "",
+          "type": "string"
+        },
+        "applicablewhenxml": {
+          "description": "Condition for SLA item",
+          "type": "string"
+        },
+        "changedattributelist": {
+          "description": "",
+          "type": "string"
+        },
+        "description": {
+          "description": "Type additional information to describe the SLA Item",
+          "type": "string"
+        },
+        "failureafter": {
+          "description": "Select how soon the success criteria must be met until the SLA item is considered failed and failure actions are initiated. The actual duration is based on the business hours as specified in the associated SLA record."
+        },
+        "msdyn_pauseconfigurationxml": {
+          "description": "",
+          "type": "string"
+        },
+        "name": {
+          "description": "Type a descriptive name of the service level agreement (SLA) item.",
+          "type": "string"
+        },
+        "relatedfield": {
+          "description": "Select the service level agreement (SLA) key performance indicator (KPI) that this SLA Item is created for.",
+          "type": "string"
+        },
+        "sequencenumber": {
+          "description": "Select the time zone, or UTC offset, for this address so that other people can reference it when they contact someone at this address."
+        },
+        "slaitemid": {
+          "description": "Unique identifier of the SLA Item.",
+          "type": "string"
+        },
+        "successconditionsxml": {
+          "description": "Condition for SLA item",
+          "type": "string"
+        },
+        "warnafter": {
+          "description": "Select how soon the success criteria must be met before warning actions are initiated. The actual duration is based on the business hours as specified in the associated SLA record."
+        },
+        "msdyn_migrationtracker_LegacySLAItem_slaitem": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_migrationtracker'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_migrationtracker_ModernSLAItem_slaitem": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_migrationtracker'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_slaitem_slakpiinstance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.slakpiinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SLAItem_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "allowpauseresume": {
+          "description": "Select whether this SLA will allow pausing and resuming during the time calculation.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_advancedpauseconfiguration": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "slaitemid"
+      ],
+      "patternProperties": {
+        "^businesshoursid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendar'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^msdyn_SLAKPIID(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_slakpi'",
+          "type": "string"
+        },
+        "^slaid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sla'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        },
+        "^workflowid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.workflow'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

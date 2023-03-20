@@ -1,0 +1,249 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/sdkmessageprocessingstep.json#",
+  "title": "Entity definition for SdkMessageProcessingStep",
+  "definitions": {
+    "SdkMessageProcessingStepPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "configuration": {
+          "description": "Step-specific configuration for the plug-in type. Passed to the plug-in constructor at run time.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the SDK message processing step.",
+          "type": "string"
+        },
+        "eventexpander": {
+          "description": "Configuration for sending pipeline events to the Event Expander service.",
+          "type": "string"
+        },
+        "filteringattributes": {
+          "description": "Comma-separated list of attributes. If at least one of these attributes is modified, the plug-in should execute.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "ishidden": {
+          "description": "Information that specifies whether this component should be hidden.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of SdkMessage processing step.",
+          "type": "string"
+        },
+        "rank": {
+          "description": "Processing order within the stage."
+        },
+        "sdkmessageprocessingstepid": {
+          "description": "Unique identifier of the SDK message processing step entity.",
+          "type": "string"
+        },
+        "SdkMessageProcessingStep_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sdkmessageprocessingstepid_sdkmessageprocessingstepimage": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessageprocessingstepimage'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "asyncautodelete": {
+          "description": "Indicates whether the asynchronous system job is automatically deleted on completion.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "canusereadonlyconnection": {
+          "description": "Identifies whether a SDK Message Processing Step type will be ReadOnly or Read Write. false - ReadWrite, true - ReadOnly ",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "mode": {
+          "description": "Run-time mode of execution, for example, synchronous or asynchronous.",
+          "anyOf": [
+            {
+              "enum": [
+                "Synchronous",
+                "Asynchronous"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "stage": {
+          "description": "Stage in the execution pipeline that the SDK message processing step is in.",
+          "anyOf": [
+            {
+              "enum": [
+                "Initial Pre-operation (For internal use only)",
+                "Pre-validation",
+                "Internal Pre-operation Before External Plugins (For internal use only)",
+                "Pre-operation",
+                "Internal Pre-operation After External Plugins (For internal use only)",
+                "Main Operation (For internal use only)",
+                "Internal Post-operation Before External Plugins (For internal use only)",
+                "Post-operation",
+                "Internal Post-operation After External Plugins (For internal use only)",
+                "Post-operation (Deprecated)",
+                "Final Post-operation (For internal use only)",
+                "Pre-Commit stage fired before transaction commit (For internal use only)",
+                "Post-Commit stage fired after transaction commit (For internal use only)"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the SDK message processing step.",
+          "anyOf": [
+            {
+              "enum": [
+                "Enabled",
+                "Disabled"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the SDK message processing step.",
+          "anyOf": [
+            {
+              "enum": [
+                "Enabled",
+                "Disabled"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "supporteddeployment": {
+          "description": "Deployment that the SDK message processing step should be executed on; server, client, or both.",
+          "anyOf": [
+            {
+              "enum": [
+                "Server Only",
+                "Microsoft Dynamics 365 Client for Outlook Only",
+                "Both"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "sdkmessageprocessingstepid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^eventhandler_plugintype(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.plugintype'",
+          "type": "string"
+        },
+        "^eventhandler_serviceendpoint(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceendpoint'",
+          "type": "string"
+        },
+        "^impersonatinguserid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^plugintypeid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.plugintype'",
+          "type": "string"
+        },
+        "^sdkmessagefilterid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessagefilter'",
+          "type": "string"
+        },
+        "^sdkmessageid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessage'",
+          "type": "string"
+        },
+        "^sdkmessageprocessingstepsecureconfigid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessageprocessingstepsecureconfig'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

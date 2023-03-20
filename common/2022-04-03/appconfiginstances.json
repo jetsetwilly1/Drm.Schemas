@@ -1,0 +1,77 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/appconfiginstance.json#",
+  "title": "Entity definition for AppConfigurationInstance",
+  "definitions": {
+    "AppConfigurationInstancePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "appconfigidunique": {
+          "description": "Enter the App Configuration unique identifier of AppConfig entity for which this customization belongs.",
+          "type": "string"
+        },
+        "appconfiginstanceid": {
+          "description": "System-Populated App Configuration instance identifier.",
+          "type": "string"
+        },
+        "appconfiginstanceidunique": {
+          "description": "System-populated App Configuration Instance unique identifier.",
+          "type": "string"
+        },
+        "componenttype": {
+          "description": "ComponentType",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Shows the version in which the App Configuration Instance is introduced.",
+          "type": "string"
+        },
+        "objectid": {
+          "description": "ObjectId",
+          "type": "string"
+        },
+        "value": {
+          "description": "Enter a value for the customization property that is valid as per the validator XML specified in the app configuration master record.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "appconfiginstanceid"
+      ],
+      "patternProperties": {
+        "^appconfiginstance_appconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appconfig'",
+          "type": "string"
+        },
+        "^appconfiginstance_appconfigmaster(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appconfigmaster'",
+          "type": "string"
+        },
+        "^appconfiginstance_createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^appconfiginstance_createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^appconfiginstance_modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^appconfiginstance_modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organization_appconfiginstance_appconfiginstance(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

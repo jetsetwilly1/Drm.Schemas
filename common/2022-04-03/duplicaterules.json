@@ -1,0 +1,151 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/duplicaterule.json#",
+  "title": "Entity definition for DuplicateDetectionRule",
+  "definitions": {
+    "DuplicateDetectionRulePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "baseentityname": {
+          "description": "Record type of the record being evaluated for potential duplicates.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the duplicate detection rule.",
+          "type": "string"
+        },
+        "duplicateruleid": {
+          "description": "Unique identifier of the duplicate detection rule.",
+          "type": "string"
+        },
+        "matchingentityname": {
+          "description": "Record type of the records being evaluated as potential duplicates.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the duplicate detection rule.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "DuplicateRule_Annotation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annotation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "DuplicateRule_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "DuplicateRule_DuplicateRuleConditions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterulecondition'",
+          "type": "array",
+          "minItems": 1
+        },
+        "DuplicateRule_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "excludeinactiverecords": {
+          "description": "Determines whether to flag inactive records as duplicates",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "iscasesensitive": {
+          "description": "Indicates if the operator is case-sensitive.",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the duplicate detection rule.",
+          "anyOf": [
+            {
+              "enum": [
+                "Unpublished",
+                "Publishing",
+                "Published"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "duplicateruleid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

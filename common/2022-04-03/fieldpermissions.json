@@ -1,0 +1,97 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/fieldpermission.json#",
+  "title": "Entity definition for FieldPermission",
+  "definitions": {
+    "FieldPermissionPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "attributelogicalname": {
+          "description": "Attribute Name.",
+          "type": "string"
+        },
+        "entityname": {
+          "description": "Entity name.",
+          "type": "string"
+        },
+        "fieldpermissionid": {
+          "description": "Unique identifier of the Field Permission.",
+          "type": "string"
+        },
+        "FieldPermission_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "cancreate": {
+          "description": "Can this Profile create the attribute",
+          "anyOf": [
+            {
+              "enum": [
+                "Not Allowed",
+                "Allowed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "canread": {
+          "description": "Can this Profile read the attribute",
+          "anyOf": [
+            {
+              "enum": [
+                "Not Allowed",
+                "Allowed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "canupdate": {
+          "description": "Can this Profile update the attribute",
+          "anyOf": [
+            {
+              "enum": [
+                "Not Allowed",
+                "Allowed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "fieldpermissionid"
+      ],
+      "patternProperties": {
+        "^fieldsecurityprofileid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fieldsecurityprofile'",
+          "type": "string"
+        },
+        "^solution_fieldpermission(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

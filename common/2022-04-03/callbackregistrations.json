@@ -1,0 +1,154 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/callbackregistration.json#",
+  "title": "Entity definition for CallbackRegistration",
+  "definitions": {
+    "CallbackRegistrationPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "callbackregistrationid": {
+          "description": "Unique identifier of the callback registration.",
+          "type": "string"
+        },
+        "entityname": {
+          "description": "Entity Name.",
+          "type": "string"
+        },
+        "filterexpression": {
+          "description": "condition represented with OData $filter syntax",
+          "type": "string"
+        },
+        "filteringattributes": {
+          "description": "Comma-separated list of attributes. If at least one of these attributes is modified, the callback url should be called.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of callback registration.",
+          "type": "string"
+        },
+        "postponeuntil": {
+          "description": "delay represented with OData expression",
+          "type": "string"
+        },
+        "sdkmessagename": {
+          "description": "Name of the SDK message the subscriber is interested in",
+          "type": "string"
+        },
+        "url": {
+          "description": "Full callback registration Url.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "message": {
+          "description": "Specifies the message type",
+          "anyOf": [
+            {
+              "enum": [
+                "Create",
+                "Delete",
+                "Update",
+                "Create or Update",
+                "Create or Delete",
+                "Update or Delete",
+                "Create or Update or Delete"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "runas": {
+          "description": "Specifies the user context under which the callback will run",
+          "anyOf": [
+            {
+              "enum": [
+                "Triggering User",
+                "Record Owner",
+                "Process Owner"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "scope": {
+          "description": "Specifies the Scope",
+          "anyOf": [
+            {
+              "enum": [
+                "User",
+                "BusinessUnit",
+                "ParentChildBusinessUnit",
+                "Organization"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "version": {
+          "description": "Specifies the Callback registration version type",
+          "anyOf": [
+            {
+              "enum": [
+                "V1",
+                "V2",
+                "V3"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "callbackregistrationid"
+      ],
+      "patternProperties": {
+        "^callbackregistration_createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^callbackregistration_createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^callbackregistration_modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^callbackregistration_modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

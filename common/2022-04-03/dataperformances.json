@@ -1,0 +1,29 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/dataperformance.json#",
+  "title": "Entity definition for DataPerformanceDashboard",
+  "definitions": {
+    "DataPerformanceDashboardPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "dataperformanceid": {
+          "description": "Unique identifier of the performance suggestion.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "dataperformanceid"
+      ],
+      "patternProperties": {
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

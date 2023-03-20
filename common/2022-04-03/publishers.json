@@ -1,0 +1,320 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/publisher.json#",
+  "title": "Entity definition for Publisher",
+  "definitions": {
+    "PublisherPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "address1_addressid": {
+          "description": "Unique identifier for address 1.",
+          "type": "string"
+        },
+        "address1_city": {
+          "description": "City name for address 1.",
+          "type": "string"
+        },
+        "address1_country": {
+          "description": "Country/region name for address 1.",
+          "type": "string"
+        },
+        "address1_county": {
+          "description": "County name for address 1.",
+          "type": "string"
+        },
+        "address1_fax": {
+          "description": "Fax number for address 1.",
+          "type": "string"
+        },
+        "address1_latitude": {
+          "description": "Latitude for address 1.",
+          "type": "number"
+        },
+        "address1_line1": {
+          "description": "First line for entering address 1 information.",
+          "type": "string"
+        },
+        "address1_line2": {
+          "description": "Second line for entering address 1 information.",
+          "type": "string"
+        },
+        "address1_line3": {
+          "description": "Third line for entering address 1 information.",
+          "type": "string"
+        },
+        "address1_longitude": {
+          "description": "Longitude for address 1.",
+          "type": "number"
+        },
+        "address1_name": {
+          "description": "Name to enter for address 1.",
+          "type": "string"
+        },
+        "address1_postalcode": {
+          "description": "ZIP Code or postal code for address 1.",
+          "type": "string"
+        },
+        "address1_postofficebox": {
+          "description": "Post office box number for address 1.",
+          "type": "string"
+        },
+        "address1_stateorprovince": {
+          "description": "State or province for address 1.",
+          "type": "string"
+        },
+        "address1_telephone1": {
+          "description": "First telephone number associated with address 1.",
+          "type": "string"
+        },
+        "address1_telephone2": {
+          "description": "Second telephone number associated with address 1.",
+          "type": "string"
+        },
+        "address1_telephone3": {
+          "description": "Third telephone number associated with address 1.",
+          "type": "string"
+        },
+        "address1_upszone": {
+          "description": "United Parcel Service (UPS) zone for address 1.",
+          "type": "string"
+        },
+        "address1_utcoffset": {
+          "description": "UTC offset for address 1. This is the difference between local time and standard Coordinated Universal Time."
+        },
+        "address2_addressid": {
+          "description": "Unique identifier for address 2.",
+          "type": "string"
+        },
+        "address2_city": {
+          "description": "City name for address 2.",
+          "type": "string"
+        },
+        "address2_country": {
+          "description": "Country/region name for address 2.",
+          "type": "string"
+        },
+        "address2_county": {
+          "description": "County name for address 2.",
+          "type": "string"
+        },
+        "address2_fax": {
+          "description": "Fax number for address 2.",
+          "type": "string"
+        },
+        "address2_latitude": {
+          "description": "Latitude for address 2.",
+          "type": "number"
+        },
+        "address2_line1": {
+          "description": "First line for entering address 2 information.",
+          "type": "string"
+        },
+        "address2_line2": {
+          "description": "Second line for entering address 2 information.",
+          "type": "string"
+        },
+        "address2_line3": {
+          "description": "Third line for entering address 2 information.",
+          "type": "string"
+        },
+        "address2_longitude": {
+          "description": "Longitude for address 2.",
+          "type": "number"
+        },
+        "address2_name": {
+          "description": "Name to enter for address 2.",
+          "type": "string"
+        },
+        "address2_postalcode": {
+          "description": "ZIP Code or postal code for address 2.",
+          "type": "string"
+        },
+        "address2_postofficebox": {
+          "description": "Post office box number for address 2.",
+          "type": "string"
+        },
+        "address2_stateorprovince": {
+          "description": "State or province for address 2.",
+          "type": "string"
+        },
+        "address2_telephone1": {
+          "description": "First telephone number associated with address 2.",
+          "type": "string"
+        },
+        "address2_telephone2": {
+          "description": "Second telephone number associated with address 2.",
+          "type": "string"
+        },
+        "address2_telephone3": {
+          "description": "Third telephone number associated with address 2.",
+          "type": "string"
+        },
+        "address2_upszone": {
+          "description": "United Parcel Service (UPS) zone for address 2.",
+          "type": "string"
+        },
+        "address2_utcoffset": {
+          "description": "UTC offset for address 2. This is the difference between local time and standard Coordinated Universal Time."
+        },
+        "customizationoptionvalueprefix": {
+          "description": "Default option value prefix used for newly created options for solutions associated with this publisher."
+        },
+        "customizationprefix": {
+          "description": "Prefix used for new entities, attributes, and entity relationships for solutions associated with this publisher.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the solution.",
+          "type": "string"
+        },
+        "emailaddress": {
+          "description": "Email address for the publisher.",
+          "type": "string"
+        },
+        "entityimage": {
+          "description": "Shows the default image for the record.",
+          "type": "string"
+        },
+        "friendlyname": {
+          "description": "User display name for this publisher.",
+          "type": "string"
+        },
+        "publisherid": {
+          "description": "Unique identifier of the publisher.",
+          "type": "string"
+        },
+        "supportingwebsiteurl": {
+          "description": "URL for the supporting website of this publisher.",
+          "type": "string"
+        },
+        "uniquename": {
+          "description": "The unique name of this publisher.",
+          "type": "string"
+        },
+        "publisher_appmodule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appmodule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Publisher_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Publisher_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Publisher_PublisherAddress": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.publisheraddress'",
+          "type": "array",
+          "minItems": 1
+        },
+        "publisher_solution": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Publisher_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "address1_addresstypecode": {
+          "description": "Type of address for address 1, such as billing, shipping, or primary address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address1_shippingmethodcode": {
+          "description": "Method of shipment for address 1.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address2_addresstypecode": {
+          "description": "Type of address for address 2. such as billing, shipping, or primary address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address2_shippingmethodcode": {
+          "description": "Method of shipment for address 2.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "publisherid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

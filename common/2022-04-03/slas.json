@@ -1,0 +1,577 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/sla.json#",
+  "title": "Entity definition for SLA",
+  "definitions": {
+    "SLAPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "applicablefrom": {
+          "description": "Select the field that specifies the date and time from which the SLA items will be calculated for the case record. For example, if you select the Case Created On field, SLA calculation will begin from the time the case is created. ",
+          "type": "string"
+        },
+        "changedattributelist": {
+          "description": "Type additional information to describe the SLA",
+          "type": "string"
+        },
+        "description": {
+          "description": "Type additional information to describe the SLA",
+          "type": "string"
+        },
+        "name": {
+          "description": "Type a descriptive name of the service level agreement (SLA).",
+          "type": "string"
+        },
+        "primaryentityotc": {
+          "description": "Shows the primary entity that the SLA has been created for."
+        },
+        "slaid": {
+          "description": "Unique identifier of the SLA.",
+          "type": "string"
+        },
+        "bulkoperation_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "bulkoperation_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "campaignactivity_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "campaignactivity_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "campaignresponse_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "campaignresponse_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "incidentresolution_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incidentresolution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "incidentresolution_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incidentresolution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_inmail_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_inmail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_inmail_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_inmail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_message_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_message'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_message_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_message'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_pointdrivepresentationviewed_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_pointdrivepresentationviewed_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_activitypointer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitypointer'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_appointment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_cases": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_email": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_fax": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fax'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_invoice": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.invoice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_lead": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_letter": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.letter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_opportunity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_phonecall": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonecall'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_quote": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_salesorder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_serviceappointment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceappointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_socialactivity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "manualsla_task": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.task'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_approval_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_approval'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_approval_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_approval'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_bookingalert_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_bookingalert_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_migrationtracker_LegacySLA_sla": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_migrationtracker'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_migrationtracker_ModernSLA_sla": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_migrationtracker'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_alert_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_alert_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_surveyinvite_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_surveyinvite_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_surveyresponse_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_surveyresponse_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "opportunityclose_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunityclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "opportunityclose_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunityclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "orderclose_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.orderclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "orderclose_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.orderclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "quoteclose_sla_slaid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quoteclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "quoteclose_sla_slainvokedid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quoteclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_activitypointer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitypointer'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_Annotation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annotation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_appointment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_cases": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_email": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_entitlement": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_entitlementtemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementtemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_fax": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fax'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_invoice": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.invoice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_lead": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_letter": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.letter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_opportunity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_phonecall": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonecall'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_quote": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_salesorder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_serviceappointment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceappointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_slaitem_slaId": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.slaitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_socialactivity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SLA_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sla_task": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.task'",
+          "type": "array",
+          "minItems": 1
+        },
+        "slabase_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "slabase_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "slabase_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "allowpauseresume": {
+          "description": "Select whether this SLA will allow pausing and resuming during the time calculation.",
+          "anyOf": [
+            {
+              "enum": [
+                "Allow",
+                "Do Not Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "applicablefrompicklist": {
+          "description": "Select the field that specifies the date and time from which the SLA items will be calculated. For example, if you select the Case Created On field, SLA calculation will begin from the time the case is created.",
+          "anyOf": [
+            {
+              "enum": [
+                "No",
+                "Yes"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isdefault": {
+          "description": "Tells whether this SLA is the default one.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "slatype": {
+          "description": "Select the type of service level agreement (SLA).",
+          "anyOf": [
+            {
+              "enum": [
+                "Standard",
+                "Enhanced"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "slaversion": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Version WC",
+                "Version UC"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Shows whether the Service Level Agreement (SLA) is active or inactive.",
+          "anyOf": [
+            {
+              "enum": [
+                "Draft",
+                "Active"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Select the status of the service level agreement (SLA).",
+          "anyOf": [
+            {
+              "enum": [
+                "Draft",
+                "Active"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "slaid"
+      ],
+      "patternProperties": {
+        "^businesshoursid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendar'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        },
+        "^workflowid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.workflow'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

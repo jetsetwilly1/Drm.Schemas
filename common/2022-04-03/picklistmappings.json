@@ -1,0 +1,91 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/picklistmapping.json#",
+  "title": "Entity definition for ListValueMapping",
+  "definitions": {
+    "ListValueMappingPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "introducedversion": {
+          "description": "Version in which the component is introduced.",
+          "type": "string"
+        },
+        "picklistmappingid": {
+          "description": "Unique identifier of the picklist mapping.",
+          "type": "string"
+        },
+        "sourcevalue": {
+          "description": "Source value to be replaced.",
+          "type": "string"
+        },
+        "targetvalue": {
+          "description": "Microsoft Dynamics 365 list value with which to replace the source value."
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "processcode": {
+          "description": "Information about whether the list value mapping needs to be processed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Process",
+                "Ignore",
+                "Internal",
+                "Unmapped"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the picklist mapping.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "picklistmappingid"
+      ],
+      "patternProperties": {
+        "^columnmappingid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.columnmapping'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

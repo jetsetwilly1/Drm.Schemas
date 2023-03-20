@@ -1,0 +1,54 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/sdkmessageprocessingstepsecureconfig.json#",
+  "title": "Entity definition for SdkMessageProcessingStepSecureConfiguration",
+  "definitions": {
+    "SdkMessageProcessingStepSecureConfigurationPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "sdkmessageprocessingstepsecureconfigid": {
+          "description": "Unique identifier of the SDK message processing step secure configuration.",
+          "type": "string"
+        },
+        "secureconfig": {
+          "description": "Secure step-specific configuration for the plug-in type that is passed to the plug-in's constructor at run time.",
+          "type": "string"
+        },
+        "sdkmessageprocessingstepsecureconfigid_sdkmessageprocessingstep": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessageprocessingstep'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "sdkmessageprocessingstepsecureconfigid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

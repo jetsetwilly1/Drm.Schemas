@@ -1,0 +1,112 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/lookupmapping.json#",
+  "title": "Entity definition for LookupMapping",
+  "definitions": {
+    "LookupMappingPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "introducedversion": {
+          "description": "Version in which the component is introduced.",
+          "type": "string"
+        },
+        "lookupattributename": {
+          "description": "Name of the field with which the lookup is associated.",
+          "type": "string"
+        },
+        "lookupentityname": {
+          "description": "Name of the entity with which the lookup is associated.",
+          "type": "string"
+        },
+        "lookupmappingid": {
+          "description": "Unique identifier of the lookup mapping.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "lookupsourcecode": {
+          "description": "Lookup source code for lookup mapping.",
+          "anyOf": [
+            {
+              "enum": [
+                "Source",
+                "System"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "processcode": {
+          "description": "Information about whether the lookup mapping has to be processed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Process",
+                "Ignore",
+                "Internal"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the lookup mapping.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "lookupmappingid"
+      ],
+      "patternProperties": {
+        "^columnmappingid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.columnmapping'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^transformationparametermappingid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transformationparametermapping'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

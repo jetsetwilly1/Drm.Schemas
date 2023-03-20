@@ -1,0 +1,4410 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/organization.json#",
+  "title": "Entity definition for Organization",
+  "definitions": {
+    "OrganizationPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "aciwebendpointurl": {
+          "description": "ACI Web Endpoint URL.",
+          "type": "string"
+        },
+        "amdesignator": {
+          "description": "AM designator to use throughout Microsoft Dynamics CRM.",
+          "type": "string"
+        },
+        "auditretentionperiod": {
+          "description": "Audit Retention Period settings stored in Organization Database."
+        },
+        "auditretentionperiodv2": {
+          "description": "Audit Retention Period settings stored in Organization Database."
+        },
+        "azureschedulerjobcollectionname": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "bingmapsapikey": {
+          "description": "Api Key to be used in requests to Bing Maps services.",
+          "type": "string"
+        },
+        "blockedattachments": {
+          "description": "Prevent upload or download of certain attachment types that are considered dangerous.",
+          "type": "string"
+        },
+        "bulkoperationprefix": {
+          "description": "Prefix used for bulk operation numbering.",
+          "type": "string"
+        },
+        "businesscardoptions": {
+          "description": "BusinessCardOptions",
+          "type": "string"
+        },
+        "businessclosurecalendarid": {
+          "description": "Unique identifier of the business closure calendar of organization.",
+          "type": "string"
+        },
+        "calendartype": {
+          "description": "Calendar type for the system. Set to Gregorian US by default."
+        },
+        "campaignprefix": {
+          "description": "Prefix used for campaign numbering.",
+          "type": "string"
+        },
+        "caseprefix": {
+          "description": "Prefix to use for all cases throughout Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "categoryprefix": {
+          "description": "Type the prefix to use for all categories in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "clientfeatureset": {
+          "description": "Client Features to be enabled as an XML BLOB.",
+          "type": "string"
+        },
+        "contentsecuritypolicyconfiguration": {
+          "description": "Policy configuration for CSP",
+          "type": "string"
+        },
+        "contractprefix": {
+          "description": "Prefix to use for all contracts throughout Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "currencydecimalprecision": {
+          "description": "Number of decimal places that can be used for currency."
+        },
+        "currencysymbol": {
+          "description": "Symbol used for currency throughout Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "dateformatcode": {
+          "description": "Information about how the date is displayed throughout Microsoft CRM."
+        },
+        "dateformatstring": {
+          "description": "String showing how the date is displayed throughout Microsoft CRM.",
+          "type": "string"
+        },
+        "dateseparator": {
+          "description": "Character used to separate the month, the day, and the year in dates throughout Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "decimalsymbol": {
+          "description": "Symbol used for decimal in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "defaultcountrycode": {
+          "description": "Text area to enter default country code.",
+          "type": "string"
+        },
+        "defaultcrmcustomname": {
+          "description": "Name of the default crm custom.",
+          "type": "string"
+        },
+        "defaultemailsettings": {
+          "description": "XML string containing the default email settings that are applied when a user or queue is created.",
+          "type": "string"
+        },
+        "defaultthemedata": {
+          "description": "Default theme data for the organization.",
+          "type": "string"
+        },
+        "delegatedadminuserid": {
+          "description": "Unique identifier of the delegated admin user for the organization.",
+          "type": "string"
+        },
+        "emailsendpollingperiod": {
+          "description": "Normal polling frequency used for sending email in Microsoft Office Outlook."
+        },
+        "entityimage": {
+          "description": "The default image for the entity.",
+          "type": "string"
+        },
+        "expirechangetrackingindays": {
+          "description": "Maximum number of days to keep change tracking deleted records"
+        },
+        "expiresubscriptionsindays": {
+          "description": "Maximum number of days before deleting inactive subscriptions."
+        },
+        "externalbaseurl": {
+          "description": "Specify the base URL to use to look for external document suggestions.",
+          "type": "string"
+        },
+        "externalpartycorrelationkeys": {
+          "description": "XML string containing the ExternalPartyEnabled entities correlation keys for association of existing External Party instance entities to newly created IsExternalPartyEnabled entities.For internal use only",
+          "type": "string"
+        },
+        "externalpartyentitysettings": {
+          "description": "XML string containing the ExternalPartyEnabled entities settings.",
+          "type": "string"
+        },
+        "featureset": {
+          "description": "Features to be enabled as an XML BLOB.",
+          "type": "string"
+        },
+        "fiscalcalendarstart": {
+          "description": "Start date for the fiscal period that is to be used throughout Microsoft CRM.",
+          "type": "string"
+        },
+        "fiscalperiodformat": {
+          "description": "Information that specifies how the name of the fiscal period is displayed throughout Microsoft CRM.",
+          "type": "string"
+        },
+        "fiscalperiodtype": {
+          "description": "Type of fiscal period used throughout Microsoft CRM."
+        },
+        "fiscalyeardisplaycode": {
+          "description": "Information that specifies whether the fiscal year should be displayed based on the start date or the end date of the fiscal year."
+        },
+        "fiscalyearformat": {
+          "description": "Information that specifies how the name of the fiscal year is displayed throughout Microsoft CRM.",
+          "type": "string"
+        },
+        "fiscalyearperiodconnect": {
+          "description": "Information that specifies how the names of the fiscal year and the fiscal period should be connected when displayed together.",
+          "type": "string"
+        },
+        "futureexpansionwindow": {
+          "description": "Specifies the maximum number of months in future for which the recurring activities can be created."
+        },
+        "globalhelpurl": {
+          "description": "URL for the web page global help.",
+          "type": "string"
+        },
+        "goalrollupexpirytime": {
+          "description": "Number of days after the goal's end date after which the rollup of the goal stops automatically."
+        },
+        "goalrollupfrequency": {
+          "description": "Number of hours between automatic rollup jobs ."
+        },
+        "hashdeltasubjectcount": {
+          "description": "Maximum difference allowed between subject keywords count of the email messaged to be correlated"
+        },
+        "hashfilterkeywords": {
+          "description": "Filter Subject Keywords",
+          "type": "string"
+        },
+        "hashmaxcount": {
+          "description": "Maximum number of subject keywords or recipients used for correlation"
+        },
+        "hashminaddresscount": {
+          "description": "Minimum number of recipients required to match for email messaged to be correlated"
+        },
+        "highcontrastthemedata": {
+          "description": "High contrast theme data for the organization.",
+          "type": "string"
+        },
+        "inactivitytimeoutinmins": {
+          "description": "Inactivity timeout in minutes"
+        },
+        "inactivitytimeoutreminderinmins": {
+          "description": "Inactivity timeout reminder in minutes"
+        },
+        "incomingemailexchangeemailretrievalbatchsize": {
+          "description": "Setting for the Async Service Mailbox Queue. Defines the retrieval batch size of exchange server."
+        },
+        "initialversion": {
+          "description": "Initial version of the organization.",
+          "type": "string"
+        },
+        "integrationuserid": {
+          "description": "Unique identifier of the integration user for the organization.",
+          "type": "string"
+        },
+        "invoiceprefix": {
+          "description": "Prefix to use for all invoice numbers throughout Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "ispdfgenerationenabled": {
+          "description": "Indicates whether PDF Generation feature has been enabled for the organization.",
+          "type": "string"
+        },
+        "kaprefix": {
+          "description": "Type the prefix to use for all knowledge articles in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "kbprefix": {
+          "description": "Prefix to use for all articles in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "kmsettings": {
+          "description": "XML string containing the Knowledge Management settings that are applied in Knowledge Management Wizard.",
+          "type": "string"
+        },
+        "languagecode": {
+          "description": "Preferred language for the organization."
+        },
+        "localeid": {
+          "description": "Unique identifier of the locale of the organization."
+        },
+        "longdateformatcode": {
+          "description": "Information that specifies how the Long Date format is displayed in Microsoft Dynamics 365."
+        },
+        "lookupcharactercountbeforeresolve": {
+          "description": "Minimum number of characters that should be entered in the lookup control before resolving for suggestions"
+        },
+        "lookupresolvedelayms": {
+          "description": "Minimum delay (in milliseconds) between consecutive inputs in a lookup control that will trigger a search for suggestions"
+        },
+        "mailboxintermittentissueminrange": {
+          "description": "Lower Threshold For Mailbox Intermittent Issue."
+        },
+        "mailboxpermanentissueminrange": {
+          "description": "Lower Threshold For Mailbox Permanent Issue."
+        },
+        "maxactionstepsinbpf": {
+          "description": "Maximum number of actionsteps allowed in a BPF"
+        },
+        "maxappointmentdurationdays": {
+          "description": "Maximum number of days an appointment can last."
+        },
+        "maxconditionsformobileofflinefilters": {
+          "description": "Maximum number of conditions allowed for mobile offline filters"
+        },
+        "maxdepthforhierarchicalsecuritymodel": {
+          "description": "Maximum depth for hierarchy security propagation."
+        },
+        "maxfolderbasedtrackingmappings": {
+          "description": "Maximum number of Folder Based Tracking mappings user can add"
+        },
+        "maximumactivebusinessprocessflowsallowedperentity": {
+          "description": "Maximum number of active business process flows allowed per entity"
+        },
+        "maximumdynamicpropertiesallowed": {
+          "description": "Restrict the maximum number of product properties for a product family/bundle"
+        },
+        "maximumentitieswithactivesla": {
+          "description": "Maximum number of active SLA allowed per entity in online"
+        },
+        "maximumslakpiperentitywithactivesla": {
+          "description": "Maximum number of SLA KPI per active SLA allowed for entity in online"
+        },
+        "maximumtrackingnumber": {
+          "description": "Maximum tracking number before recycling takes place."
+        },
+        "maxproductsinbundle": {
+          "description": "Restrict the maximum no of items in a bundle"
+        },
+        "maxrecordsforexporttoexcel": {
+          "description": "Maximum number of records that will be exported to a static Microsoft Office Excel worksheet when exporting from the grid."
+        },
+        "maxrecordsforlookupfilters": {
+          "description": "Maximum number of lookup and picklist records that can be selected by user for filtering."
+        },
+        "maxslaitemspersla": {
+          "description": ""
+        },
+        "maxuploadfilesize": {
+          "description": "Maximum allowed size of an attachment."
+        },
+        "microsoftflowenvironment": {
+          "description": "(Deprecated) Environment selected for Integration with Microsoft Flow",
+          "type": "string"
+        },
+        "minaddressbooksyncinterval": {
+          "description": "Normal polling frequency used for address book synchronization in Microsoft Office Outlook."
+        },
+        "minofflinesyncinterval": {
+          "description": "Normal polling frequency used for background offline synchronization in Microsoft Office Outlook."
+        },
+        "minoutlooksyncinterval": {
+          "description": "Minimum allowed time between scheduled Outlook synchronizations."
+        },
+        "mobileofflinesyncinterval": {
+          "description": "Sync interval for mobile offline."
+        },
+        "name": {
+          "description": "Name of the organization. The name is set when Microsoft CRM is installed and should not be changed.",
+          "type": "string"
+        },
+        "negativecurrencyformatcode": {
+          "description": "Information that specifies how negative currency numbers are displayed throughout Microsoft Dynamics 365."
+        },
+        "nexttrackingnumber": {
+          "description": "Next token to be placed on the subject line of an email message."
+        },
+        "numberformat": {
+          "description": "Specification of how numbers are displayed throughout Microsoft CRM.",
+          "type": "string"
+        },
+        "numbergroupformat": {
+          "description": "Specifies how numbers are grouped in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "numberseparator": {
+          "description": "Symbol used for number separation in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "officegraphdelveurl": {
+          "description": "The url to open the Delve for the organization.",
+          "type": "string"
+        },
+        "orderprefix": {
+          "description": "Prefix to use for all orders throughout Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "organizationid": {
+          "description": "Unique identifier of the organization.",
+          "type": "string"
+        },
+        "orgdborgsettings": {
+          "description": "Organization settings stored in Organization Database.",
+          "type": "string"
+        },
+        "pastexpansionwindow": {
+          "description": "Specifies the maximum number of months in past for which the recurring activities can be created."
+        },
+        "picture": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "pinpointlanguagecode": {
+          "description": ""
+        },
+        "pmdesignator": {
+          "description": "PM designator to use throughout Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "postmessagewhitelistdomains": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "pricingdecimalprecision": {
+          "description": "Number of decimal places that can be used for prices."
+        },
+        "privacystatementurl": {
+          "description": "Privacy Statement URL",
+          "type": "string"
+        },
+        "privilegeusergroupid": {
+          "description": "Unique identifier of the default privilege for users in the organization.",
+          "type": "string"
+        },
+        "privreportinggroupid": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "privreportinggroupname": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "qualifyleadadditionaloptions": {
+          "description": "Indicates whether prompt should be shown for new Qualify Lead Experience",
+          "type": "string"
+        },
+        "quoteprefix": {
+          "description": "Prefix to use for all quotes throughout Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "recurrencedefaultnumberofoccurrences": {
+          "description": "Specifies the default value for number of occurrences field in the recurrence dialog."
+        },
+        "recurrenceexpansionjobbatchinterval": {
+          "description": "Specifies the interval (in seconds) for pausing expansion job."
+        },
+        "recurrenceexpansionjobbatchsize": {
+          "description": "Specifies the value for number of instances created in on demand job in one shot."
+        },
+        "recurrenceexpansionsynchcreatemax": {
+          "description": "Specifies the maximum number of instances to be created synchronously after creating a recurring appointment."
+        },
+        "reportinggroupid": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "reportinggroupname": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "rierrorstatus": {
+          "description": "Error status of Relationship Insights provisioning."
+        },
+        "sampledataimportid": {
+          "description": "Unique identifier of the sample data import job.",
+          "type": "string"
+        },
+        "schemanameprefix": {
+          "description": "Prefix used for custom entities and attributes.",
+          "type": "string"
+        },
+        "sessiontimeoutinmins": {
+          "description": "Session timeout in minutes"
+        },
+        "sessiontimeoutreminderinmins": {
+          "description": "Session timeout reminder in minutes"
+        },
+        "signupoutlookdownloadfwlink": {
+          "description": "CRM for Outlook Download URL",
+          "type": "string"
+        },
+        "slapausestates": {
+          "description": "Contains the on hold case status values.",
+          "type": "string"
+        },
+        "socialinsightsinstance": {
+          "description": "Identifier for the Social Insights instance for the organization.",
+          "type": "string"
+        },
+        "sortid": {
+          "description": "For internal use only."
+        },
+        "sqlaccessgroupid": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "sqlaccessgroupname": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "supportuserid": {
+          "description": "Unique identifier of the support user for the organization.",
+          "type": "string"
+        },
+        "syncbulkoperationbatchsize": {
+          "description": "Number of records to update per operation in Sync Bulk Pause/Resume/Cancel"
+        },
+        "syncbulkoperationmaxlimit": {
+          "description": "Max total number of records to update in database for Sync Bulk Pause/Resume/Cancel"
+        },
+        "systemuserid": {
+          "description": "Unique identifier of the system user for the organization.",
+          "type": "string"
+        },
+        "tagmaxaggressivecycles": {
+          "description": "Maximum number of aggressive polling cycles executed for email auto-tagging when a new email is received."
+        },
+        "tagpollingperiod": {
+          "description": "Normal polling frequency used for email receive auto-tagging in outlook."
+        },
+        "telemetryinstrumentationkey": {
+          "description": "Instrumentation key for Application Insights used to log plugins telemetry.",
+          "type": "string"
+        },
+        "timeformatcode": {
+          "description": "Information that specifies how the time is displayed throughout Microsoft CRM."
+        },
+        "timeformatstring": {
+          "description": "Text for how time is displayed in Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "timeseparator": {
+          "description": "Text for how the time separator is displayed throughout Microsoft Dynamics 365.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "tokenexpiry": {
+          "description": "Duration used for token expiration."
+        },
+        "tokenkey": {
+          "description": "Token key.",
+          "type": "string"
+        },
+        "tracelogmaximumageindays": {
+          "description": "Tracelog record maximum age in days"
+        },
+        "trackingprefix": {
+          "description": "History list of tracking token prefixes.",
+          "type": "string"
+        },
+        "trackingtokenidbase": {
+          "description": "Base number used to provide separate tracking token identifiers to users belonging to different deployments."
+        },
+        "trackingtokeniddigits": {
+          "description": "Number of digits used to represent a tracking token identifier."
+        },
+        "uniquespecifierlength": {
+          "description": "Number of characters appended to invoice, quote, and order numbers."
+        },
+        "useraccessauditinginterval": {
+          "description": "The interval at which user access is checked for auditing."
+        },
+        "usergroupid": {
+          "description": "Unique identifier of the default group of users in the organization.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "webresourcehash": {
+          "description": "Hash value of web resources.",
+          "type": "string"
+        },
+        "weekstartdaycode": {
+          "description": "Designated first day of the week throughout Microsoft Dynamics 365."
+        },
+        "widgetproperties": {
+          "description": "For Internal use only.",
+          "type": "string"
+        },
+        "yammergroupid": {
+          "description": "Denotes the Yammer group ID"
+        },
+        "yammernetworkpermalink": {
+          "description": "Denotes the Yammer network permalink",
+          "type": "string"
+        },
+        "yearstartweekcode": {
+          "description": "Information that specifies how the first week of the year is specified in Microsoft Dynamics 365."
+        },
+        "customcontrol_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.customcontrol'",
+          "type": "array",
+          "minItems": 1
+        },
+        "customcontroldefaultconfig_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.customcontroldefaultconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "customcontrolresource_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.customcontrolresource'",
+          "type": "array",
+          "minItems": 1
+        },
+        "dynamicproperty_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.dynamicproperty'",
+          "type": "array",
+          "minItems": 1
+        },
+        "DynamicPropertyAssociation_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.dynamicpropertyassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "DynamicPropertyOptionSetItem_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.dynamicpropertyoptionsetitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entitlementchannel_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementchannel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entitlementtemplate_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementtemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entitlementtemplatechannel_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementtemplatechannel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "languagelocale_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.languagelocale'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_dataperformance_organizationid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.dataperformance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_documenttemplatebase_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.documenttemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_fieldsecurityprofile_organizationid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fieldsecurityprofile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_principalobjectattributeaccess_organizationid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "MobileOfflineProfile_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mobileofflineprofile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "MobileOfflineProfileItem_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mobileofflineprofileitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "MobileOfflineProfileItemAssociation_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mobileofflineprofileitemassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_aciviewmapper": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.aciviewmapper'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_apisettings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.apisettings'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_appconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_appconfiginstance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appconfiginstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_appconfigmaster": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appconfigmaster'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_appmodule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appmodule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Organization_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Organization_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_business_unit_news_articles": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunitnewsarticle'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_business_units": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_calendars": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendar'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_competitors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.competitor'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_complexcontrols": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.complexcontrol'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_connection_roles": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connectionrole'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_constraint_based_groups": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.constraintbasedgroup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_contract_templates": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contracttemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_custom_displaystrings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.displaystring'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_discount_types": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.discounttype'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_emailserverprofile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.emailserverprofile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_entityanalyticsconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entityanalyticsconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_equipment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.equipment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_expiredprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.expiredprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_importjob": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importjob'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_kb_article_templates": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.kbarticletemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_kb_articles": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.kbarticle'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_KnowledgeBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgebaserecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_leadtoopportunitysalesprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_mailbox": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailbox'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Organization_MailboxTrackingFolder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_mbs_pluginprofile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mbs_pluginprofile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_metric": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.metric'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_ms_newsitem": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ms_newsitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_ms_satori": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ms_satori'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_3dmodel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_3dmodel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_adaptivecardconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_adaptivecardconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_assetsuggestionssetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_assetsuggestionssetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_batchjob": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_batchjob'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_bpf_665e73aa18c247d886bfc50499c73b82": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_bpf_989e9b1857e24af18787d5143b67523b": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_caseenrichment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_caseenrichment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_casesuggestionrequestpayload": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_casesuggestionrequestpayload'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_casetopic": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_casetopic'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_casetopic_incident": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_casetopic_incident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_casetopicsetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_casetopicsetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_casetopicsummary": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_casetopicsummary'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_contractlineinvoiceschedule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_dataanalyticsreport_csrmanager": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_csrmanager'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_dataanalyticsreport_fs": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fs'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_dataanalyticsreport_fspredictrs": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictrs'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_dataanalyticsreport_fspredictwhd": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictwhd'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_dataanalyticsreport_ksinsights": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_ksinsights'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_databaseversion": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_databaseversion'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_datainsightsandanalyticsfeature": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_datainsightsandanalyticsfeature'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_dimensionfieldname": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dimensionfieldname'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_expensecategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_expensecategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_federatedarticleincident": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_federatedarticleincident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_fieldservicepricelistitem": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_fieldservicesystemjob": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldservicesystemjob'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_geolocationsettings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geolocationsettings'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_geolocationtracking": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geolocationtracking'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_helppage": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_helppage'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_invoicefrequency": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicefrequency'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_invoicefrequencydetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicefrequencydetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_iottocaseprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iottocaseprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_kbenrichment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_kbenrichment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_mlresultcache": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_mlresultcache'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_organizationalunit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_organizationalunit'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_paneconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paneconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_panetabconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_panetabconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_panetoolconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_panetoolconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_postconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_postconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_postruleconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_postruleconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_predictworkhourdurationsetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_predictworkhourdurationsetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_processnotes": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_processnotes'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_productinventory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productinventory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_projectparameter": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectparameter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_projectparameterpricelist": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectparameterpricelist'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_projectteammembersignup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectteammembersignup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_quotelineinvoiceschedule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelineinvoiceschedule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_resourcecategorymarkuppricelevel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcecategorymarkuppricelevel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_resourcecategorypricelevel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_schedulingparameter": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_schedulingparameter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_sikeyvalueconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_sikeyvalueconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_smartassistconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_smartassistconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_solutionhealthruleset": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_solutionhealthruleset'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_suggestioninteraction": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_suggestioninteraction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_suggestionrequestpayload": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_suggestionrequestpayload'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_suggestionsmodelsummary": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_suggestionsmodelsummary'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_suggestionssetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_suggestionssetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_transactioncategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_transactioncategoryclassification": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategoryclassification'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_transactioncategoryhierarchyelement": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategoryhierarchyelement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_transactioncategorypricelevel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_transactiontype": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactiontype'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_uniquenumber": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_uniquenumber'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_upgraderun": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_upgraderun'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_upgradestep": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_upgradestep'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_upgradeversion": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_upgradeversion'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_wallsavedquery": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_wallsavedquery'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_msdyn_workorderdetailsgenerationqueue": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderdetailsgenerationqueue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_navigationsetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.navigationsetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_newprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.newprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_officegraphdocument": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.officegraphdocument'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_opportunitysalesprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunitysalesprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_organizationdatasyncsubscription": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organizationdatasyncsubscription'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_organizationdatasyncsubscriptionentity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organizationdatasyncsubscriptionentity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_package": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.package'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_phonetocaseprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonetocaseprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_pluginassembly": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.pluginassembly'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_plugintype": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.plugintype'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_plugintypestatistic": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.plugintypestatistic'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_position": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.position'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_post": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.post'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_PostComment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.postcomment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_postlike": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.postlike'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_price_levels": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.pricelevel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_ProductAssociation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.productassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_products": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.product'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_ProductSubstitute": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.productsubstitute'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_publisher": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.publisher'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_queueitems": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.queueitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_queues": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.queue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_recommendeddocument": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recommendeddocument'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_relationshipattribute": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.relationshipattribute'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_resource_groups": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.resourcegroup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_resource_specs": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.resourcespec'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_resources": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.resource'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_roles": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.role'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_sales_literature": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesliterature'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_saved_queries": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.savedquery'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_saved_query_visualizations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.savedqueryvisualization'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_sdkmessage": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessage'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_sdkmessagefilter": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessagefilter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_sdkmessageprocessingstep": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessageprocessingstep'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_sdkmessageprocessingstepimage": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessageprocessingstepimage'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_sdkmessageprocessingstepsecureconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessageprocessingstepsecureconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_serviceendpoint": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceendpoint'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_services": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.service'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_similarityrule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.similarityrule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_sitemap": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sitemap'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_sites": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.site'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_solution": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_solutioncomponentattributeconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponentattributeconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_solutioncomponentconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponentconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_solutioncomponentrelationshipconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponentrelationshipconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_subjects": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.subject'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Organization_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_system_users": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_systemforms": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemform'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_teammobileofflineprofilemembership": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.teammobileofflineprofilemembership'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_teams": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_territories": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.territory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_theme": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.theme'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_tracelog": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.tracelog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_transactioncurrencies": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_translationprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.translationprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_uof_schedules": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.uomschedule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_UserMapping": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.usermapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_usermobileofflineprofilemembership": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.usermobileofflineprofilemembership'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organization_webwizard": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.webwizard'",
+          "type": "array",
+          "minItems": 1
+        },
+        "webresource_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.webresource'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "allowaddressbooksyncs": {
+          "description": "Indicates whether background address book synchronization in Microsoft Office Outlook is allowed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowautoresponsecreation": {
+          "description": "Indicates whether automatic response creation is allowed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowautounsubscribe": {
+          "description": "Indicates whether automatic unsubscribe is allowed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowautounsubscribeacknowledgement": {
+          "description": "Indicates whether automatic unsubscribe acknowledgement email is allowed to send.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowclientmessagebarad": {
+          "description": "Indicates whether Outlook Client message bar advertisement is allowed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowentityonlyaudit": {
+          "description": "Indicates whether auditing of changes to entity is allowed when no attributes have changed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowlegacyclientexperience": {
+          "description": "Enable access to legacy web client UI",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowlegacydialogsembedding": {
+          "description": "Enable embedding of certain legacy dialogs in Unified Interface browser client",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowmarketingemailexecution": {
+          "description": "Indicates whether marketing emails execution is allowed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowofflinescheduledsyncs": {
+          "description": "Indicates whether background offline synchronization in Microsoft Office Outlook is allowed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowoutlookscheduledsyncs": {
+          "description": "Indicates whether scheduled synchronizations to Outlook are allowed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowunresolvedpartiesonemailsend": {
+          "description": "Indicates whether users are allowed to send email to unresolved parties (parties must still have an email address).",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowuserformmodepreference": {
+          "description": "Indicates whether individuals can select their form mode preference in their personal options.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowusersseeappdownloadmessage": {
+          "description": "Indicates whether the showing tablet application notification bars in a browser is allowed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "allowwebexcelexport": {
+          "description": "Indicates whether Web-based export of grids to Microsoft Office Excel is allowed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "appdesignerexperienceenabled": {
+          "description": "Indicates whether the appDesignerExperience is enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "appointmentricheditorexperience": {
+          "description": "Information on whether rich editing experience for Appointment is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "autoapplydefaultoncasecreate": {
+          "description": "Select whether to auto apply the default customer entitlement on case creation.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "autoapplydefaultoncaseupdate": {
+          "description": "Select whether to auto apply the default customer entitlement on case update.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "autoapplysla": {
+          "description": "Indicates whether to Auto-apply SLA on case record update after SLA was manually applied.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "bounddashboarddefaultcardexpanded": {
+          "description": "Display cards in expanded state for interactive dashboard",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "canoptoutnewsearchexperience": {
+          "description": "Indicates whether the organization can opt out of the new Relevance search experience (released in Oct 2020)",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "cascadestatusupdate": {
+          "description": "Flag to cascade Update on incident.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "cortanaproactiveexperienceenabled": {
+          "description": "Indicates whether the feature CortanaProactiveExperience Flow processes should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "createproductswithoutparentinactivestate": {
+          "description": "Enable Initial state of newly created products to be Active instead of Draft",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "currencydisplayoption": {
+          "description": "Indicates whether to display money fields with currency code or currency symbol.",
+          "anyOf": [
+            {
+              "enum": [
+                "Currency symbol",
+                "Currency code"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "currencyformatcode": {
+          "description": "Information about how currency symbols are placed throughout Microsoft Dynamics CRM.",
+          "anyOf": [
+            {
+              "enum": [
+                "$123",
+                "123$",
+                "$ 123",
+                "123 $"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "defaultrecurrenceendrangetype": {
+          "description": "Type of default recurrence end range date.",
+          "anyOf": [
+            {
+              "enum": [
+                "No End Date",
+                "Number of Occurrences",
+                "End By Date"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "disablesocialcare": {
+          "description": "Indicates whether Social Care is disabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "discountcalculationmethod": {
+          "description": "Discount calculation method for the QOOI product.",
+          "anyOf": [
+            {
+              "enum": [
+                "Line item",
+                "Per unit"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "displaynavigationtour": {
+          "description": "Indicates whether or not navigation tour is displayed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "emailconnectionchannel": {
+          "description": "Select if you want to use the Email Router or server-side synchronization for email processing.",
+          "anyOf": [
+            {
+              "enum": [
+                "Server-Side Synchronization",
+                "Microsoft Dynamics 365 Email Router"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "emailcorrelationenabled": {
+          "description": "Flag to turn email correlation on or off.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enablebingmapsintegration": {
+          "description": "Enable Integration with Bing Maps",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enableimmersiveskypeintegration": {
+          "description": "Enable Integration with Immersive Skype",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enablelivepersonacarduci": {
+          "description": "Indicates whether the user has enabled or disabled Live Persona Card feature in UCI.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enablelivepersoncardintegrationinoffice": {
+          "description": "Indicates whether the user has enabled or disabled LivePersonCardIntegration in Office.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enablelpauthoring": {
+          "description": "Select to enable learning path auhtoring.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enablemicrosoftflowintegration": {
+          "description": "Enable Integration with Microsoft Flow",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enablepricingoncreate": {
+          "description": "Enable pricing calculations on a Create call.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enablesmartmatching": {
+          "description": "Use Smart Matching.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enableunifiedinterfaceshellrefresh": {
+          "description": "Enable site map and commanding update",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "enforcereadonlyplugins": {
+          "description": "Organization setting to enforce read only plugins.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "fiscalperiodformatperiod": {
+          "description": "Format in which the fiscal period will be displayed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Quarter {0}",
+                "Q{0}",
+                "P{0}",
+                "Month {0}",
+                "M{0}",
+                "Semester {0}",
+                "Month Name"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "fiscalyearformatprefix": {
+          "description": "Prefix for the display of the fiscal year.",
+          "anyOf": [
+            {
+              "enum": [
+                "FY",
+                ""
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "fiscalyearformatsuffix": {
+          "description": "Suffix for the display of the fiscal year.",
+          "anyOf": [
+            {
+              "enum": [
+                "FY",
+                " Fiscal Year",
+                ""
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "fiscalyearformatyear": {
+          "description": "Format for the year.",
+          "anyOf": [
+            {
+              "enum": [
+                "YYYY",
+                "YY",
+                "GGYY"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "fullnameconventioncode": {
+          "description": "Order in which names are to be displayed throughout Microsoft CRM.",
+          "anyOf": [
+            {
+              "enum": [
+                "Last Name, First Name",
+                "First Name",
+                "Last Name, First Name, Middle Initial",
+                "First Name, Middle Initial, Last Name",
+                "Last Name, First Name, Middle Name",
+                "First Name, Middle Name, Last Name",
+                "Last Name, space, First Name",
+                "Last Name, no space, First Name"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "generatealertsforerrors": {
+          "description": "Indicates whether alerts will be generated for errors.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "generatealertsforinformation": {
+          "description": "Indicates whether alerts will be generated for information.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "generatealertsforwarnings": {
+          "description": "Indicates whether alerts will be generated for warnings.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "getstartedpanecontentenabled": {
+          "description": "Indicates whether Get Started content is enabled for this organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "globalappendurlparametersenabled": {
+          "description": "Indicates whether the append URL parameters is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "globalhelpurlenabled": {
+          "description": "Indicates whether the customizable global help is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "grantaccesstonetworkservice": {
+          "description": "For internal use only.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ignoreinternalemail": {
+          "description": "Indicates whether incoming email sent by internal Microsoft Dynamics 365 users or queues should be tracked.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "improvesearchloggingenabled": {
+          "description": "Indicates whether an organization has consented to sharing search query data to help improve search results",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "inactivitytimeoutenabled": {
+          "description": "Information that specifies whether Inactivity timeout is enabled",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isactioncardenabled": {
+          "description": "Indicates whether the feature Action Card should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isactionsupportfeatureenabled": {
+          "description": "Information that specifies whether Action Support Feature is enabled",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isactivityanalysisenabled": {
+          "description": "Indicates whether the feature Relationship Analytics should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isappmode": {
+          "description": "Indicates whether loading of Microsoft Dynamics 365 in a browser window that does not have address, tool, and menu bars is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isappointmentattachmentsyncenabled": {
+          "description": "Enable or disable attachments sync for outlook and exchange.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isassignedtaskssyncenabled": {
+          "description": "Enable or disable assigned tasks sync for outlook and exchange.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isauditenabled": {
+          "description": "Enable or disable auditing of changes.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isautodatacaptureenabled": {
+          "description": "Indicates whether the feature Auto Capture should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isautodatacapturev2enabled": {
+          "description": "Indicates whether the V2 feature of Auto Capture should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isautosaveenabled": {
+          "description": "Information on whether auto save is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isbpfentitycustomizationfeatureenabled": {
+          "description": "Information that specifies whether BPF Entity Customization Feature is enabled",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isconflictdetectionenabledformobileclient": {
+          "description": "Information that specifies whether conflict detection for mobile client is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "iscontactmailingaddresssyncenabled": {
+          "description": "Enable or disable mailing address sync for outlook and exchange.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "iscontentsecuritypolicyenabled": {
+          "description": "Indicates whether Content Security Policy has been enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "iscontextualemailenabled": {
+          "description": "Indicates whether Contextual email experience is enabled on this organization",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "iscontextualhelpenabled": {
+          "description": "Select to enable Contextual Help in UCI.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "iscustomcontrolsincanvasappsenabled": {
+          "description": "Indicates whether Custom Controls in canvas PowerApps feature has been enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isdefaultcountrycodecheckenabled": {
+          "description": "Enable or disable country code selection.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isdelegateaccessenabled": {
+          "description": "Enable Delegation Access content",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isdelveactionhubintegrationenabled": {
+          "description": "Indicates whether the feature Action Hub should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isduplicatedetectionenabled": {
+          "description": "Indicates whether duplicate detection of records is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isduplicatedetectionenabledforimport": {
+          "description": "Indicates whether duplicate detection of records during import is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isduplicatedetectionenabledforofflinesync": {
+          "description": "Indicates whether duplicate detection of records during offline synchronization is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isduplicatedetectionenabledforonlinecreateupdate": {
+          "description": "Indicates whether duplicate detection during online create or update is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isemailmonitoringallowed": {
+          "description": "Allow tracking recipient activity on sent emails.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isemailserverprofilecontentfilteringenabled": {
+          "description": "Enable Email Server Profile content filtering",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isembedteamscollabenabled": {
+          "description": "Indicates whether embed Teams collaboration has been enabled for the organization",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isenabledforallroles": {
+          "description": "Indicates whether appmodule is enabled for all roles",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isexternalfilestorageenabled": {
+          "description": "Indicates whether the organization's files are being stored in Azure.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isexternalsearchindexenabled": {
+          "description": "Select whether data can be synchronized with an external search index.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isfiscalperiodmonthbased": {
+          "description": "Indicates whether the fiscal period is displayed as the month number.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isfolderautocreatedonsp": {
+          "description": "Select whether folders should be automatically created on SharePoint.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isfolderbasedtrackingenabled": {
+          "description": "Enable or disable folder based tracking for Server Side Sync.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isfulltextsearchenabled": {
+          "description": "Indicates whether full-text search for Quick Find entities should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isgeospatialazuremapsintegrationenabled": {
+          "description": "Indicates whether geospatial capabilities leveraging Azure Maps are enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ishierarchicalsecuritymodelenabled": {
+          "description": "Enable Hierarchical Security Model",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isluisenabledford365bot": {
+          "description": "Give Consent to use LUIS in Dynamics 365 Bot",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismailboxforcedunlockingenabled": {
+          "description": "Enable or disable forced unlocking for Server Side Sync mailboxes.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismailboxinactivebackoffenabled": {
+          "description": "Enable or disable mailbox keep alive for Server Side Sync.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismanualsalesforecastingenabled": {
+          "description": "Indicates whether Manual Sales Forecasting feature has been enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismobileclientondemandsyncenabled": {
+          "description": "Information that specifies whether mobile client on demand sync is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismobileofflineenabled": {
+          "description": "Indicates whether the feature MobileOffline should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismodeldrivenappsinmsteamsenabled": {
+          "description": "Indicates whether Model Apps can be embedded within Microsoft Teams. This is a tenant admin controlled preview/experimental feature.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismsteamscollaborationenabled": {
+          "description": "Indicates whether Microsoft Teams Collaboration feature has been enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismsteamsenabled": {
+          "description": "Indicates whether Microsoft Teams integration has been enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismsteamssettingchangedbyuser": {
+          "description": "Indicates whether the user has enabled or disabled Microsoft Teams integration.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismsteamsusersyncenabled": {
+          "description": "Indicates whether Microsoft Teams User Sync feature has been enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isnewaddproductexperienceenabled": {
+          "description": "Indicates whether new add product experience is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isnotesanalysisenabled": {
+          "description": "Indicates whether the feature Notes Analysis should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isofficegraphenabled": {
+          "description": "Indicates whether the feature OfficeGraph should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isonedriveenabled": {
+          "description": "Indicates whether the feature One Drive should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ispaienabled": {
+          "description": "Indicates whether PAI feature has been enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isplaybookenabled": {
+          "description": "Indicates whether playbook feature has been enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ispresenceenabled": {
+          "description": "Information on whether IM presence is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ispreviewenabledforactioncard": {
+          "description": "Indicates whether the Preview feature for Action Card should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ispreviewforautocaptureenabled": {
+          "description": "Indicates whether the feature Auto Capture should be enabled for the organization at Preview Settings.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ispreviewforemailmonitoringallowed": {
+          "description": "Is Preview For Email Monitoring Allowed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ispricelistmandatory": {
+          "description": "Indicates whether PriceList is mandatory for adding existing products to sales entities.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isquickcreateenabledforopportunityclose": {
+          "description": "Select whether to use the standard Out-of-box Opportunity Close experience or opt to for a customized experience.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isreadauditenabled": {
+          "description": "Enable or disable auditing of read operations.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isrelationshipinsightsenabled": {
+          "description": "Indicates whether the feature Relationship Insights should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isresourcebookingexchangesyncenabled": {
+          "description": "Indicates if the synchronization of user resource booking with Exchange is enabled at organization level.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isrichtextnotesenabled": {
+          "description": "Indicates whether rich text editor for notes experience is enabled on this organization",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "issalesassistantenabled": {
+          "description": "Indicates whether Sales Assistant mobile app has been enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "issalesmobilepreviewenabled": {
+          "description": "Indicates whether Sales Mobile Preview has been enabled for the organization",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "issopintegrationenabled": {
+          "description": "Enable sales order processing integration.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "istextwrapenabled": {
+          "description": "Information on whether text wrap is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isuseraccessauditenabled": {
+          "description": "Enable or disable auditing of user access.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "iswriteinproductsallowed": {
+          "description": "Indicates whether Write-in Products can be added to Opportunity/Quote/Order/Invoice or not.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "negativeformatcode": {
+          "description": "Information that specifies how negative numbers are displayed throughout Microsoft CRM.",
+          "anyOf": [
+            {
+              "enum": [
+                "Brackets",
+                "Dash",
+                "Dash plus Space",
+                "Trailing Dash",
+                "Space plus Trailing Dash"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "newsearchexperienceenabled": {
+          "description": "Indicates whether an organization has enabled the new Relevance search experience (released in Oct 2020) for the organization",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "notifymailboxownerofemailserverlevelalerts": {
+          "description": "Indicates whether mailbox owners will be notified of email server profile level alerts.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "officeappsautodeploymentenabled": {
+          "description": "Indicates whether the Office Apps auto deployment is enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "oobpricecalculationenabled": {
+          "description": "Enable OOB pricing calculation logic for Opportunity, Quote, Order and Invoice entities.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "orginsightsenabled": {
+          "description": "Select whether to turn on OrgInsights for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "paipreviewscenarioenabled": {
+          "description": "Indicates whether Preview feature has been enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "plugintracelogsetting": {
+          "description": "Plug-in Trace Log Setting for the Organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Off",
+                "Exception",
+                "All"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "powerbifeatureenabled": {
+          "description": "Indicates whether the Power BI feature should be enabled for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Enable",
+                "Disable"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "productrecommendationsenabled": {
+          "description": "Select whether to turn on product recommendations for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "quickfindrecordlimitenabled": {
+          "description": "Indicates whether a quick find record limit should be enabled for this organization (allows for faster Quick Find queries but prevents overly broad searches).",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "rendersecureiframeforemail": {
+          "description": "Flag to render the body of email in the Web form in an IFRAME with the security='restricted' attribute set. This is additional security but can cause a credentials prompt.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "reportscripterrors": {
+          "description": "Picklist for selecting the organization preference for reporting scripting errors.",
+          "anyOf": [
+            {
+              "enum": [
+                "No preference for sending an error report to Microsoft about Microsoft Dynamics 365",
+                "Ask me for permission to send an error report to Microsoft",
+                "Automatically send an error report to Microsoft without asking me for permission",
+                "Never send an error report to Microsoft about Microsoft Dynamics 365"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "requireapprovalforqueueemail": {
+          "description": "Indicates whether Send As Other User privilege is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "requireapprovalforuseremail": {
+          "description": "Indicates whether Send As Other User privilege is enabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "resolvesimilarunresolvedemailaddress": {
+          "description": "Apply same email address to all unresolved matches when you manually resolve it for one",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "restrictstatusupdate": {
+          "description": "Flag to restrict Update on incident.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "schedulingengine": {
+          "description": "Scheduling engine for Appointments and Service Activities",
+          "anyOf": [
+            {
+              "enum": [
+                "Legacy Scheduling Engine",
+                "Universal Resource Scheduling"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "sendbulkemailinuci": {
+          "description": "Indicates whether Send Bulk Email in UCI is enabled for the org.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "servestaticresourcesfromazurecdn": {
+          "description": "Serve Static Content From CDN",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "sessiontimeoutenabled": {
+          "description": "Information that specifies whether session timeout is enabled",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "sharepointdeploymenttype": {
+          "description": "Indicates which SharePoint deployment type is configured for Server to Server. (Online or On-Premises)",
+          "anyOf": [
+            {
+              "enum": [
+                "Online",
+                "On-Premises"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "sharetopreviousowneronassign": {
+          "description": "Information that specifies whether to share to previous owner on assign.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "showkbarticledeprecationnotification": {
+          "description": "Select whether to display a KB article deprecation notification to the user.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "showweeknumber": {
+          "description": "Information that specifies whether to display the week number in calendar displays throughout Microsoft CRM.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "socialinsightsenabled": {
+          "description": "Flag for whether the organization is using Social Insights.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "socialinsightstermsaccepted": {
+          "description": "Flag for whether the organization has accepted the Social Insights terms of use.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "sqmenabled": {
+          "description": "Setting for SQM data collection, 0 no, 1 yes enabled",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "suppresssla": {
+          "description": "Indicates whether SLA is suppressed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "syncoptinselection": {
+          "description": "Indicates the selection to use the dynamics 365 azure sync framework or server side sync.",
+          "anyOf": [
+            {
+              "enum": [
+                "Enable",
+                "Disable"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "syncoptinselectionstatus": {
+          "description": "Indicates the status of the opt-in or opt-out operation for dynamics 365 azure sync.",
+          "anyOf": [
+            {
+              "enum": [
+                "Processing",
+                "Passed",
+                "Failed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "taskbasedflowenabled": {
+          "description": "Select whether to turn on task flows for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "textanalyticsenabled": {
+          "description": "Select whether to turn on text analytics for the organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "unresolveemailaddressifmultiplematch": {
+          "description": "Indicates whether email address should be unresolved if multiple matches are found",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "useinbuiltrulefordefaultpricelistselection": {
+          "description": "Flag indicates whether to Use Inbuilt Rule For DefaultPricelist.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "uselegacyrendering": {
+          "description": "Select whether to use legacy form rendering.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "usepositionhierarchy": {
+          "description": "Use position hierarchy",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "usequickfindviewforgridsearch": {
+          "description": "Indicates whether searching in a grid should use the Quick Find view for the entity.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "usereadform": {
+          "description": "Indicates whether the read-optimized form should be enabled for this organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "useskypeprotocol": {
+          "description": "Indicates default protocol selected for organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "yammeroauthaccesstokenexpired": {
+          "description": "Denotes whether the OAuth access token for Yammer network has expired",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "yammerpostmethod": {
+          "description": "Internal Use Only",
+          "anyOf": [
+            {
+              "enum": [
+                "Public",
+                "Private"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "organizationid"
+      ],
+      "patternProperties": {
+        "^acknowledgementtemplateid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.template'",
+          "type": "string"
+        },
+        "^basecurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        },
+        "^businessclosurecalendarid_calendar(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendar'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^defaultemailserverprofileid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.emailserverprofile'",
+          "type": "string"
+        },
+        "^defaultmobileofflineprofileid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mobileofflineprofile'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

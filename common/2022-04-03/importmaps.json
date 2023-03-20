@@ -1,0 +1,235 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/importmap.json#",
+  "title": "Entity definition for DataMap",
+  "definitions": {
+    "DataMapPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "description": "Type additional information to describe the data map, such as the intended use or data source.",
+          "type": "string"
+        },
+        "importmapid": {
+          "description": "Unique identifier of the data map.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the component is introduced.",
+          "type": "string"
+        },
+        "mapcustomizations": {
+          "description": "Customizations XML",
+          "type": "string"
+        },
+        "name": {
+          "description": "Type a descriptive name for the data map.",
+          "type": "string"
+        },
+        "source": {
+          "description": "Type the name of the migration source that this data map is used for.",
+          "type": "string"
+        },
+        "sourceuseridentifierforsourcecrmuserlink": {
+          "description": "Source user value for source Microsoft Dynamics 365 user link.",
+          "type": "string"
+        },
+        "sourceuseridentifierforsourcedatasourceuserlink": {
+          "description": "Column in the source file that uniquely identifies a user.",
+          "type": "string"
+        },
+        "targetuseridentifierforsourcecrmuserlink": {
+          "description": "Microsoft Dynamics 365 user.",
+          "type": "string"
+        },
+        "ColumnMapping_ImportMap": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.columnmapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ImportEntityMapping_ImportMap": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importentitymapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ImportMap_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ImportMap_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ImportMap_ImportFile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importfile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ImportMap_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "OwnerMapping_ImportMap": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ownermapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransformationMapping_ImportMap": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transformationmapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "entitiesperfile": {
+          "description": "Choose whether a data file can contain data for one or more record types.",
+          "anyOf": [
+            {
+              "enum": [
+                "Single Entity Per File",
+                "Multiple Entities Per File"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "importmaptype": {
+          "description": "Select the type of data map to distinguish out-of-the-box data maps from custom maps.",
+          "anyOf": [
+            {
+              "enum": [
+                "Standard",
+                "Out of Box",
+                "In Process"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "iswizardcreated": {
+          "description": "Information about whether this data map was created by the Data Migration Manager.",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "sourcetype": {
+          "description": "Select the migration source type that this data map is used for.",
+          "anyOf": [
+            {
+              "enum": [
+                "Map For SalesForce.com Full Data Export",
+                "Map For SalesForce.com Report Export",
+                "Map For SalesForce.com Contact and Account Report Export",
+                "Microsoft Office Outlook 2010 with Business Contact Manager",
+                "Generic Map for Contact and Account"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Shows whether the data map is active or inactive. Inactive data maps are read-only and can't be edited.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Select the data map's status.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "importmapid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

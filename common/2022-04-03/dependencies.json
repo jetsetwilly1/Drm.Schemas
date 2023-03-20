@@ -1,0 +1,23 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/dependency.json#",
+  "title": "Entity definition for Dependency",
+  "definitions": {
+    "DependencyPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "dependencyid": {
+          "description": "Unique identifier of a dependency.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "dependencyid"
+      ]
+    }
+  }
+}

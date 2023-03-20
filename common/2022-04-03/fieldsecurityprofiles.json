@@ -1,0 +1,77 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/fieldsecurityprofile.json#",
+  "title": "Entity definition for FieldSecurityProfile",
+  "definitions": {
+    "FieldSecurityProfilePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "description": "Description of the Profile",
+          "type": "string"
+        },
+        "fieldsecurityprofileid": {
+          "description": "Unique identifier of the profile.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the profile.",
+          "type": "string"
+        },
+        "FieldSecurityProfile_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_fieldpermission_fieldsecurityprofileid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fieldpermission'",
+          "type": "array",
+          "minItems": 1
+        },
+        "systemuserprofiles_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "array",
+          "minItems": 1
+        },
+        "teamprofiles_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "fieldsecurityprofileid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^solution_fieldsecurityprofile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

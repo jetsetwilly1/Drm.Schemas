@@ -1,0 +1,182 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/webresource.json#",
+  "title": "Entity definition for WebResource",
+  "definitions": {
+    "WebResourcePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "canbedeleted": {
+          "description": "Information that specifies whether this component can be deleted.",
+          "type": "string"
+        },
+        "content": {
+          "description": "Bytes of the web resource, in Base64 format.",
+          "type": "string"
+        },
+        "content_binary": {
+          "description": "Bytes of the web resource, in Base64 format.",
+          "type": "string"
+        },
+        "contentjson": {
+          "description": "Json representation of the content of the resource.",
+          "type": "string"
+        },
+        "dependencyxml": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the web resource.",
+          "type": "string"
+        },
+        "displayname": {
+          "description": "Display name of the web resource.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "ishidden": {
+          "description": "Information that specifies whether this component should be hidden.",
+          "type": "string"
+        },
+        "languagecode": {
+          "description": "Language of the web resource."
+        },
+        "name": {
+          "description": "Name of the web resource.",
+          "type": "string"
+        },
+        "silverlightversion": {
+          "description": "Silverlight runtime version number required by a silverlight web resource.",
+          "type": "string"
+        },
+        "webresourceid": {
+          "description": "Unique identifier of the web resource.",
+          "type": "string"
+        },
+        "lk_theme_logoid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.theme'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solution_configuration_webresource": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "webresource_FileAttachments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fileattachment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "webresource_savedqueryvisualizations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.savedqueryvisualization'",
+          "type": "array",
+          "minItems": 1
+        },
+        "webresource_userqueryvisualizations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.userqueryvisualization'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isavailableformobileoffline": {
+          "description": "Information that specifies whether this web resource is available for mobile client in offline mode.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isenabledformobileclient": {
+          "description": "Information that specifies whether this web resource is enabled for mobile client.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "webresourcetype": {
+          "description": "Drop-down list for selecting the type of the web resource.",
+          "anyOf": [
+            {
+              "enum": [
+                "Webpage (HTML)",
+                "Style Sheet (CSS)",
+                "Script (JScript)",
+                "Data (XML)",
+                "PNG format",
+                "JPG format",
+                "GIF format",
+                "Silverlight (XAP)",
+                "Style Sheet (XSL)",
+                "ICO format",
+                "Vector format (SVG)",
+                "String (RESX)"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "webresourceid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

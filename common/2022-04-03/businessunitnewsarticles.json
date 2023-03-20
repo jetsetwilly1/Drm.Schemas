@@ -1,0 +1,128 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/businessunitnewsarticle.json#",
+  "title": "Entity definition for Announcement",
+  "definitions": {
+    "AnnouncementPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "activeon": {
+          "description": "Date and time for the announcement to become active.",
+          "type": "string"
+        },
+        "activeuntil": {
+          "description": "Date and time of the last day the announcement is active.",
+          "type": "string"
+        },
+        "articletitle": {
+          "description": "Title of the announcement.",
+          "type": "string"
+        },
+        "articleurl": {
+          "description": "URL for the Website on which the announcement is located.",
+          "type": "string"
+        },
+        "businessunitnewsarticleid": {
+          "description": "Unique identifier of the announcement.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "newsarticle": {
+          "description": "Text for the announcement.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "BusinessUnitNewsArticle_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnitNewsArticle_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnitNewsArticle_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "articletypecode": {
+          "description": "Type of announcement.",
+          "anyOf": [
+            {
+              "enum": [
+                "All Users",
+                "Sales Users",
+                "Service Users"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "showonhomepage": {
+          "description": "Information about whether to show the announcement on the Website home page.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "businessunitnewsarticleid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

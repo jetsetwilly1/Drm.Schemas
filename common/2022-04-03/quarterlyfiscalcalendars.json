@@ -1,0 +1,85 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/quarterlyfiscalcalendar.json#",
+  "title": "Entity definition for QuarterlyFiscalCalendar",
+  "definitions": {
+    "QuarterlyFiscalCalendarPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "effectiveon": {
+          "description": "Date and time when the quarterly fiscal calendar sales quota takes effect.",
+          "type": "string"
+        },
+        "quarter1": {
+          "description": "Sales quota for the first quarter in the fiscal year.",
+          "type": "number"
+        },
+        "quarter2": {
+          "description": "Sales quota for the second quarter in the fiscal year.",
+          "type": "number"
+        },
+        "quarter3": {
+          "description": "Sales quota for the third quarter in the fiscal year.",
+          "type": "number"
+        },
+        "quarter4": {
+          "description": "Sales quota for the fourth quarter in the fiscal year.",
+          "type": "number"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "userfiscalcalendarid": {
+          "description": "Unique identifier of the quarterly fiscal calendar.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "QuarterlyFiscalCalendar_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "QuarterlyFiscalCalendar_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "userfiscalcalendarid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^salespersonid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/feedback.json#",
+  "title": "Entity definition for Feedback",
+  "definitions": {
+    "FeedbackPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comments": {
+          "description": "Type the feedback comments.",
+          "type": "string"
+        },
+        "feedbackid": {
+          "description": "FeedbackId",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "maxrating": {
+          "description": "Enter the maximum rating value."
+        },
+        "minrating": {
+          "description": "Enter the minimum rating value."
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "rating": {
+          "description": "Specifies how helpful the related record was."
+        },
+        "title": {
+          "description": "Type a title for the feedback.",
+          "type": "string"
+        },
+        "feedback_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "feedback_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "feedback_feedback": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.feedback'",
+          "type": "array",
+          "minItems": 1
+        },
+        "feedback_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Feedback_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "source": {
+          "description": "Shows where the feedback was submitted from.",
+          "anyOf": [
+            {
+              "enum": [
+                "Internal",
+                "Portal"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Shows whether the feedback is open, rejected or closed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Open",
+                "Closed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Select the feedback's status.",
+          "anyOf": [
+            {
+              "enum": [
+                "Proposed",
+                "Accepted",
+                "Closed",
+                "Rejected"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "feedbackid"
+      ],
+      "patternProperties": {
+        "^closedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ContactId(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^CreatedByContact(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^CreatedOnBehalfByContact(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "string"
+        },
+        "^FeedbackId(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.feedback'",
+          "type": "string"
+        },
+        "^KnowledgeArticleId(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgearticle'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ModifiedOnBehalfBy(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^msdyn_ContextObjectId_incident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "string"
+        },
+        "^msdyn_ContextObjectId_knowledgearticle(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgearticle'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^regardingobjectid_msfp_alert(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "string"
+        },
+        "^regardingobjectid_msfp_surveyinvite(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "string"
+        },
+        "^regardingobjectid_msfp_surveyresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

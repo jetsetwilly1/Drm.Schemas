@@ -1,0 +1,2405 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/businessunit.json#",
+  "title": "Entity definition for BusinessUnit",
+  "definitions": {
+    "BusinessUnitPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "address1_addressid": {
+          "description": "Unique identifier for address 1.",
+          "type": "string"
+        },
+        "address1_city": {
+          "description": "City name for address 1.",
+          "type": "string"
+        },
+        "address1_country": {
+          "description": "Country/region name for address 1.",
+          "type": "string"
+        },
+        "address1_county": {
+          "description": "County name for address 1.",
+          "type": "string"
+        },
+        "address1_fax": {
+          "description": "Fax number for address 1.",
+          "type": "string"
+        },
+        "address1_latitude": {
+          "description": "Latitude for address 1.",
+          "type": "number"
+        },
+        "address1_line1": {
+          "description": "First line for entering address 1 information.",
+          "type": "string"
+        },
+        "address1_line2": {
+          "description": "Second line for entering address 1 information.",
+          "type": "string"
+        },
+        "address1_line3": {
+          "description": "Third line for entering address 1 information.",
+          "type": "string"
+        },
+        "address1_longitude": {
+          "description": "Longitude for address 1.",
+          "type": "number"
+        },
+        "address1_name": {
+          "description": "Name to enter for address 1.",
+          "type": "string"
+        },
+        "address1_postalcode": {
+          "description": "ZIP Code or postal code for address 1.",
+          "type": "string"
+        },
+        "address1_postofficebox": {
+          "description": "Post office box number for address 1.",
+          "type": "string"
+        },
+        "address1_stateorprovince": {
+          "description": "State or province for address 1.",
+          "type": "string"
+        },
+        "address1_telephone1": {
+          "description": "First telephone number associated with address 1.",
+          "type": "string"
+        },
+        "address1_telephone2": {
+          "description": "Second telephone number associated with address 1.",
+          "type": "string"
+        },
+        "address1_telephone3": {
+          "description": "Third telephone number associated with address 1.",
+          "type": "string"
+        },
+        "address1_upszone": {
+          "description": "United Parcel Service (UPS) zone for address 1.",
+          "type": "string"
+        },
+        "address1_utcoffset": {
+          "description": "UTC offset for address 1. This is the difference between local time and standard Coordinated Universal Time."
+        },
+        "address2_addressid": {
+          "description": "Unique identifier for address 2.",
+          "type": "string"
+        },
+        "address2_city": {
+          "description": "City name for address 2.",
+          "type": "string"
+        },
+        "address2_country": {
+          "description": "Country/region name for address 2.",
+          "type": "string"
+        },
+        "address2_county": {
+          "description": "County name for address 2.",
+          "type": "string"
+        },
+        "address2_fax": {
+          "description": "Fax number for address 2.",
+          "type": "string"
+        },
+        "address2_latitude": {
+          "description": "Latitude for address 2.",
+          "type": "number"
+        },
+        "address2_line1": {
+          "description": "First line for entering address 2 information.",
+          "type": "string"
+        },
+        "address2_line2": {
+          "description": "Second line for entering address 2 information.",
+          "type": "string"
+        },
+        "address2_line3": {
+          "description": "Third line for entering address 2 information.",
+          "type": "string"
+        },
+        "address2_longitude": {
+          "description": "Longitude for address 2.",
+          "type": "number"
+        },
+        "address2_name": {
+          "description": "Name to enter for address 2.",
+          "type": "string"
+        },
+        "address2_postalcode": {
+          "description": "ZIP Code or postal code for address 2.",
+          "type": "string"
+        },
+        "address2_postofficebox": {
+          "description": "Post office box number for address 2.",
+          "type": "string"
+        },
+        "address2_stateorprovince": {
+          "description": "State or province for address 2.",
+          "type": "string"
+        },
+        "address2_telephone1": {
+          "description": "First telephone number associated with address 2.",
+          "type": "string"
+        },
+        "address2_telephone2": {
+          "description": "Second telephone number associated with address 2.",
+          "type": "string"
+        },
+        "address2_telephone3": {
+          "description": "Third telephone number associated with address 2.",
+          "type": "string"
+        },
+        "address2_upszone": {
+          "description": "United Parcel Service (UPS) zone for address 2.",
+          "type": "string"
+        },
+        "address2_utcoffset": {
+          "description": "UTC offset for address 2. This is the difference between local time and standard Coordinated Universal Time."
+        },
+        "businessunitid": {
+          "description": "Unique identifier of the business unit.",
+          "type": "string"
+        },
+        "costcenter": {
+          "description": "Name of the business unit cost center.",
+          "type": "string"
+        },
+        "creditlimit": {
+          "description": "Credit limit for the business unit.",
+          "type": "number"
+        },
+        "description": {
+          "description": "Description of the business unit.",
+          "type": "string"
+        },
+        "divisionname": {
+          "description": "Name of the division to which the business unit belongs.",
+          "type": "string"
+        },
+        "emailaddress": {
+          "description": "Email address for the business unit.",
+          "type": "string"
+        },
+        "fileasname": {
+          "description": "Alternative name under which the business unit can be filed.",
+          "type": "string"
+        },
+        "ftpsiteurl": {
+          "description": "FTP site URL for the business unit.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "inheritancemask": {
+          "description": "Inheritance mask for the business unit."
+        },
+        "name": {
+          "description": "Name of the business unit.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "picture": {
+          "description": "Picture or diagram of the business unit.",
+          "type": "string"
+        },
+        "stockexchange": {
+          "description": "Stock exchange on which the business is listed.",
+          "type": "string"
+        },
+        "tickersymbol": {
+          "description": "Stock exchange ticker symbol for the business unit.",
+          "type": "string"
+        },
+        "utcoffset": {
+          "description": "UTC offset for the business unit. This is the difference between local time and standard Coordinated Universal Time."
+        },
+        "websiteurl": {
+          "description": "Website URL for the business unit.",
+          "type": "string"
+        },
+        "BulkDeleteOperation_BusinessUnit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeleteoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_actioncards": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.actioncard'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_activitypointer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitypointer'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_adminsettingsentity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.adminsettingsentity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_annotations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annotation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_appointment_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_asyncoperation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_bookableresource": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresource'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_bookableresourcebooking": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcebooking'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_bookableresourcebookingheader": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcebookingheader'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_bookableresourcecategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_bookableresourcecategoryassn": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecategoryassn'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_bookableresourcecharacteristic": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecharacteristic'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_bookableresourcegroup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcegroup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_bookingstatus": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookingstatus'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_BulkOperation_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_calendars": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendar'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_campaignactivity_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_campaignresponse_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_category": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.category'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_characteristic": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.characteristic'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_connections": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_connector": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connector'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_constraint_based_groups": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.constraintbasedgroup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_dynamicproperyinstance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.dynamicpropertyinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_email_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_emailserverprofile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.emailserverprofile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_entitlement": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_entitlemententityallocationtypemapping": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlemententityallocationtypemapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_environmentvariabledefinition": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.environmentvariabledefinition'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_environmentvariablevalue": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.environmentvariablevalue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_equipment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.equipment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_exchangesyncidmapping": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.exchangesyncidmapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_exportsolutionupload": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.exportsolutionupload'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_fax_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fax'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_feedback": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.feedback'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_flowsession": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.flowsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_goal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_goalrollupquery": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_incident_resolution_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incidentresolution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_incidents": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_invoices": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.invoice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_knowledgearticle": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgearticle'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_leads": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_letter_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.letter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_list": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.list'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_listoperation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.listoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_mailbox": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailbox'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_mailmergetemplates": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailmergetemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_accountpricelist": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_accountpricelist'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_actioncardregarding": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actioncardregarding'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_actioncardrolesetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actioncardrolesetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_actual": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actual'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_agreement": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_agreementbookingdate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingdate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_agreementbookingincident": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingincident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_agreementbookingproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_agreementbookingservice": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingservice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_agreementbookingservicetask": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_agreementbookingsetup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_agreementinvoicedate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_agreementinvoiceproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_agreementinvoicesetup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_agreementsubstatus": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementsubstatus'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aibdataset": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdataset'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aibdatasetfile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdatasetfile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aibdatasetrecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdatasetrecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aibdatasetscontainer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdatasetscontainer'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aibfile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibfile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aibfileattacheddata": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibfileattacheddata'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aiconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aifptrainingdocument": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aifptrainingdocument'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aimodel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aimodel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aiodimage": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodimage'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aiodlabel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodlabel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aiodtrainingboundingbox": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodtrainingboundingbox'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aiodtrainingimage": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodtrainingimage'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_aitemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aitemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_analysiscomponent": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysiscomponent'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_analysisjob": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysisjob'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_analysisresult": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysisresult'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_analysisresultdetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysisresultdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_analyticsadminsettings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analyticsadminsettings'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_analyticsforcs": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analyticsforcs'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_appconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_appconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_applicationextension": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_applicationextension'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_applicationtabtemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_applicationtabtemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_assetcategorytemplateassociation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_assetcategorytemplateassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_assettemplateassociation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_assettemplateassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_autocapturerule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_autocapturerule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_autocapturesettings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_autocapturesettings'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_bookableresourceassociation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookableresourceassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_bookingalertstatus": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalertstatus'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_bookingchange": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingchange'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_bookingjournal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingjournal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_bookingrule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingrule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_bookingsetupmetadata": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingsetupmetadata'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_bookingtimestamp": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingtimestamp'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_businessclosure": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_businessclosure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_callablecontext": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_callablecontext'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_channelprovider": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_channelprovider'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_characteristicreqforteammember": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_clientextension": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_clientextension'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_configuration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_configuration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_connector": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_connector'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_contactpricelist": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contactpricelist'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_contractlinedetailperformance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractlinedetailperformance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_contractlinescheduleofvalue": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_contractperformance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractperformance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_customerasset": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerasset'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_customerassetattachment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerassetattachment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_customerassetcategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerassetcategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_dataanalyticsreport": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_dataexport": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataexport'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_dataflow": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataflow'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_delegation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_delegation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_dimension": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dimension'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_entitlementapplication": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_entitlementapplication'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_entityconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_entityconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_entityrankingrule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_entityrankingrule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_estimate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_estimateline": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimateline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_expense": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_expense'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_expensereceipt": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_expensereceipt'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_fact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_federatedarticle": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_federatedarticle'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_fieldcomputation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldcomputation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_fieldservicesetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldservicesetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_fieldserviceslaconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldserviceslaconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_findworkevent": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_findworkevent'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_flowcardtype": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_flowcardtype'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_forecastconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_forecastdefinition": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastdefinition'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_forecastinstance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_forecastrecurrence": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastrecurrence'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_functionallocation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_functionallocation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_geofence": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geofence'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_geofenceevent": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geofenceevent'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_geofencingsettings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geofencingsettings'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_icebreakersconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_icebreakersconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_incidenttype": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttype'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_incidenttype_requirementgroup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttype_requirementgroup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_incidenttypecharacteristic": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_incidenttypeproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_incidenttyperecommendationresult": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationresult'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_incidenttyperecommendationrunhistory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationrunhistory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_incidenttypeservice": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeservice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_incidenttypeservicetask": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeservicetask'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_incidenttypessetup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypessetup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_inspection": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_inspectionattachment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspectionattachment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_inspectiondefinition": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspectiondefinition'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_inspectionresponse": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspectionresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_integrationjob": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_integrationjob'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_integrationjobdetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_integrationjobdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_inventoryadjustment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryadjustment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_inventoryadjustmentproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_inventoryjournal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryjournal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_inventorytransfer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventorytransfer'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_invoicelinetransaction": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotalert": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotalert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotdevice": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotdevicecategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicecategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotdevicecommand": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicecommand'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotdevicecommanddefinition": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicecommanddefinition'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotdevicedatahistory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicedatahistory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotdeviceproperty": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdeviceproperty'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotdeviceregistrationhistory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotdevicevisualizationconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicevisualizationconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotfieldmapping": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotfieldmapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotpropertydefinition": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotpropertydefinition'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotprovider": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotprovider'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotproviderinstance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotproviderinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_iotsettings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotsettings'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_journal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_journalline": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journalline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_kmfederatedsearchconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_kmfederatedsearchconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_knowledgearticleimage": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgearticleimage'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_knowledgearticletemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_knowledgeinteractioninsight": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgeinteractioninsight'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_knowledgesearchinsight": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgesearchinsight'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_macrosession": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_macrosession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_migrationtracker": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_migrationtracker'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_msteamssetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_msteamssetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_notesanalysisconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_notesanalysisconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_notificationfield": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_notificationfield'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_notificationtemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_notificationtemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_opportunitylineresourcecategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_opportunitylinetransaction": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_opportunitylinetransactioncategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactioncategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_opportunitylinetransactionclassificatio": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactionclassificatio'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_opportunitypricelist": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitypricelist'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_orderinvoicingdate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingdate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_orderinvoicingproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_orderinvoicingsetup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_orderinvoicingsetupdate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetupdate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_orderlineresourcecategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlineresourcecategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_orderlinetransaction": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_orderlinetransactioncategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransactioncategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_orderlinetransactionclassification": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransactionclassification'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_orderpricelist": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderpricelist'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_orginsightsuserdashboarddefinition": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_payment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_payment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_paymentdetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paymentdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_paymentmethod": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paymentmethod'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_paymentterm": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paymentterm'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_playbookactivity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_playbookactivityattribute": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookactivityattribute'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_playbookcategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookcategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_playbookinstance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_playbooktemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbooktemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_postalbum": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_postalbum'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_postalcode": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_postalcode'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_priority": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_priority'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_problematicasset": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_problematicasset'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_problematicassetfeedback": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_problematicassetfeedback'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_productivityactioninputparameter": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityactioninputparameter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_productivityactionoutputparameter": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityactionoutputparameter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_productivityagentscript": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityagentscript'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_productivityagentscriptstep": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityagentscriptstep'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_productivitymacroactiontemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivitymacroactiontemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_productivitymacroconnector": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivitymacroconnector'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_productivitymacrosolutionconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivitymacrosolutionconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_productivityparameterdefinition": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityparameterdefinition'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_project": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_project'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_projectapproval": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectapproval'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_projectpricelist": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectpricelist'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_projecttask": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttask'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_projecttaskdependency": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttaskdependency'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_projecttaskstatususer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttaskstatususer'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_projectteam": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectteam'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_projecttransactioncategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttransactioncategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_property": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_property'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_propertyassetassociation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_propertyassetassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_propertylog": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_propertylog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_propertytemplateassociation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_propertytemplateassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_purchaseorder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_purchaseorderbill": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderbill'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_purchaseorderproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_purchaseorderreceipt": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_purchaseorderreceiptproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_purchaseordersubstatus": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotebookingincident": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingincident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotebookingproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotebookingservice": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingservice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotebookingservicetask": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotebookingsetup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingsetup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quoteinvoicingproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quoteinvoicingsetup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quoteinvoicingsetup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotelineanalyticsbreakdown": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelineanalyticsbreakdown'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotelineresourcecategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelineresourcecategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotelinescheduleofvalue": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinescheduleofvalue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotelinetransaction": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotelinetransactioncategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransactioncategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotelinetransactionclassification": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransactionclassification'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_quotepricelist": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotepricelist'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_relationshipinsightsunifiedconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_relationshipinsightsunifiedconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_requirementcharacteristic": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_requirementdependency": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementdependency'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_requirementgroup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementgroup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_requirementorganizationunit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_requirementrelationship": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementrelationship'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_requirementresourcecategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_requirementresourcepreference": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_requirementstatus": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementstatus'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_resourceassignment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourceassignment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_resourceassignmentdetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourceassignmentdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_resourcepaytype": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcepaytype'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_resourcerequest": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcerequest'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_resourcerequirement": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcerequirement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_resourcerequirementdetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcerequirementdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_resourceterritory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourceterritory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_richtextfile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_richtextfile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_rma": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rma'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_rmaproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmaproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_rmareceipt": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmareceipt'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_rmareceiptproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_rmasubstatus": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmasubstatus'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_rolecompetencyrequirement": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rolecompetencyrequirement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_roleutilization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_roleutilization'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_rtv": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtv'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_rtvproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtvproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_rtvsubstatus": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtvsubstatus'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_salesinsightssettings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_salesinsightssettings'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_scheduleboardsetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_schedulingfeatureflag": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_schedulingfeatureflag'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_serviceconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_serviceconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_servicetasktype": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_servicetasktype'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_sessiontemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_sessiontemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_shipvia": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_shipvia'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_siconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_siconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_slakpi": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_slakpi'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_solutionhealthrule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_solutionhealthrule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_solutionhealthruleargument": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_solutionhealthruleargument'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_systemuserschedulersetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_taxcode": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_taxcode'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_taxcodedetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_taxcodedetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_templateforproperties": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_templateforproperties'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_templateparameter": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_templateparameter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_timeentry": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timeentry'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_timeentrysetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timeentrysetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_timegroup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timegroup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_timegroupdetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timegroupdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_timeoffcalendar": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timeoffcalendar'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_timeoffrequest": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timeoffrequest'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_transactionconnection": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactionconnection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_transactionorigin": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactionorigin'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_untrackedappointment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_untrackedappointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_userworkhistory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_userworkhistory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_wallsavedqueryusersettings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_wallsavedqueryusersettings'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_warehouse": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_warehouse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_workhourtemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workhourtemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_workorder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_workordercharacteristic": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workordercharacteristic'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_workorderincident": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderincident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_workorderproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_workorderresourcerestriction": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_workorderservice": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderservice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_workorderservicetask": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderservicetask'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_workordersubstatus": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workordersubstatus'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdyn_workordertype": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workordertype'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msdynce_botcontent": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdynce_botcontent'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msfp_alertrule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alertrule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msfp_emailtemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_emailtemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msfp_fileresponse": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_fileresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msfp_localizedemailtemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_localizedemailtemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msfp_project": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_project'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msfp_question": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_question'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msfp_questionresponse": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_questionresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msfp_satisfactionmetric": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_satisfactionmetric'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msfp_survey": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_survey'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msfp_surveyreminder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyreminder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_msfp_unsubscribedrecipient": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_unsubscribedrecipient'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_new_interactionforemail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.interactionforemail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_opportunities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_opportunity_close_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunityclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_order_close_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.orderclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_orders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_parent_business_unit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_personaldocumenttemplates": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.personaldocumenttemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_phone_call_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonecall'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_postfollows": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.postfollow'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_PostRegarding": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.postregarding'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_processstageparameter": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processstageparameter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_queues": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.queue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_queues2": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.queue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_quote_close_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quoteclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_quotes": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_ratingmodel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ratingmodel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_ratingvalue": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ratingvalue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_recurrencerule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recurrencerule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_recurringappointmentmaster_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recurringappointmentmaster'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_reports": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.report'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_resource_groups": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.resourcegroup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_resource_specs": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.resourcespec'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_resources": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.resource'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_revokeinheritedaccessrecordstracker": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_roles": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.role'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_sales_linkedin_profileassociations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sales_linkedin_profileassociations'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_service_appointments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceappointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_service_contracts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contract'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_sharepointdocumentlocation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointdocumentlocation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_sharepointsites": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointsite'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_slabase": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sla'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_slakpiinstance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.slakpiinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_socialactivity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_socialprofiles": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialprofile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_stagesolutionupload": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.stagesolutionupload'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_system_users": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_task_activities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.task'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_teams": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_templates": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.template'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_user_settings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.usersettings'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_userform": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.userform'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_userquery": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.userquery'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_userqueryvisualizations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.userqueryvisualization'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_workflow": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.workflow'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_workflowbinary": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.workflowbinary'",
+          "type": "array",
+          "minItems": 1
+        },
+        "business_unit_workflowlogs": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.workflowlog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "businessunit_callbackregistration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.callbackregistration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_Campaigns": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaign'",
+          "type": "array",
+          "minItems": 1
+        },
+        "businessunit_canvasapp": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.canvasapp'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_DuplicateRules": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_ImportData": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importdata'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_ImportFiles": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importfile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_ImportLogs": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importlog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_ImportMaps": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importmap'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_Imports": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.import'",
+          "type": "array",
+          "minItems": 1
+        },
+        "businessunit_mailboxtrackingfolder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "businessunit_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_SyncError": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BusinessUnit_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_inmail_businessunit_owningbusinessunit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_inmail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_message_businessunit_owningbusinessunit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_message'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_pointdrivepresentationviewed_businessunit_owningbusinessunit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed'",
+          "type": "array",
+          "minItems": 1
+        },
+        "mbs_businessunit_mbs_pluginprofile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mbs_pluginprofile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_approval_businessunit_owningbusinessunit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_approval'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_bookingalert_businessunit_owningbusinessunit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_alert_businessunit_owningbusinessunit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_surveyinvite_businessunit_owningbusinessunit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_surveyresponse_businessunit_owningbusinessunit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Owning_businessunit_processsessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "address1_addresstypecode": {
+          "description": "Type of address for address 1, such as billing, shipping, or primary address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address1_shippingmethodcode": {
+          "description": "Method of shipment for address 1.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address2_addresstypecode": {
+          "description": "Type of address for address 2, such as billing, shipping, or primary address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address2_shippingmethodcode": {
+          "description": "Method of shipment for address 2.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isdisabled": {
+          "description": "Information about whether the business unit is enabled or disabled.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "workflowsuspended": {
+          "description": "Information about whether workflow or sales process rules have been suspended.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "businessunitid"
+      ],
+      "patternProperties": {
+        "^calendarid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendar'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^msdyn_warehouse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_warehouse'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^parentbusinessunitid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

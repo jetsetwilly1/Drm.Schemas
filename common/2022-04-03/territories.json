@@ -1,0 +1,187 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/territory.json#",
+  "title": "Entity definition for Territory",
+  "definitions": {
+    "TerritoryPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "description": "Description of the territory.",
+          "type": "string"
+        },
+        "entityimage": {
+          "description": "The default image for the entity.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "name": {
+          "description": "Name of the territory.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "territoryid": {
+          "description": "Unique identifier of the territory.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "msdyn_territory_account_ServiceTerritory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_territory_msdyn_actual_ServiceTerritory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actual'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_territory_msdyn_agreement_ServiceTerritory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_territory_msdyn_postalcode_ServiceTerritory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_postalcode'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_territory_msdyn_resourcerequirement_Territory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcerequirement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_territory_msdyn_resourceterritory_Territory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourceterritory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_territory_msdyn_workorder_ServiceTerritory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_territory_quotedetail_ServiceTerritory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quotedetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "territory_accounts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Territory_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Territory_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "territory_connections1": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "territory_connections2": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Territory_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Territory_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "territory_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "territory_parent_territory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.territory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "territory_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Territory_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Territory_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "territory_system_users": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "territoryid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^managerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^parentterritoryid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.territory'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/sharepointsite.json#",
+  "title": "Entity definition for SharePointSite",
+  "definitions": {
+    "SharePointSitePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "absoluteurl": {
+          "description": "Absolute URL of the SharePoint site.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the SharePoint site record.",
+          "type": "string"
+        },
+        "folderstructureentity": {
+          "description": "Entity on which the folder structure for Microsoft Dynamics 365 records will be created in SharePoint.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "lastvalidated": {
+          "description": "Date and time when the SharePoint site URL was last validated.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the SharePoint site record.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "relativeurl": {
+          "description": "Relative URL of the SharePoint site.",
+          "type": "string"
+        },
+        "sharepointsiteid": {
+          "description": "Unique identifier of the SharePoint site in Dynamics 365",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "userid": {
+          "description": "Choose the user who owns the SharePoint site.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "sharepointdocumentlocation_parent_sharepointsite": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointdocumentlocation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SharePointSite_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SharePointSite_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SharePointSite_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sharepointsite_parentsite_sharepointsite": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointsite'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sharepointsite_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SharePointSite_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SharePointSite_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isdefault": {
+          "description": "Indicates whether the SharePoint site is the default site or not.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isgridpresent": {
+          "description": "Indicates if SharePoint Grid is present or not.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ispowerbisite": {
+          "description": "Allows embedding of Power BI Reports available in this SharePoint site.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "servicetype": {
+          "description": "Shows the service type of location of the SharePoint site.",
+          "anyOf": [
+            {
+              "enum": [
+                "SharePoint",
+                "OneDrive",
+                "Shared with me",
+                "MS Teams"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the SharePoint site record.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the SharePoint site record.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "validationstatus": {
+          "description": "Validation status of the SharePoint site URL.",
+          "anyOf": [
+            {
+              "enum": [
+                "Not Validated",
+                "In Progress",
+                "Invalid",
+                "Valid",
+                "Could not validate"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "validationstatuserrorcode": {
+          "description": "Reason for validation status of the URL",
+          "anyOf": [
+            {
+              "enum": [
+                "This record's URL has not been validated.",
+                "This record's URL is valid.",
+                "This record's URL is not valid.",
+                "The URL schemes of Microsoft Dynamics 365 and SharePoint are different.",
+                "The URL could not be accessed because of Internet Explorer security settings.",
+                "Authentication failure.",
+                "Invalid certificates."
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "sharepointsiteid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^parentsite(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointsite'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

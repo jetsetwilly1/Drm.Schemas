@@ -1,0 +1,112 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/rollupfield.json#",
+  "title": "Entity definition for RollupField",
+  "definitions": {
+    "RollupFieldPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "dateattribute": {
+          "description": "Select a date field for the selected record type, such as Actual Closed Date for the Opportunity record type. A record participates in the goal rollup, if the selected date falls between the start date and the end date for the goal.",
+          "type": "string"
+        },
+        "entityfordateattribute": {
+          "description": "Select the record type that contains the date field that will be considered while rolling up data to the goal.",
+          "type": "string"
+        },
+        "goalattribute": {
+          "description": "Select a rollup field where the metric rollup data will be displayed in the goal. The options are an integer or money, depending on the Metric Type you chose for the goal metric.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "rollupfieldid": {
+          "description": "Unique identifier of the rollup field.",
+          "type": "string"
+        },
+        "sourceattribute": {
+          "description": "Type the name of the field that the data for the goal rolls up from.",
+          "type": "string"
+        },
+        "sourceentity": {
+          "description": "Type the name of the record type (entity) that the data for the goal must roll up from.",
+          "type": "string"
+        },
+        "sourcestate": {
+          "description": "Select the state of the records you want to use as the source of the rollup data for the metric."
+        },
+        "sourcestatus": {
+          "description": "Select the status of the records you want to use as the source of the rollup data for the metric."
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "rollupfield_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "rollupfield_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "RollupField_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isstateparententityattribute": {
+          "description": "Tells whether the state or status belongs to the parent entity.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "rollupfieldid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^metricid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.metric'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/msdyn_solutionhistorydatasource.json#",
+  "title": "Entity definition for SolutionHistoryDataSource",
+  "definitions": {
+    "SolutionHistoryDataSourcePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "msdyn_name": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_solutionhistorydatasourceid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "msdyn_solutionhistorydatasource_Annotations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annotation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "msdyn_solutionhistorydatasourceid"
+      ]
+    }
+  }
+}

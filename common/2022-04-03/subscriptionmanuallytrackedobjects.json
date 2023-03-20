@@ -1,0 +1,52 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/subscriptionmanuallytrackedobject.json#",
+  "title": "Entity definition for SubscriptionManuallyTrackedObject",
+  "definitions": {
+    "SubscriptionManuallyTrackedObjectPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "objectid": {
+          "description": "Unique identifier of the object with which the subscription is associated.",
+          "type": "string"
+        },
+        "objecttypecode": {
+          "description": "Type code of the object with which the subscription is associated.",
+          "type": "string"
+        },
+        "subscriptionid": {
+          "description": "Unique identifier of the subscription.",
+          "type": "string"
+        },
+        "subscriptionmanuallytrackedobjectid": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "track": {
+          "description": "Information that specifies if the object is tracked.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "subscriptionmanuallytrackedobjectid"
+      ]
+    }
+  }
+}

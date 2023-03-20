@@ -1,0 +1,73 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/attributeimageconfig.json#",
+  "title": "Entity definition for ImageAttributeConfiguration",
+  "definitions": {
+    "ImageAttributeConfigurationPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "attributeimageconfigid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "attributelogicalname": {
+          "description": "Logical name of image attribute",
+          "type": "string"
+        },
+        "parententitylogicalname": {
+          "description": "Parent entity logical name",
+          "type": "string"
+        },
+        "attributeimageconfig_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "attributeimageconfig_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "attributeimageconfig_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "attributeimageconfig_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "attributeimageconfig_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "canstorefullimage": {
+          "description": "Indicates if an image attribute can store full image",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "attributeimageconfigid"
+      ]
+    }
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/sharepointdocumentlocation.json#",
+  "title": "Entity definition for DocumentLocation",
+  "definitions": {
+    "DocumentLocationPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "absoluteurl": {
+          "description": "Absolute URL of the SharePoint document location.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the SharePoint document location record.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created the SharePoint document location record."
+        },
+        "name": {
+          "description": "Name of the SharePoint document location record.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "relativeurl": {
+          "description": "Relative URL of the SharePoint document location.",
+          "type": "string"
+        },
+        "sharepointdocumentlocationid": {
+          "description": "Unique identifier of the SharePoint document location record.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "userid": {
+          "description": "Choose the user who owns the SharePoint document location.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "SharePointDocumentLocation_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SharePointDocumentLocation_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SharePointDocumentLocation_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sharepointdocumentlocation_parent_sharepointdocumentlocation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointdocumentlocation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "sharepointdocumentlocation_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SharePointDocumentLocation_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SharePointDocumentLocation_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "locationtype": {
+          "description": "Location type of the SharePoint document location.",
+          "anyOf": [
+            {
+              "enum": [
+                "General",
+                "Dedicated for OneNote Integration"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "servicetype": {
+          "description": "Shows the service type of the SharePoint site.",
+          "anyOf": [
+            {
+              "enum": [
+                "SharePoint",
+                "OneDrive",
+                "Shared with me",
+                "MS Teams"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the SharePoint document location record.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the SharePoint document location record.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "sharepointdocumentlocationid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^parentsiteorlocation_sharepointdocumentlocation(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointdocumentlocation'",
+          "type": "string"
+        },
+        "^parentsiteorlocation_sharepointsite(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointsite'",
+          "type": "string"
+        },
+        "^regardingobjectid_account(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "string"
+        },
+        "^regardingobjectid_contact(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "string"
+        },
+        "^regardingobjectid_kbarticle(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.kbarticle'",
+          "type": "string"
+        },
+        "^regardingobjectid_knowledgearticle(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgearticle'",
+          "type": "string"
+        },
+        "^regardingobjectid_lead(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_agreement(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreement'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_agreementbookingdate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingdate'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_agreementbookingsetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_agreementinvoicedate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_agreementinvoicesetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_bookingtimestamp(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingtimestamp'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_expense(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_expense'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_incidenttypeproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_inventoryadjustment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryadjustment'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_inventoryadjustmentproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_inventorytransfer(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventorytransfer'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_knowledgearticletemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_playbookactivity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookactivity'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_project(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_project'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_purchaseorder(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorder'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_purchaseorderproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_purchaseorderreceipt(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_resourceterritory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourceterritory'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_rma(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rma'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_rmareceipt(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmareceipt'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_rtv(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtv'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_timegroup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timegroup'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_timegroupdetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timegroupdetail'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_warehouse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_warehouse'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_workorder(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorder'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_workorderincident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderincident'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_workorderproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderproduct'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_workorderservice(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderservice'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_workorderservicetask(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderservicetask'",
+          "type": "string"
+        },
+        "^regardingobjectid_opportunity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "string"
+        },
+        "^regardingobjectid_product(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.product'",
+          "type": "string"
+        },
+        "^regardingobjectid_quote(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "string"
+        },
+        "^regardingobjectid_salesliterature(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesliterature'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

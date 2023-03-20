@@ -1,0 +1,106 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/personaldocumenttemplate.json#",
+  "title": "Entity definition for PersonalDocumentTemplate",
+  "definitions": {
+    "PersonalDocumentTemplatePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "associatedentitytypecode": {
+          "description": "Associated Entity Type Code.",
+          "type": "string"
+        },
+        "clientdata": {
+          "description": "Client data regarding this personal document template.",
+          "type": "string"
+        },
+        "content": {
+          "description": "Bytes of the personal document template.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Additional information to describe the Personal Document Template",
+          "type": "string"
+        },
+        "languagecode": {
+          "description": "Language of Personal Document Template."
+        },
+        "name": {
+          "description": "Name of the personal document template.",
+          "type": "string"
+        },
+        "personaldocumenttemplateid": {
+          "description": "Unique identifier of the personal document template.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "documenttype": {
+          "description": "Option set for selecting the type of the personal document template",
+          "anyOf": [
+            {
+              "enum": [
+                "Microsoft Excel",
+                "Microsoft Word"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "status": {
+          "description": "Information about whether the personal document template is active.",
+          "anyOf": [
+            {
+              "enum": [
+                "Draft",
+                "Activated"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "personaldocumenttemplateid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2825 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/duplicaterecord.json#",
+  "title": "Entity definition for DuplicateRecord",
+  "definitions": {
+    "DuplicateRecordPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "duplicateid": {
+          "description": "Unique identifier of the duplicate record.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "duplicateid"
+      ],
+      "patternProperties": {
+        "^asyncoperationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "string"
+        },
+        "^baserecordid_account(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "string"
+        },
+        "^baserecordid_adminsettingsentity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.adminsettingsentity'",
+          "type": "string"
+        },
+        "^baserecordid_apisettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.apisettings'",
+          "type": "string"
+        },
+        "^baserecordid_appointment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appointment'",
+          "type": "string"
+        },
+        "^baserecordid_bookableresource(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresource'",
+          "type": "string"
+        },
+        "^baserecordid_bookableresourcebooking(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcebooking'",
+          "type": "string"
+        },
+        "^baserecordid_bookableresourcebookingheader(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcebookingheader'",
+          "type": "string"
+        },
+        "^baserecordid_bookableresourcecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecategory'",
+          "type": "string"
+        },
+        "^baserecordid_bookableresourcecategoryassn(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecategoryassn'",
+          "type": "string"
+        },
+        "^baserecordid_bookableresourcecharacteristic(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecharacteristic'",
+          "type": "string"
+        },
+        "^baserecordid_bookableresourcegroup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcegroup'",
+          "type": "string"
+        },
+        "^baserecordid_bookingstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookingstatus'",
+          "type": "string"
+        },
+        "^baserecordid_campaign(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaign'",
+          "type": "string"
+        },
+        "^baserecordid_campaignresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignresponse'",
+          "type": "string"
+        },
+        "^baserecordid_characteristic(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.characteristic'",
+          "type": "string"
+        },
+        "^baserecordid_competitor(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.competitor'",
+          "type": "string"
+        },
+        "^baserecordid_connector(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connector'",
+          "type": "string"
+        },
+        "^baserecordid_contact(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "string"
+        },
+        "^baserecordid_contract(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contract'",
+          "type": "string"
+        },
+        "^baserecordid_email(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "string"
+        },
+        "^baserecordid_emailserverprofile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.emailserverprofile'",
+          "type": "string"
+        },
+        "^baserecordid_entitlement(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlement'",
+          "type": "string"
+        },
+        "^baserecordid_entitlementchannel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementchannel'",
+          "type": "string"
+        },
+        "^baserecordid_entitlemententityallocationtypemapping(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlemententityallocationtypemapping'",
+          "type": "string"
+        },
+        "^baserecordid_entitlementtemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementtemplate'",
+          "type": "string"
+        },
+        "^baserecordid_environmentvariabledefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.environmentvariabledefinition'",
+          "type": "string"
+        },
+        "^baserecordid_environmentvariablevalue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.environmentvariablevalue'",
+          "type": "string"
+        },
+        "^baserecordid_equipment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.equipment'",
+          "type": "string"
+        },
+        "^baserecordid_exportsolutionupload(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.exportsolutionupload'",
+          "type": "string"
+        },
+        "^baserecordid_fax(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fax'",
+          "type": "string"
+        },
+        "^baserecordid_feedback(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.feedback'",
+          "type": "string"
+        },
+        "^baserecordid_goal(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "string"
+        },
+        "^baserecordid_goalrollupquery(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "string"
+        },
+        "^baserecordid_incident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "string"
+        },
+        "^baserecordid_kbarticle(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.kbarticle'",
+          "type": "string"
+        },
+        "^baserecordid_knowledgearticle(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgearticle'",
+          "type": "string"
+        },
+        "^baserecordid_knowledgebaserecord(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgebaserecord'",
+          "type": "string"
+        },
+        "^baserecordid_lead(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "string"
+        },
+        "^baserecordid_letter(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.letter'",
+          "type": "string"
+        },
+        "^baserecordid_list(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.list'",
+          "type": "string"
+        },
+        "^baserecordid_ms_newsitem(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ms_newsitem'",
+          "type": "string"
+        },
+        "^baserecordid_ms_satori(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ms_satori'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_accountpricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_accountpricelist'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_actioncardregarding(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actioncardregarding'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_actual(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actual'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_agreement(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreement'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_agreementbookingdate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingdate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_agreementbookingincident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingincident'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_agreementbookingproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_agreementbookingservice(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingservice'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_agreementbookingservicetask(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_agreementbookingsetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_agreementinvoicedate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_agreementinvoiceproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_agreementinvoicesetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_agreementsubstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementsubstatus'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_aibdataset(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdataset'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_aibdatasetfile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdatasetfile'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_aibdatasetrecord(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdatasetrecord'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_aibdatasetscontainer(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdatasetscontainer'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_aibfile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibfile'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_aibfileattacheddata(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibfileattacheddata'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_aiodimage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodimage'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_aiodlabel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodlabel'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_aiodtrainingboundingbox(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodtrainingboundingbox'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_aiodtrainingimage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodtrainingimage'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_analysiscomponent(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysiscomponent'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_analysisjob(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysisjob'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_analysisresult(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysisresult'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_analysisresultdetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysisresultdetail'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_appconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_appconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_applicationextension(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_applicationextension'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_applicationtabtemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_applicationtabtemplate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_approval(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_approval'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_autocapturerule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_autocapturerule'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_autocapturesettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_autocapturesettings'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_batchjob(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_batchjob'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_bookableresourceassociation(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookableresourceassociation'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_bookingalert(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalert'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_bookingalertstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalertstatus'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_bookingrule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingrule'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_bookingtimestamp(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingtimestamp'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_callablecontext(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_callablecontext'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_channelprovider(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_channelprovider'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_characteristicreqforteammember(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_clientextension(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_clientextension'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_connector(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_connector'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_contactpricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contactpricelist'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_contractlinedetailperformance(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractlinedetailperformance'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_contractlineinvoiceschedule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_contractlinescheduleofvalue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_customerasset(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerasset'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_customerassetattachment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerassetattachment'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_customerassetcategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerassetcategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_dataanalyticsreport_fs(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fs'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_dataanalyticsreport_fspredictrs(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictrs'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_dataanalyticsreport_fspredictwhd(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictwhd'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_dataexport(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataexport'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_dataflow(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataflow'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_delegation(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_delegation'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_dimension(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dimension'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_dimensionfieldname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dimensionfieldname'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_entitlementapplication(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_entitlementapplication'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_entityconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_entityconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_estimate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_estimateline(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimateline'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_expense(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_expense'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_expensecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_expensecategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_fact(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fact'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_federatedarticle(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_federatedarticle'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_federatedarticleincident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_federatedarticleincident'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_fieldcomputation(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldcomputation'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_fieldservicepricelistitem(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_findworkevent(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_findworkevent'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_flowcardtype(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_flowcardtype'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_forecastconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_forecastdefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastdefinition'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_forecastinstance(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastinstance'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_forecastrecurrence(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastrecurrence'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_geofence(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geofence'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_geofenceevent(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geofenceevent'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_geofencingsettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geofencingsettings'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_geolocationsettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geolocationsettings'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_geolocationtracking(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geolocationtracking'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_icebreakersconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_icebreakersconfig'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_incidenttype(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttype'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_incidenttype_requirementgroup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttype_requirementgroup'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_incidenttypecharacteristic(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_incidenttypeproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_incidenttyperecommendationresult(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationresult'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_incidenttyperecommendationrunhistory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationrunhistory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_incidenttypeservice(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeservice'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_incidenttypeservicetask(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeservicetask'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_incidenttypessetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypessetup'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_inspection(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspection'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_inspectionattachment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspectionattachment'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_inspectiondefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspectiondefinition'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_inspectionresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspectionresponse'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_inventoryadjustment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryadjustment'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_inventoryadjustmentproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_inventoryjournal(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryjournal'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_inventorytransfer(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventorytransfer'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_invoicefrequency(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicefrequency'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_invoicefrequencydetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicefrequencydetail'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_invoicelinetransaction(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotdevice(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevice'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotdevicecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicecategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotdevicecommand(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicecommand'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotdevicecommanddefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicecommanddefinition'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotdevicedatahistory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicedatahistory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotdeviceproperty(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdeviceproperty'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotdeviceregistrationhistory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotdevicevisualizationconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicevisualizationconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotfieldmapping(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotfieldmapping'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotpropertydefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotpropertydefinition'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotprovider(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotprovider'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotproviderinstance(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotproviderinstance'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_iotsettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotsettings'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_journal(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journal'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_journalline(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journalline'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_kmfederatedsearchconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_kmfederatedsearchconfig'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_knowledgearticleimage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgearticleimage'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_knowledgearticletemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_knowledgeinteractioninsight(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgeinteractioninsight'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_knowledgesearchinsight(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgesearchinsight'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_macrosession(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_macrosession'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_migrationtracker(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_migrationtracker'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_notificationfield(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_notificationfield'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_notificationtemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_notificationtemplate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_opportunitylineresourcecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_opportunitylinetransaction(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_opportunitylinetransactioncategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactioncategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_opportunitylinetransactionclassificatio(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactionclassificatio'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_opportunitypricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitypricelist'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_orderinvoicingdate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingdate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_orderinvoicingproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_orderinvoicingsetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetup'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_orderinvoicingsetupdate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetupdate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_orderlineresourcecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlineresourcecategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_orderlinetransaction(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransaction'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_orderlinetransactioncategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransactioncategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_orderlinetransactionclassification(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransactionclassification'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_orderpricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderpricelist'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_organizationalunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_organizationalunit'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_paneconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paneconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_panetabconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_panetabconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_panetoolconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_panetoolconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_payment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_payment'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_paymentdetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paymentdetail'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_paymentmethod(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paymentmethod'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_paymentterm(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paymentterm'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_playbookactivity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookactivity'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_playbookactivityattribute(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookactivityattribute'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_playbookcategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookcategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_playbookinstance(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookinstance'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_playbooktemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbooktemplate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_postalbum(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_postalbum'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_postalcode(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_postalcode'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_priority(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_priority'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_problematicasset(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_problematicasset'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_problematicassetfeedback(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_problematicassetfeedback'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_processnotes(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_processnotes'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_productinventory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productinventory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_productivityactioninputparameter(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityactioninputparameter'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_productivityactionoutputparameter(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityactionoutputparameter'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_productivityagentscript(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityagentscript'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_productivityagentscriptstep(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityagentscriptstep'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_productivitymacroactiontemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivitymacroactiontemplate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_productivitymacroconnector(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivitymacroconnector'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_productivitymacrosolutionconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivitymacrosolutionconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_productivityparameterdefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityparameterdefinition'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_project(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_project'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_projectapproval(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectapproval'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_projectparameter(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectparameter'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_projectparameterpricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectparameterpricelist'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_projectpricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectpricelist'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_projecttask(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttask'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_projecttaskdependency(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttaskdependency'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_projecttaskstatususer(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttaskstatususer'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_projectteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectteam'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_projectteammembersignup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectteammembersignup'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_projecttransactioncategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttransactioncategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_purchaseorder(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorder'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_purchaseorderbill(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderbill'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_purchaseorderreceipt(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_purchaseorderreceiptproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_purchaseordersubstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotebookingincident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingincident'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotebookingproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingproduct'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotebookingservice(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingservice'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotebookingservicetask(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotebookingsetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingsetup'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quoteinvoicingproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quoteinvoicingsetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quoteinvoicingsetup'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotelineanalyticsbreakdown(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelineanalyticsbreakdown'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotelineinvoiceschedule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelineinvoiceschedule'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotelineresourcecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelineresourcecategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotelinescheduleofvalue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinescheduleofvalue'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotelinetransaction(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransaction'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotelinetransactioncategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransactioncategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotelinetransactionclassification(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransactionclassification'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_quotepricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotepricelist'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_relationshipinsightsunifiedconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_relationshipinsightsunifiedconfig'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_requirementcharacteristic(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_requirementdependency(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementdependency'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_requirementgroup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementgroup'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_requirementorganizationunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_requirementrelationship(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementrelationship'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_requirementresourcecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_requirementresourcepreference(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_requirementstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementstatus'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_resourceassignmentdetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourceassignmentdetail'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_resourcecategorymarkuppricelevel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcecategorymarkuppricelevel'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_resourcecategorypricelevel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_resourcerequest(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcerequest'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_resourcerequirement(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcerequirement'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_resourcerequirementdetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcerequirementdetail'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_resourceterritory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourceterritory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_rma(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rma'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_rmareceipt(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmareceipt'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_rmareceiptproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_rmasubstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmasubstatus'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_rolecompetencyrequirement(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rolecompetencyrequirement'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_roleutilization(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_roleutilization'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_rtv(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtv'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_rtvproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtvproduct'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_rtvsubstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtvsubstatus'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_salesinsightssettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_salesinsightssettings'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_scheduleboardsetting(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_schedulingfeatureflag(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_schedulingfeatureflag'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_serviceconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_serviceconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_servicetasktype(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_servicetasktype'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_sessiontemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_sessiontemplate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_shipvia(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_shipvia'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_siconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_siconfig'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_slakpi(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_slakpi'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_smartassistconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_smartassistconfig'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_solutionhealthrule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_solutionhealthrule'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_solutionhealthruleargument(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_solutionhealthruleargument'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_solutionhealthruleset(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_solutionhealthruleset'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_systemuserschedulersetting(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_taxcode(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_taxcode'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_taxcodedetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_taxcodedetail'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_templateparameter(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_templateparameter'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_timeentrysetting(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timeentrysetting'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_timegroup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timegroup'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_timegroupdetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timegroupdetail'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_timeoffcalendar(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timeoffcalendar'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_timeoffrequest(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timeoffrequest'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_transactioncategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_transactioncategoryclassification(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategoryclassification'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_transactioncategoryhierarchyelement(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategoryhierarchyelement'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_transactioncategorypricelevel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_transactionconnection(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactionconnection'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_transactionorigin(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactionorigin'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_transactiontype(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactiontype'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_untrackedappointment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_untrackedappointment'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_userworkhistory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_userworkhistory'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_warehouse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_warehouse'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_workhourtemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workhourtemplate'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_workorder(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorder'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_workordercharacteristic(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workordercharacteristic'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_workorderdetailsgenerationqueue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderdetailsgenerationqueue'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_workorderincident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderincident'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_workorderresourcerestriction(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_workorderservice(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderservice'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_workorderservicetask(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderservicetask'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_workordersubstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workordersubstatus'",
+          "type": "string"
+        },
+        "^baserecordid_msdyn_workordertype(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workordertype'",
+          "type": "string"
+        },
+        "^baserecordid_msfp_alert(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "string"
+        },
+        "^baserecordid_msfp_alertrule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alertrule'",
+          "type": "string"
+        },
+        "^baserecordid_msfp_emailtemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_emailtemplate'",
+          "type": "string"
+        },
+        "^baserecordid_msfp_fileresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_fileresponse'",
+          "type": "string"
+        },
+        "^baserecordid_msfp_question(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_question'",
+          "type": "string"
+        },
+        "^baserecordid_msfp_questionresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_questionresponse'",
+          "type": "string"
+        },
+        "^baserecordid_msfp_survey(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_survey'",
+          "type": "string"
+        },
+        "^baserecordid_msfp_surveyinvite(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "string"
+        },
+        "^baserecordid_msfp_surveyreminder(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyreminder'",
+          "type": "string"
+        },
+        "^baserecordid_msfp_surveyresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "string"
+        },
+        "^baserecordid_msfp_unsubscribedrecipient(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_unsubscribedrecipient'",
+          "type": "string"
+        },
+        "^baserecordid_opportunity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "string"
+        },
+        "^baserecordid_organizationdatasyncsubscription(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organizationdatasyncsubscription'",
+          "type": "string"
+        },
+        "^baserecordid_organizationdatasyncsubscriptionentity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organizationdatasyncsubscriptionentity'",
+          "type": "string"
+        },
+        "^baserecordid_package(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.package'",
+          "type": "string"
+        },
+        "^baserecordid_phonecall(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonecall'",
+          "type": "string"
+        },
+        "^baserecordid_publisher(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.publisher'",
+          "type": "string"
+        },
+        "^baserecordid_queue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.queue'",
+          "type": "string"
+        },
+        "^baserecordid_quote(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "string"
+        },
+        "^baserecordid_ratingmodel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ratingmodel'",
+          "type": "string"
+        },
+        "^baserecordid_ratingvalue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ratingvalue'",
+          "type": "string"
+        },
+        "^baserecordid_recurringappointmentmaster(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recurringappointmentmaster'",
+          "type": "string"
+        },
+        "^baserecordid_resourcegroup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.resourcegroup'",
+          "type": "string"
+        },
+        "^baserecordid_revokeinheritedaccessrecordstracker(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker'",
+          "type": "string"
+        },
+        "^baserecordid_sales_linkedin_configuration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sales_linkedin_configuration'",
+          "type": "string"
+        },
+        "^baserecordid_service(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.service'",
+          "type": "string"
+        },
+        "^baserecordid_serviceplan(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceplan'",
+          "type": "string"
+        },
+        "^baserecordid_sharepointdocumentlocation(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointdocumentlocation'",
+          "type": "string"
+        },
+        "^baserecordid_sharepointsite(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointsite'",
+          "type": "string"
+        },
+        "^baserecordid_socialactivity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "string"
+        },
+        "^baserecordid_socialprofile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialprofile'",
+          "type": "string"
+        },
+        "^baserecordid_solutioncomponentattributeconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponentattributeconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_solutioncomponentconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponentconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_solutioncomponentrelationshipconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponentrelationshipconfiguration'",
+          "type": "string"
+        },
+        "^baserecordid_stagesolutionupload(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.stagesolutionupload'",
+          "type": "string"
+        },
+        "^baserecordid_systemuser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^baserecordid_task(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.task'",
+          "type": "string"
+        },
+        "^baserecordid_team(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^baserecordid_territory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.territory'",
+          "type": "string"
+        },
+        "^baserecordid_transactioncurrency(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        },
+        "^duplicaterecordid_account(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "string"
+        },
+        "^duplicaterecordid_adminsettingsentity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.adminsettingsentity'",
+          "type": "string"
+        },
+        "^duplicaterecordid_apisettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.apisettings'",
+          "type": "string"
+        },
+        "^duplicaterecordid_appointment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appointment'",
+          "type": "string"
+        },
+        "^duplicaterecordid_bookableresource(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresource'",
+          "type": "string"
+        },
+        "^duplicaterecordid_bookableresourcebooking(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcebooking'",
+          "type": "string"
+        },
+        "^duplicaterecordid_bookableresourcebookingheader(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcebookingheader'",
+          "type": "string"
+        },
+        "^duplicaterecordid_bookableresourcecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_bookableresourcecategoryassn(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecategoryassn'",
+          "type": "string"
+        },
+        "^duplicaterecordid_bookableresourcecharacteristic(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecharacteristic'",
+          "type": "string"
+        },
+        "^duplicaterecordid_bookableresourcegroup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcegroup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_bookingstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookingstatus'",
+          "type": "string"
+        },
+        "^duplicaterecordid_campaign(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaign'",
+          "type": "string"
+        },
+        "^duplicaterecordid_campaignresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignresponse'",
+          "type": "string"
+        },
+        "^duplicaterecordid_characteristic(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.characteristic'",
+          "type": "string"
+        },
+        "^duplicaterecordid_competitor(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.competitor'",
+          "type": "string"
+        },
+        "^duplicaterecordid_connector(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connector'",
+          "type": "string"
+        },
+        "^duplicaterecordid_contact(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "string"
+        },
+        "^duplicaterecordid_contract(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contract'",
+          "type": "string"
+        },
+        "^duplicaterecordid_email(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "string"
+        },
+        "^duplicaterecordid_emailserverprofile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.emailserverprofile'",
+          "type": "string"
+        },
+        "^duplicaterecordid_entitlement(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlement'",
+          "type": "string"
+        },
+        "^duplicaterecordid_entitlementchannel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementchannel'",
+          "type": "string"
+        },
+        "^duplicaterecordid_entitlemententityallocationtypemapping(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlemententityallocationtypemapping'",
+          "type": "string"
+        },
+        "^duplicaterecordid_entitlementtemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementtemplate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_environmentvariabledefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.environmentvariabledefinition'",
+          "type": "string"
+        },
+        "^duplicaterecordid_environmentvariablevalue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.environmentvariablevalue'",
+          "type": "string"
+        },
+        "^duplicaterecordid_equipment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.equipment'",
+          "type": "string"
+        },
+        "^duplicaterecordid_exportsolutionupload(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.exportsolutionupload'",
+          "type": "string"
+        },
+        "^duplicaterecordid_fax(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fax'",
+          "type": "string"
+        },
+        "^duplicaterecordid_feedback(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.feedback'",
+          "type": "string"
+        },
+        "^duplicaterecordid_goal(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "string"
+        },
+        "^duplicaterecordid_goalrollupquery(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "string"
+        },
+        "^duplicaterecordid_incident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "string"
+        },
+        "^duplicaterecordid_kbarticle(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.kbarticle'",
+          "type": "string"
+        },
+        "^duplicaterecordid_knowledgearticle(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgearticle'",
+          "type": "string"
+        },
+        "^duplicaterecordid_knowledgebaserecord(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgebaserecord'",
+          "type": "string"
+        },
+        "^duplicaterecordid_lead(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "string"
+        },
+        "^duplicaterecordid_letter(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.letter'",
+          "type": "string"
+        },
+        "^duplicaterecordid_list(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.list'",
+          "type": "string"
+        },
+        "^duplicaterecordid_ms_newsitem(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ms_newsitem'",
+          "type": "string"
+        },
+        "^duplicaterecordid_ms_satori(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ms_satori'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_accountpricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_accountpricelist'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_actioncardregarding(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actioncardregarding'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_actual(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actual'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_agreement(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreement'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_agreementbookingdate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingdate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_agreementbookingincident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingincident'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_agreementbookingproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_agreementbookingservice(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingservice'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_agreementbookingservicetask(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_agreementbookingsetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_agreementinvoicedate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_agreementinvoiceproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_agreementinvoicesetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_agreementsubstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementsubstatus'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_aibdataset(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdataset'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_aibdatasetfile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdatasetfile'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_aibdatasetrecord(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdatasetrecord'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_aibdatasetscontainer(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibdatasetscontainer'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_aibfile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibfile'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_aibfileattacheddata(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aibfileattacheddata'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_aiodimage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodimage'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_aiodlabel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodlabel'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_aiodtrainingboundingbox(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodtrainingboundingbox'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_aiodtrainingimage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_aiodtrainingimage'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_analysiscomponent(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysiscomponent'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_analysisjob(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysisjob'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_analysisresult(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysisresult'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_analysisresultdetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_analysisresultdetail'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_appconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_appconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_applicationextension(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_applicationextension'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_applicationtabtemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_applicationtabtemplate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_approval(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_approval'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_autocapturerule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_autocapturerule'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_autocapturesettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_autocapturesettings'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_batchjob(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_batchjob'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_bookableresourceassociation(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookableresourceassociation'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_bookingalert(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalert'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_bookingalertstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalertstatus'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_bookingrule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingrule'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_bookingtimestamp(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingtimestamp'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_callablecontext(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_callablecontext'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_channelprovider(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_channelprovider'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_characteristicreqforteammember(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_clientextension(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_clientextension'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_connector(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_connector'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_contactpricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contactpricelist'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_contractlinedetailperformance(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractlinedetailperformance'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_contractlineinvoiceschedule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_contractlinescheduleofvalue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_customerasset(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerasset'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_customerassetattachment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerassetattachment'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_customerassetcategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerassetcategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_dataanalyticsreport_fs(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fs'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_dataanalyticsreport_fspredictrs(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictrs'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_dataanalyticsreport_fspredictwhd(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictwhd'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_dataexport(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataexport'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_dataflow(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dataflow'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_delegation(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_delegation'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_dimension(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dimension'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_dimensionfieldname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_dimensionfieldname'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_entitlementapplication(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_entitlementapplication'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_entityconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_entityconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_estimate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_estimateline(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimateline'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_expense(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_expense'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_expensecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_expensecategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_fact(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fact'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_federatedarticle(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_federatedarticle'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_federatedarticleincident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_federatedarticleincident'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_fieldcomputation(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldcomputation'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_fieldservicepricelistitem(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_findworkevent(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_findworkevent'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_flowcardtype(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_flowcardtype'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_forecastconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_forecastdefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastdefinition'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_forecastinstance(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastinstance'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_forecastrecurrence(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastrecurrence'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_geofence(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geofence'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_geofenceevent(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geofenceevent'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_geofencingsettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geofencingsettings'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_geolocationsettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geolocationsettings'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_geolocationtracking(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_geolocationtracking'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_icebreakersconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_icebreakersconfig'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_incidenttype(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttype'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_incidenttype_requirementgroup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttype_requirementgroup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_incidenttypecharacteristic(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_incidenttypeproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_incidenttyperecommendationresult(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationresult'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_incidenttyperecommendationrunhistory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationrunhistory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_incidenttypeservice(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeservice'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_incidenttypeservicetask(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeservicetask'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_incidenttypessetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypessetup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_inspection(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspection'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_inspectionattachment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspectionattachment'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_inspectiondefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspectiondefinition'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_inspectionresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inspectionresponse'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_inventoryadjustment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryadjustment'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_inventoryadjustmentproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_inventoryjournal(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryjournal'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_inventorytransfer(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventorytransfer'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_invoicefrequency(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicefrequency'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_invoicefrequencydetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicefrequencydetail'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_invoicelinetransaction(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotdevice(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevice'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotdevicecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicecategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotdevicecommand(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicecommand'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotdevicecommanddefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicecommanddefinition'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotdevicedatahistory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicedatahistory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotdeviceproperty(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdeviceproperty'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotdeviceregistrationhistory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotdevicevisualizationconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotdevicevisualizationconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotfieldmapping(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotfieldmapping'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotpropertydefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotpropertydefinition'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotprovider(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotprovider'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotproviderinstance(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotproviderinstance'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_iotsettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotsettings'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_journal(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journal'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_journalline(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journalline'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_kmfederatedsearchconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_kmfederatedsearchconfig'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_knowledgearticleimage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgearticleimage'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_knowledgearticletemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_knowledgeinteractioninsight(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgeinteractioninsight'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_knowledgesearchinsight(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_knowledgesearchinsight'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_macrosession(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_macrosession'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_migrationtracker(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_migrationtracker'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_notificationfield(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_notificationfield'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_notificationtemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_notificationtemplate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_opportunitylineresourcecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_opportunitylinetransaction(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_opportunitylinetransactioncategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactioncategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_opportunitylinetransactionclassificatio(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactionclassificatio'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_opportunitypricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitypricelist'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_orderinvoicingdate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingdate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_orderinvoicingproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_orderinvoicingsetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_orderinvoicingsetupdate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingsetupdate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_orderlineresourcecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlineresourcecategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_orderlinetransaction(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransaction'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_orderlinetransactioncategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransactioncategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_orderlinetransactionclassification(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransactionclassification'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_orderpricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderpricelist'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_organizationalunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_organizationalunit'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_paneconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paneconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_panetabconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_panetabconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_panetoolconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_panetoolconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_payment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_payment'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_paymentdetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paymentdetail'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_paymentmethod(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paymentmethod'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_paymentterm(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paymentterm'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_playbookactivity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookactivity'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_playbookactivityattribute(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookactivityattribute'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_playbookcategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookcategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_playbookinstance(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookinstance'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_playbooktemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbooktemplate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_postalbum(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_postalbum'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_postalcode(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_postalcode'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_priority(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_priority'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_problematicasset(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_problematicasset'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_problematicassetfeedback(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_problematicassetfeedback'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_processnotes(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_processnotes'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_productinventory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productinventory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_productivityactioninputparameter(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityactioninputparameter'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_productivityactionoutputparameter(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityactionoutputparameter'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_productivityagentscript(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityagentscript'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_productivityagentscriptstep(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityagentscriptstep'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_productivitymacroactiontemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivitymacroactiontemplate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_productivitymacroconnector(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivitymacroconnector'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_productivitymacrosolutionconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivitymacrosolutionconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_productivityparameterdefinition(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productivityparameterdefinition'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_project(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_project'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_projectapproval(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectapproval'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_projectparameter(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectparameter'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_projectparameterpricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectparameterpricelist'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_projectpricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectpricelist'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_projecttask(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttask'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_projecttaskdependency(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttaskdependency'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_projecttaskstatususer(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttaskstatususer'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_projectteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectteam'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_projectteammembersignup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectteammembersignup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_projecttransactioncategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttransactioncategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_purchaseorder(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorder'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_purchaseorderbill(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderbill'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_purchaseorderreceipt(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_purchaseorderreceiptproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_purchaseordersubstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotebookingincident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingincident'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotebookingproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingproduct'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotebookingservice(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingservice'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotebookingservicetask(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotebookingsetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingsetup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quoteinvoicingproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quoteinvoicingsetup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quoteinvoicingsetup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotelineanalyticsbreakdown(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelineanalyticsbreakdown'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotelineinvoiceschedule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelineinvoiceschedule'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotelineresourcecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelineresourcecategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotelinescheduleofvalue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinescheduleofvalue'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotelinetransaction(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransaction'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotelinetransactioncategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransactioncategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotelinetransactionclassification(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransactionclassification'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_quotepricelist(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotepricelist'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_relationshipinsightsunifiedconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_relationshipinsightsunifiedconfig'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_requirementcharacteristic(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_requirementdependency(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementdependency'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_requirementgroup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementgroup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_requirementorganizationunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_requirementrelationship(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementrelationship'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_requirementresourcecategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_requirementresourcepreference(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_requirementstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_requirementstatus'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_resourceassignmentdetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourceassignmentdetail'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_resourcecategorymarkuppricelevel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcecategorymarkuppricelevel'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_resourcecategorypricelevel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_resourcerequest(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcerequest'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_resourcerequirement(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcerequirement'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_resourcerequirementdetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcerequirementdetail'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_resourceterritory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourceterritory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_rma(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rma'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_rmareceipt(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmareceipt'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_rmareceiptproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_rmasubstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmasubstatus'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_rolecompetencyrequirement(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rolecompetencyrequirement'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_roleutilization(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_roleutilization'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_rtv(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtv'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_rtvproduct(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtvproduct'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_rtvsubstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtvsubstatus'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_salesinsightssettings(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_salesinsightssettings'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_scheduleboardsetting(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_schedulingfeatureflag(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_schedulingfeatureflag'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_serviceconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_serviceconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_servicetasktype(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_servicetasktype'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_sessiontemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_sessiontemplate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_shipvia(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_shipvia'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_siconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_siconfig'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_slakpi(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_slakpi'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_smartassistconfig(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_smartassistconfig'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_solutionhealthrule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_solutionhealthrule'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_solutionhealthruleargument(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_solutionhealthruleargument'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_solutionhealthruleset(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_solutionhealthruleset'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_systemuserschedulersetting(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_taxcode(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_taxcode'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_taxcodedetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_taxcodedetail'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_templateparameter(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_templateparameter'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_timeentrysetting(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timeentrysetting'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_timegroup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timegroup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_timegroupdetail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timegroupdetail'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_timeoffcalendar(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timeoffcalendar'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_timeoffrequest(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timeoffrequest'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_transactioncategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_transactioncategoryclassification(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategoryclassification'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_transactioncategoryhierarchyelement(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategoryhierarchyelement'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_transactioncategorypricelevel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_transactionconnection(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactionconnection'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_transactionorigin(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactionorigin'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_transactiontype(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactiontype'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_untrackedappointment(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_untrackedappointment'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_userworkhistory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_userworkhistory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_warehouse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_warehouse'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_workhourtemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workhourtemplate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_workorder(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorder'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_workordercharacteristic(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workordercharacteristic'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_workorderdetailsgenerationqueue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderdetailsgenerationqueue'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_workorderincident(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderincident'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_workorderresourcerestriction(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_workorderservice(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderservice'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_workorderservicetask(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderservicetask'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_workordersubstatus(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workordersubstatus'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msdyn_workordertype(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workordertype'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msfp_alert(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msfp_alertrule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alertrule'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msfp_emailtemplate(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_emailtemplate'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msfp_fileresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_fileresponse'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msfp_question(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_question'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msfp_questionresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_questionresponse'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msfp_survey(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_survey'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msfp_surveyinvite(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msfp_surveyreminder(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyreminder'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msfp_surveyresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "string"
+        },
+        "^duplicaterecordid_msfp_unsubscribedrecipient(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_unsubscribedrecipient'",
+          "type": "string"
+        },
+        "^duplicaterecordid_opportunity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "string"
+        },
+        "^duplicaterecordid_organizationdatasyncsubscription(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organizationdatasyncsubscription'",
+          "type": "string"
+        },
+        "^duplicaterecordid_organizationdatasyncsubscriptionentity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organizationdatasyncsubscriptionentity'",
+          "type": "string"
+        },
+        "^duplicaterecordid_package(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.package'",
+          "type": "string"
+        },
+        "^duplicaterecordid_phonecall(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonecall'",
+          "type": "string"
+        },
+        "^duplicaterecordid_publisher(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.publisher'",
+          "type": "string"
+        },
+        "^duplicaterecordid_queue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.queue'",
+          "type": "string"
+        },
+        "^duplicaterecordid_quote(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "string"
+        },
+        "^duplicaterecordid_ratingmodel(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ratingmodel'",
+          "type": "string"
+        },
+        "^duplicaterecordid_ratingvalue(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ratingvalue'",
+          "type": "string"
+        },
+        "^duplicaterecordid_recurringappointmentmaster(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recurringappointmentmaster'",
+          "type": "string"
+        },
+        "^duplicaterecordid_resourcegroup(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.resourcegroup'",
+          "type": "string"
+        },
+        "^duplicaterecordid_revokeinheritedaccessrecordstracker(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker'",
+          "type": "string"
+        },
+        "^duplicaterecordid_sales_linkedin_configuration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sales_linkedin_configuration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_service(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.service'",
+          "type": "string"
+        },
+        "^duplicaterecordid_serviceplan(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceplan'",
+          "type": "string"
+        },
+        "^duplicaterecordid_sharepointdocumentlocation(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointdocumentlocation'",
+          "type": "string"
+        },
+        "^duplicaterecordid_sharepointsite(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointsite'",
+          "type": "string"
+        },
+        "^duplicaterecordid_socialactivity(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "string"
+        },
+        "^duplicaterecordid_socialprofile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialprofile'",
+          "type": "string"
+        },
+        "^duplicaterecordid_solutioncomponentattributeconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponentattributeconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_solutioncomponentconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponentconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_solutioncomponentrelationshipconfiguration(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponentrelationshipconfiguration'",
+          "type": "string"
+        },
+        "^duplicaterecordid_stagesolutionupload(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.stagesolutionupload'",
+          "type": "string"
+        },
+        "^duplicaterecordid_systemuser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^duplicaterecordid_task(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.task'",
+          "type": "string"
+        },
+        "^duplicaterecordid_team(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^duplicaterecordid_territory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.territory'",
+          "type": "string"
+        },
+        "^duplicaterecordid_transactioncurrency(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        },
+        "^duplicateruleid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterule'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

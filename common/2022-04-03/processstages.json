@@ -1,0 +1,478 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/processstage.json#",
+  "title": "Entity definition for ProcessStage",
+  "definitions": {
+    "ProcessStagePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "connector": {
+          "description": "The connector associated with the stage.",
+          "type": "string"
+        },
+        "operationid": {
+          "description": "The operation id of the stage",
+          "type": "string"
+        },
+        "primaryentitytypecode": {
+          "description": "Primary entity associated with the stage.",
+          "type": "string"
+        },
+        "processstageid": {
+          "description": "Shows the ID of the process stage record.",
+          "type": "string"
+        },
+        "stagename": {
+          "description": "Type a name for the process stage.",
+          "type": "string"
+        },
+        "lk_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799_activestageid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b_activestageid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_msdyn_bpf_665e73aa18c247d886bfc50499c73b82_activestageid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_msdyn_bpf_989e9b1857e24af18787d5143b67523b_activestageid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3_activestageid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39_activestageid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d_activestageid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_msdyn_iottocaseprocess_activestageid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iottocaseprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_appointments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_campaignactivities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_campaignresponses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_campaigns": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaign'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_competitors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.competitor'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_emails": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_expiredprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.expiredprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_faxes": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fax'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_incident": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_invoices": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.invoice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_knowledgearticle": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgearticle'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_lead": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_leadtoopportunitysalesprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_letters": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.letter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_lists": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.list'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_agreement": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_agreementbookingsetup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_agreementinvoicesetup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_expense": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_expense'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_iotalert": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_iotalert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_journal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_project": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_project'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_purchaseorder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_purchaseorderbill": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderbill'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_purchaseorderreceipt": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_quotebookingsetup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingsetup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_timeentry": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timeentry'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_timegroup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timegroup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_timegroupdetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_timegroupdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_msdyn_workorder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_newprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.newprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_opportunity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_opportunitysalesprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunitysalesprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_phonecalls": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonecall'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_phonetocaseprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonetocaseprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_processstageparameter": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processstageparameter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_productpricelevels": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.productpricelevel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_products": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.product'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_quotes": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_recurringappointmentmasters": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recurringappointmentmaster'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_salesliteratures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesliterature'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_salesorders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ProcessStage_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_systemusers": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_tasks": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.task'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_teams": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "array",
+          "minItems": 1
+        },
+        "processstage_translationprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.translationprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "istrigger": {
+          "description": "Whether the stage is a trigger",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "operationkind": {
+          "description": "The operation kind",
+          "anyOf": [
+            {
+              "enum": [
+                "Http",
+                "PowerApp",
+                "PowerAppV2",
+                "Button",
+                "ApiConnection",
+                "Alert",
+                "EventGrid",
+                "CurrentTime",
+                "ConvertTimeZone",
+                "GetFutureTime",
+                "GetPastTime",
+                "AddToTime",
+                "SubtractFromTime",
+                "AzureMonitorAlert",
+                "SecurityCenterAlert",
+                "JsonToJson",
+                "JsonToText",
+                "XmlToJson",
+                "XmlToText",
+                "Geofence",
+                "ODataOpenApiConnection",
+                "IndexOf",
+                "Substring",
+                "VirtualAgent",
+                "FormatNumber"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "operationtype": {
+          "description": "The type of the operation",
+          "anyOf": [
+            {
+              "enum": [
+                "Http",
+                "ApiApp",
+                "Recurrence",
+                "Workflow",
+                "Flow",
+                "Wait",
+                "ApiConnection",
+                "OpenApiConnection",
+                "Manual",
+                "ApiConnectionWebhook",
+                "OpenApiConnectionWebhook",
+                "Response",
+                "HttpWebhook",
+                "Compose",
+                "Query",
+                "Function",
+                "ApiManagement",
+                "XmlValidation",
+                "FlatFileEncoding",
+                "Scope",
+                "Request",
+                "If",
+                "Foreach",
+                "Until",
+                "Xslt",
+                "FlatFileDecoding",
+                "Terminate",
+                "IntegrationAccountArtifactLookup",
+                "Switch",
+                "ParseJson",
+                "Table",
+                "Join",
+                "Select",
+                "InitializeVariable",
+                "IncrementVariable",
+                "DecrementVariable",
+                "SetVariable",
+                "AppendToArrayVariable",
+                "AppendToStringVariable",
+                "Batch",
+                "SendToBatch",
+                "SlidingWindow",
+                "Expression",
+                "Liquid",
+                "JavascriptCode",
+                "As2Decode",
+                "As2Encode",
+                "RosettaNetEncode",
+                "RosettaNetDecode",
+                "RosettaNetWaitForResponse",
+                "ApiConnectionNotification",
+                "Changeset",
+                "SwiftEncode"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "stagecategory": {
+          "description": "Select the category of the sales process.",
+          "anyOf": [
+            {
+              "enum": [
+                "Qualify",
+                "Develop",
+                "Propose",
+                "Close",
+                "Identify",
+                "Research",
+                "Resolve",
+                "Approval"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "processstageid"
+      ],
+      "patternProperties": {
+        "^processid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.workflow'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

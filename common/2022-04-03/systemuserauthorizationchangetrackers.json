@@ -1,0 +1,59 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/systemuserauthorizationchangetracker.json#",
+  "title": "Entity definition for SystemUserAuthorizationChangeTracker",
+  "definitions": {
+    "SystemUserAuthorizationChangeTrackerPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "systemuserid": {
+          "description": "Unique identifier for the user",
+          "type": "string"
+        },
+        "systemuserauthorizationchangetracker_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "systemuserauthorizationchangetracker_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "systemuserauthorizationchangetracker_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "systemuserauthorizationchangetracker_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "systemuserauthorizationchangetracker_ProcessSession": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "systemuserauthorizationchangetracker_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "systemuserid"
+      ],
+      "patternProperties": {
+        "^systemuserid_userauthztracker(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

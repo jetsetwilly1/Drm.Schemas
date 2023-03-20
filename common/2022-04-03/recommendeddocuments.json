@@ -1,0 +1,79 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/recommendeddocument.json#",
+  "title": "Entity definition for DocumentSuggestions",
+  "definitions": {
+    "DocumentSuggestionsPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "associatedrecordname": {
+          "description": "Shows the associated record name of the recommended document.",
+          "type": "string"
+        },
+        "author": {
+          "description": "Shows the name of the author of the recommended document.",
+          "type": "string"
+        },
+        "externaldocumentid": {
+          "description": "Shows the external document.",
+          "type": "string"
+        },
+        "externalmodifiedby": {
+          "description": "Shows who last updated the document record.",
+          "type": "string"
+        },
+        "recommendeddocumentid": {
+          "description": "Shows the recommended document record.",
+          "type": "string"
+        },
+        "source": {
+          "description": "Shows the source storage of the recommended document.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "title": {
+          "description": "Type a title for the entity.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Shows the time zone code that was in use when the record was created."
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "recommendeddocumentid"
+      ],
+      "patternProperties": {
+        "^createdbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfbyname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^transactioncurrencyidname(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

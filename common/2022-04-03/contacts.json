@@ -1,0 +1,1714 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/contact.json#",
+  "title": "Entity definition for Contact",
+  "definitions": {
+    "ContactPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "address1_addressid": {
+          "description": "Unique identifier for address 1.",
+          "type": "string"
+        },
+        "address1_city": {
+          "description": "Type the city for the primary address.",
+          "type": "string"
+        },
+        "address1_country": {
+          "description": "Type the country or region for the primary address.",
+          "type": "string"
+        },
+        "address1_county": {
+          "description": "Type the county for the primary address.",
+          "type": "string"
+        },
+        "address1_fax": {
+          "description": "Type the fax number associated with the primary address.",
+          "type": "string"
+        },
+        "address1_latitude": {
+          "description": "Type the latitude value for the primary address for use in mapping and other applications.",
+          "type": "number"
+        },
+        "address1_line1": {
+          "description": "Type the first line of the primary address.",
+          "type": "string"
+        },
+        "address1_line2": {
+          "description": "Type the second line of the primary address.",
+          "type": "string"
+        },
+        "address1_line3": {
+          "description": "Type the third line of the primary address.",
+          "type": "string"
+        },
+        "address1_longitude": {
+          "description": "Type the longitude value for the primary address for use in mapping and other applications.",
+          "type": "number"
+        },
+        "address1_name": {
+          "description": "Type a descriptive name for the primary address, such as Corporate Headquarters.",
+          "type": "string"
+        },
+        "address1_postalcode": {
+          "description": "Type the ZIP Code or postal code for the primary address.",
+          "type": "string"
+        },
+        "address1_postofficebox": {
+          "description": "Type the post office box number of the primary address.",
+          "type": "string"
+        },
+        "address1_primarycontactname": {
+          "description": "Type the name of the main contact at the account's primary address.",
+          "type": "string"
+        },
+        "address1_stateorprovince": {
+          "description": "Type the state or province of the primary address.",
+          "type": "string"
+        },
+        "address1_telephone1": {
+          "description": "Type the main phone number associated with the primary address.",
+          "type": "string"
+        },
+        "address1_telephone2": {
+          "description": "Type a second phone number associated with the primary address.",
+          "type": "string"
+        },
+        "address1_telephone3": {
+          "description": "Type a third phone number associated with the primary address.",
+          "type": "string"
+        },
+        "address1_upszone": {
+          "description": "Type the UPS zone of the primary address to make sure shipping charges are calculated correctly and deliveries are made promptly, if shipped by UPS.",
+          "type": "string"
+        },
+        "address1_utcoffset": {
+          "description": "Select the time zone, or UTC offset, for this address so that other people can reference it when they contact someone at this address."
+        },
+        "address2_addressid": {
+          "description": "Unique identifier for address 2.",
+          "type": "string"
+        },
+        "address2_city": {
+          "description": "Type the city for the secondary address.",
+          "type": "string"
+        },
+        "address2_country": {
+          "description": "Type the country or region for the secondary address.",
+          "type": "string"
+        },
+        "address2_county": {
+          "description": "Type the county for the secondary address.",
+          "type": "string"
+        },
+        "address2_fax": {
+          "description": "Type the fax number associated with the secondary address.",
+          "type": "string"
+        },
+        "address2_latitude": {
+          "description": "Type the latitude value for the secondary address for use in mapping and other applications.",
+          "type": "number"
+        },
+        "address2_line1": {
+          "description": "Type the first line of the secondary address.",
+          "type": "string"
+        },
+        "address2_line2": {
+          "description": "Type the second line of the secondary address.",
+          "type": "string"
+        },
+        "address2_line3": {
+          "description": "Type the third line of the secondary address.",
+          "type": "string"
+        },
+        "address2_longitude": {
+          "description": "Type the longitude value for the secondary address for use in mapping and other applications.",
+          "type": "number"
+        },
+        "address2_name": {
+          "description": "Type a descriptive name for the secondary address, such as Corporate Headquarters.",
+          "type": "string"
+        },
+        "address2_postalcode": {
+          "description": "Type the ZIP Code or postal code for the secondary address.",
+          "type": "string"
+        },
+        "address2_postofficebox": {
+          "description": "Type the post office box number of the secondary address.",
+          "type": "string"
+        },
+        "address2_primarycontactname": {
+          "description": "Type the name of the main contact at the account's secondary address.",
+          "type": "string"
+        },
+        "address2_stateorprovince": {
+          "description": "Type the state or province of the secondary address.",
+          "type": "string"
+        },
+        "address2_telephone1": {
+          "description": "Type the main phone number associated with the secondary address.",
+          "type": "string"
+        },
+        "address2_telephone2": {
+          "description": "Type a second phone number associated with the secondary address.",
+          "type": "string"
+        },
+        "address2_telephone3": {
+          "description": "Type a third phone number associated with the secondary address.",
+          "type": "string"
+        },
+        "address2_upszone": {
+          "description": "Type the UPS zone of the secondary address to make sure shipping charges are calculated correctly and deliveries are made promptly, if shipped by UPS.",
+          "type": "string"
+        },
+        "address2_utcoffset": {
+          "description": "Select the time zone, or UTC offset, for this address so that other people can reference it when they contact someone at this address."
+        },
+        "address3_addressid": {
+          "description": "Unique identifier for address 3.",
+          "type": "string"
+        },
+        "address3_city": {
+          "description": "Type the city for the 3rd address.",
+          "type": "string"
+        },
+        "address3_country": {
+          "description": "the country or region for the 3rd address.",
+          "type": "string"
+        },
+        "address3_county": {
+          "description": "Type the county for the third address.",
+          "type": "string"
+        },
+        "address3_fax": {
+          "description": "Type the fax number associated with the third address.",
+          "type": "string"
+        },
+        "address3_latitude": {
+          "description": "Type the latitude value for the third address for use in mapping and other applications.",
+          "type": "number"
+        },
+        "address3_line1": {
+          "description": "the first line of the 3rd address.",
+          "type": "string"
+        },
+        "address3_line2": {
+          "description": "the second line of the 3rd address.",
+          "type": "string"
+        },
+        "address3_line3": {
+          "description": "the third line of the 3rd address.",
+          "type": "string"
+        },
+        "address3_longitude": {
+          "description": "Type the longitude value for the third address for use in mapping and other applications.",
+          "type": "number"
+        },
+        "address3_name": {
+          "description": "Type a descriptive name for the third address, such as Corporate Headquarters.",
+          "type": "string"
+        },
+        "address3_postalcode": {
+          "description": "the ZIP Code or postal code for the 3rd address.",
+          "type": "string"
+        },
+        "address3_postofficebox": {
+          "description": "the post office box number of the 3rd address.",
+          "type": "string"
+        },
+        "address3_primarycontactname": {
+          "description": "Type the name of the main contact at the account's third address.",
+          "type": "string"
+        },
+        "address3_stateorprovince": {
+          "description": "the state or province of the third address.",
+          "type": "string"
+        },
+        "address3_telephone1": {
+          "description": "Type the main phone number associated with the third address.",
+          "type": "string"
+        },
+        "address3_telephone2": {
+          "description": "Type a second phone number associated with the third address.",
+          "type": "string"
+        },
+        "address3_telephone3": {
+          "description": "Type a third phone number associated with the primary address.",
+          "type": "string"
+        },
+        "address3_upszone": {
+          "description": "Type the UPS zone of the third address to make sure shipping charges are calculated correctly and deliveries are made promptly, if shipped by UPS.",
+          "type": "string"
+        },
+        "address3_utcoffset": {
+          "description": "Select the time zone, or UTC offset, for this address so that other people can reference it when they contact someone at this address."
+        },
+        "anniversary": {
+          "description": "Enter the date of the contact's wedding or service anniversary for use in customer gift programs or other communications.",
+          "type": "string"
+        },
+        "annualincome": {
+          "description": "Type the contact's annual income for use in profiling and financial analysis.",
+          "type": "number"
+        },
+        "assistantname": {
+          "description": "Type the name of the contact's assistant.",
+          "type": "string"
+        },
+        "assistantphone": {
+          "description": "Type the phone number for the contact's assistant.",
+          "type": "string"
+        },
+        "birthdate": {
+          "description": "Enter the contact's birthday for use in customer gift programs or other communications.",
+          "type": "string"
+        },
+        "business2": {
+          "description": "Type a second business phone number for this contact.",
+          "type": "string"
+        },
+        "businesscard": {
+          "description": "Stores Image of the Business Card",
+          "type": "string"
+        },
+        "businesscardattributes": {
+          "description": "Stores Business Card Control Properties.",
+          "type": "string"
+        },
+        "callback": {
+          "description": "Type a callback phone number for this contact.",
+          "type": "string"
+        },
+        "childrensnames": {
+          "description": "Type the names of the contact's children for reference in communications and client programs.",
+          "type": "string"
+        },
+        "company": {
+          "description": "Type the company phone of the contact.",
+          "type": "string"
+        },
+        "contactid": {
+          "description": "Unique identifier of the contact.",
+          "type": "string"
+        },
+        "creditlimit": {
+          "description": "Type the credit limit of the contact for reference when you address invoice and accounting issues with the customer.",
+          "type": "number"
+        },
+        "department": {
+          "description": "Type the department or business unit where the contact works in the parent company or business.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Type additional information to describe the contact, such as an excerpt from the company's website.",
+          "type": "string"
+        },
+        "emailaddress1": {
+          "description": "Type the primary email address for the contact.",
+          "type": "string"
+        },
+        "emailaddress2": {
+          "description": "Type the secondary email address for the contact.",
+          "type": "string"
+        },
+        "emailaddress3": {
+          "description": "Type an alternate email address for the contact.",
+          "type": "string"
+        },
+        "employeeid": {
+          "description": "Type the employee ID or number for the contact for reference in orders, service cases, or other communications with the contact's organization.",
+          "type": "string"
+        },
+        "entityimage": {
+          "description": "Shows the default image for the record.",
+          "type": "string"
+        },
+        "externaluseridentifier": {
+          "description": "Identifier for an external user.",
+          "type": "string"
+        },
+        "fax": {
+          "description": "Type the fax number for the contact.",
+          "type": "string"
+        },
+        "firstname": {
+          "description": "Type the contact's first name to make sure the contact is addressed correctly in sales calls, email, and marketing campaigns.",
+          "type": "string"
+        },
+        "ftpsiteurl": {
+          "description": "Type the URL for the contact's FTP site to enable users to access data and share documents.",
+          "type": "string"
+        },
+        "governmentid": {
+          "description": "Type the passport number or other government ID for the contact for use in documents or reports.",
+          "type": "string"
+        },
+        "home2": {
+          "description": "Type a second home phone number for this contact.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "jobtitle": {
+          "description": "Type the job title of the contact to make sure the contact is addressed correctly in sales calls, email, and marketing campaigns.",
+          "type": "string"
+        },
+        "lastname": {
+          "description": "Type the contact's last name to make sure the contact is addressed correctly in sales calls, email, and marketing campaigns.",
+          "type": "string"
+        },
+        "lastonholdtime": {
+          "description": "Contains the date and time stamp of the last on hold time.",
+          "type": "string"
+        },
+        "lastusedincampaign": {
+          "description": "Shows the date when the contact was last included in a marketing campaign or quick campaign.",
+          "type": "string"
+        },
+        "managername": {
+          "description": "Type the name of the contact's manager for use in escalating issues or other follow-up communications with the contact.",
+          "type": "string"
+        },
+        "managerphone": {
+          "description": "Type the phone number for the contact's manager.",
+          "type": "string"
+        },
+        "middlename": {
+          "description": "Type the contact's middle name or initial to make sure the contact is addressed correctly.",
+          "type": "string"
+        },
+        "mobilephone": {
+          "description": "Type the mobile phone number for the contact.",
+          "type": "string"
+        },
+        "nickname": {
+          "description": "Type the contact's nickname.",
+          "type": "string"
+        },
+        "numberofchildren": {
+          "description": "Type the number of children the contact has for reference in follow-up phone calls and other communications."
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "pager": {
+          "description": "Type the pager number for the contact.",
+          "type": "string"
+        },
+        "processid": {
+          "description": "Shows the ID of the process.",
+          "type": "string"
+        },
+        "salutation": {
+          "description": "Type the salutation of the contact to make sure the contact is addressed correctly in sales calls, email messages, and marketing campaigns.",
+          "type": "string"
+        },
+        "spousesname": {
+          "description": "Type the name of the contact's spouse or partner for reference during calls, events, or other communications with the contact.",
+          "type": "string"
+        },
+        "stageid": {
+          "description": "Shows the ID of the stage.",
+          "type": "string"
+        },
+        "subscriptionid": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "suffix": {
+          "description": "Type the suffix used in the contact's name, such as Jr. or Sr. to make sure the contact is addressed correctly in sales calls, email, and marketing campaigns.",
+          "type": "string"
+        },
+        "teamsfollowed": {
+          "description": "Number of users or conversations followed the record"
+        },
+        "telephone1": {
+          "description": "Type the main phone number for this contact.",
+          "type": "string"
+        },
+        "telephone2": {
+          "description": "Type a second phone number for this contact.",
+          "type": "string"
+        },
+        "telephone3": {
+          "description": "Type a third phone number for this contact.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "traversedpath": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "websiteurl": {
+          "description": "Type the contact's professional or personal website or blog URL.",
+          "type": "string"
+        },
+        "yomifirstname": {
+          "description": "Type the phonetic spelling of the contact's first name, if the name is specified in Japanese, to make sure the name is pronounced correctly in phone calls with the contact.",
+          "type": "string"
+        },
+        "yomilastname": {
+          "description": "Type the phonetic spelling of the contact's last name, if the name is specified in Japanese, to make sure the name is pronounced correctly in phone calls with the contact.",
+          "type": "string"
+        },
+        "yomimiddlename": {
+          "description": "Type the phonetic spelling of the contact's middle name, if the name is specified in Japanese, to make sure the name is pronounced correctly in phone calls with the contact.",
+          "type": "string"
+        },
+        "account_primary_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "array",
+          "minItems": 1
+        },
+        "BulkOperation_Logs_Contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "CampaignActivity_Logs_Contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_actioncard": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.actioncard'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_activity_parties": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activityparty'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_ActivityPointers": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitypointer'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_Annotation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annotation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_Appointments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_as_primary_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_as_responsible_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_bookableresource_ContactId": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresource'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_BulkOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_CampaignResponses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_connections1": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_connections2": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_customer_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_CustomerAddress": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.customeraddress'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_Email_EmailSender": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_Emails": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_entitlement_ContactId": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_entitlement_Customer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_Faxes": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fax'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_Feedback": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.feedback'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_Letters": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.letter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_li_inmails": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_inmail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_li_messages": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_message'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_li_pointdrivepresentationvieweds": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_MailboxTrackingFolder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_master_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_msdyn_approvals": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_approval'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_msdyn_bookingalerts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_msfp_alerts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_msfp_surveyinvites": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_msfp_surveyresponses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_Phonecalls": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonecall'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_PostFollows": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.postfollow'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_PostRegardings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.postregarding'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_RecurringAppointmentMasters": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recurringappointmentmaster'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_ServiceAppointments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceappointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contact_SharePointDocumentLocations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointdocumentlocation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_SocialActivities": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Contact_Tasks": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.task'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contactinvoices_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.invoice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contactleads_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contactorders_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contactquotes_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contract_billingcustomer_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contract'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contract_customer_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contract'",
+          "type": "array",
+          "minItems": 1
+        },
+        "contractlineitem_customer_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contractdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "CreatedContact_BulkOperationLogs": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperationlog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entitlementcontacts_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "incident_customer_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "invoice_customer_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.invoice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lead_customer_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lead_parent_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "listcontact_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.list'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_contact_feedback_createdby": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.feedback'",
+          "type": "array",
+          "minItems": 1
+        },
+        "lk_contact_feedback_createdonbehalfby": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.feedback'",
+          "type": "array",
+          "minItems": 1
+        },
+        "ms_contact_ms_newsitem": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ms_newsitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_actual_ContactCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actual'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_actual_ContactVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actual'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_contactpricelist_Contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contactpricelist'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_estimateline_ContactCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimateline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_estimateline_ContactVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimateline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_fact_ContactCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_fact_ContactVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_invoicelinetransaction_ContactVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_journalline_ContactCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journalline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_journalline_ContactVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journalline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_orderlinetransaction_ContactCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_orderlinetransaction_ContactVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_quotelinetransaction_ContactCustomer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_quotelinetransaction_ContactVendor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_rma_RequestedByContact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rma'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_rtv_VendorContact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtv'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_contact_msdyn_workorder_ReportedByContact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_playbookinstance_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_playbookinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "opportunity_customer_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "opportunity_parent_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "order_customer_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "quote_customer_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "array",
+          "minItems": 1
+        },
+        "servicecontractcontacts_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contract'",
+          "type": "array",
+          "minItems": 1
+        },
+        "slakpiinstance_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.slakpiinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "socialactivity_postauthor_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "socialactivity_postauthoraccount_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Socialprofile_customer_contacts": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialprofile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SourceContact_BulkOperationLogs": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperationlog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "accountrolecode": {
+          "description": "Select the contact's role within the company or sales process, such as decision maker, employee, or influencer.",
+          "anyOf": [
+            {
+              "enum": [
+                "Decision Maker",
+                "Employee",
+                "Influencer"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address1_addresstypecode": {
+          "description": "Select the primary address type.",
+          "anyOf": [
+            {
+              "enum": [
+                "Bill To",
+                "Ship To",
+                "Primary",
+                "Other"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address1_freighttermscode": {
+          "description": "Select the freight terms for the primary address to make sure shipping orders are processed correctly.",
+          "anyOf": [
+            {
+              "enum": [
+                "FOB",
+                "No Charge"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address1_shippingmethodcode": {
+          "description": "Select a shipping method for deliveries sent to this address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Airborne",
+                "DHL",
+                "FedEx",
+                "UPS",
+                "Postal Mail",
+                "Full Load",
+                "Will Call"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address2_addresstypecode": {
+          "description": "Select the secondary address type.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address2_freighttermscode": {
+          "description": "Select the freight terms for the secondary address to make sure shipping orders are processed correctly.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address2_shippingmethodcode": {
+          "description": "Select a shipping method for deliveries sent to this address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address3_addresstypecode": {
+          "description": "Select the third address type.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address3_freighttermscode": {
+          "description": "Select the freight terms for the third address to make sure shipping orders are processed correctly.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "address3_shippingmethodcode": {
+          "description": "Select a shipping method for deliveries sent to this address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "creditonhold": {
+          "description": "Select whether the contact is on a credit hold, for reference when addressing invoice and accounting issues.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "customersizecode": {
+          "description": "Select the size of the contact's company for segmentation and reporting purposes.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "customertypecode": {
+          "description": "Select the category that best describes the relationship between the contact and your organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotbulkemail": {
+          "description": "Select whether the contact accepts bulk email sent through marketing campaigns or quick campaigns. If Do Not Allow is selected, the contact can be added to marketing lists, but will be excluded from the email.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Allow",
+                "Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotbulkpostalmail": {
+          "description": "Select whether the contact accepts bulk postal mail sent through marketing campaigns or quick campaigns. If Do Not Allow is selected, the contact can be added to marketing lists, but will be excluded from the letters.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotemail": {
+          "description": "Select whether the contact allows direct email sent from Microsoft Dynamics 365. If Do Not Allow is selected, Microsoft Dynamics 365 will not send the email.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Allow",
+                "Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotfax": {
+          "description": "Select whether the contact allows faxes. If Do Not Allow is selected, the contact will be excluded from any fax activities distributed in marketing campaigns.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Allow",
+                "Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotphone": {
+          "description": "Select whether the contact accepts phone calls. If Do Not Allow is selected, the contact will be excluded from any phone call activities distributed in marketing campaigns.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Allow",
+                "Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotpostalmail": {
+          "description": "Select whether the contact allows direct mail. If Do Not Allow is selected, the contact will be excluded from letter activities distributed in marketing campaigns.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Allow",
+                "Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "donotsendmm": {
+          "description": "Select whether the contact accepts marketing materials, such as brochures or catalogs. Contacts that opt out can be excluded from marketing initiatives.",
+          "anyOf": [
+            {
+              "enum": [
+                "Do Not Send",
+                "Send"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "educationcode": {
+          "description": "Select the contact's highest level of education for use in segmentation and analysis.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "familystatuscode": {
+          "description": "Select the marital status of the contact for reference in follow-up phone calls and other communications.",
+          "anyOf": [
+            {
+              "enum": [
+                "Single",
+                "Married",
+                "Divorced",
+                "Widowed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "followemail": {
+          "description": "Information about whether to allow following email activity like opens, attachment views and link clicks for emails sent to the contact.",
+          "anyOf": [
+            {
+              "enum": [
+                "Allow",
+                "Do Not Allow"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "gendercode": {
+          "description": "Select the contact's gender to make sure the contact is addressed correctly in sales calls, email, and marketing campaigns.",
+          "anyOf": [
+            {
+              "enum": [
+                "Male",
+                "Female"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "haschildrencode": {
+          "description": "Select whether the contact has any children for reference in follow-up phone calls and other communications.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isbackofficecustomer": {
+          "description": "Select whether the contact exists in a separate accounting or other system, such as Microsoft Dynamics GP or another ERP database, for use in integration processes.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "leadsourcecode": {
+          "description": "Select the primary marketing source that directed the contact to your organization.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "marketingonly": {
+          "description": "Whether is only for marketing",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_gdproptout": {
+          "description": "Describes whether contact is opted out or not",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_orgchangestatus": {
+          "description": "Whether or not the contact belongs to the associated account",
+          "anyOf": [
+            {
+              "enum": [
+                "No Feedback",
+                "Not at Company",
+                "Ignore"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "participatesinworkflow": {
+          "description": "Shows whether the contact participates in workflow rules.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "paymenttermscode": {
+          "description": "Select the payment terms to indicate when the customer needs to pay the total amount.",
+          "anyOf": [
+            {
+              "enum": [
+                "Net 30",
+                "2% 10, Net 30",
+                "Net 45",
+                "Net 60"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "preferredappointmentdaycode": {
+          "description": "Select the preferred day of the week for service appointments.",
+          "anyOf": [
+            {
+              "enum": [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "preferredappointmenttimecode": {
+          "description": "Select the preferred time of day for service appointments.",
+          "anyOf": [
+            {
+              "enum": [
+                "Morning",
+                "Afternoon",
+                "Evening"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "preferredcontactmethodcode": {
+          "description": "Select the preferred method of contact.",
+          "anyOf": [
+            {
+              "enum": [
+                "Any",
+                "Email",
+                "Phone",
+                "Fax",
+                "Mail"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "shippingmethodcode": {
+          "description": "Select a shipping method for deliveries sent to this address.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Shows whether the contact is active or inactive. Inactive contacts are read-only and can't be edited unless they are reactivated.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Select the contact's status.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "territorycode": {
+          "description": "Select a region or territory for the contact for use in segmentation and analysis.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "contactid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^defaultpricelevelid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.pricelevel'",
+          "type": "string"
+        },
+        "^masterid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^originatingleadid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^parentcustomerid_account(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "string"
+        },
+        "^parentcustomerid_contact(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "string"
+        },
+        "^preferredequipmentid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.equipment'",
+          "type": "string"
+        },
+        "^preferredserviceid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.service'",
+          "type": "string"
+        },
+        "^preferredsystemuserid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^slaid_sla(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sla'",
+          "type": "string"
+        },
+        "^slainvokedid_contact_sla(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sla'",
+          "type": "string"
+        },
+        "^stageid_processstage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processstage'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

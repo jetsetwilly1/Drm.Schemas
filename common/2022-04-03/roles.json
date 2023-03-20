@@ -1,0 +1,151 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/role.json#",
+  "title": "Entity definition for SecurityRole",
+  "definitions": {
+    "SecurityRolePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "canbedeleted": {
+          "description": "Tells whether the role can be deleted.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the role.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "roleid": {
+          "description": "Unique identifier of the role.",
+          "type": "string"
+        },
+        "appmoduleroles_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appmodule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_role_msdyn_actioncardrolesetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actioncardrolesetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Role_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Role_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "role_parent_role": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.role'",
+          "type": "array",
+          "minItems": 1
+        },
+        "role_parent_root_role": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.role'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Role_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "roleprivileges_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.privilege'",
+          "type": "array",
+          "minItems": 1
+        },
+        "systemuserroles_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "array",
+          "minItems": 1
+        },
+        "teamroles_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isinherited": {
+          "description": "Role is inherited by users from team membership, if role associated with team.",
+          "anyOf": [
+            {
+              "enum": [
+                "Team privileges only",
+                "Direct User (Basic) access level and Team privileges"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "roleid"
+      ],
+      "patternProperties": {
+        "^businessunitid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid_organization(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^parentroleid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.role'",
+          "type": "string"
+        },
+        "^parentrootroleid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.role'",
+          "type": "string"
+        },
+        "^roletemplateid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.roletemplate'",
+          "type": "string"
+        },
+        "^solution_role(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

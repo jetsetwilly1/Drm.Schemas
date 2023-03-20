@@ -1,0 +1,611 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/emailserverprofile.json#",
+  "title": "Entity definition for EmailServerProfile",
+  "definitions": {
+    "EmailServerProfilePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "credentialinfo": {
+          "description": "",
+          "type": "string"
+        },
+        "dataencryptionkey": {
+          "description": "",
+          "type": "string"
+        },
+        "defaultserverlocation": {
+          "description": "Type the default location of the server.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Type additional information that describes the email server profile.",
+          "type": "string"
+        },
+        "emailserverprofileid": {
+          "description": "Unique identifier of the email server profile.",
+          "type": "string"
+        },
+        "encodingcodepage": {
+          "description": "Indicates the code page to use when encoding email content.",
+          "type": "string"
+        },
+        "entityimage": {
+          "description": "The default image for the entity.",
+          "type": "string"
+        },
+        "exchangeonlinetenantid": {
+          "description": "Type the tenant ID of Exchange Online.",
+          "type": "string"
+        },
+        "incomingpassword": {
+          "description": "Type the password for incoming email.",
+          "type": "string"
+        },
+        "incomingportnumber": {
+          "description": "Type the Exchange port number for incoming mail."
+        },
+        "incomingserverlocation": {
+          "description": "Type the location of the server for incoming email.",
+          "type": "string"
+        },
+        "incomingusername": {
+          "description": "Type the user name for incoming email.",
+          "type": "string"
+        },
+        "lastcrmmessage": {
+          "description": "Shows the Dynamics 365 message obtained during the Last Test",
+          "type": "string"
+        },
+        "lasttestrequest": {
+          "description": "Shows the EWS Request created during the Last Test",
+          "type": "string"
+        },
+        "lasttestresponse": {
+          "description": "Shows the EWS Response obtained during the Last Test",
+          "type": "string"
+        },
+        "lastteststarttime": {
+          "description": "Shows the Last Test Start date and time",
+          "type": "string"
+        },
+        "lasttesttotalexecutiontime": {
+          "description": "Shows the Time taken while running the last test",
+          "type": "string"
+        },
+        "maxconcurrentconnections": {
+          "description": "Maximum number of concurrent connections allowed to the email server per authenticated user."
+        },
+        "minpollingintervalinminutes": {
+          "description": "Minimum polling interval, in minutes, for mailboxes that are associated with this email server profile."
+        },
+        "name": {
+          "description": "Type a meaningful name for the email server profile. This name is displayed when you need to select an email server profile.",
+          "type": "string"
+        },
+        "oauthclientid": {
+          "description": "ClientId used for OAuth athentication scheme",
+          "type": "string"
+        },
+        "oauthclientsecret": {
+          "description": "Client secret used for the OAuth authentication scheme",
+          "type": "string"
+        },
+        "outgoingpassword": {
+          "description": "Type the password for outgoing email.",
+          "type": "string"
+        },
+        "outgoingportnumber": {
+          "description": "Type the Exchange port number for outgoing mail."
+        },
+        "outgoingserverlocation": {
+          "description": "Type the location of the server for outgoing email.",
+          "type": "string"
+        },
+        "outgoingusername": {
+          "description": "Type the user name for outgoing email.",
+          "type": "string"
+        },
+        "owneremailaddress": {
+          "description": "Email Server Profile Owner's email address",
+          "type": "string"
+        },
+        "processemailsreceivedafter": {
+          "description": "Shows the date and time after which email messages that are received will be processed for mailboxes associated with the email server profile.",
+          "type": "string"
+        },
+        "timeoutmailboxconnectionafteramount": {
+          "description": "Type the number of milliseconds to timeout a single mailbox. The upper limit is 100 seconds."
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "EmailServerProfile_Annotation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annotation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "emailserverprofile_asyncoperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "emailserverprofile_bulkdeletefailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "emailserverprofile_duplicatebaserecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "emailserverprofile_duplicatematchingrecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "emailserverprofile_mailbox": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailbox'",
+          "type": "array",
+          "minItems": 1
+        },
+        "EmailServerProfile_Organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "array",
+          "minItems": 1
+        },
+        "EmailServerProfile_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "tracelog_EmailServerProfile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.tracelog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "exchangeversion": {
+          "description": "Select the version of Exchange that is on the email server.",
+          "anyOf": [
+            {
+              "enum": [
+                "Exchange 2007",
+                "Exchange 2007 SP1",
+                "Exchange 2010",
+                "Exchange 2010 SP1",
+                "Exchange 2010 SP2",
+                "Exchange 2013"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "incomingauthenticationprotocol": {
+          "description": "Select the incoming email authentication protocol that is used for connecting to the email server.",
+          "anyOf": [
+            {
+              "enum": [
+                "Auto Detect",
+                "Negotiate",
+                "NTLM",
+                "Basic",
+                "OAuth"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "incomingcredentialretrieval": {
+          "description": "Select how credentials will be retrieved for incoming email.",
+          "anyOf": [
+            {
+              "enum": [
+                "Credentials Specified by a User or Queue",
+                "Credentials Specified in Email Server Profile",
+                "Server to Server Authentication",
+                "Windows Integrated Authentication",
+                "Without Credentials (Anonymous)",
+                "Gmail OAuth"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "incominguseimpersonation": {
+          "description": "Select whether to use impersonation to access the mailbox to process incoming emails.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "incomingusessl": {
+          "description": "Select whether to use the Secure Sockets Layer (SSL) protocol for incoming email.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "lastauthorizationstatus": {
+          "description": "Shows the last test authorization status of email server profile",
+          "anyOf": [
+            {
+              "enum": [
+                "Failure",
+                "Success"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "lasttestexecutionstatus": {
+          "description": "Shows the last test Execution status of email server profile",
+          "anyOf": [
+            {
+              "enum": [
+                "Failure",
+                "Success",
+                "Warning"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "lasttestvalidationstatus": {
+          "description": "Shows the last test Validation status of email server profile",
+          "anyOf": [
+            {
+              "enum": [
+                "Failure",
+                "Success"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "moveundeliveredemails": {
+          "description": "Indicates whether to move undelivered incoming emails to the Undeliverable folder in Microsoft Exchange.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "outgoingauthenticationprotocol": {
+          "description": "Select the outgoing email authentication protocol that is used for connecting to the email server.",
+          "anyOf": [
+            {
+              "enum": [
+                "Auto Detect",
+                "Negotiate",
+                "NTLM",
+                "Basic",
+                "OAuth"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "outgoingautograntdelegateaccess": {
+          "description": "Indicates whether the email connector will grant delegate access permissions to the accessing user when required while processing outgoing emails.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "outgoingcredentialretrieval": {
+          "description": "Select how credentials will be retrieved for outgoing email.",
+          "anyOf": [
+            {
+              "enum": [
+                "Credentials Specified by a User or Queue",
+                "Credentials Specified in Email Server Profile",
+                "Server to Server Authentication",
+                "Windows Integrated Authentication",
+                "Without Credentials (Anonymous)",
+                "Gmail OAuth"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "outgoinguseimpersonation": {
+          "description": "Select whether to use impersonation for accessing the mailbox to process outgoing emails.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "outgoingusessl": {
+          "description": "Select whether to use the Secure Sockets Layer (SSL) protocol for outgoing email.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "sendemailalert": {
+          "description": "Select whether to send an email alert if more than 50% of the mailboxes in this email server profile failed to synchronize in an hour period.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "servertype": {
+          "description": "Select the profile's email server type.",
+          "anyOf": [
+            {
+              "enum": [
+                "Exchange Server",
+                "Other (POP3/SMTP)",
+                "Exchange Server (Hybrid)",
+                "Exchange Online (Hybrid)",
+                "IMAP/SMTP"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Shows whether the email server profile is active or inactive.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Select the email server profile's status.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "timeoutmailboxconnection": {
+          "description": "Select whether to timeout a single mailbox.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "useautodiscover": {
+          "description": "Select whether to automatically discover the server location",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "usedefaulttenantid": {
+          "description": "Select whether to use the Exchange Online Tenant ID obtained from running Microsoft Azure PowerShell cmdlets (highly recommended). If you select No, you can edit this field manually",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "usesamesettingsforoutgoingconnections": {
+          "description": "Select whether to use the same settings for incoming and outgoing connections.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "emailserverprofileid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/theme.json#",
+  "title": "Entity definition for Theme",
+  "definitions": {
+    "ThemePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "accentcolor": {
+          "description": "Choose the Unified Interface secondary theme color to be used on the process control",
+          "type": "string"
+        },
+        "backgroundcolor": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "controlborder": {
+          "description": "Choose the color that controls will use for borders",
+          "type": "string"
+        },
+        "controlshade": {
+          "description": "Choose the background color for controls to use to indicate when you hover over items",
+          "type": "string"
+        },
+        "defaultcustomentitycolor": {
+          "description": "Choose the default custom entity color if no color is assigned",
+          "type": "string"
+        },
+        "defaultentitycolor": {
+          "description": "Choose the default color for system entities if no color is assigned",
+          "type": "string"
+        },
+        "globallinkcolor": {
+          "description": "Choose the color for all links, such as e-mail address and lookup links, and for all buttons that are in focus",
+          "type": "string"
+        },
+        "headercolor": {
+          "description": "Choose the color for title text, such as form tab labels",
+          "type": "string"
+        },
+        "hoverlinkeffect": {
+          "description": "Choose the color that commands or lists will use to indicate hovered over items",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "logotooltip": {
+          "description": "Enter text that will be used as the tooltip and alt text for the logo.",
+          "type": "string"
+        },
+        "maincolor": {
+          "description": "Choose the Unified Interface primary theme color to be used on main command bar, buttons and tabs",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the Theme Entity.",
+          "type": "string"
+        },
+        "navbarbackgroundcolor": {
+          "description": "Choose the primary Navigation Bar background color",
+          "type": "string"
+        },
+        "navbarshelfcolor": {
+          "description": "Choose the secondary Navigation Bar background color",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "pageheaderbackgroundcolor": {
+          "description": "Choose the page header background color",
+          "type": "string"
+        },
+        "panelheaderbackgroundcolor": {
+          "description": "Choose the panel header background color",
+          "type": "string"
+        },
+        "processcontrolcolor": {
+          "description": "Choose the primary background color for process controls",
+          "type": "string"
+        },
+        "selectedlinkeffect": {
+          "description": "Choose the color that commands or lists will use to indicate selected items",
+          "type": "string"
+        },
+        "themeid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "theme_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "theme_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "theme_ProcessSession": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isdefaulttheme": {
+          "description": "Default status of theme.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the Theme",
+          "anyOf": [
+            {
+              "enum": [
+                "Custom",
+                "System"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "type": {
+          "description": "Define type of theme.",
+          "anyOf": [
+            {
+              "enum": [
+                "Custom",
+                "System"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "themeid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^logoimage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.webresource'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

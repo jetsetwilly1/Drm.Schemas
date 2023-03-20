@@ -1,0 +1,959 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/transactioncurrency.json#",
+  "title": "Entity definition for Currency",
+  "definitions": {
+    "CurrencyPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "currencyname": {
+          "description": "Name of the transaction currency.",
+          "type": "string"
+        },
+        "currencyprecision": {
+          "description": "Number of decimal places that can be used for currency."
+        },
+        "currencysymbol": {
+          "description": "Symbol for the transaction currency.",
+          "type": "string"
+        },
+        "entityimage": {
+          "description": "The default image for the entity.",
+          "type": "string"
+        },
+        "exchangerate": {
+          "description": "Exchange rate between the transaction currency and the base currency.",
+          "type": "number"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "isocurrencycode": {
+          "description": "ISO currency code for the transaction currency.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "transactioncurrencyid": {
+          "description": "Unique identifier of the transaction currency.",
+          "type": "string"
+        },
+        "basecurrency_organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "array",
+          "minItems": 1
+        },
+        "bulkoperation_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "DynamicPropertyAssociation_TransactionCurrency": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.dynamicpropertyassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "DynamicPropertyOptionSetItem_TransactionCurrency": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.dynamicpropertyoptionsetitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "incidentresolution_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incidentresolution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_inmail_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_inmail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_message_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_message'",
+          "type": "array",
+          "minItems": 1
+        },
+        "li_pointdrivepresentationviewed_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_approval_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_approval'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_bookingalert_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_organizationalunit_currency": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_organizationalunit'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_transactioncurrency_invoicedetail_Currency": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.invoicedetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_alert_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_surveyinvite_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msfp_surveyresponse_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "orderclose_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.orderclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "quoteclose_transactioncurrency_transactioncurrencyid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quoteclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_account": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_actioncard": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.actioncard'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_ActionCardUserState": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.actioncarduserstate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_ActivityPointer": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitypointer'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_annualfiscalcalendar": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annualfiscalcalendar'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Appointment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_bookableresource": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresource'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_bookableresourcebooking": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcebooking'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_bookableresourcebookingheader": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcebookingheader'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_bookableresourcecategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_bookableresourcecategoryassn": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecategoryassn'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_bookableresourcecharacteristic": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcecharacteristic'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_bookableresourcegroup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookableresourcegroup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_bookingstatus": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bookingstatus'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_BusinessUnit": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_campaign": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaign'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_campaignactivity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_CampaignResponse": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaignresponse'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_category": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.category'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_characteristic": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.characteristic'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_competitor": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.competitor'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Connection": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_contact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_contract": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contract'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_contractdetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contractdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_CustomerAddress": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.customeraddress'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_discount": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.discount'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_discounttype": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.discounttype'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Dynamicpropertyinsatance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.dynamicpropertyinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Email": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Entitlement": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_entitlementchannel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementchannel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_entitlementtemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementtemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_entitlementtemplatechannel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementtemplatechannel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Equipment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.equipment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_expiredprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.expiredprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Fax": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fax'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_feedback": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.feedback'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_fixedmonthlyfiscalcalendar": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fixedmonthlyfiscalcalendar'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Goal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Incident": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_InteractionForEmail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.interactionforemail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_invoice": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.invoice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_invoicedetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.invoicedetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_KbArticle": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.kbarticle'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_knowledgearticle": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgearticle'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_knowledgearticleincident": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgearticleincident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_knowledgearticleviews": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgearticleviews'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_KnowledgeBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.knowledgebaserecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_lead": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_LeadAddress": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.leadaddress'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_leadtoopportunitysalesprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Letter": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.letter'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_list": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.list'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_MailMergeTemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailmergetemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_monthlyfiscalcalendar": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.monthlyfiscalcalendar'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_actual": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actual'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_agreementbookingproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_agreementbookingservice": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingservice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_agreementinvoiceproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_bookingjournal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingjournal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_contractlinedetailperformance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractlinedetailperformance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_contractlinescheduleofvalue": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_contractperformance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_contractperformance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_estimateline": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimateline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_expense": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_expense'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_fact": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_fieldservicepricelistitem": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_forecastinstance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_invoicelinetransaction": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_journalline": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journalline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_opportunitylinetransaction": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_orderinvoicingproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_orderlinetransaction": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_payment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_payment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_paymentdetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_paymentdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_problematicasset": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_problematicasset'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_project": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_project'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_projectapproval": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projectapproval'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_projecttask": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_projecttask'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_purchaseorder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_purchaseorderbill": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderbill'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_purchaseorderproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_purchaseorderreceiptproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_quotebookingproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_quotebookingservice": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingservice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_quotebookingsetup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingsetup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_quoteinvoicingproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_quoteinvoicingsetup": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quoteinvoicingsetup'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_quotelineanalyticsbreakdown": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelineanalyticsbreakdown'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_quotelinescheduleofvalue": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinescheduleofvalue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_quotelinetransaction": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_resourceassignment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourceassignment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_resourcecategorypricelevel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_resourcerequirement": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_resourcerequirement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_rma": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rma'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_rmaproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmaproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_rtv": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtv'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_rtvproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtvproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_transactioncategorypricelevel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_workorder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_workorderproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_msdyn_workorderservice": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderservice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_newprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.newprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_officegraphdocument": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.officegraphdocument'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_opportunity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_opportunityclose": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunityclose'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_opportunityproduct": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunityproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_opportunitysalesprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunitysalesprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_PhoneCall": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonecall'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_phonetocaseprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonetocaseprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_position": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.position'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_pricelevel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.pricelevel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.product'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_ProductAssociation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.productassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_productpricelevel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.productpricelevel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_ProductSubstitute": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.productsubstitute'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_quarterlyfiscalcalendar": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quarterlyfiscalcalendar'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Queue": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.queue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_QueueItem": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.queueitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_quote": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quote'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_quotedetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quotedetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_ratingmodel": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ratingmodel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_ratingvalue": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.ratingvalue'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_recommendeddocument": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recommendeddocument'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_RecurringAppointmentMaster": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recurringappointmentmaster'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_ReportCategory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.reportcategory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_SalesLiterature": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesliterature'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_salesorder": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesorder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_salesorderdetail": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesorderdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_semiannualfiscalcalendar": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.semiannualfiscalcalendar'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_ServiceAppointment": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceappointment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_SharePointDocumentLocation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointdocumentlocation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_SharePointSite": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointsite'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_SimilarityRule": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.similarityrule'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_SLA": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sla'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_SLAItem": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.slaitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_slakpiinstance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.slakpiinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_socialactivity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialactivity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_SocialProfile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.socialprofile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_SystemUser": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Task": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.task'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Team": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Territory": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.territory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_Theme": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.theme'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_translationprocess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.translationprocess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "TransactionCurrency_UserMapping": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.usermapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "transactioncurrency_usersettings": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.usersettings'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "statecode": {
+          "description": "Status of the transaction currency.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the transaction currency.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "transactioncurrencyid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

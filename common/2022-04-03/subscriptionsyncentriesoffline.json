@@ -1,0 +1,37 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/subscriptionsyncentryoffline.json#",
+  "title": "Entity definition for SubscriptionSyncEntryOffline",
+  "definitions": {
+    "SubscriptionSyncEntryOfflinePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "objectid": {
+          "description": "Object Id",
+          "type": "string"
+        },
+        "objecttypecode": {
+          "description": "Entity object type code"
+        },
+        "subscriptionid": {
+          "description": "Subscription Id",
+          "type": "string"
+        },
+        "syncstate": {
+          "description": "Sync state"
+        },
+        "versionnumber": {
+          "description": "Version number",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "subscriptionid"
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/transformationparametermapping.json#",
+  "title": "Entity definition for TransformationParameterMapping",
+  "definitions": {
+    "TransformationParameterMappingPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "data": {
+          "description": "Transformation data for transformation parameter",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the component is introduced.",
+          "type": "string"
+        },
+        "parameterarrayindex": {
+          "description": "Index of the array if the input parameter is an array."
+        },
+        "parametersequence": {
+          "description": "Parameter sequence number."
+        },
+        "transformationparametermappingid": {
+          "description": "Unique identifier of the transformation parameter mapping.",
+          "type": "string"
+        },
+        "LookUpMapping_TransformationParameterMapping": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lookupmapping'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "datatypecode": {
+          "description": "Data type of the transformation parameter.",
+          "anyOf": [
+            {
+              "enum": [
+                "Reference",
+                "Value"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "parametertypecode": {
+          "description": "Type of transformation parameter.",
+          "anyOf": [
+            {
+              "enum": [
+                "Input",
+                "Output"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "transformationparametermappingid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^transformationmappingid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transformationmapping'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/userquery.json#",
+  "title": "Entity definition for SavedView",
+  "definitions": {
+    "SavedViewPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "advancedgroupby": {
+          "description": "Type the column name that will be used to group the results from the data collected across multiple records from a user view.",
+          "type": "string"
+        },
+        "columnsetxml": {
+          "description": "Shows the columns and sorting criteria for the saved view, stored in XML format.",
+          "type": "string"
+        },
+        "conditionalformatting": {
+          "description": "Type information about how the items in the user view are formatted.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Type additional information to describe the saved view, such as the filter criteria or intended results set.",
+          "type": "string"
+        },
+        "fetchxml": {
+          "description": "Contains the Fetch XML query that defines the entities and attributes included in the saved view.",
+          "type": "string"
+        },
+        "layoutjson": {
+          "description": "Layout data in JSON format.",
+          "type": "string"
+        },
+        "layoutxml": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Type a descriptive name for the saved view.",
+          "type": "string"
+        },
+        "offlinesqlquery": {
+          "description": "String specifying the corresponding sql query for the fetch xml specified for offline use.",
+          "type": "string"
+        },
+        "querytype": {
+          "description": "Shows the code for the query type to indicate whether the saved view is an address book filter, advanced search, or other view."
+        },
+        "returnedtypecode": {
+          "description": "Type of entity that the saved view displays.",
+          "type": "string"
+        },
+        "userqueryid": {
+          "description": "Unique identifier of the saved view.",
+          "type": "string"
+        },
+        "UserQuery_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "UserQuery_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "UserQuery_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "statecode": {
+          "description": "Shows whether the saved view is active or inactive.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Select the item's status.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "All",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "userqueryid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/pluginassembly.json#",
+  "title": "Entity definition for Plug-inAssembly",
+  "definitions": {
+    "Plug-inAssemblyPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "content": {
+          "description": "Bytes of the assembly, in Base64 format.",
+          "type": "string"
+        },
+        "content_binary": {
+          "description": "Bytes of the assembly, in Base64 format.",
+          "type": "string"
+        },
+        "culture": {
+          "description": "Culture code for the plug-in assembly.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the plug-in assembly.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "ishidden": {
+          "description": "Information that specifies whether this component should be hidden.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the plug-in assembly.",
+          "type": "string"
+        },
+        "password": {
+          "description": "User Password",
+          "type": "string"
+        },
+        "path": {
+          "description": "File name of the plug-in assembly. Used when the source type is set to 1.",
+          "type": "string"
+        },
+        "pluginassemblyid": {
+          "description": "Unique identifier of the plug-in assembly.",
+          "type": "string"
+        },
+        "publickeytoken": {
+          "description": "Public key token of the assembly. This value can be obtained from the assembly by using reflection.",
+          "type": "string"
+        },
+        "sourcehash": {
+          "description": "Hash of the source of the assembly.",
+          "type": "string"
+        },
+        "url": {
+          "description": "Web Url",
+          "type": "string"
+        },
+        "username": {
+          "description": "User Name",
+          "type": "string"
+        },
+        "version": {
+          "description": "Version number of the assembly. The value can be obtained from the assembly through reflection.",
+          "type": "string"
+        },
+        "pluginassembly_plugintype": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.plugintype'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "authtype": {
+          "description": "Specifies mode of authentication with web sources like WebApp",
+          "anyOf": [
+            {
+              "enum": [
+                "BasicAuth"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isolationmode": {
+          "description": "Information about how the plugin assembly is to be isolated at execution time; None / Sandboxed.",
+          "anyOf": [
+            {
+              "enum": [
+                "None",
+                "Sandbox",
+                "External"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "sourcetype": {
+          "description": "Location of the assembly, for example 0=database, 1=on-disk.",
+          "anyOf": [
+            {
+              "enum": [
+                "Database",
+                "Disk",
+                "Normal",
+                "AzureWebApp"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "pluginassemblyid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "id": "https://devops.midwolf.co.uk/schemas/2022-04-03/savedquery.json#",
+  "title": "Entity definition for View",
+  "definitions": {
+    "ViewPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "advancedgroupby": {
+          "description": "Type the column name that will be used to group the results from the data collected across multiple records from a system view.",
+          "type": "string"
+        },
+        "canbedeleted": {
+          "description": "Tells whether the view can be deleted.",
+          "type": "string"
+        },
+        "columnsetxml": {
+          "description": "Contains the columns and sorting criteria for the view, stored in XML format.",
+          "type": "string"
+        },
+        "conditionalformatting": {
+          "description": "Type information about how the items in the system view are formatted.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Type additional information to describe the view, such as the filter criteria or intended results set.",
+          "type": "string"
+        },
+        "fetchxml": {
+          "description": "String specifying the query in Fetch XML language.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Tells whether the component can be customized.",
+          "type": "string"
+        },
+        "layoutjson": {
+          "description": "Layout data in JSON format.",
+          "type": "string"
+        },
+        "layoutxml": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Type a name for the view to describe what results the view will contain. This name is visible to users in the View list.",
+          "type": "string"
+        },
+        "offlinesqlquery": {
+          "description": "String specifying the corresponding sql query for the fetch xml specified for offline use.",
+          "type": "string"
+        },
+        "queryappusage": {
+          "description": "For internal use only."
+        },
+        "querytype": {
+          "description": "Shows the type of the query."
+        },
+        "returnedtypecode": {
+          "description": "Type of entity displayed in the view.",
+          "type": "string"
+        },
+        "savedqueryid": {
+          "description": "Unique identifier of the view.",
+          "type": "string"
+        },
+        "lk_mobileofflineprofileitem_savedquery": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mobileofflineprofileitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SavedQuery_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SavedQuery_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "SavedQuery_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isdefault": {
+          "description": "Tells whether the view is the default view for the specified record type (entity).",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isquickfindquery": {
+          "description": "Choose whether the view is compatible with Quick Find. When users search for specific items, you define the fields that are searched in.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Shows the status of the view.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Shows the reason code that explains the status of the record.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "savedqueryid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

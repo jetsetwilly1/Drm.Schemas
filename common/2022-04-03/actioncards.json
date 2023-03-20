@@ -1,0 +1,250 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/actioncard.json#",
+  "title": "Entity definition for ActionCard",
+  "definitions": {
+    "ActionCardPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "actioncardid": {
+          "description": "Unique identifier of the action card.",
+          "type": "string"
+        },
+        "cardtype": {
+          "description": "The CardType ENUM value."
+        },
+        "data": {
+          "description": "Json formatted string for generic purpose.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Card Description",
+          "type": "string"
+        },
+        "expirydate": {
+          "description": "Shows the Expiry Date",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "msdyn_actioncardregardingid": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_regardingobjectid": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_regardingobjectlogicalname": {
+          "description": "",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "parentregardingobjectiddata": {
+          "description": "Json formatted string for parent regarding object.",
+          "type": "string"
+        },
+        "priority": {
+          "description": "Priority of the ActionCard"
+        },
+        "recordidobjecttypecode2": {
+          "description": "RecordIdObjectTypeCode2 of the ActionCard"
+        },
+        "referencetokens": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "startdate": {
+          "description": "Shows the Start Date",
+          "type": "string"
+        },
+        "title": {
+          "description": "Title of the ActionCard",
+          "type": "string"
+        },
+        "ActionCardUserState_ActionCard": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.actioncarduserstate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "source": {
+          "description": "Source for the Action Card",
+          "anyOf": [
+            {
+              "enum": [
+                "CRM",
+                "Exchange"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "state": {
+          "description": "State of the Action Card",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Dismissed",
+                "Completed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "visibility": {
+          "description": "Select whether the visibility should be set to public/private.",
+          "anyOf": [
+            {
+              "enum": [
+                "Private",
+                "Public"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "actioncardid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^regardingobjectid_account_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "string"
+        },
+        "^regardingobjectid_appointment_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appointment'",
+          "type": "string"
+        },
+        "^regardingobjectid_contact_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contact'",
+          "type": "string"
+        },
+        "^regardingobjectid_email_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "string"
+        },
+        "^regardingobjectid_fax_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fax'",
+          "type": "string"
+        },
+        "^regardingobjectid_incident_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "string"
+        },
+        "^regardingobjectid_lead_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "string"
+        },
+        "^regardingobjectid_letter_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.letter'",
+          "type": "string"
+        },
+        "^regardingobjectid_li_inmail(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_inmail'",
+          "type": "string"
+        },
+        "^regardingobjectid_li_message(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_message'",
+          "type": "string"
+        },
+        "^regardingobjectid_li_pointdrivepresentationviewed(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_approval(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_approval'",
+          "type": "string"
+        },
+        "^regardingobjectid_msdyn_bookingalert(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_bookingalert'",
+          "type": "string"
+        },
+        "^regardingobjectid_msfp_alert(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_alert'",
+          "type": "string"
+        },
+        "^regardingobjectid_msfp_surveyinvite(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyinvite'",
+          "type": "string"
+        },
+        "^regardingobjectid_msfp_surveyresponse(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msfp_surveyresponse'",
+          "type": "string"
+        },
+        "^regardingobjectid_opportunity_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunity'",
+          "type": "string"
+        },
+        "^regardingobjectid_phonecall_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.phonecall'",
+          "type": "string"
+        },
+        "^regardingobjectid_recurringappointmentmaster_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.recurringappointmentmaster'",
+          "type": "string"
+        },
+        "^regardingobjectid_serviceappointment_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceappointment'",
+          "type": "string"
+        },
+        "^regardingobjectid_task_actioncard(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.task'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

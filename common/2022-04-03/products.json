@@ -1,0 +1,670 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/product.json#",
+  "title": "Entity definition for Product",
+  "definitions": {
+    "ProductPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "currentcost": {
+          "description": "Current cost for the product item. Used in price calculations.",
+          "type": "number"
+        },
+        "description": {
+          "description": "Description of the product.",
+          "type": "string"
+        },
+        "dmtimportstate": {
+          "description": "Internal Use Only"
+        },
+        "entityimage": {
+          "description": "Shows the default image for the record.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "msdyn_purchasename": {
+          "description": "Type the name for the product when used on a purchase order.",
+          "type": "string"
+        },
+        "msdyn_upccode": {
+          "description": "Shows the UPC Code for product. Used for bar code scanning.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the product.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "price": {
+          "description": "List price for the product item. Used in price calculations.",
+          "type": "number"
+        },
+        "processid": {
+          "description": "Contains the id of the process associated with the entity.",
+          "type": "string"
+        },
+        "productid": {
+          "description": "Unique identifier of the product.",
+          "type": "string"
+        },
+        "productnumber": {
+          "description": "User-defined product ID.",
+          "type": "string"
+        },
+        "producturl": {
+          "description": "URL for the Website associated with the product.",
+          "type": "string"
+        },
+        "quantitydecimal": {
+          "description": "Number of decimal places that can be used in monetary amounts for the product."
+        },
+        "quantityonhand": {
+          "description": "Quantity of the product in stock.",
+          "type": "number"
+        },
+        "size": {
+          "description": "Product size.",
+          "type": "string"
+        },
+        "stageid": {
+          "description": "Contains the id of the stage where the entity is located.",
+          "type": "string"
+        },
+        "standardcost": {
+          "description": "Standard cost for the product item. Used in price calculations.",
+          "type": "number"
+        },
+        "stockvolume": {
+          "description": "Stock volume of the product.",
+          "type": "number"
+        },
+        "stockweight": {
+          "description": "Stock weight of the product.",
+          "type": "number"
+        },
+        "suppliername": {
+          "description": "Name of the product's supplier.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "traversedpath": {
+          "description": "A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "validfromdate": {
+          "description": "Date from which this product is valid.",
+          "type": "string"
+        },
+        "validtodate": {
+          "description": "Date to which this product is valid.",
+          "type": "string"
+        },
+        "vendorid": {
+          "description": "Unique identifier of vendor supplying the product.",
+          "type": "string"
+        },
+        "vendorname": {
+          "description": "Name of the product vendor.",
+          "type": "string"
+        },
+        "vendorpartnumber": {
+          "description": "Unique part identifier in vendor catalog of this product.",
+          "type": "string"
+        },
+        "campaignproduct_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.campaign'",
+          "type": "array",
+          "minItems": 1
+        },
+        "competitorproduct_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.competitor'",
+          "type": "array",
+          "minItems": 1
+        },
+        "leadproduct_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.lead'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_actual_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_actual'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_agreementbookingproduct_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_agreementbookingservice_Service": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementbookingservice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_agreementinvoiceproduct_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_customerasset_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_customerasset'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_estimateline_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_estimateline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_fact_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fact'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_fieldcomputation_ProductId": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldcomputation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_fieldservicepricelistitem_ProductService": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_fieldservicesetting": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_fieldservicesetting'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_incidenttypeproduct_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_incidenttyperecommendationresult_ProductService": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationresult'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_incidenttypeservice_Service": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_incidenttypeservice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_inventoryadjustmentproduct_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_inventoryjournal_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_inventoryjournal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_invoicelinetransaction_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_journalline_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_journalline'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_opportunitylinetransaction_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_orderinvoicingproduct_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderinvoicingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_orderlinetransaction_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_orderlinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_productinventory_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_productinventory'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_purchaseorderproduct_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_quotebookingproduct_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_quotebookingservice_Service": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotebookingservice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_quoteinvoicingproduct_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_quotelinetransaction_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_quotelinetransaction'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_rmaproduct_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rmaproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_rtvproduct_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_rtvproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_workorderproduct_Product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_product_msdyn_workorderservice_Service": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_workorderservice'",
+          "type": "array",
+          "minItems": 1
+        },
+        "opportunity_products": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.opportunityproduct'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Product_Annotation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annotation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Product_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Product_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_connections1": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_connections2": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_contract_line_items": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.contractdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Product_DynamicProperty": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.dynamicproperty'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Product_DynamicPropertyAssociation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.dynamicpropertyassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_entitlement_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlement'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_entitlementtemplate_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entitlementtemplate'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_incidents": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.incident'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_invoice_details": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.invoicedetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_order_details": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesorderdetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_parent_product": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.product'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_price_levels": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.productpricelevel'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Product_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Product_ProductAssociation_AssocProd": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.productassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Product_ProductAssociation_Prod": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.productassociation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_ProductSubstitute_productid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.productsubstitute'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_ProductSubstitute_substitutedproductid": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.productsubstitute'",
+          "type": "array",
+          "minItems": 1
+        },
+        "product_quote_details": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.quotedetail'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Product_SharepointDocumentLocation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sharepointdocumentlocation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Product_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "productsalesliterature_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.salesliterature'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "iskit": {
+          "description": "Information that specifies whether the product is a kit.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isreparented": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isstockitem": {
+          "description": "Information about whether the product is a stock item.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_converttocustomerasset": {
+          "description": "Specify whether a product is to be converted to a customer asset. When a product is used on a work order, the system will automatically convert it into a customer asset when the work order is closed.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_fieldserviceproducttype": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Inventory",
+                "Non-Inventory",
+                "Service"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_taxable": {
+          "description": "Select whether the item is taxable. If an item is set as not taxable, it won't be taxable even on a taxable work order.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "productstructure": {
+          "description": "Product Structure.",
+          "anyOf": [
+            {
+              "enum": [
+                "Product",
+                "Product Family",
+                "Product Bundle"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "producttypecode": {
+          "description": "Type of product.",
+          "anyOf": [
+            {
+              "enum": [
+                "Sales Inventory",
+                "Miscellaneous Charges",
+                "Services",
+                "Flat Fees"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the product.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Retired",
+                "Draft",
+                "Under Revision"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the product.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Retired",
+                "Draft",
+                "Under Revision"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "productid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^defaultuomid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.uom'",
+          "type": "string"
+        },
+        "^defaultuomscheduleid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.uomschedule'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^msdyn_defaultvendor(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.account'",
+          "type": "string"
+        },
+        "^msdyn_TransactionCategory(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_transactioncategory'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^parentproductid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.product'",
+          "type": "string"
+        },
+        "^pricelevelid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.pricelevel'",
+          "type": "string"
+        },
+        "^stageid_processstage(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processstage'",
+          "type": "string"
+        },
+        "^subjectid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.subject'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

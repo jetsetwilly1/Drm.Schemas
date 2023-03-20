@@ -1,0 +1,74 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/sitemap.json#",
+  "title": "Entity definition for SiteMap",
+  "definitions": {
+    "SiteMapPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "sitemapid": {
+          "description": "",
+          "type": "string"
+        },
+        "sitemapname": {
+          "description": "",
+          "type": "string"
+        },
+        "sitemapnameunique": {
+          "description": "",
+          "type": "string"
+        },
+        "sitemapxml": {
+          "description": "",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isappaware": {
+          "description": "Information about whether the site map is associated with app module.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "sitemapid"
+      ],
+      "patternProperties": {
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^SiteMap_createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^SiteMap_createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^SiteMap_modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^SiteMap_modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

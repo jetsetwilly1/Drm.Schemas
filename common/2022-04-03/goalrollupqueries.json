@@ -1,0 +1,187 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/goalrollupquery.json#",
+  "title": "Entity definition for RollupQuery",
+  "definitions": {
+    "RollupQueryPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "fetchxml": {
+          "description": "String that specifies the condition criteria in FetchXML.",
+          "type": "string"
+        },
+        "goalrollupqueryid": {
+          "description": "Unique identifier of the rollup query.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "name": {
+          "description": "Type a descriptive name for the goal rollup query.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "queryentitytype": {
+          "description": "Enter the record type of the rollup query.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "goal_rollupquery_actualdecimal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goal_rollupquery_actualmoney": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goal_rollupquery_customdecimal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goal_rollupquery_customint": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goal_rollupquery_custommoney": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goal_rollupquery_inprogressdecimal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goal_rollupquery_inprogressint": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goal_rollupquery_inprogressmoney": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goalrollupquery_actualint": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goalrollupquery_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "GoalRollupQuery_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "GoalRollupQuery_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goalrollupquery_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "GoalRollupQuery_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_goalrollupquery_msdyn_forecastdefinition_rollupquery": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastdefinition'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "statecode": {
+          "description": "Shows whether the goal rollup query is active or inactive.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Select the goal rollup query's status.",
+          "anyOf": [
+            {
+              "enum": [
+                "Open",
+                "Closed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "goalrollupqueryid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

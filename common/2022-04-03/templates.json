@@ -1,0 +1,170 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/template.json#",
+  "title": "Entity definition for EmailTemplate",
+  "definitions": {
+    "EmailTemplatePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "body": {
+          "description": "Body text of the email template.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the email template.",
+          "type": "string"
+        },
+        "entityimage": {
+          "description": "Shows the default image for the record.",
+          "type": "string"
+        },
+        "generationtypecode": {
+          "description": "For internal use only."
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "languagecode": {
+          "description": "Language of the email template."
+        },
+        "mimetype": {
+          "description": "MIME type of the email template.",
+          "type": "string"
+        },
+        "presentationxml": {
+          "description": "XML data for the body of the email template.",
+          "type": "string"
+        },
+        "safehtml": {
+          "description": "Safe html of email template.",
+          "type": "string"
+        },
+        "subject": {
+          "description": "Subject associated with the email template.",
+          "type": "string"
+        },
+        "subjectpresentationxml": {
+          "description": "XML data for the subject of the email template.",
+          "type": "string"
+        },
+        "subjectsafehtml": {
+          "description": "Safe html of email template subject.",
+          "type": "string"
+        },
+        "templateid": {
+          "description": "Unique identifier of the template.",
+          "type": "string"
+        },
+        "templatetypecode": {
+          "description": "Type of email template.",
+          "type": "string"
+        },
+        "title": {
+          "description": "Title of the template.",
+          "type": "string"
+        },
+        "Email_EmailTemplate": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.email'",
+          "type": "array",
+          "minItems": 1
+        },
+        "template_activity_mime_attachments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitymimeattachment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Template_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Template_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Template_Organization": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Template_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Template_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "ispersonal": {
+          "description": "Information about whether the template is personal or is available to all users.",
+          "anyOf": [
+            {
+              "enum": [
+                "Individual",
+                "Organization"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "templateid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

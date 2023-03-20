@@ -1,0 +1,141 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/appmodulecomponent.json#",
+  "title": "Entity definition for AppModuleComponent",
+  "definitions": {
+    "AppModuleComponentPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "appmodulecomponentid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "appmodulecomponentidunique": {
+          "description": "Unique identifier of the Application Component used when synchronizing customizations for the Microsoft Dynamics 365 client for Outlook",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the application component record is introduced.",
+          "type": "string"
+        },
+        "objectid": {
+          "description": "Object Id",
+          "type": "string"
+        },
+        "rootappmodulecomponentid": {
+          "description": "The parent ID of the subcomponent, which will be a root",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "componenttype": {
+          "description": "The object type code of the component.",
+          "anyOf": [
+            {
+              "enum": [
+                "Entities",
+                "Views",
+                "Business Process Flows",
+                "Command (Ribbon) for Forms, Grids, sub grids",
+                "Charts",
+                "Forms",
+                "Sitemap"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isdefault": {
+          "description": "Is Default",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ismetadata": {
+          "description": "Is Metadata",
+          "anyOf": [
+            {
+              "enum": [
+                "Metadata",
+                "Data"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "rootcomponentbehavior": {
+          "description": "Indicates the include behavior of the root component.",
+          "anyOf": [
+            {
+              "enum": [
+                "Include Subcomponents",
+                "Do not include subcomponents",
+                "Include As Shell Only"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "appmodulecomponentid"
+      ],
+      "patternProperties": {
+        "^appmodulecomponent_createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^appmodulecomponent_modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^appmoduleid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appmodule'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

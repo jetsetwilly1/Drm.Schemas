@@ -1,0 +1,83 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/entitydataprovider.json#",
+  "title": "Entity definition for VirtualEntityDataProvider",
+  "definitions": {
+    "VirtualEntityDataProviderPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "createmultipleplugin": {
+          "description": "Contains the createmultipleplugin id that should be run when CreateMultiple is invoked",
+          "type": "string"
+        },
+        "createplugin": {
+          "description": "Create Plugin",
+          "type": "string"
+        },
+        "datasourcelogicalname": {
+          "description": "When creating a Data Provider, the end user must select the name of the Data Source entity that will be created for the provider.",
+          "type": "string"
+        },
+        "deleteplugin": {
+          "description": "Delete Plugin",
+          "type": "string"
+        },
+        "description": {
+          "description": "What is this Data Provider used for and data store technologies does it target?",
+          "type": "string"
+        },
+        "entitydataproviderid": {
+          "description": "Unique identifier of the data provider.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of this Data Provider. This is the name that appears in the dropdown when creating a new entity.",
+          "type": "string"
+        },
+        "retrieveentitychangesplugin": {
+          "description": "Contains the retrieveentitychangesplugin id that should be run when RetrieveEntityChanges is invoked",
+          "type": "string"
+        },
+        "retrievemultipleplugin": {
+          "description": "MultipleRetrieve Plugin",
+          "type": "string"
+        },
+        "retrieveplugin": {
+          "description": "Retrieve Plugin",
+          "type": "string"
+        },
+        "updatemultipleplugin": {
+          "description": "Contains the updatemultipleplugin id that should be run when UpdateMultiple is invoked",
+          "type": "string"
+        },
+        "updateplugin": {
+          "description": "Update Plugin",
+          "type": "string"
+        },
+        "upsertmultipleplugin": {
+          "description": "Contains the upsertmultipleplugin id that should be run when UpsertMultiple is invoked",
+          "type": "string"
+        },
+        "upsertplugin": {
+          "description": "Contains the upsertplugin id that should be run when Upsert is invoked",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "entitydataproviderid"
+      ]
+    }
+  }
+}

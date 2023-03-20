@@ -1,0 +1,147 @@
+{
+  "id": "https://schemas.drmtemplates.io/2021-03-01/drm.principal.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "drm.principal",
+  "description": "principal Resource Types",
+  "resourceDefinitions": {
+    "teams": {
+      "type": "object",
+      "properties": {
+        "apiVersion": {
+          "type": "string",
+          "enum": [
+            "2023-01-09"
+          ]
+        },
+        "type": {
+          "enum": [
+            "drm.principal/teams"
+          ]
+        },
+        "properties": {
+          "oneOf": [
+            { "$ref": "#/definitions/TeamPrincipalFormat" },
+            { "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression" }
+          ],
+          "description": "drm.principal/team: properties for configuring a team entity."
+        }
+      },
+      "required": [
+        "targetenvironment",
+        "name",
+        "apiVersion",
+        "type",
+        "properties"
+      ],
+      "description": "principal/team resource"
+    },
+    "systemusers": {
+      "type": "object",
+      "properties": {
+        "apiVersion": {
+          "type": "string",
+          "enum": [
+            "2023-01-09"
+          ]
+        },
+        "type": {
+          "enum": [
+            "drm.principal/systemusers"
+          ]
+        },
+        "properties": {
+          "oneOf": [
+            { "$ref": "#/definitions/SystemUsersFormat" },
+            { "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression" }
+          ],
+          "description": "drm.principal/systemusers: variables to update"
+        }
+      },
+      "required": [
+        "targetenvironment",
+        "name",
+        "apiVersion",
+        "properties",
+        "type"
+      ],
+      "description": "principal/systemusers resource"
+    }
+  },
+  "definitions": {
+    "SystemUsersParameters": {
+      "$ref": "https://schemas.drmtemplates.io/common/2022-04-03/systemusers.json#/definitions/UserPropertiesCreateParameters"
+    },
+    "TeamPropertiesCreateParameters": {
+      "$ref": "https://schemas.drmtemplates.io/common/2022-04-03/teams.json#/definitions/TeamPropertiesCreateParameters"
+    },
+    "TeamRoleParameters": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metadata": {
+          "type": "object"
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "id"
+          ]
+        },
+        {
+          "required": [
+            "name"
+          ]
+        }
+      ]
+    },
+    "TeamPrincipalFormat": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "oneOf": [
+            {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/definitions/TeamPropertiesCreateParameters"
+              }
+            },
+            {
+              "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression"
+            }
+          ]
+        }
+      },
+      "required": [ "teams" ]
+    },
+    "SystemUsersFormat": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "oneOf": [
+            {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/definitions/SystemUsersParameters"
+              }
+            },
+            {
+              "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression"
+            }
+          ]
+        }
+      },
+      "required": [ "systemusers" ]
+    }
+  }
+}
+

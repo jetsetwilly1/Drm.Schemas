@@ -1,0 +1,33 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/plugintracelog.json#",
+  "title": "Entity definition for Plug-inTraceLog",
+  "definitions": {
+    "Plug-inTraceLogPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "plugintracelogid": {
+          "description": "Unique identifier for an entity instance.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "plugintracelogid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

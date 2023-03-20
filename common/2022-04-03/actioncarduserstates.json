@@ -1,0 +1,65 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/actioncarduserstate.json#",
+  "title": "Entity definition for ActionCardUserState",
+  "definitions": {
+    "ActionCardUserStatePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "actioncarduserstateid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "startdate": {
+          "description": "Shows the Start Date",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "state": {
+          "description": "State of the Action Card",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Dismissed",
+                "Completed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "actioncarduserstateid"
+      ],
+      "patternProperties": {
+        "^actioncardid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.actioncard'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

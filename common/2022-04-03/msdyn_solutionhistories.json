@@ -1,0 +1,212 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/msdyn_solutionhistory.json#",
+  "title": "Entity definition for SolutionHistory",
+  "definitions": {
+    "SolutionHistoryPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "msdyn_activityid": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_correlationid": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_endtime": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_errorcode": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_exceptionmessage": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_exceptionstack": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_name": {
+          "description": "The name of the custom entity.",
+          "type": "string"
+        },
+        "msdyn_packagename": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_packageversion": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_publisherid": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_publishername": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_solutionhistoryid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "msdyn_solutionid": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_solutionversion": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_starttime": {
+          "description": "",
+          "type": "string"
+        },
+        "msdyn_totaltime": {
+          "description": ""
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "msdyn_ismanaged": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_isoverwritecustomizations": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_ispatch": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_operation": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Import",
+                "Uninstall",
+                "Export",
+                "Publish",
+                "PublishAll",
+                "LanguageProvision",
+                "ImportTranslation",
+                "RibbonMetadataGeneration",
+                "WorkflowSetState",
+                "None"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_result": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Success",
+                "Failure"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_status": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Started",
+                "Completed"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "msdyn_suboperation": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "None",
+                "New",
+                "Upgrade",
+                "Update",
+                "Delete"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "msdyn_solutionhistoryid"
+      ]
+    }
+  }
+}

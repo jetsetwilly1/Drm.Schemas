@@ -1,0 +1,224 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/appmodule.json#",
+  "title": "Entity definition for Model-drivenApp",
+  "definitions": {
+    "Model-drivenAppPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "appmoduleid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "appmoduleidunique": {
+          "description": "Unique identifier of the App Module used when synchronizing customizations for the Microsoft Dynamics 365 client for Outlook",
+          "type": "string"
+        },
+        "appmoduleversion": {
+          "description": "App Module Version",
+          "type": "string"
+        },
+        "appmodulexmlmanaged": {
+          "description": "App Module Xml Managed",
+          "type": "string"
+        },
+        "clienttype": {
+          "description": "Client Type such as Web or UCI"
+        },
+        "configxml": {
+          "description": "Contains configuration XML",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description for entity",
+          "type": "string"
+        },
+        "eventhandlers": {
+          "description": "App Module Event Handlers",
+          "type": "string"
+        },
+        "formfactor": {
+          "description": "Form Factor"
+        },
+        "importsequencenumber": {
+          "description": "Unique identifier of the data import or data migration that created this record."
+        },
+        "introducedversion": {
+          "description": "Version in which the similarity rule is introduced.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of App Module",
+          "type": "string"
+        },
+        "optimizedfor": {
+          "description": "The client that this app is optimized for",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "publishedon": {
+          "description": "Date and time when the record was published.",
+          "type": "string"
+        },
+        "uniquename": {
+          "description": "Unique Name of App Module",
+          "type": "string"
+        },
+        "url": {
+          "description": "Contains URL",
+          "type": "string"
+        },
+        "webresourceid": {
+          "description": "Unique identifier of the Web Resource",
+          "type": "string"
+        },
+        "welcomepageid": {
+          "description": "Unique identifier of the Web Resource as Welcome Page Id",
+          "type": "string"
+        },
+        "appmodule_appconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "appmodule_appmodulecomponent": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.appmodulecomponent'",
+          "type": "array",
+          "minItems": 1
+        },
+        "appmoduleroles_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.role'",
+          "type": "array",
+          "minItems": 1
+        },
+        "serviceplan_appmodule_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.serviceplan'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isdefault": {
+          "description": "Is Default",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isfeatured": {
+          "description": "Is Featured",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "navigationtype": {
+          "description": "App navigation type",
+          "anyOf": [
+            {
+              "enum": [
+                "Single session",
+                "Multi session"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the Model-driven App",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the Model-driven App",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive",
+                "Deleted"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "appmoduleid"
+      ],
+      "patternProperties": {
+        "^appmodule_createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^appmodule_createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^appmodule_modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^appmodule_modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organization_appmodule_appmodule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^publisher_appmodule_appmodule(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.publisher'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/importjob.json#",
+  "title": "Entity definition for ImportJob",
+  "definitions": {
+    "ImportJobPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "data": {
+          "description": "Unstructured data associated with the import job.",
+          "type": "string"
+        },
+        "importcontext": {
+          "description": "The context of the import",
+          "type": "string"
+        },
+        "importjobid": {
+          "description": "Unique identifier of the import job.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the import job.",
+          "type": "string"
+        },
+        "operationcontext": {
+          "description": "The context of the solution operation",
+          "type": "string"
+        },
+        "progress": {
+          "description": "Import Progress Percentage.",
+          "type": "number"
+        },
+        "solutionname": {
+          "description": "Unique identifier of the solution.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "importjobid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/managedproperty.json#",
+  "title": "Entity definition for ManagedProperty",
+  "definitions": {
+    "ManagedPropertyPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "enablesattributename": {
+          "description": "Enables Attribute Name of this Managed Property.",
+          "type": "string"
+        },
+        "enablesentityname": {
+          "description": "Enables Entity Name of this Managed Property.",
+          "type": "string"
+        },
+        "logicalname": {
+          "description": "The logical name of this Managed Property.",
+          "type": "string"
+        },
+        "managedpropertyid": {
+          "description": "Unique identifier of the managed property key.",
+          "type": "string"
+        },
+        "managedpropertyrowid": {
+          "description": "Unique identifier of the Managed Property",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "managedpropertyid"
+      ]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+﻿{
+	"$ref": "https://schemas.drmtemplates.io/common/2022-04-03/{name}.json#/definitions/{nameSingular}PropertiesCreateParameters"
+}

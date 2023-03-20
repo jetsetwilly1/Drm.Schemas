@@ -1,0 +1,178 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/calendarrule.json#",
+  "title": "Entity definition for CalendarRule",
+  "definitions": {
+    "CalendarRulePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "calendarruleid": {
+          "description": "Unique identifier of the calendar rule.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Defines free/busy times for a service and for resources or resource groups, such as working, non-working, vacation, and blocked.",
+          "type": "string"
+        },
+        "duration": {
+          "description": "Duration of the calendar rule in minutes."
+        },
+        "effectiveintervalend": {
+          "description": "Effective interval end of the calendar rule.",
+          "type": "string"
+        },
+        "effectiveintervalstart": {
+          "description": "Effective interval start of the calendar rule.",
+          "type": "string"
+        },
+        "effort": {
+          "description": "Effort available for a resource during the time described by the calendar rule.",
+          "type": "number"
+        },
+        "endtime": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "extentcode": {
+          "description": "Extent of the calendar rule."
+        },
+        "groupdesignator": {
+          "description": "Unique identifier of the group.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the calendar rule.",
+          "type": "string"
+        },
+        "offset": {
+          "description": "Start offset for leaf nonrecurring rules."
+        },
+        "pattern": {
+          "description": "Pattern of the rule recurrence.",
+          "type": "string"
+        },
+        "rank": {
+          "description": "Rank of the calendar rule."
+        },
+        "starttime": {
+          "description": "Start time for the rule.",
+          "type": "string"
+        },
+        "subcode": {
+          "description": "Sub-type of calendar rule."
+        },
+        "timecode": {
+          "description": "Type of calendar rule such as working hours, break, holiday, or time off."
+        },
+        "timezonecode": {
+          "description": "Local time zone for the calendar rule."
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "ismodified": {
+          "description": "For internal use only.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isselected": {
+          "description": "Flag used in vary-by-day calendar rules.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "issimple": {
+          "description": "Flag used in vary-by-day calendar rules.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isvaried": {
+          "description": "Flag used in leaf nonrecurring rules.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "calendarruleid"
+      ],
+      "patternProperties": {
+        "^calendarid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendar'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^innercalendarid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.calendar'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^serviceid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.service'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

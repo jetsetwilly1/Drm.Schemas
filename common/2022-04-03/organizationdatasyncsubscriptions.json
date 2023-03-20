@@ -1,0 +1,274 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/organizationdatasyncsubscription.json#",
+  "title": "Entity definition for OrganizationDataSyncSubscription",
+  "definitions": {
+    "OrganizationDataSyncSubscriptionPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "aadapplicationid": {
+          "description": "",
+          "type": "string"
+        },
+        "endpointsettings": {
+          "description": "",
+          "type": "string"
+        },
+        "entityfilters": {
+          "description": "",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "name": {
+          "description": "The name of the custom entity.",
+          "type": "string"
+        },
+        "organizationdatasyncsubscriptionid": {
+          "description": "Unique identifier for entity instances",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "partnerprefix": {
+          "description": "",
+          "type": "string"
+        },
+        "subscriptionendpointstatus": {
+          "description": ""
+        },
+        "subscriptionentities": {
+          "description": "",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "organizationdatasyncsubscription_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organizationdatasyncsubscription_BulkDeleteFailures": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.bulkdeletefailure'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organizationdatasyncsubscription_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organizationdatasyncsubscription_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organizationdatasyncsubscription_MailboxTrackingFolders": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailboxtrackingfolder'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organizationdatasyncsubscription_PrincipalObjectAttributeAccesses": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organizationdatasyncsubscription_ProcessSession": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "organizationdatasyncsubscription_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "subscription_subscriptionentity": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organizationdatasyncsubscriptionentity'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "blobpartitionby": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "None",
+                "Day",
+                "Month",
+                "Year"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "cansyncallmetadata": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "dataendpointpostingtype": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "DefaultEndpoint",
+                "ServiceBusTopic",
+                "HTTPS",
+                "ServiceBusEventHub"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "dataprocessingtype": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Unknown",
+                "Streaming",
+                "Batch",
+                "Mixed",
+                "NotificationOnly"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isoutofboxsubscription": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "needcopyattachmentstoblob": {
+          "description": "",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the OrganizationDataSyncSubscription",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the OrganizationDataSyncSubscription",
+          "anyOf": [
+            {
+              "enum": [
+                "Uninitialized",
+                "Activated",
+                "Deactivated"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "organizationdatasyncsubscriptionid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

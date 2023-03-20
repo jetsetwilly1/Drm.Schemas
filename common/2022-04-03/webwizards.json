@@ -1,0 +1,87 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/webwizard.json#",
+  "title": "Entity definition for WebWizard",
+  "definitions": {
+    "WebWizardPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "accessprivileges": {
+          "description": "Privileges required to use this wizard, separated with commas (,).",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the component is introduced.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the wizard",
+          "type": "string"
+        },
+        "startpagesequencenumber": {
+          "description": "Sequence number of the first page of this wizard."
+        },
+        "titleresourcestring": {
+          "description": "Title of the wizard.",
+          "type": "string"
+        },
+        "webwizardid": {
+          "description": "Unique identifier of the wizard.",
+          "type": "string"
+        },
+        "wizardpageheight": {
+          "description": "Window height for the wizard."
+        },
+        "wizardpagewidth": {
+          "description": "Window width for the wizard."
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "isstaticpagesequence": {
+          "description": "Information about whether all pages for this wizard are statically defined.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "webwizardid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

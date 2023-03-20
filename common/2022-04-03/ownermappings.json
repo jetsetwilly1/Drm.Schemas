@@ -1,0 +1,103 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/ownermapping.json#",
+  "title": "Entity definition for OwnerMapping",
+  "definitions": {
+    "OwnerMappingPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "introducedversion": {
+          "description": "Version in which the component is introduced.",
+          "type": "string"
+        },
+        "ownermappingid": {
+          "description": "Unique identifier of the owner mapping.",
+          "type": "string"
+        },
+        "sourcesystemusername": {
+          "description": "Source user name that has to be replaced",
+          "type": "string"
+        },
+        "sourceuservalueforsourcecrmuserlink": {
+          "description": "Source user value for source Microsoft Dynamics 365 user link.",
+          "type": "string"
+        },
+        "targetsystemuserdomainname": {
+          "description": "Microsoft Dynamics 365 logon name with which the source user name should be replaced.",
+          "type": "string"
+        },
+        "targetuservalueforsourcecrmuserlink": {
+          "description": "Microsoft Dynamics CRM user.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "processcode": {
+          "description": "Code that indicates whether the owner mapping has to be processed",
+          "anyOf": [
+            {
+              "enum": [
+                "Process",
+                "Ignore",
+                "Internal"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the owner mapping.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "ownermappingid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^importmapid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.importmap'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^targetsystemuserid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

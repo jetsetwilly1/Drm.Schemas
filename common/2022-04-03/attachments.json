@@ -1,0 +1,53 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/attachment.json#",
+  "title": "Entity definition for Attachment",
+  "definitions": {
+    "AttachmentPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "attachmentid": {
+          "description": "Unique identifier of the attachment.",
+          "type": "string"
+        },
+        "body": {
+          "description": "Contents of the attachment.",
+          "type": "string"
+        },
+        "body_binary": {
+          "description": "Contents of the attachment.",
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name of the attachment.",
+          "type": "string"
+        },
+        "mimetype": {
+          "description": "MIME type of the attachment.",
+          "type": "string"
+        },
+        "subject": {
+          "description": "Subject associated with the attachment.",
+          "type": "string"
+        },
+        "attachment_activity_mime_attachments": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.activitymimeattachment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Attachment_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "attachmentid"
+      ]
+    }
+  }
+}

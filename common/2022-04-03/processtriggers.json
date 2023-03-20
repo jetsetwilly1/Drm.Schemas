@@ -1,0 +1,126 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/processtrigger.json#",
+  "title": "Entity definition for ProcessTrigger",
+  "definitions": {
+    "ProcessTriggerPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "controlname": {
+          "description": "Name of the control.",
+          "type": "string"
+        },
+        "event": {
+          "description": "Indicates the event.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Indicates whether this component can be customized.",
+          "type": "string"
+        },
+        "methodid": {
+          "description": "Displays StageID to which the PBL rule belongs to",
+          "type": "string"
+        },
+        "primaryentitytypecode": {
+          "description": "Primary entity for the process which is invoked by the event.",
+          "type": "string"
+        },
+        "processtriggerid": {
+          "description": "Unique identifier of the process trigger record.",
+          "type": "string"
+        },
+        "ProcessTrigger_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "controltype": {
+          "description": "Type of the control to which this trigger is bound",
+          "anyOf": [
+            {
+              "enum": [
+                "Attribute",
+                "Form Tab"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "pipelinestage": {
+          "description": "Pipeline Stage to Execute Workflow Event Plugin.",
+          "anyOf": [
+            {
+              "enum": [
+                "Default Value",
+                "Before Main Operation",
+                "After Main Operation"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "scope": {
+          "description": "Scope level for PBL rules.",
+          "anyOf": [
+            {
+              "enum": [
+                "Form",
+                "Entity"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "processtriggerid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^formid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemform'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^processid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.workflow'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/solution.json#",
+  "title": "Entity definition for Solution",
+  "definitions": {
+    "SolutionPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "description": "Description of the solution.",
+          "type": "string"
+        },
+        "friendlyname": {
+          "description": "User display name for the solution.",
+          "type": "string"
+        },
+        "solutionid": {
+          "description": "Unique identifier of the solution.",
+          "type": "string"
+        },
+        "solutionpackageversion": {
+          "description": "Solution package source organization version",
+          "type": "string"
+        },
+        "templatesuffix": {
+          "description": "The template suffix of this solution",
+          "type": "string"
+        },
+        "uniquename": {
+          "description": "The unique name of this solution",
+          "type": "string"
+        },
+        "version": {
+          "description": "Solution version, used to identify a solution for upgrades and hotfixes.",
+          "type": "string"
+        },
+        "FK_CanvasApp_Solution": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.canvasapp'",
+          "type": "array",
+          "minItems": 1
+        },
+        "package_solution": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.package'",
+          "type": "array",
+          "minItems": 1
+        },
+        "regardingobjectid_fileattachment_solution": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fileattachment'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solution_fieldpermission": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fieldpermission'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solution_fieldsecurityprofile": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fieldsecurityprofile'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solution_parent_solution": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solution_privilege": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.privilege'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solution_role": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.role'",
+          "type": "array",
+          "minItems": 1
+        },
+        "solution_solutioncomponent": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponent'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Solution_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "solutiontype": {
+          "description": "Solution Type",
+          "anyOf": [
+            {
+              "enum": [
+                "None",
+                "Snapshot",
+                "Internal"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "solutionid"
+      ],
+      "patternProperties": {
+        "^configurationpageid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.webresource'",
+          "type": "string"
+        },
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^fileid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.fileattachment'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^parentsolutionid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "string"
+        },
+        "^publisherid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.publisher'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

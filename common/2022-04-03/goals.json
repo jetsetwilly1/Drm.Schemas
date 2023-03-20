@@ -1,0 +1,558 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/goal.json#",
+  "title": "Entity definition for Goal",
+  "definitions": {
+    "GoalPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "actualdecimal": {
+          "description": "Shows the actual value (Decimal type) achieved towards the target as of the last rolled-up date. This field appears when the metric type of the goal is Amount and the amount data type is Decimal.",
+          "type": "number"
+        },
+        "actualinteger": {
+          "description": "Shows the actual value (integer) achieved towards the target as of the last rolled-up date. This field appears when the metric type of the goal is Amount or Count and the amount data type is Integer."
+        },
+        "actualmoney": {
+          "description": "Shows the actual value (Money type) achieved towards the target as of the last rolled-up date. This field appears when the metric type of the goal is Amount and the amount data type is Money.",
+          "type": "number"
+        },
+        "customrollupfielddecimal": {
+          "description": "Indicates a placeholder rollup field for a decimal value to track a third category of results other than actuals and in-progress results.",
+          "type": "number"
+        },
+        "customrollupfieldinteger": {
+          "description": "Indicates a placeholder rollup field for an integer value to track a third category of results other than actuals and in-progress results."
+        },
+        "customrollupfieldmoney": {
+          "description": "Indicates a placeholder rollup field for a money value to track a third category of results other than actuals and in-progress results.",
+          "type": "number"
+        },
+        "entityimage": {
+          "description": "The default image for the entity.",
+          "type": "string"
+        },
+        "goalenddate": {
+          "description": "Enter the date when the goal ends.",
+          "type": "string"
+        },
+        "goalid": {
+          "description": "Unique identifier of the goal.",
+          "type": "string"
+        },
+        "goalstartdate": {
+          "description": "Enter the date and time when the period for tracking the goal begins.",
+          "type": "string"
+        },
+        "importsequencenumber": {
+          "description": "Sequence number of the import that created this record."
+        },
+        "inprogressdecimal": {
+          "description": "Shows the in-progress value (decimal) against the target. This value could contribute to a goal, but is not counted yet as actual.",
+          "type": "number"
+        },
+        "inprogressinteger": {
+          "description": "Shows the in-progress value (integer) against the target. This value could contribute to a goal, but is not counted yet as actual."
+        },
+        "inprogressmoney": {
+          "description": "Shows the in-progress value (money) against the target. This value could contribute to a goal, but is not counted yet as actual.",
+          "type": "number"
+        },
+        "lastrolledupdate": {
+          "description": "Shows the date and time when the goal was last rolled up. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.",
+          "type": "string"
+        },
+        "overriddencreatedon": {
+          "description": "Date and time that the record was migrated.",
+          "type": "string"
+        },
+        "percentage": {
+          "description": "Shows the percentage achieved against the target goal.",
+          "type": "number"
+        },
+        "rolluperrorcode": {
+          "description": "Error code associated with rollup."
+        },
+        "stretchtargetdecimal": {
+          "description": "Select a stretch target (decimal) of the goal to define a higher or difficult level of goal than the usual ones.",
+          "type": "number"
+        },
+        "stretchtargetinteger": {
+          "description": "Select the stretch target (integer) of the goal to define a higher or difficult level of goal than the usual ones."
+        },
+        "stretchtargetmoney": {
+          "description": "Select stretch target (money) of the goal to define a higher or difficult level of goal than the usual ones.",
+          "type": "number"
+        },
+        "targetdecimal": {
+          "description": "Select a goal target of the decimal type to use for tracking data that include partial numbers, such as pounds sold of a product sold by weight.",
+          "type": "number"
+        },
+        "targetinteger": {
+          "description": "Select a goal target of the integer type to use for tracking anything countable in whole numbers, such as units sold."
+        },
+        "targetmoney": {
+          "description": "Select a goal target (money) to track a monetary amount such as revenue from a product.",
+          "type": "number"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "title": {
+          "description": "Type a title or name that describes the goal.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "Goal_Annotation": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.annotation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Goal_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goal_connections1": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goal_connections2": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.connection'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Goal_DuplicateBaseRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Goal_DuplicateMatchingRecord": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterecord'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goal_parent_goal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "goal_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Goal_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Goal_RollupError_Goal": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "array",
+          "minItems": 1
+        },
+        "Goal_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "msdyn_goal_msdyn_forecastinstance": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.msdyn_forecastinstance'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "amountdatatype": {
+          "description": "Data type of the amount.",
+          "anyOf": [
+            {
+              "enum": [
+                "Money",
+                "Decimal",
+                "Integer"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "consideronlygoalownersrecords": {
+          "description": "Select whether only the goal owner's records, or all records, should be rolled up for goal results.",
+          "anyOf": [
+            {
+              "enum": [
+                "Owned by goal owner",
+                "All"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "fiscalperiod": {
+          "description": "Select the fiscal period for the goal.",
+          "anyOf": [
+            {
+              "enum": [
+                "Quarter 1",
+                "Quarter 2",
+                "Quarter 3",
+                "Quarter 4",
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+                "Semester 1",
+                "Semester 2",
+                "Annual",
+                "P1",
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P10",
+                "P11",
+                "P12",
+                "P13"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "fiscalyear": {
+          "description": "Select the fiscal year for the goal that's being tracked.",
+          "anyOf": [
+            {
+              "enum": [
+                "FY2038",
+                "FY2037",
+                "FY2036",
+                "FY2035",
+                "FY2034",
+                "FY2033",
+                "FY2032",
+                "FY2031",
+                "FY2030",
+                "FY2029",
+                "FY2028",
+                "FY2027",
+                "FY2026",
+                "FY2025",
+                "FY2024",
+                "FY2023",
+                "FY2022",
+                "FY2021",
+                "FY2020",
+                "FY2019",
+                "FY2018",
+                "FY2017",
+                "FY2016",
+                "FY2015",
+                "FY2014",
+                "FY2013",
+                "FY2012",
+                "FY2011",
+                "FY2010",
+                "FY2009",
+                "FY2008",
+                "FY2007",
+                "FY2006",
+                "FY2005",
+                "FY2004",
+                "FY2003",
+                "FY2002",
+                "FY2001",
+                "FY2000",
+                "FY1999",
+                "FY1998",
+                "FY1997",
+                "FY1996",
+                "FY1995",
+                "FY1994",
+                "FY1993",
+                "FY1992",
+                "FY1991",
+                "FY1990",
+                "FY1989",
+                "FY1988",
+                "FY1987",
+                "FY1986",
+                "FY1985",
+                "FY1984",
+                "FY1983",
+                "FY1982",
+                "FY1981",
+                "FY1980",
+                "FY1979",
+                "FY1978",
+                "FY1977",
+                "FY1976",
+                "FY1975",
+                "FY1974",
+                "FY1973",
+                "FY1972",
+                "FY1971",
+                "FY1970"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isamount": {
+          "description": "Indicates whether the metric type is Count or Amount.",
+          "anyOf": [
+            {
+              "enum": [
+                "Amount",
+                "Count"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isfiscalperiodgoal": {
+          "description": "Select whether the goal period is a fiscal period or custom period.",
+          "anyOf": [
+            {
+              "enum": [
+                "Fiscal Period",
+                "Custom Period"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isoverridden": {
+          "description": "Select whether the system rollup fields are updated. If set to Yes, the next system rollup will not update the values of the rollup fields with the system calculated values.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isoverride": {
+          "description": "Indicates whether the values of system rollup fields can be updated.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "rolluponlyfromchildgoals": {
+          "description": "Select whether the data should be rolled up only from the child goals.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Shows whether the goal is open, completed, or canceled. Completed and canceled goals are read-only and can't be edited.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Select the goal's status.",
+          "anyOf": [
+            {
+              "enum": [
+                "Open",
+                "Closed",
+                "Discarded"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "goalid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^goalownerid_systemuser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^goalownerid_team(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^goalwitherrorid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "string"
+        },
+        "^metricid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.metric'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^owningteam(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.team'",
+          "type": "string"
+        },
+        "^owninguser(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^parentgoalid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goal'",
+          "type": "string"
+        },
+        "^rollupqueryactualdecimalid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "string"
+        },
+        "^rollupqueryactualintegerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "string"
+        },
+        "^rollupqueryactualmoneyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "string"
+        },
+        "^rollupquerycustomdecimalid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "string"
+        },
+        "^rollupquerycustomintegerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "string"
+        },
+        "^rollupquerycustommoneyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "string"
+        },
+        "^rollupqueryinprogressdecimalid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "string"
+        },
+        "^rollupqueryinprogressintegerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "string"
+        },
+        "^rollupqueryinprogressmoneyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.goalrollupquery'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

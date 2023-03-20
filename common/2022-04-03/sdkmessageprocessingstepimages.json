@@ -1,0 +1,99 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/sdkmessageprocessingstepimage.json#",
+  "title": "Entity definition for SdkMessageProcessingStepImage",
+  "definitions": {
+    "SdkMessageProcessingStepImagePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "attributes": {
+          "description": "Comma-separated list of attributes that are to be passed into the SDK message processing step image.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the SDK message processing step image.",
+          "type": "string"
+        },
+        "entityalias": {
+          "description": "Key name used to access the pre-image or post-image property bags in a step.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "messagepropertyname": {
+          "description": "Name of the property on the Request message.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of SdkMessage processing step image.",
+          "type": "string"
+        },
+        "relatedattributename": {
+          "description": "Name of the related entity.",
+          "type": "string"
+        },
+        "sdkmessageprocessingstepimageid": {
+          "description": "Unique identifier of the SDK message processing step image entity.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "imagetype": {
+          "description": "Type of image requested.",
+          "anyOf": [
+            {
+              "enum": [
+                "PreImage",
+                "PostImage",
+                "Both"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "sdkmessageprocessingstepimageid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^sdkmessageprocessingstepid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.sdkmessageprocessingstep'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

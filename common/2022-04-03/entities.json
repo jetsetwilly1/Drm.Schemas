@@ -1,0 +1,93 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/entity.json#",
+  "title": "Entity definition for Entity",
+  "definitions": {
+    "EntityPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "addresstablename": {
+          "description": "The address table name of this entity.",
+          "type": "string"
+        },
+        "basetablename": {
+          "description": "The base table name of this entity.",
+          "type": "string"
+        },
+        "collectionname": {
+          "description": "The collection name of this entity.",
+          "type": "string"
+        },
+        "entityid": {
+          "description": "Unique identifier of the entity.",
+          "type": "string"
+        },
+        "entitysetname": {
+          "description": "The entity set name of this entity.",
+          "type": "string"
+        },
+        "extensiontablename": {
+          "description": "The extension table name of this entity.",
+          "type": "string"
+        },
+        "externalcollectionname": {
+          "description": "The external collection name of this entity.",
+          "type": "string"
+        },
+        "externalname": {
+          "description": "The external name of this entity.",
+          "type": "string"
+        },
+        "logicalcollectionname": {
+          "description": "The logical collection name of this entity.",
+          "type": "string"
+        },
+        "logicalname": {
+          "description": "The logical name of this entity.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of this Entity.",
+          "type": "string"
+        },
+        "originallocalizedcollectionname": {
+          "description": "The original localized collection name of this entity.",
+          "type": "string"
+        },
+        "originallocalizedname": {
+          "description": "The original localized name of this entity.",
+          "type": "string"
+        },
+        "parentcontrollingattributename": {
+          "description": "The parent controlling attribute name of this entity.",
+          "type": "string"
+        },
+        "physicalname": {
+          "description": "The physical name of this entity.",
+          "type": "string"
+        },
+        "reportviewname": {
+          "description": "The Report view name of this entity.",
+          "type": "string"
+        },
+        "entity_entityanalyticsconfig": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.entityanalyticsconfig'",
+          "type": "array",
+          "minItems": 1
+        },
+        "entity_solutioncomponentconfiguration": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponentconfiguration'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "entityid"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+	"type": "object",
+	"properties": {
+		"{name}": {
+			"oneOf": [
+				{
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"$ref": "#/definitions/{nameUpperFirstLetter}PropertiesCreateParameters"
+					}
+				},
+				{
+					"$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression"
+				}
+			]
+		}
+	},
+	"required": [ "{name}" ]
+}

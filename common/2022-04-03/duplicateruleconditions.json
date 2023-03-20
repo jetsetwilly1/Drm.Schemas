@@ -1,0 +1,100 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/duplicaterulecondition.json#",
+  "title": "Entity definition for DuplicateRuleCondition",
+  "definitions": {
+    "DuplicateRuleConditionPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "baseattributename": {
+          "description": "Field that is being compared.",
+          "type": "string"
+        },
+        "duplicateruleconditionid": {
+          "description": "Unique identifier of the condition.",
+          "type": "string"
+        },
+        "matchingattributename": {
+          "description": "Field that is being compared with the base field.",
+          "type": "string"
+        },
+        "operatorparam": {
+          "description": "Parameter value of N if the operator is Same First Characters or Same Last Characters."
+        },
+        "DuplicateRuleCondition_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "ignoreblankvalues": {
+          "description": "Determines whether to consider blank values as non-duplicate values",
+          "anyOf": [
+            {
+              "enum": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "operatorcode": {
+          "description": "Operator for this rule condition.",
+          "anyOf": [
+            {
+              "enum": [
+                "Exact Match",
+                "Same First Characters",
+                "Same Last Characters",
+                "Same Date",
+                "Same Date and Time",
+                "Exact Match (Pick List Label)",
+                "Exact Match (Pick List Value)"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "duplicateruleconditionid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^regardingobjectid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.duplicaterule'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/roletemplate.json#",
+  "title": "Entity definition for RoleTemplate",
+  "definitions": {
+    "RoleTemplatePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "name": {
+          "description": "Name of the role template.",
+          "type": "string"
+        },
+        "roletemplateid": {
+          "description": "Unique identifier of the role template.",
+          "type": "string"
+        },
+        "role_template_roles": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.role'",
+          "type": "array",
+          "minItems": 1
+        },
+        "roletemplateprivileges_association": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.privilege'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "roletemplateid"
+      ]
+    }
+  }
+}

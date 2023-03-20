@@ -1,0 +1,1884 @@
+{
+  "id": "https://schemas.drmtemplates.io/2021-03-01/deploymentTemplate.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Template",
+  "description": "An Dynamics deployment template",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON schema reference"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional unstructured metadata to include with the template deployment.",
+      "additionalProperties": true
+    },
+    "contentVersion": {
+      "type": "string",
+      "pattern": "(^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+$)",
+      "description": "A 4 number format for the version number of this template file. For example, 1.0.0.0"
+    },
+    "variables": {
+      "type": "object",
+      "description": "Variable definitions"
+    },
+    "parameters": {
+      "type": "object",
+      "description": "Input parameter definitions",
+      "additionalProperties": {
+        "$ref": "#/definitions/parameter"
+      }
+    },
+    "resources": {
+      "type": "array",
+      "description": "Collection of resources to be deployed",
+      "items": {
+        "oneOf": [
+          {
+            "allOf": [
+              {
+                "$ref": "#/definitions/resourceBase"
+              },
+              {
+                "oneOf": [
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/contacts"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/queues"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/custom"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/workflows"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/roles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/environmentvariablevalues"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.Principal.json#/resourceDefinitions/teams"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.Principal.json#/resourceDefinitions/systemusers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/businessunits"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/accounts"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/aciviewmappers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/actioncards"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/actioncarduserstates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/activitymimeattachments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/activityparties"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/activitypointers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/annotations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/annualfiscalcalendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/appconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/appconfiginstances"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/appconfigmasters"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/appmodules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/appmodulecomponents"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/appmodulerolescollection"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/asyncoperations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/attachments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/attributes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/attributeimageconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/audits"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/bulkdeletefailures"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/bulkdeleteoperations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/businessunitnewsarticles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/calendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/calendarrules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/callbackregistrations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/canvasapps"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/categories"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/columnmappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/complexcontrols"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/connections"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/connectionreferences"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/connectionroles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/connectors"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/customcontrols"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/customcontroldefaultconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/customcontrolresources"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/customeraddresses"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/dataperformances"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/dependencies"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/displaystrings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/documenttemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/duplicaterecords"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/duplicaterules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/duplicateruleconditions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/emailserverprofiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/entities"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/entityanalyticsconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/entitydataproviders"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/entityimageconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/entitykeys"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/entityrelationships"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/environmentvariabledefinitions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/exchangesyncidmappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/expiredprocesses"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/exportsolutionuploads"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/feedback"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/fieldpermissions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/fieldsecurityprofiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/fileattachments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/fixedmonthlyfiscalcalendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/flowsessions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/goals"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/goalrollupqueries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/imports"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/importdataset"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/importentitymappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/importfiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/importjobs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/importlogs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/importmaps"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/interactionforemails"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/invaliddependencies"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/kbarticles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/kbarticlecomments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/kbarticletemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/languagelocale"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/languageprovisioningstates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/lookupmappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/mailboxes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/mailboxtrackingfolders"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/mailmergetemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/managedproperties"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/metrics"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/mobileofflineprofiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/mobileofflineprofileitems"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/mobileofflineprofileitemassociations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/monthlyfiscalcalendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdynce_botcontents"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibdatasets"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibdatasetfiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibdatasetrecords"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibdatasetscontainers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibfiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibfileattacheddatas"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aiconfigurations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aifptrainingdocuments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aimodels"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aiodimages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aiodlabels"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aiodtrainingboundingboxes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aiodtrainingimages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aitemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_analysiscomponents"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_analysisjobs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_analysisresults"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_analysisresultdetails"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_componentlayers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_componentlayerdatasources"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_dataflows"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_federatedarticles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_federatedarticleincidents"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_helppages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_kmfederatedsearchconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_knowledgearticletemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_knowledgeinteractioninsights"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_knowledgesearchinsights"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_odatav4ds"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_richtextfiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_serviceconfigurations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_slakpis"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutioncomponentdatasources"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutioncomponentsummaries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutionhealthrules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutionhealthrulearguments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutionhealthrulesets"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutionhistories"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutionhistorydatasources"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/navigationsettings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/newprocesses"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/officegraphdocuments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/organizations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/organizationdatasyncsubscriptions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/organizationdatasyncsubscriptionentities"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/ownermappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/packages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/personaldocumenttemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/picklistmappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/pluginassemblies"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/plugintracelogs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/plugintypes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/plugintypestatistics"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/positions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/posts"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/postcomments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/postfollows"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/postlikes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/postregardings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/privileges"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/processsessions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/processstages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/processstageparameters"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/processtriggers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/products"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/provisionlanguageforusers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/publishers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/publisheraddresses"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/quarterlyfiscalcalendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/queueitems"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/recommendeddocuments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/recurrencerules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/relationships"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/relationshipattributes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/reports"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/reportcategories"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/ribbonmetadatasettoprocess"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/roletemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/rollupfields"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/runtimedependencies"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/savedqueries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/savedqueryvisualizations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/sdkmessages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/sdkmessagefilters"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/sdkmessageprocessingsteps"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/sdkmessageprocessingstepimages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/sdkmessageprocessingstepsecureconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/searchtelemetries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/semiannualfiscalcalendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/serviceendpoints"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/serviceplans"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/sharepointdocumentlocations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/sharepointsites"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/similarityrules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/sitemaps"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/slakpiinstances"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/socialprofiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/solutions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/solutioncomponents"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/solutioncomponentattributeconfigurations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/solutioncomponentconfigurations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/solutioncomponentrelationshipconfigurations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/solutionhistories"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/stagesolutionuploads"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/subjects"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/subscriptionmanuallytrackedobjects"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/subscriptionsyncentriesoffline"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/systemforms"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/systemuserauthorizationchangetrackers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/teammobileofflineprofilememberships"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/teamtemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/templates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/territories"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/themes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/timestampdatemappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/timezonedefinitions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/timezonelocalizednames"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/timezonerules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/tracelogs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/transactioncurrencies"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/transformationmappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/transformationparametermappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/translationprocesses"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/usermobileofflineprofilememberships"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/userqueries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/userqueryvisualizations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/usersettingscollection"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/webresourceset"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/webwizards"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/workflowbinaries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2022-04-03/drm.CrmBaseEntity.json#/resourceDefinitions/workflowlogs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/accounts"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/aciviewmappers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/actioncards"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/actioncarduserstates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/activitymimeattachments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/activityparties"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/activitypointers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/annotations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/annualfiscalcalendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/appconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/appconfiginstances"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/appconfigmasters"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/appmodules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/appmodulecomponents"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/appmodulerolescollection"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/asyncoperations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/attachments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/attributes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/attributeimageconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/audits"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/bulkdeletefailures"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/bulkdeleteoperations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/businessunits"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/businessunitnewsarticles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/calendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/calendarrules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/callbackregistrations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/canvasapps"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/categories"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/columnmappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/complexcontrols"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/connections"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/connectionreferences"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/connectionroles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/connectors"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/contacts"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/custom"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/customcontrols"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/customcontroldefaultconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/customcontrolresources"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/customeraddresses"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/dataperformances"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/dependencies"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/displaystrings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/documenttemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/duplicaterecords"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/duplicaterules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/duplicateruleconditions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/emailserverprofiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/entities"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/entityanalyticsconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/entitydataproviders"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/entityimageconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/entitykeys"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/entityrelationships"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/environmentvariabledefinitions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/environmentvariablevalues"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/exchangesyncidmappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/expiredprocesses"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/exportsolutionuploads"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/feedback"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/fieldpermissions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/fieldsecurityprofiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/fileattachments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/fixedmonthlyfiscalcalendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/flowsessions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/goals"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/goalrollupqueries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/imports"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/importdataset"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/importentitymappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/importfiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/importjobs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/importlogs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/importmaps"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/interactionforemails"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/invaliddependencies"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/kbarticles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/kbarticlecomments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/kbarticletemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/languagelocale"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/languageprovisioningstates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/lookupmappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/mailboxes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/mailboxtrackingfolders"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/mailmergetemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/managedproperties"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/metrics"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/mobileofflineprofiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/mobileofflineprofileitems"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/mobileofflineprofileitemassociations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/monthlyfiscalcalendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdynce_botcontents"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibdatasets"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibdatasetfiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibdatasetrecords"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibdatasetscontainers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibfiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aibfileattacheddatas"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aiconfigurations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aifptrainingdocuments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aimodels"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aiodimages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aiodlabels"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aiodtrainingboundingboxes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aiodtrainingimages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_aitemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_analysiscomponents"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_analysisjobs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_analysisresults"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_analysisresultdetails"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_componentlayers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_componentlayerdatasources"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_dataflows"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_federatedarticles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_federatedarticleincidents"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_helppages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_kmfederatedsearchconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_knowledgearticletemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_knowledgeinteractioninsights"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_knowledgesearchinsights"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_odatav4ds"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_richtextfiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_serviceconfigurations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_slakpis"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutioncomponentdatasources"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutioncomponentsummaries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutionhealthrules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutionhealthrulearguments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutionhealthrulesets"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutionhistories"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/msdyn_solutionhistorydatasources"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/navigationsettings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/newprocesses"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/officegraphdocuments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/organizations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/organizationdatasyncsubscriptions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/organizationdatasyncsubscriptionentities"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/ownermappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/packages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/personaldocumenttemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/picklistmappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/pluginassemblies"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/plugintracelogs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/plugintypes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/plugintypestatistics"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/positions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/posts"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/postcomments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/postfollows"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/postlikes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/postregardings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/privileges"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/processsessions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/processstages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/processstageparameters"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/processtriggers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/products"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/provisionlanguageforusers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/publishers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/publisheraddresses"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/quarterlyfiscalcalendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/queues"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/queueitems"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/recommendeddocuments"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/recurrencerules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/relationships"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/relationshipattributes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/reports"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/reportcategories"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/ribbonmetadatasettoprocess"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/roles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/roletemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/rollupfields"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/runtimedependencies"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/savedqueries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/savedqueryvisualizations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/sdkmessages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/sdkmessagefilters"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/sdkmessageprocessingsteps"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/sdkmessageprocessingstepimages"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/sdkmessageprocessingstepsecureconfigs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/searchtelemetries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/semiannualfiscalcalendars"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/serviceendpoints"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/serviceplans"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/sharepointdocumentlocations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/sharepointsites"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/similarityrules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/sitemaps"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/slas"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/slaitems"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/slakpiinstances"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/socialprofiles"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/solutions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/solutioncomponents"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/solutioncomponentattributeconfigurations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/solutioncomponentconfigurations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/solutioncomponentrelationshipconfigurations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/solutionhistories"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/stagesolutionuploads"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/subjects"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/subscriptionmanuallytrackedobjects"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/subscriptionsyncentriesoffline"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/systemforms"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/systemuserauthorizationchangetrackers"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/teammobileofflineprofilememberships"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/teamtemplates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/templates"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/territories"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/themes"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/timestampdatemappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/timezonedefinitions"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/timezonelocalizednames"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/timezonerules"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/tracelogs"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/transactioncurrencies"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/transformationmappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/transformationparametermappings"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/translationprocesses"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/usermobileofflineprofilememberships"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/userqueries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/userqueryvisualizations"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/usersettingscollection"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/webresourceset"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/webwizards"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/workflows"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/workflowbinaries"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/workflowlogs"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "description": "Output parameter definitions",
+      "additionalProperties": {
+        "$ref": "#/definitions/output"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "contentVersion",
+    "resources"
+  ],
+  "definitions": {
+    "QueriesParameters": {
+      "type": "object",
+      "patternProperties": {
+        "^.*$": {
+          "$ref": "#/definitions/QueryFilterParameters"
+        }
+      }
+    },
+    "QueryFilterParameters": {
+      "type": "object",
+      "properties": {
+        "entity": {
+          "type": "string"
+        },
+        "filter": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "entity",
+        "filter"
+      ]
+    },
+    "targetDynamicsEnvironment": {
+      "type": "object",
+      "properties": {
+        "applicationCredentials": {
+          "type": "object",
+          "properties": {
+            "clientId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "clientSecret": {
+              "type": "string",
+              "minLength": 1
+            },
+            "tenantId": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "clientId",
+            "clientSecret",
+            "tenantId"
+          ]
+        },
+        "userCredentials": {
+          "type": "object",
+          "properties": {
+            "username": {
+              "type": "string",
+              "minLength": 1
+            },
+            "password": {
+              "type": "string",
+              "minLength": 1
+            },
+            "clientId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "tenantId": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "bearerToken": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "url"
+      ],
+      "oneOf": [
+        {
+          "required": [
+            "bearerToken"
+          ]
+        },
+        {
+          "required": [
+            "applicationCredentials"
+          ]
+        },
+        {
+          "required": [
+            "userCredentials"
+          ]
+        }
+      ]
+    },
+    "ARMResourceBase": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the resource"
+        },
+        "type": {
+          "type": "string",
+          "description": "Resource type"
+        },
+        "apiVersion": {
+          "type": "string",
+          "description": "API Version of the resource type, optional when apiProfile is used on the template"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Collection of resources this resource depends on"
+        }
+      },
+      "required": [
+        "name",
+        "type"
+      ]
+    },
+    "resourceBase": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ARMResourceBase"
+        },
+        {
+          "properties": {
+            "targetenvironment": {
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/targetDynamicsEnvironment"
+                },
+                {
+                  "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression"
+                }
+              ]
+            },
+            "queries": {
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/QueriesParameters"
+                },
+                {
+                  "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression"
+                }
+              ]
+            },
+            "copy": {
+              "$ref": "#/definitions/resourceCopy"
+            },
+            "comments": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "resourceBaseExternal": {
+      "$ref": "#/definitions/resourceBase",
+      "required": [
+        "plan"
+      ]
+    },
+    "resourceSku": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the sku"
+        },
+        "tier": {
+          "type": "string",
+          "description": "Tier of the sku"
+        },
+        "size": {
+          "type": "string",
+          "description": "Size of the sku"
+        },
+        "family": {
+          "type": "string",
+          "description": "Family of the sku"
+        },
+        "capacity": {
+          "type": "integer",
+          "description": "Capacity of the sku"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "resourceCopy": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the copy"
+        },
+        "count": {
+          "oneOf": [
+            {
+              "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression"
+            },
+            {
+              "type": "integer"
+            }
+          ],
+          "description": "Count of the copy"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "Parallel",
+            "Serial"
+          ],
+          "description": "The copy mode"
+        },
+        "batchSize": {
+          "oneOf": [
+            {
+              "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression"
+            },
+            {
+              "type": "integer"
+            }
+          ],
+          "description": "The serial copy batch size"
+        }
+      }
+    },
+    "functionNamespace": {
+      "type": "object",
+      "properties": {
+        "namespace": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Function namespace"
+        },
+        "members": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/functionMember"
+          },
+          "description": "Function memebers"
+        }
+      }
+    },
+    "functionMember": {
+      "type": "object",
+      "properties": {
+        "parameters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/functionParameter"
+          },
+          "description": "Function parameters"
+        },
+        "output": {
+          "$ref": "#/definitions/functionOutput",
+          "description": "Function output"
+        }
+      }
+    },
+    "functionParameter": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Function parameter name"
+        },
+        "type": {
+          "$ref": "#/definitions/parameterTypes",
+          "description": "Type of function parameter value"
+        }
+      }
+    },
+    "functionOutput": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/parameterTypes",
+          "description": "Type of function output value"
+        },
+        "value": {
+          "$ref": "#/definitions/parameterValueTypes",
+          "description": "Value assigned for function output"
+        }
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/parameterTypes",
+          "description": "Type of input parameter"
+        },
+        "defaultValue": {
+          "$ref": "#/definitions/parameterValueTypes",
+          "description": "Default value to be used if one is not provided"
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Metadata for the parameter, can be any valid JSON object"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "description": "Input parameter definitions"
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "condition": {
+          "oneOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression"
+            }
+          ],
+          "description": "Condition of the output"
+        },
+        "type": {
+          "$ref": "#/definitions/parameterTypes",
+          "description": "Type of output value"
+        },
+        "value": {
+          "$ref": "#/definitions/parameterValueTypes",
+          "description": "Value assigned for output"
+        },
+        "copy": {
+          "$ref": "#/definitions/outputCopy",
+          "description": "Output copy"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "description": "Set of output parameters"
+    },
+    "parameterTypes": {
+      "enum": [
+        "string",
+        "securestring",
+        "int",
+        "bool",
+        "object",
+        "secureObject",
+        "array"
+      ]
+    },
+    "parameterValueTypes": {
+      "type": [
+        "string",
+        "boolean",
+        "integer",
+        "number",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "keyVaultReference": {
+      "type": "object",
+      "properties": {
+        "keyVault": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "additionalProperties": false
+        },
+        "secretName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secretVersion": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "keyVault",
+        "secretName"
+      ],
+      "additionalProperties": false
+    },
+    "outputCopy": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "oneOf": [
+            {
+              "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression"
+            },
+            {
+              "type": "integer"
+            }
+          ],
+          "description": "Count of the copy"
+        },
+        "input": {
+          "anyOf": [
+            {
+              "type": [
+                "string",
+                "boolean",
+                "integer",
+                "array",
+                "object",
+                "null"
+              ]
+            },
+            {
+              "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression"
+            }
+          ],
+          "description": "Input of the copy"
+        }
+      },
+      "required": [
+        "count",
+        "input"
+      ],
+      "description": "Output copy"
+    }
+  }
+}

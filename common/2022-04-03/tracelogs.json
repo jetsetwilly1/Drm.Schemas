@@ -1,0 +1,171 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/tracelog.json#",
+  "title": "Entity definition for Trace",
+  "definitions": {
+    "TracePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "collationlevel": {
+          "description": "Indicates the collation level"
+        },
+        "errordetails": {
+          "description": "",
+          "type": "string"
+        },
+        "errortypedisplay": {
+          "description": "",
+          "type": "string"
+        },
+        "machinename": {
+          "description": "",
+          "type": "string"
+        },
+        "text": {
+          "description": "Text of the trace.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "traceactionxml": {
+          "description": "XML representation of the trace actions.",
+          "type": "string"
+        },
+        "tracecode": {
+          "description": "Error code."
+        },
+        "tracedetailxml": {
+          "description": "XML representation of the trace details.",
+          "type": "string"
+        },
+        "tracelogid": {
+          "description": "Unique identifier of the trace.",
+          "type": "string"
+        },
+        "traceparameterxml": {
+          "description": "XML representation of the trace parameters.",
+          "type": "string"
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the trace was created."
+        },
+        "tracelog_parent_tracelog": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.tracelog'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "canbedeleted": {
+          "description": "Indicates if this trace log can be deleted.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "isunique": {
+          "description": "Tells if this traceLog is created uniquely(only one) for the associated entity.",
+          "anyOf": [
+            {
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "level": {
+          "description": "Information about the trace level.",
+          "anyOf": [
+            {
+              "enum": [
+                "Information",
+                "Warning",
+                "Error"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "tracestatus": {
+          "description": "Status about the trace.",
+          "anyOf": [
+            {
+              "enum": [
+                "Success",
+                "Failure"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "tracelogid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^organizationid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.organization'",
+          "type": "string"
+        },
+        "^parenttracelogid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.tracelog'",
+          "type": "string"
+        },
+        "^regardingobjectid_emailserverprofile(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.emailserverprofile'",
+          "type": "string"
+        },
+        "^regardingobjectid_mailbox(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.mailbox'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

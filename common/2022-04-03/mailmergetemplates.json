@@ -1,0 +1,207 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/mailmergetemplate.json#",
+  "title": "Entity definition for MailMergeTemplate",
+  "definitions": {
+    "MailMergeTemplatePropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "body": {
+          "description": "Body text of the mail merge template.",
+          "type": "string"
+        },
+        "defaultfilter": {
+          "description": "Default data fields associated with the mail merge template.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the mail merge template.",
+          "type": "string"
+        },
+        "filename": {
+          "description": "File name of the mail merge template.",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the form is introduced.",
+          "type": "string"
+        },
+        "iscustomizable": {
+          "description": "Information that specifies whether this component can be customized.",
+          "type": "string"
+        },
+        "languagecode": {
+          "description": "Language of the mail merge template."
+        },
+        "mailmergetemplateid": {
+          "description": "Unique identifier of the mail merge template.",
+          "type": "string"
+        },
+        "mimetype": {
+          "description": "MIME type of the mail merge template.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the mail merge template.",
+          "type": "string"
+        },
+        "templatetypecode": {
+          "description": "Type of mail merge template.",
+          "type": "string"
+        },
+        "timezoneruleversionnumber": {
+          "description": "For internal use only."
+        },
+        "utcconversiontimezonecode": {
+          "description": "Time zone code that was in use when the record was created."
+        },
+        "MailMergeTemplate_AsyncOperations": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.asyncoperation'",
+          "type": "array",
+          "minItems": 1
+        },
+        "mailmergetemplate_principalobjectattributeaccess": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principalobjectattributeaccess'",
+          "type": "array",
+          "minItems": 1
+        },
+        "MailMergeTemplate_ProcessSessions": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.processsession'",
+          "type": "array",
+          "minItems": 1
+        },
+        "MailMergeTemplate_SyncErrors": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.syncerror'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        },
+        "documentformat": {
+          "description": "Version of the Microsoft Office Word XML format used by the template.",
+          "anyOf": [
+            {
+              "enum": [
+                "2003",
+                "2007"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "ispersonal": {
+          "description": "Information about whether the mail merge template is personal or is available to all users.",
+          "anyOf": [
+            {
+              "enum": [
+                "Individual",
+                "Organization"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "mailmergetype": {
+          "description": "Drop-down list for selecting the type of the mail merge.",
+          "anyOf": [
+            {
+              "enum": [
+                "Letter",
+                "Email Message",
+                "Envelope",
+                "Labels",
+                "Quotes",
+                "Fax"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statecode": {
+          "description": "Status of the mail merge template.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        },
+        "statuscode": {
+          "description": "Reason for the status of the mail merge template.",
+          "anyOf": [
+            {
+              "enum": [
+                "Active",
+                "Inactive"
+              ]
+            },
+            {
+              "type": [
+                "number",
+                "string"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "mailmergetemplateid"
+      ],
+      "patternProperties": {
+        "^createdby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^ownerid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.principal'",
+          "type": "string"
+        },
+        "^owningbusinessunit(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.businessunit'",
+          "type": "string"
+        },
+        "^transactioncurrencyid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.transactioncurrency'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

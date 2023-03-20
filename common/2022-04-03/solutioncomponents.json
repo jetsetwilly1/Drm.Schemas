@@ -1,0 +1,46 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/solutioncomponent.json#",
+  "title": "Entity definition for SolutionComponent",
+  "definitions": {
+    "SolutionComponentPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "solutioncomponentid": {
+          "description": "Unique identifier of the solution component.",
+          "type": "string"
+        },
+        "solutioncomponent_parent_solutioncomponent": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponent'",
+          "type": "array",
+          "minItems": 1
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "solutioncomponentid"
+      ],
+      "patternProperties": {
+        "^createdonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^modifiedonbehalfby(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.systemuser'",
+          "type": "string"
+        },
+        "^rootsolutioncomponentid_solutioncomponent(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solutioncomponent'",
+          "type": "string"
+        },
+        "^solutionid(?:@odata.bind|)$": {
+          "description": "Must be of type 'Microsoft.Dynamics.CRM.solution'",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

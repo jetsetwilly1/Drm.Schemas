@@ -1,0 +1,31 @@
+{
+  "id": "https://schemas.drmtemplates.io/2022-04-03/appmoduleroles.json#",
+  "title": "Entity definition for AppModuleRoles",
+  "definitions": {
+    "AppModuleRolesPropertiesCreateParameters": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "appmoduleroleid": {
+          "description": "For internal use only.",
+          "type": "string"
+        },
+        "appmoduleroleidunique": {
+          "description": "Unique identifier of the App Module Roles used when synchronizing customizations for the Microsoft Dynamics 365 client for Outlook",
+          "type": "string"
+        },
+        "introducedversion": {
+          "description": "Version in which the similarity rule is introduced.",
+          "type": "string"
+        },
+        "drmmetadata": {
+          "description": "Metadata optional object used to describe this entry.",
+          "type": "object"
+        }
+      },
+      "required": [
+        "appmoduleroleid"
+      ]
+    }
+  }
+}
