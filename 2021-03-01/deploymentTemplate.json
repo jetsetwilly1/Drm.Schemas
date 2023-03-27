@@ -901,6 +901,12 @@
                     "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/environmentvariablevalues"
                   },
                   {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.Principal.json#/resourceDefinitions/teams"
+                  },
+                  {
+                    "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.Principal.json#/resourceDefinitions/systemusers"
+                  },
+                  {
                     "$ref": "https://schemas.drmtemplates.io/2023-01-09/drm.CrmBaseEntity.json#/resourceDefinitions/exchangesyncidmappings"
                   },
                   {
