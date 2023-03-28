@@ -120,7 +120,7 @@
           ]
         }
       },
-      "required": [ "teams" ]
+      "required": [ "data" ]
     },
     "SystemUsersFormat": {
       "type": "object",
@@ -140,7 +140,7 @@
           ]
         }
       },
-      "required": [ "systemusers" ]
+      "required": [ "data" ]
     }
   }
 }
