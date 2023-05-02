@@ -1,5 +1,5 @@
 {
-  "id": "https://devops.midwolf.co.uk/schemas/2022-04-03/queue.json#",
+  "id": "https://schemas.drmtemplates.io/2022-04-03/queue.json#",
   "title": "Entity definition for Queue",
   "definitions": {
     "QueuePropertiesCreateParameters": {
@@ -148,7 +148,8 @@
             {
               "type": [
                 "number",
-                "string"
+                "string",
+                "boolean"
               ]
             }
           ]

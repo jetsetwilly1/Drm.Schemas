@@ -1,5 +1,5 @@
 {
-  "id": "https://devops.midwolf.co.uk/schemas/2022-04-03/publisheraddress.json#",
+  "id": "https://schemas.drmtemplates.io/2022-04-03/publisheraddress.json#",
   "title": "Entity definition for PublisherAddress",
   "definitions": {
     "PublisherAddressPropertiesCreateParameters": {

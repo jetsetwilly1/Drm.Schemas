@@ -1,7 +1,7 @@
 ﻿{
 	"type": "object",
 	"properties": {
-		"{name}": {
+		"data": {
 			"oneOf": [
 				{
 					"type": "array",
@@ -16,5 +16,5 @@
 			]
 		}
 	},
-	"required": [ "{name}" ]
+	"required": [ "data" ]
 }

@@ -1,5 +1,5 @@
 {
-  "id": "https://devops.midwolf.co.uk/schemas/2022-04-03/savedquery.json#",
+  "id": "https://schemas.drmtemplates.io/2022-04-03/savedquery.json#",
   "title": "Entity definition for View",
   "definitions": {
     "ViewPropertiesCreateParameters": {
@@ -104,7 +104,8 @@
             {
               "type": [
                 "number",
-                "string"
+                "string",
+                "boolean"
               ]
             }
           ]
@@ -121,7 +122,8 @@
             {
               "type": [
                 "number",
-                "string"
+                "string",
+                "boolean"
               ]
             }
           ]

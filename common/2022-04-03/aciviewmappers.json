@@ -1,5 +1,5 @@
 {
-  "id": "https://schemas.drmtemplates.io/2022-04-03/aciviewmapper.json#",
+  "id": "https://devops.midwolf.co.uk/schemas/2022-04-03/aciviewmapper.json#",
   "title": "Entity definition for ACIViewMapper",
   "definitions": {
     "ACIViewMapperPropertiesCreateParameters": {

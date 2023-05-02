@@ -82,7 +82,8 @@
             {
               "type": [
                 "number",
-                "string"
+                "string",
+                "boolean"
               ]
             }
           ]

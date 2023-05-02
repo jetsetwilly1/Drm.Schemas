@@ -3,15 +3,15 @@
 	"properties": {
 		"apiVersion": {
 			"type": "string",
-			"enum": [ "2022-04-03" ]
+			"enum": [ "2023-01-09" ]
 		},
-		"type": { "enum": [ "drm.CrmBaseEntity/{name}" ] },
+		"type": { "enum": [ "cT.crmbaseentity/{name}" ] },
 		"properties": {
 			"oneOf": [
 				{ "$ref": "#/definitions/{nameUpperFirstLetter}PropertiesFormat" },
 				{ "$ref": "https://schemas.drmtemplates.io/common/definitions.json#/definitions/expression" }
 			],
-			"description": "drm.CrmBaseEntity/{nameSingular}: properties for configuring a {nameSingular} entity."
+			"description": "cT.crmbaseentity/{nameSingular}: properties for configuring a {nameSingular} entity."
 		}
 	},
 	"required": [ "targetenvironment", "name", "apiVersion", "type", "properties" ],
